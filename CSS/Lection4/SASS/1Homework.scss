@@ -1,0 +1,265 @@
+@mixin clearfix {
+	zoom: 1;
+	&:after {
+		display: block; 
+		content: "";
+		height: 0; 
+		clear: both;
+	}
+}
+@mixin linear-gradient($from-color,$from-pos,$to-color,$to-pos,$repeat: no-repeat) {
+    background: $to-color;
+    background: -moz-linear-gradient(top, $from-color $from-pos, $to-color $to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($from-pos,$from-color), color-stop($to-pos,$to-color));
+    background: -webkit-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -o-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: -ms-linear-gradient(top, $from-color $from-pos,$to-color $to-pos);
+    background: linear-gradient(to bottom, $from-color $from-pos,$to-color $to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from-color}', endColorstr='#{$to-color}',GradientType=0 );
+    background-repeat: $repeat;
+}
+
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+    $default-page-color:white;
+
+	margin: 0;
+    padding: 0;
+    border: 0;
+    color: $default-page-color;
+}
+
+div, h1, h3, h4, h5, h6, header, footer, body, section, nav, article, aside {
+    display: block;
+}
+
+body {
+	$background-from-color-body: #C898D9;
+	$background-to-color-body: #845F93;
+	$background-font:14px normal Arial;
+	$header-nav-color:white;
+	$header-nav-font:1.4em normal Arial;
+	$header-nav-color-hover:#a8a8a8;
+	$header-subnav-color:white;
+	$header-subnav-background-color:rgba(179, 94, 243, 0.9);
+	$header-login-color:white;
+	$header-login-button-color:#C898D9;
+	$header-login-button-hover-color:#8949b9;
+	$article-footer-author-color:#DEADED;
+	$article-timestamp-font:Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;
+	$aside-widget-link-color:#aaaaaa;
+	$aside-widget-importantItem-color:#cccccc;
+
+	header {
+		nav {
+            @include clearfix;
+			ul li {
+                a {
+					&.selected {
+                        font-weight: bold;
+                    }
+					text-decoration: none;
+					padding: 0 10px 0 10px;
+					color: $header-nav-color;
+					font: $header-nav-font;
+                }
+				&:hover > a {
+                text-decoration: underline;
+                color: $header-nav-color-hover;
+				}
+				&:hover > a + ul {
+					display: block;
+				}
+				ul.sub-nav-list {
+                    @include clearfix;
+					position: absolute;
+                    display: none;
+                    background-color: $header-subnav-background-color;
+                    border-radius: 5px;
+                }
+				ul li {
+                    & > a {
+                        font-size: 1.2em;
+                        color: $header-subnav-color;
+                    }
+					&:last-of-type {
+						border-bottom: none;
+					}
+					float: none;
+                    margin: 0 15px;
+                    padding: 10px 0;
+                    border-bottom: 1px solid black;
+                }
+				float: left;
+                margin: 0;
+            }
+			ul.nav-list {
+				list-style-type: none;
+			}
+			display: inline-block;
+            width: 75%;
+            margin: 20px 20px 20px 20px;
+            padding: 12px;
+            border-style: outset;
+            border-radius: 10px;
+            border: 2px solid black; 
+        }
+		div#header-container { 
+			@include clearfix;
+			div#logo-container {
+				float: left;
+				position: relative;
+			}
+			div#reg-form-container {
+				div {
+					label {
+						width: 50px;
+						margin: 5px;
+						color:$header-login-color;
+					}
+					input {
+						width: 130px;
+						border: 1px solid #603382;
+						border-radius: 10px;
+						padding: 2px 5px;
+						margin: 5px;
+						opacity:0.3;
+					}
+					text-align: right;
+				}
+				button {
+					&:hover {
+						background-color: $header-login-button-hover-color;
+						border-style: inset;
+					}
+					margin-left: auto;
+					margin-right: auto;
+					font-weight: bold;
+					border: 1px solid #603382;
+					border-style: outset;
+					border-radius: 10px;
+					padding: 5px 8px;
+					background-color:$header-login-button-color;
+					opacity:0.8;
+					box-shadow:2px 2px #603382;
+				}
+				float: right;
+				position: relative;
+				right: 5%;
+				top: 50%;
+			}
+		}
+		padding-top: 25px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+        padding-left: 15px;
+	}	
+	section {
+        @include clearfix;
+		article {
+            header {
+                h1 {
+                    font-size: 1.4em;
+                    padding: 0;
+                }
+				background: none;
+                padding: 5px;
+            }
+			footer {
+                p {
+                    time {
+                        font-family: $article-timestamp-font;
+                    }
+					a{
+                        &:hover {
+                            text-decoration: underline;
+                        }
+						text-decoration: none;
+                        color: $article-footer-author-color;
+                    }
+					font-size: 16px;
+                    text-align: right;
+                    font-weight: normal;     
+                }
+				padding: 5px;
+            }
+			margin: 20px;
+            padding: 20px;
+            border-style: outset;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+		width: 75%;
+        float: left;
+        color: black;
+    }
+	aside {
+        @include clearfix;
+		& > ul {
+            & > li {
+                h2 {
+                    font-size: 1.1em;
+                    font-weight: bold;
+                }
+				p {
+                    a {
+                        color: $aside-widget-link-color;
+                        text-decoration: none;
+                    }
+					strong {
+                        color: $aside-widget-importantItem-color;
+                        font-weight: bold;
+                        font-style: normal;
+                    }
+					em {
+                        color: $aside-widget-importantItem-color;
+                        font-weight: normal;
+                        font-style: italic;
+                    }
+					margin-top: 10px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                    margin-left: 5px;
+                    font-size: 14px;
+                }
+				ul {
+                    li {
+                        margin-top: 5px;
+                        margin-left: 10px;
+                        margin-bottom: 0px;
+                        margin-right: 0px;
+                        background: url(images/li-dot.png) no-repeat;
+                        background-position: 0 50%;
+                        padding-left: 25px;
+                    }
+					list-style-type: none;
+                    margin-top: 10px;
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                    margin-left: 0px;
+                }
+				margin: 15px 0;
+                padding: 15px;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+			list-style-type: none;
+        }
+		float: left;
+        width: 20%;
+        margin: 20px;
+    }
+	footer {
+        p {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align:center;
+        }
+		clear: both;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+	font: $background-font;
+	@include linear-gradient($background-from-color-body, 0%, $background-to-color-body, 100%);
+}

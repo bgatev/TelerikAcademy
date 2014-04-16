@@ -1,0 +1,86 @@
+﻿.clearfix {
+	zoom: 1;
+	&:after {
+		display: block; 
+		content: "";
+		height: 0; 
+		clear: both;
+	}
+}
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos,@repeat: no-repeat) {
+    background: @to-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{@from-color}', endColorstr='#{@to-color}',GradientType=0 );
+    background-repeat: @repeat;
+}
+body, div, nav, header, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+    height:200px;
+    width:800px;
+    border:1px solid black;
+    .linear-gradient(darkblue, 0%, #00C5FF, 100%);
+}
+nav ul {
+    margin-top:10px;
+    margin-left:10px;
+    list-style-type: none;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav ul li ul {
+    position:absolute;
+}
+nav ul li ul li {
+    display: none;
+    position:relative;
+}
+nav ul li ul li ul {
+    padding-left:5px;
+    padding-right:5px;
+    width:170px;
+    border-radius:5px;
+    background-color:lightblue;
+    text-align:center;
+}
+nav ul li ul li ul li{
+    display: none;
+}
+nav > ul > li:hover > ul li {
+    display: inline-block;
+}
+nav > ul > li:hover > ul li ul li {
+    display: none;
+}
+.selected > a{
+    background-color: #8A8383;
+}
+nav ul li ul li:hover > ul li {
+    display: block;
+}
+nav ul li ul li ul li a{
+    text-decoration:underline;
+}
+nav ul li ul li ul li:last-of-type a{
+    text-decoration:none;
+}
+a {
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    padding:0px 5px 0px 5px;
+    border-radius:5px;
+}
+a:hover {
+    background-color: #A49E9E;
+}
+
+

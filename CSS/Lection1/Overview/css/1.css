@@ -1,0 +1,48 @@
+body section{
+    display:inline-block;
+    width:400px;
+    background-color: #ACB0B2;
+}
+body h1{
+    color: #B2CEDC;
+}
+
+body section table tr > td{
+    padding-bottom:10px;
+}
+
+.tableLabel {
+    color:white;
+    font-family:Arial;
+    font-style:italic;
+    vertical-align:top;
+}
+.personalData
+{
+    color: #C6B13F;
+}
+.personalStatus {
+    color:red;
+}
+.action {
+    color:#B2CEDC;
+}
+.links {
+    color:#C6B13F;
+    text-decoration:none;
+}
+    .links > div {
+        padding-top:10px;
+    }
+.ticketStatus {
+    color:darkorange;
+    font-weight:bold;
+}
+
+.circlePoint {
+    background: -webkit-radial-gradient(circle 5px at 6px 50%, green 0%, green 5px, rgba(0,0,0,0.3) 5px, rgba(0,0,0,0) 5px);
+    background:         radial-gradient(circle 5px at 6px 50%, green 0%, green 5px, rgba(0,0,0,0.3) 5px, rgba(0,0,0,0) 5px);   
+}
+    .circlePoint > div {
+        padding-left:15px;
+    } 

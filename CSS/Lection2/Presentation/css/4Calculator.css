@@ -1,0 +1,63 @@
+﻿body section {
+    display:inline-block;
+    background: linear-gradient(#BCF3F1, #31C3B2);
+}
+body header div {
+    display:inline-block;
+    width:40px;
+    text-align:center;
+}
+table {
+    width:400px;
+    border-spacing:3px;
+}
+table tr td {
+    padding:0px;
+    border:1px solid black;
+}
+.result > * {
+    display:inline-block;
+    width:400px;
+    text-align:right;
+    font-size:2em;
+}
+.secondHeader tr td {
+    border:none;
+    padding-right:5px;
+    text-align:right;
+    font-size:0.8em;
+    font-family:Consolas;
+    height:10px;
+}
+.msb td:first-child {
+    padding-left:15px;
+    text-align:left;
+}
+.msb td:nth-child(2n) {
+    text-align:center;
+}
+tr td {
+    height:30px;
+    width:50px;
+}
+tr td input[type="button"] {
+    height:100%;
+    width:100%;
+}
+tr td input[type="button"]:hover {
+    border:1px solid #FFDB00;
+    background: linear-gradient(#FFDB00, #ffce68);
+}
+ul li {
+    list-style-type:none;
+}
+ul li input[type="radio"] {
+    margin:-25px;
+}
+ul li label {
+    padding-left:25px;
+    margin-right:5px;
+}
+#equalSign > * {
+    height:70px;
+}

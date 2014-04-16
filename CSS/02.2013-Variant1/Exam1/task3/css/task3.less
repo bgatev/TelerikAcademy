@@ -1,0 +1,97 @@
+﻿.clearfix {
+	zoom: 1;
+	&:after {
+		display: block; 
+		content: "";
+		height: 0; 
+		clear: both;
+	}
+}
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos,@repeat: no-repeat) {
+    background: @to-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{@from-color}', endColorstr='#{@to-color}',GradientType=0 );
+    background-repeat: @repeat;
+}
+body, div, ul, li, span, p {
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    font-family:Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+    font-size:16px;
+    width:410px;
+    height:490px;
+    color:black;
+    border:1px solid black;
+    border-radius:15px;
+    margin-left:50px;
+    .linear-gradient(#eae4e4, 0%, #a19d9d, 100%);
+}
+#wrapper h1 {
+    text-align:center;
+}
+#wrapper .messages-list {
+    list-style-type:none;
+}
+#wrapper .messages-list .me-item {
+    display:block;
+    border:1px solid black;
+    border-radius:15px;
+    .linear-gradient(#32cece, 0%, #b6fafc, 100%);
+    width:250px;
+    margin-left:140px;
+    margin-bottom:10px;
+}
+#wrapper .messages-list p {
+    margin-left:10px;    
+}
+#wrapper .messages-list .me-item span:first-of-type {
+    font-weight:bold;
+    margin-left:10px;
+}
+#wrapper .messages-list .me-item .date{
+    margin-left:90px;   
+}
+#wrapper .messages-list .toshko-item {
+    display:block;
+    border:1px solid black;
+    border-radius:15px;
+    .linear-gradient(#cdf7a2, 0%, #99f739, 100%);
+    width:250px;
+    margin-left:20px;
+    margin-bottom:10px;
+}
+#wrapper .messages-list .toshko-item span:first-of-type {
+    font-weight:bold;
+    margin-left:190px;
+}
+#wrapper .messages-list .toshko-item .date{
+    margin-left:10px; 
+}
+.date {
+    font-family:Consolas;
+}
+input {
+    width:300px;
+    height:25px;
+    border-radius:5px;
+    margin-left:20px;
+    color:#a19d9d;
+}
+button {
+    width:60px;
+    height:35px;
+    border-radius:5px;
+    padding:5px;
+    .linear-gradient(#eae4e4, 0%, #a19d9d, 100%);
+    font-weight:bold;
+}
+button:hover {
+    .linear-gradient(white, 0%, white, 100%);
+}

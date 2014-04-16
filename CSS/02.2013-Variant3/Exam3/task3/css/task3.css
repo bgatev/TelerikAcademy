@@ -1,0 +1,114 @@
+﻿.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+body,
+div,
+fieldset,
+legend,
+label,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+#wrapper {
+  font-family: Cambria, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif;
+  font-size: 18px;
+  width: 350px;
+  height: 380px;
+  margin: 20px;
+  border: 1px solid black;
+  background: #757506;
+  background: -moz-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeee0b), color-stop(100%, #757506));
+  background: -webkit-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: -o-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: -ms-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: linear-gradient(to bottom, #eeee0b 0%, #757506 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{@from-color}', endColorstr='#{@to-color}', GradientType=0);
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+#wrapper fieldset {
+  margin: 10px 0px 10px 10px;
+  border: 2px solid black;
+}
+#wrapper fieldset legend {
+  margin-left: 120px;
+  font-weight: bold;
+}
+#wrapper fieldset input {
+  width: 120px;
+  padding: 5px;
+  margin: 0px 10px 5px 0px;
+  border-radius: 5px;
+  background: #757506;
+  background: -moz-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeee0b), color-stop(100%, #757506));
+  background: -webkit-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: -o-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: -ms-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: linear-gradient(to bottom, #eeee0b 0%, #757506 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{@from-color}', endColorstr='#{@to-color}', GradientType=0);
+  background-repeat: no-repeat;
+}
+#wrapper fieldset label {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+#wrapper fieldset label:first-of-type,
+#wrapper fieldset input:first-of-type {
+  margin-top: 10px;
+}
+form {
+  text-align: right;
+  margin-right: 10px;
+}
+button,
+input[type=reset] {
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #757506;
+  background: -moz-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeee0b), color-stop(100%, #757506));
+  background: -webkit-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: -o-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: -ms-linear-gradient(top, #eeee0b 0%, #757506 100%);
+  background: linear-gradient(to bottom, #eeee0b 0%, #757506 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{@from-color}', endColorstr='#{@to-color}', GradientType=0);
+  background-repeat: no-repeat;
+  font-weight: bold;
+}
+#wrapper form fieldset input[type=number] {
+  width: 30px;
+}
+button {
+  margin-left: 130px;
+}
+button:hover,
+input[type=reset]:hover {
+  background: #fbfb68;
+  background: -moz-linear-gradient(top, #fbfb68 0%, #fbfb68 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfb68), color-stop(100%, #fbfb68));
+  background: -webkit-linear-gradient(top, #fbfb68 0%, #fbfb68 100%);
+  background: -o-linear-gradient(top, #fbfb68 0%, #fbfb68 100%);
+  background: -ms-linear-gradient(top, #fbfb68 0%, #fbfb68 100%);
+  background: linear-gradient(to bottom, #fbfb68 0%, #fbfb68 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{@from-color}', endColorstr='#{@to-color}', GradientType=0);
+  background-repeat: no-repeat;
+}
+input[type=radio] {
+  display: none;
+}
+input[type=radio]:checked + label {
+  font-weight: bold;
+  font-size: 1.1em;
+}

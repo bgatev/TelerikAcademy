@@ -1,0 +1,45 @@
+﻿body section table {  
+    border-spacing:0px;
+}
+body section table tr > * {
+    border:1px solid black;
+    text-align:left;
+}
+body section table th {
+    background-color:lightgreen;
+}
+td input[type="checkbox"] {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+}
+.contactName {
+    width:150px;
+}
+.contactAddress {
+    width:100px;
+}
+.greyRow {
+    background-color:lightgrey;
+}
+.germany {
+    background-image:url('/images/GermanyFlag.jpg');
+    background-size:20px 15px;
+    background-position: 2px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.mexico {
+    background-image:url('/images/MexicoFlag.jpg');
+    background-size:20px 15px;
+    background-position: 2px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.uk {
+    background-image:url('/images/UKFlag.jpg');
+    background-size:20px 15px;
+    background-position: 2px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}

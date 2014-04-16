@@ -1,0 +1,63 @@
+﻿.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+body,
+div,
+ul,
+li,
+span,
+a {
+  margin: 0;
+  padding: 0;
+  color: blue;
+}
+#wrapper {
+  font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  font-size: 16px;
+  width: 960px;
+}
+.select-list {
+  margin: 10px;
+}
+.select-list .all-items,
+.select-list .selected-items {
+  list-style-type: none;
+  display: inline-block;
+  width: 130px;
+  height: 200px;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #3378f2 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3378f2), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #3378f2 0%, #ffffff 100%);
+  background: -o-linear-gradient(top, #3378f2 0%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #3378f2 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #3378f2 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{@from-color}', endColorstr='#{@to-color}', GradientType=0);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+.select-list .selected {
+  background-color: #0a38ce;
+}
+.select-list li {
+  border-bottom: 1px solid black;
+  color: black;
+  padding: 5px;
+}
+.select-list li:last-of-type {
+  border-bottom: none;
+}
+.select-list li:first-letter {
+  text-decoration: underline;
+}
+.select-list a {
+  position: relative;
+  top: -80px;
+}

@@ -1,0 +1,49 @@
+@mixin clearfix {
+	zoom: 1;
+	&:after {
+		display: block; 
+		content: "";
+		height: 0; 
+		clear: both;
+	}
+}
+@mixin reset{
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	@include clearfix;
+	@include reset;
+	section{
+		width:1260px;
+		height:500px;
+		margin-left:10px;
+		margin-top:10px;
+		border:2px solid black;
+		ul {
+			@include reset;
+			li {
+				.zoomed{
+					display:none;
+					width:410px;
+					height:300px;
+				}
+				&:hover .zoomed{
+					display:block;
+					position:absolute;
+					top:180px;
+					left:10px;	
+				}
+				img{
+					margin-top:10px;
+					margin-left:5px;
+					width:200px;
+					height:150px;
+				}
+				display:inline-block;
+			}
+			list-style-type:none;
+		}
+	}
+}

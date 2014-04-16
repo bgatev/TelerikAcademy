@@ -1,0 +1,64 @@
+﻿section {
+    display:inline-block;
+    width:480px;
+    height:480px;
+    background-color:aqua;
+    border-radius:10px;
+}
+section header div {
+    padding-left:10px;
+    margin-bottom:40px;
+}
+section article {
+    display:inline-block;
+    width:450px;
+    margin-left:10px;
+    margin-bottom:10px;
+    border:1px solid black;
+}
+.firstArticle p {
+    display:inline-block;
+    height:80px;
+    width:300px;
+    background-image:url('/images/GermanyFlag.jpg');
+    background-size:100px 75px;
+    background-position: 10px 0px;
+    background-repeat: no-repeat;
+    padding-left: 150px;
+    margin-bottom:0px;
+}
+.secondArticle p {
+    display:inline-block;
+    height:80px;
+    width:300px;
+    background-image:url('/images/MexicoFlag.jpg');
+    background-size:100px 75px;
+    background-position: 10px 0px;
+    background-repeat: no-repeat;
+    padding-left: 150px;
+    margin-bottom:0px;
+}
+.thirdArticle p {
+    display:inline-block;
+    height:80px;
+    width:300px;
+    background-image:url('/images/UKFlag.jpg');
+    background-size:100px 75px;
+    background-position: 10px 0px;
+    background-repeat: no-repeat;
+    padding-left: 150px;
+    margin-bottom:0px;
+}
+input[type="button"] {
+    margin-left:180px;
+    margin-top:0px;
+    margin-bottom: 5px;
+    background-image:url('/images/Button.jpg');
+    background-size:40px 20px;
+    color: white;
+    border: 1px solid #8A0000;
+    border-left: 15px solid #8A0000;
+}
+input[type="button"]:nth-last-child(2n+1) {
+    margin-left:30px;
+}

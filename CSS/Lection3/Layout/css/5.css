@@ -1,0 +1,55 @@
+﻿body > header {
+    text-align: center;
+    width: 475px;
+    border-bottom:1px solid black;
+    margin-bottom:10px;
+}
+ul {
+    list-style-type:none;
+}
+img {
+    width:80px;
+}
+section > fieldset {
+    float:left;
+    width:450px;
+}
+section fieldset {
+    display:inline-block;
+}
+section fieldset fieldset {
+    width:43%;
+}
+fieldset ul {
+    padding:0px;
+}
+fieldset > ul li p {
+    display:inline-block;
+    margin:0px;
+    padding:0px;
+    margin-top:5px;
+    padding-left:10px;
+}
+fieldset > ul li:first-of-type p:first-of-type {
+    padding:0px;
+    margin:0px;
+    margin-left:8px;
+}
+fieldset > ul li:first-of-type p:last-of-type {
+    padding:0px;
+    margin:0px;
+    display:block;
+    margin-left:92px;
+}
+aside {
+    border: 0;
+    margin-top:100px;
+    display:inline-block;
+}
+aside ul li {
+    display: block;
+    background-color:white;
+}
+aside ul li p {
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+body {
+  zoom: 1;
+  margin: 0px;
+  padding: 0px; }
+  body:after {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both; }
+  body section {
+    width: 1260px;
+    height: 500px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 2px solid black; }
+    body section ul {
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none; }
+      body section ul li {
+        display: inline-block; }
+        body section ul li .zoomed {
+          display: none;
+          width: 410px;
+          height: 300px; }
+        body section ul li:hover .zoomed {
+          display: block;
+          position: absolute;
+          top: 180px;
+          left: 10px; }
+        body section ul li img {
+          margin-top: 10px;
+          margin-left: 5px;
+          width: 200px;
+          height: 150px; }
+

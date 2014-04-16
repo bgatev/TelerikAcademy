@@ -1,0 +1,38 @@
+﻿body {
+    background-color:grey;
+}
+body > header {
+    text-align:center;
+}
+body > header > h1 {
+    font-size:2em;
+}
+body > footer {
+    text-align:center;
+}
+header > h1 {
+    color:#f6e37d;
+    font-size:1.5em;
+}
+nav {
+    text-align:center;
+    font-size:1.2em;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li a {
+    color:#f6e37d;
+    font-weight:bold;
+    text-decoration:none;
+}
+nav ul li a:hover {
+    background-color: #F4EFD5;
+}
+nav ul li:last-of-type > a {
+    text-decoration:underline;
+}
+footer > p > a {
+    text-decoration:none;
+    color:black;
+}
