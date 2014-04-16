@@ -1,0 +1,3 @@
+1. Find and document information for the Transport Layer Security (TLS) cryptographic.
+2.*** Describe the procedure of sharing folders on Windows Client OS. Provide detailed procedure with screenshots (or video).
+3. Demonstrate the User Account Control (UAC) functionality. Provide detailed demonstration with screenshots (or video).

@@ -1,0 +1,8 @@
+1. Describe the procedure of installing Windows Client or Sever on VHD. Provide some steps and screenshots (or video).
+2.*** Describe the procedure of installing Windows on Virtual Machine.  Provide some steps and screenshots (or video).
+3. Describe how to install Windows 7/8 from USB flash drive. Provide some steps and screenshots(or video).
+4. Describe some basic functions of Virtual Box (e.g. Create Virtual Machine, Create Virtual HDD, Add/Manage hardware resources). Provide video lesson with explanations.
+5. Describe the differences between MBR and GPT. 
+6. Describe the differences betweek Basic and Dynamic Disks.
+7. Find and document as much as possible for the Windows Task Scheduler.
+8. Explain the main differences between NTFS and FAT file systems. Explain which of both is the prefered file system for server enviroments.

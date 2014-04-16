@@ -1,0 +1,11 @@
+1. Install Windows Backup Feature and create full server backup. Demonstrate how to performen bare metal resotre using the Windows RE. 
+2. Install Active Directory Recycle Bin feature. Demostrate how to restore deleted objects. Provide some steps and screenshots (or video).
+3. Describe the procedure of performing Active Directory Authoratitaive restore. Demostrate how to restore deleted user object, Provide some steps and screenshots (or video).
+4.*** Install WSUS role:
+ * configure it to download pacakge for Windows Server and Client OS. 
+ * Create WSUS targeting GPO that is applied to servers and workstations in your domain.
+ *** Provide some steps and screenshots (or video).
+5. Demostrate how to use the best practice analyzer for different server roles, Provide some steps and screenshots (or video).
+6. Demostrate how to use the security configuration wizard. Provide some steps and screenshots (or video).
+7. Demostrate how to use the bitlocker feature. Provide some steps and screenshots (or video).
+8. Demostrate how to use the EFS technologies. Provide some steps and screenshots (or video).

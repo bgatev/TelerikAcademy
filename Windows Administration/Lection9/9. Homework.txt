@@ -1,0 +1,11 @@
+1. Describe the idea of WDS multicast transmission. Provide details and different configuration options.
+2. Create a multicast transmission that meets the following requirements:
+* Start multicast transmission automatic
+* Start multicast transmission only if threshold of 10 machines is reached
+*** Provide some steps and screenshots (or video).
+3. Find and document as much as possible how can you deploy linux via WDS. Provide some steps and screenshots (or video).
+4. Prepare answer files for complete deployment of windows 7 via WDS. The deployment process should require manual configuration only for the partition layout. Provide some steps and screenshots (or video).
+5.*** Prepare answer files for Windows 7 automatic deployment via flash drive. Provide some steps and screenshots (or video).
+6. Create prestaged active directory computer accounts for WDS deployment with custom answer file (Hint: You can use twenty zeros and MAC Address for device identifier). Provide some steps and screenshots (or video).
+7. Create capture image of Windows 7 with installed patches and software. Provide some steps and screenshots (or video).
+8. Describe the procedure how to import drivers into WDS image. Provide some steps and screenshots (or video).

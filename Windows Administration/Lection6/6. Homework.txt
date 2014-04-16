@@ -1,0 +1,6 @@
+1. Describe the idea of the Group Policy feature. Try to find any non-Microsoft softwares that provide Group Policy Administrative Templates.
+2. Describe the idea of the Group Policy Loopback processing. Provide details and explain different scenarious.
+3. Find and document information for the common differences between Polices and Preferences.
+4. Create a Group Policy that enforces IE Settings for default page and proxy. Provide some steps and screenshots (or video).
+5. Describe the idea of AppLocker feature. Create a Group Policy that enforces AppLocker rules. Provide some steps and screenshots (or video).
+6.*** Create a Group Policy that restrics the users to use only specific applications and to access only their home drive as local data storage. Provide some steps and screenshots (or video).

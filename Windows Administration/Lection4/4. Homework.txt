@@ -1,0 +1,7 @@
+1. Describe the idea of Directory Services and Central Identity Stores. Find information for any existing solutions.
+2. Find and document information for the LDAP protocol. Provide information for some applications that are integrated with the LDAP protocol.
+3. Find and document information for the most common symmetric key cryptographic algorithms used in Windows OS.
+4. Find and document information for the following security hash algorithms MD5 and SHA.
+5. Describe the procedure how to manage users and groups information via "net" command. Provide detailed procedure with screenshots (or video).
+6.*** Find a tool or script that can be used to extract the Security Identifier (SID) of a local group or user. Provide detailed procedure with screenshots (or video).
+

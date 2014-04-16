@@ -1,0 +1,6 @@
+1. Find and document as much as possible for the Windows Driver Signing process
+2.*** Describe the procedure of installing Roles and Features. Provide some steps and screenshots (or video).
+3. Describe some of the common administion options in Server Manager. Provide some steps and screenshots (or video).
+4. Find and document as much as possible for the Microsoft Management Console (MMC)
+5. Find and document as much as possible for Windows PowerShell. Try to compare PowerShell with some classic Unix/Linux shells.
+6. Find and document some non-Microsoft products that supports PowerShell as management shell.

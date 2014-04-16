@@ -1,0 +1,12 @@
+1. Find and document - is it possible to use two hypervisors that rely on Intel-VT or AMD-V on the same time. Justify your answer and provide details.
+2. Install and configure RDS Session Host server and RDS Web Access. Demonstrate RemoteApp and provide some steps and screenshots (or video).
+3. Find and document as much as possible for synthetic devices in Microsoft Hyper-V.
+4.*** Find and document as much as possible for Remote Desktop Protocol.
+Ето линк с доста пълно описание на RDP протокола:
+
+http://download.microsoft.com/download/9/5/E/95EF66AF-9026-4BB0-A41D-A4F81802D92C/%5BMS-RDPBCGR%5D.pdf
+
+5. Find and document as much as possible for Microsoft? RemoteFX? technology.
+6. Find and Document as much as possible for Hyper-V Replica feature.
+7. Describe the idea of the differencing disks in Hyper-V. Describe some common scenarios.
+8. Describe the idea of Failover Cluster feature. Provide some details what are all requirements of this feature.

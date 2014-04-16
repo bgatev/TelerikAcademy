@@ -1,0 +1,6 @@
+1. Describe the idea of Domain and Forest Functional Levels in Active Directory. Find information for any existing solutions.
+2. Find and document information for the Extensible Storage Engine (ESE) data storage engine. Provide information for some applications that uses ESE.
+3. Find and document historical information for all versions of Active Directory (AD DS) technology.
+4. Describe the procedure of promoting new domain controller in existing forest and domain. Provide some steps and screenshots (or video).
+5.*** Describe the procedure of joining workstation computers in Active Directory Domain. Provide some steps and screenshots (or video).
+6. Describe the procedure of unattended domain controller promotion process. Provide some steps and screenshots (or video).

@@ -1,0 +1,8 @@
+1. Describe the idea and the main differences between Resultant Set of Policy (RSOP) and Group Policy Modeling. Provide details and explain different scenarious.
+2. Find and document different approaches to map network drives via Group Policy. Provide some steps and screenshots (or video).
+3. Create a Group Policy that runs simple startup and shutdown. Provide some steps and screenshots (or video).
+4. Describe the commond differences between AppLocker and Software Restriction features.
+5. Deploy new file server and create folder structure based on companie's business requiremets. Create groups according to common best practices and provide permissions based on these groups. Provide some steps and screenshots (or video).
+6. Configure the permissions on your ShareData folder to prevent users to delete any file or sub folder in SharedData. The users should have permissions to create and modify any resources in the SharedData folder. Provide some steps and screenshots (or video).
+7.*** Configure File Server Resource Manager (FSRM) to prevent the storage of more than 150 GB in the SharedData folder on your file server. As a next step configure FSRM to prevent the storage of more than 20 GB in each sub folder of SharedData. Provide some steps and screenshots (or video). 
+8. Implement File Server Resource Manager (FSRM) on your file servers and configure it to generate regular reports for duplicate files, large files and quota usage. Provide some steps and screenshots (or video).

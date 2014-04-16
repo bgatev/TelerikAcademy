@@ -1,0 +1,7 @@
+1. Describe the idea of the Alternate Network Configuration - User Configuration. Provide some steps and screenshots (or video).
+2. Analyze with Netmon (or Wireshark) the DCHP D.O.R.A packets.  Provide some steps and screenshots (or video).
+3. Analyze with Netmon (or Wireshark) the DCHP client behavior when you have two DHCP Servers in the network (Advanced). Provide some steps and screenshots (or video).
+4.*** Configure Windows Firewall to accept inbound connections only on ports 332 and 449. Provide some steps and screenshots (or video).
+5. Describe how the APIPA (IPv4) Auto-Configuration works. Provides additional information what is the mechanism used to prevent duplicate IP Address.
+6. Describe the main differences between IPv4 and IPv6. Provide information for the important improvements in IPv6.
+6. Find and document as much as possible for the IPv6 stateless and statefull Auto-Configuration.

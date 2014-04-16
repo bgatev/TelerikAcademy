@@ -1,0 +1,13 @@
+1. Describe the idea of the Distribute File System Namespace (DFS-N). Provide details and different scenarious.
+2. Describe the idea of the Access Based Enumaration (ABE) feature. Provide details and different scenarious.
+3. Describe the the idea of the DFS Referals. Provide details what is expceted if a target server is down.
+4. Find and document different approaches to map print queues based on location. Provide some steps and screenshots (or video).
+5. Deploy new DFS Replication infrastructure with two servers and create replication group with 3 folders (Profiles/TemplateDocs/Softwares). Provide some steps and screenshots (or video).
+6.*** Implment a print management solution that meets the following requirements:
+ * Printers can be used by all users in the company
+ * Printers can be used only in working hours. The only exception is for the managers
+ * Printers should be set to print Black&White by default configuration 
+ * Consiter that all printers are located in a single office.
+ * The number of the physical printer devices is 5.
+ *** Provide some steps and screenshots (or video).
+7. Find and document any solutions that can be used in cooperation with the Districuted File System Replication (DFS-R) features and provides file locking over all replication members. 
