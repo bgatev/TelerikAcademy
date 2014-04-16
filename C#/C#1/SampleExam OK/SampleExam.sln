@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task 2 - Miss Cat 2011", "Exam\Task 2 - Miss Cat 2011.csproj", "{FDCE4F15-BF2D-4F98-BA27-B80A0C4E7936}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task 1 - Cartesian Coordinate System", "Task 1 - Cartesian Coordinate System\Task 1 - Cartesian Coordinate System.csproj", "{6583829B-4067-4B5F-AE2A-913EE8E134C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task 3 - Forest Road", "Task 3 - Forest Road\Task 3 - Forest Road.csproj", "{CFA6179D-5096-491D-B41C-83D834FBC615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task 4 - Binary Digits Count", "Task 4 - Binary Digits Count\Task 4 - Binary Digits Count.csproj", "{F1FB7DD0-48F2-4D44-A70A-4E9B2AF81129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task 5 - Subset Sums", "Task 5 - Subset Sums\Task 5 - Subset Sums.csproj", "{23E43DEE-8965-4CA6-B53B-1F08B44B6068}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDCE4F15-BF2D-4F98-BA27-B80A0C4E7936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDCE4F15-BF2D-4F98-BA27-B80A0C4E7936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDCE4F15-BF2D-4F98-BA27-B80A0C4E7936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDCE4F15-BF2D-4F98-BA27-B80A0C4E7936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6583829B-4067-4B5F-AE2A-913EE8E134C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6583829B-4067-4B5F-AE2A-913EE8E134C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6583829B-4067-4B5F-AE2A-913EE8E134C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6583829B-4067-4B5F-AE2A-913EE8E134C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA6179D-5096-491D-B41C-83D834FBC615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA6179D-5096-491D-B41C-83D834FBC615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA6179D-5096-491D-B41C-83D834FBC615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA6179D-5096-491D-B41C-83D834FBC615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1FB7DD0-48F2-4D44-A70A-4E9B2AF81129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FB7DD0-48F2-4D44-A70A-4E9B2AF81129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FB7DD0-48F2-4D44-A70A-4E9B2AF81129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FB7DD0-48F2-4D44-A70A-4E9B2AF81129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23E43DEE-8965-4CA6-B53B-1F08B44B6068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E43DEE-8965-4CA6-B53B-1F08B44B6068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E43DEE-8965-4CA6-B53B-1F08B44B6068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E43DEE-8965-4CA6-B53B-1F08B44B6068}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
