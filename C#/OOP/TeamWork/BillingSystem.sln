@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingSystem", "BillingSystem\BillingSystem.csproj", "{4FACDC9F-9739-44CA-A3E0-F189670C8C3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resource Files", "Resource Files", "{CF4E5376-B0AC-488D-BE2F-A923D6193DFB}"
+	ProjectSection(SolutionItems) = preProject
+		BillingSystem\Resource Files\CDR Sample.txt = BillingSystem\Resource Files\CDR Sample.txt
+		BillingSystem\Resource Files\Requirement Specification.doc = BillingSystem\Resource Files\Requirement Specification.doc
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FACDC9F-9739-44CA-A3E0-F189670C8C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FACDC9F-9739-44CA-A3E0-F189670C8C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FACDC9F-9739-44CA-A3E0-F189670C8C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FACDC9F-9739-44CA-A3E0-F189670C8C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

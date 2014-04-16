@@ -1,0 +1,291 @@
+﻿<Window x:Class="BillingSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Billing System" Height="550" Width="825">
+    <Grid>
+        <Label Content="Subscribers" 
+               Height="25" Width="75"
+               Margin="10,10,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Name" 
+               Height="25" Width="50"
+               Margin="10,49,0,0" 
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="SubscriberName" 
+                 Height="25" Width="94"
+                 Margin="71,49,0,0" 
+                 HorizontalAlignment="Left" VerticalAlignment="Top"
+                 TextWrapping="Wrap" 
+                 Initialized="OnSubscriberNameTextBoxInit"/>
+        <Label Content="EGN" 
+               Height="25" Width="50"
+               Margin="10,78,0,0" 
+               HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="SubscriberEGN"
+                 Height="25" Width="75"
+                 Margin="71,78,0,0" 
+                 HorizontalAlignment="Left" VerticalAlignment="Top" 
+                 TextWrapping="Wrap"
+                 Initialized="OnSubscriberEGNTextBoxInit"/>
+        <Label Content="MSISDN" 
+        	   Height="25" Width="61"
+        	   Margin="10,108,0,0"
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="SubscriberMSISDN" 
+        	     Height="25" Width="94"
+        	     Margin="71,108,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnSubscriberMSISDNTextBoxInit"/>
+        <Label Content="Account" 
+        	   Height="25" Width="61"
+        	   Margin="10,138,0,0"
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="SubscriberAccount" 
+        	     Height="25" Width="50"
+        	     Margin="71,138,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnSubscriberAccountTextBoxInit"/>
+        <Label Content="TariffPlan" 
+        	   Height="25" Width="61"
+        	   Margin="10,168,0,0"
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ComboBox Name="SubscriberTariffPlan"
+        	      Height="25" Width="100"
+        	      Margin="71,168,0,0" 
+        	      HorizontalAlignment="Left" VerticalAlignment="Top" 
+        	      Loaded="OnSubscriberTariffPlanLoaded" />
+        <Button Name="AddSubcriber"
+                Content="Add New" 
+                Height="25" Width="75"
+                Margin="90,10,0,0" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Click="OnAddSubcriber_Click"/>
+        <Button Name="FindSubcriber"
+        	    Content="Find" 
+        	    Height="25" Width="75"
+        	    Margin="190,10,0,0" 
+        	    HorizontalAlignment="Left" VerticalAlignment="Top" 
+        	    Click="OnFindSubcriber_Click"/>
+        <Button Name="ChangeSubcriber"
+        	    Content="Change current" 
+        	    Height="25" Width="90"
+        	    Margin="190,49,0,0" 
+        	    HorizontalAlignment="Left" VerticalAlignment="Top" 
+        	    Click="OnChangeSubcriber_Click"/>
+        <Button Name="DeleteSubcriber"
+        	    Content="Delete current" 
+        	    Height="25" Width="90"
+        	    Margin="190,78,0,0" 
+        	    HorizontalAlignment="Left" VerticalAlignment="Top" 
+        	    Click="OnDeleteSubcriber_Click"/>
+        <Label Content="Tariff Plan" 
+               Height="25" Width="75"
+               Margin="368,10,0,0" 
+               HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Label Content="Name" 
+        	   Height="25" Width="50"
+        	   Margin="368,49,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="TariffPlanName" 
+        	     Height="25" Width="94"
+        	     Margin="423,49,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnTariffPlanNameTextBoxInit"/>
+        <Label Content="MOC" 
+        	   Height="25" Width="40"
+        	   Margin="409,106,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="SMS" 
+        	   Height="25" Width="40"
+        	   Margin="409,135,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="GPRS" 
+        	   Height="25" Width="40"
+        	   Margin="409,165,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Name="FindTariffPlan"
+        	    Content="Find" 
+        	    Height="25" Width="75"
+        	    Margin="545,10,0,0" 
+        	    HorizontalAlignment="Left" VerticalAlignment="Top" 
+        	    Click="OnFindTariffPlan_Click"/>
+        <Button Name="AddTariffPlan"
+        	    Content="Add New" 
+        	    Height="25" Width="75"
+        	    Margin="645,11,0,0" 
+        	    HorizontalAlignment="Left" VerticalAlignment="Top" 
+        	    Click="OnAddTariffPlan_Click"/>
+        <Button Name="ChangeTariffPlan"
+        	    Content="Change Current" 
+        	    Height="25" Width="90"
+        	    Margin="545,50,0,0" 
+        	    HorizontalAlignment="Left" VerticalAlignment="Top" 
+        	    Click="OnChangeTariffPlan_Click"/>
+        <Button Name="DeleteTariffPlan"
+        	    Content="Delete Current" 
+        	    Height="25" Width="90"
+        	    Margin="645,50,0,0" 
+        	    HorizontalAlignment="Left" VerticalAlignment="Top" 
+        	    Click="OnDeleteTariffPlan_Click"/>
+        <Button Name="ShowHistory"
+        	    Content="Show History" 
+        	    Height="25" Width="100"
+        	    Margin="10,209,0,0" 
+        	    HorizontalAlignment="Left" VerticalAlignment="Top" 
+        	    Click="OnShowHistory_Click"/>
+        <Button Name="ExitButton"
+        	    Content="Exit" 
+        	    Height="25" Width="75"
+        	    Margin="732,484,0,0" 
+        	    HorizontalAlignment="Left" VerticalAlignment="Top" 
+        	    Click="OnExit_Click"/>
+        <Label Content="First Block" 
+        	   Height="25" Width="65"
+        	   Margin="449,79,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Price" 
+        	   Height="25" Width="40"
+        	   Margin="524,79,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Subseq Blocks" 
+        	   Height="25" Width="90"
+        	   Margin="590,79,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Price" 
+        	   Height="25" Width="40"
+        	   Margin="681,79,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="firstCallIntervalBlock" 
+        	     Height="20" Width="20"
+        	     Margin="454,108,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnFirstCallIntervalBlockTextBoxInit"/>
+        <Label Content="s" 
+        	   Height="25" Width="20"
+        	   Margin="474,105,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="firstCallIntervalPrice" 
+        	     Height="20" Width="35"
+        	     Margin="525,108,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnFirstCallIntervalPriceTextBoxInit"/>
+        <Label Content="BGN" 
+        	   Height="25" Width="35"
+        	   Margin="560,105,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/> 
+        <TextBox Name="subseqCallIntervalBlock" 
+        	     Height="20" Width="20"
+        	     Margin="605,108,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnSubseqCallIntervalBlockTextBoxInit"/>
+        <Label Content="s" 
+        	   Height="25" Width="20"
+        	   Margin="625,105,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="subseqCallIntervalPrice" 
+        	     Height="20" Width="35"
+        	     Margin="680,108,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnSubseqCallIntervalPriceTextBoxInit"/>
+        <Label Content="BGN" 
+        	   Height="25" Width="35"
+        	   Margin="715,105,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="firstSMSIntervalBlock" 
+        	     Height="20" Width="20"
+        	     Margin="454,138,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnFirstSMSIntervalBlockTextBoxInit"/>
+        <Label Content="br" 
+        	   Height="25" Width="20"
+        	   Margin="474,135,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="firstSMSIntervalPrice" 
+        	     Height="20" Width="35"
+        	     Margin="525,138,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnFirstSMSIntervalPriceTextBoxInit"/>
+        <Label Content="BGN" 
+        	   Height="25" Width="35"
+        	   Margin="560,135,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="subseqSMSIntervalBlock" 
+        	     Height="20" Width="20"
+        	     Margin="605,138,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnSubseqSMSIntervalBlockTextBoxInit"/>
+        <Label Content="br" 
+        	   Height="25" Width="20"
+        	   Margin="625,135,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="subseqSMSIntervalPrice" 
+        	     Height="20" Width="35"
+        	     Margin="680,138,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnSubseqSMSIntervalPriceTextBoxInit"/>
+        <Label Content="BGN" 
+        	   Height="25" Width="35"
+        	   Margin="715,135,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="firstGPRSIntervalBlock" 
+        	     Height="20" Width="40"
+        	     Margin="454,168,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnFirstGPRSIntervalBlockTextBoxInit"/>
+        <Label Content="B" 
+        	   Height="25" Width="20"
+        	   Margin="494,165,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="firstGPRSIntervalPrice" 
+        	     Height="20" Width="35"
+        	     Margin="525,168,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnFirstGPRSIntervalPriceTextBoxInit"/>
+        <Label Content="BGN" 
+        	   Height="25" Width="35"
+        	   Margin="560,165,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="subseqGPRSIntervalBlock" 
+        	     Height="20" Width="40"
+        	     Margin="605,168,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnSubseqGPRSIntervalBlockTextBoxInit"/>
+        <Label Content="B" 
+        	   Height="25" Width="20"
+        	   Margin="645,165,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="subseqGPRSIntervalPrice" 
+        	     Height="20" Width="35"
+        	     Margin="680,168,0,0" 
+        	     HorizontalAlignment="Left" VerticalAlignment="Top"
+        	     TextWrapping="Wrap" 
+        	     Initialized="OnSubseqGPRSIntervalPriceTextBoxInit"/>
+        <Label Content="BGN" 
+        	   Height="25" Width="35"
+        	   Margin="715,165,0,0" 
+        	   HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox Name="ShowHistoryTextBox" 
+        	Height="240" Width="705"
+        	Margin="10,252,0,0" 
+        	HorizontalAlignment="Left" VerticalAlignment="Top"
+        	TextWrapping="Wrap" 
+        	Initialized="OnShowHistoryTextBoxInit"/>
+        
+   
+
+    </Grid>
+</Window>
