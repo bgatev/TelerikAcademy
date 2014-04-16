@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyBilling.Billing" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAgAIAAAAAAAAAAAAAMAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Billing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyBilling.DBConnect" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAEAEAAAAEQBAAAADABQAAQEAAAAAAAAAQgAAAAI=</HashCode>
+      <FileName>DBConnect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyBilling.Destination" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Destination.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyBilling.GPRS" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAgAAIAIAYAAEAAAAAAgABAAIAAAAAAgCAAAAAgA=</HashCode>
+      <FileName>GPRS.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyBilling.Location" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyBilling.MOC" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAAAAIAAAJAAEQAAAAEgAAAAIAAAAAAgAAAAEgAA=</HashCode>
+      <FileName>MOC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyBilling.RatingItems" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEIAAAAAAAAAAAAAAAAAAAEAEAAAAAAAA=</HashCode>
+      <FileName>RatingItems.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyBilling.RWFiles" Collapsed="true">
+    <Position X="16.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>RWFiles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyBilling.SMS" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABAAgAAYAIAIAAEQAAAAEgAAAEIAAABAAgAAAAAAAA=</HashCode>
+      <FileName>SMS.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyBilling.Subscriber" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAoBAAJAEEAAAAQAYAABAEAAABAAgAQAAAAEA=</HashCode>
+      <FileName>Subscriber.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyBilling.TariffPlan" Collapsed="true">
+    <Position X="14.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEgAICAAJgAIANWAAAgAAQAAWAEAEAACAAAAAACAIA=</HashCode>
+      <FileName>TariffPlan.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MyBilling.TimeInterval" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>TimeInterval.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyBilling.CarrierType" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>CarrierType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyBilling.BillingArgExc" Collapsed="true">
+    <Position X="16.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BillingArgExc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyBilling.RatingItemsCommon" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RatingItemsCommon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MyBilling.IChargeable" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IChargeable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MyBilling.IRateable" Collapsed="true">
+    <Position X="18.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>IRateable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MyBilling.IRequiredNumbers" Collapsed="true">
+    <Position X="18.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>IRequiredNumbers.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MyBilling.IPrintable" Collapsed="true">
+    <Position X="18.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPrintable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
