@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Web Form</title>
+    <style>
+        input[type=text] 
+        {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <fieldset style="display:inline-block">
+            <table border="1">
+                <tr>
+                    <td><label for="lname">Last Name</label></td>
+                    <td><input type="text" name="lname" id="lname" placeholder="Last Name"/></td>
+                </tr>
+                <tr>
+                    <td><label for="fname">First Name</label></td>
+                    <td><input type="text" name="fname" id="fname" placeholder="First Name"/></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><textarea id="address" style="width: 250px; height: 50px;" placeholder="Permanent Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City</label></td>
+                    <td><input type="text" name="city" id="city" placeholder="City"/>
+                        <label for="state">State</label>
+                        <input type="text" name="state" id="state" style="width:50px" placeholder="State"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="zip">ZIP/Postal Code</label></td>
+                    <td><input type="text" name="zip" id="zip" placeholder="Zip code"/></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td><select name="country" id="country">
+                            <option value="BG" selected>Bulgaria</option>
+                            <option value="EU">European Union</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </td>
+                </tr> 
+                <tr>
+                    <td><label for="number">Phone (country code, area code, number)</label></td>
+                    <td>
+                        ( + <input type="tel" name="countrycode" id="countrycode" style="width:40px" /> )
+                        <input type="tel" name="areacode" id="areacode" style="width:40px" /> -
+                        <input type="tel" name="number" id="number" style="width:100px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-Mail</label></td>
+                    <td><input type="email" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" placeholder="Email Address"/></td>
+                </tr>
+                <tr>
+                    <td><label for="bithdate">Birth Date</label></td>
+                    <td>
+                        Month<input type="text" name="month" id="month" style="width:40px" />
+                        Day<input type="text" name="day" id="day" style="width:40px" />
+                        Year (4 digit)<input type="text" name="year" id="year" pattern="\d{4}" style="width:40px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td><select name="gender">
+                            <option value="M" selected="selected">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="startingDate">Starting Date</label></td>
+                    <td>
+                        <input type="radio" name="startingDate" id="startingDate" value="Spring 2006" />Spring 2006
+                        <input type="radio" name="startingDate" id="startingDate" value="Summer 2006" />Summer 2006
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="comments">Comments/Questions</label></td>
+                    <td><textarea id="comments" style="width: 250px; height: 50px;" placeholder="Write your Comments or Questions here"></textarea></td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" style="background-color:aqua; text-align:center;">
+                            <input type="submit" value="Submit" />
+                            <input type="reset" value="Clear This Form" />
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

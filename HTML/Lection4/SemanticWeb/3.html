@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>LinkedIN</title>
+    <style>
+        #signIn 
+        {
+            width: 300px;
+        }
+        #signUp 
+        {
+            width: 1000px;
+        }
+            #signUp ul 
+            {
+                height: 200px;
+            }
+                #signUp ul li 
+                {
+                    height: 30px;
+                }
+                    #signUp ul li p 
+                    {
+                        height: 6px;
+                    }
+    </style>
+</head>
+<body> 
+    <header>
+        <a href="http://www.linkedin.com">LinkedIn</a>
+        <nav>
+            <ul type="disc">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">What is LinkedIn?</a></li>
+                <li><a href="#">Join Today</a></li>
+                <li>
+                    <form method="post">
+                        <fieldset id="signIn">
+                            <legend>Sign In</legend>
+                            <ul type="circle">
+                                <li>
+                                    <label for="loginemail">E-Mail:</label>
+                                    <input type="email" name="loginemail" id="loginemail" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" placeholder="Email Address" />
+                                </li>
+                                <li>
+                                    <label for="loginpassword">Password:</label>
+                                    <input type="password" name="loginpassword" id="loginpassword" placeholder="Password" />
+                                </li>
+                                <li><input type="submit" value="Sign In" /></li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    <section>
+        <h2>Over 175 million professionals use LinkedIn to exchange information, ideas and opportunities</h2>
+        <ul type="disc">
+            <li>Stay informed about your contacts and industry</li>
+            <li>Find the people & knowledge you need to achieve your goals</li>
+            <li>Control your professional identity online</li>
+        </ul>
+        <h3>Join LinkedIn Today</h3>
+        <form method="post">
+            <fieldset id="signUp">
+                <legend>Sign Up</legend>
+                <ul type="disc">
+                    <li>
+                        <p><label for="fname">First Name:</label></p>
+                        <input type="text" name="fname" id="fname" placeholder="First Name" />
+                    </li>
+                    <li>
+                        <p><label for="lname">Last Name:</label></p>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" />
+                    </li>
+                    <li>
+                        <p><label for="email">E-Mail:</label></p>
+                        <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" placeholder="Email Address" />
+                    </li>
+                    <li>
+                        <p><label for="password">Password:</label></p>
+                        <input type="password" name="password" id="password" placeholder="Password" />
+                        <br /><span>6 or more characters</span>
+                    </li>
+                </ul>
+                <input type="submit" value="Join Now" />
+                <p>Already on LinkedIn? <a href="#">Sign In</a></p>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <strong><p>Search for someone by name:</p></strong>
+        <form method="get">
+            <ul type="disc">
+                <li>
+                    <label for="searchfname">First Name</label>
+                    <input type="text" name="searchfname" id="searchfname" placeholder="First Name" />
+                </li>
+                <li>
+                    <label for="searchlname">Last Name</label>
+                    <input type="text" name="searchlname" id="searchlname" placeholder="Last Name" />
+                </li>
+            </ul>
+            <input type="submit" value="Go" />
+        </form>
+    </footer>
+</body>
+</html>
