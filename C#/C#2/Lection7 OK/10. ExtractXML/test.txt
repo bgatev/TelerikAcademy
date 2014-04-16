@@ -1,0 +1,2 @@
+<?xml version="1.0"><student><name>PESHO</name><age>21</age><interests count="3"><interest> GAMES</instrest>
+<interest>C#</instrest><interest> JAVA</instrest></interests></student>

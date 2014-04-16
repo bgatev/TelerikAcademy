@@ -1,0 +1,4 @@
+Word 'start.' occurs 5 times.
+Word 'test' occurs 3 times.
+Word 'hope' occurs 3 times.
+Word 'Boiko' occurs 1 times.
