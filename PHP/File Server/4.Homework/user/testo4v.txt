@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Сваляне на файл</title>
+
+            <meta charset="UTF-8">
+
+    </head>
+    <body>
+string(17) ".\user\testov.txt"
+sdfsfsd
+</body>
+</html>

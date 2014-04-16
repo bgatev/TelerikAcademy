@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Сваляне на файл</title>
+
+            <meta charset="UTF-8">
+
+    </head>
+    <body>
+string(27) "database\user\testov121.txt"
+<br />
+<b>Warning</b>:  readfile(database\user\testov121.txt): failed to open stream: No such file or directory in <b>C:\BGatev\Personal\PHP\XAMPP\htdocs\4.Homework\Download.php</b> on line <b>16</b><br />
+
+</body>
+</html>
