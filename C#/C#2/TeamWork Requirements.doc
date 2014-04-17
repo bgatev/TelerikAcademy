@@ -1,0 +1,733 @@
+{\rtf1\adeflang1025\ansi\ansicpg1251\uc1\adeff0\deff0\stshfdbch39\stshfloch39\stshfhich39\stshfbi0\deflang1026\deflangfe1026{\fonttbl{\f0\froman\fcharset204\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f2\fmodern\fcharset204\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}{\f10\fnil\fcharset2\fprq2{\*\panose 05000000000000000000}Wingdings;}{\f13\fnil\fcharset134\fprq2{\*\panose 02010600030101010101}SimSun{\*\falt \'a7\'ad\'a7\'b0\'a7\'ae\'a7\'d6};}
+{\f36\fswiss\fcharset204\fprq2{\*\panose 020b0604030504040204}Tahoma;}{\f38\froman\fcharset204\fprq2{\*\panose 02040503050406030204}Cambria;}{\f39\fswiss\fcharset204\fprq2{\*\panose 020f0502020204030204}Calibri;}
+{\f40\fswiss\fcharset204\fprq2{\*\panose 020b0702040204020203}Segoe UI Semibold;}{\f41\fswiss\fcharset204\fprq2{\*\panose 020b0502040204020203}Segoe UI;}
+{\f42\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Segoe WP Semibold{\*\falt Segoe UI Semibold};}{\f132\fnil\fcharset134\fprq2{\*\panose 02010600030101010101}@SimSun;}{\f274\froman\fcharset0\fprq2 Times New Roman;}
+{\f272\froman\fcharset238\fprq2 Times New Roman CE;}{\f275\froman\fcharset161\fprq2 Times New Roman Greek;}{\f276\froman\fcharset162\fprq2 Times New Roman Tur;}{\f277\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\f278\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f279\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f280\froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\f294\fmodern\fcharset0\fprq1 Courier New;}
+{\f292\fmodern\fcharset238\fprq1 Courier New CE;}{\f295\fmodern\fcharset161\fprq1 Courier New Greek;}{\f296\fmodern\fcharset162\fprq1 Courier New Tur;}{\f297\fbidi \fmodern\fcharset177\fprq1 Courier New (Hebrew);}
+{\f298\fbidi \fmodern\fcharset178\fprq1 Courier New (Arabic);}{\f299\fmodern\fcharset186\fprq1 Courier New Baltic;}{\f300\fmodern\fcharset163\fprq1 Courier New (Vietnamese);}
+{\f404\fnil\fcharset0\fprq2 SimSun Western{\*\falt \'a7\'ad\'a7\'b0\'a7\'ae\'a7\'d6};}{\f634\fswiss\fcharset0\fprq2 Tahoma;}{\f632\fswiss\fcharset238\fprq2 Tahoma CE;}{\f635\fswiss\fcharset161\fprq2 Tahoma Greek;}
+{\f636\fswiss\fcharset162\fprq2 Tahoma Tur;}{\f637\fbidi \fswiss\fcharset177\fprq2 Tahoma (Hebrew);}{\f638\fbidi \fswiss\fcharset178\fprq2 Tahoma (Arabic);}{\f639\fswiss\fcharset186\fprq2 Tahoma Baltic;}
+{\f640\fswiss\fcharset163\fprq2 Tahoma (Vietnamese);}{\f641\fswiss\fcharset222\fprq2 Tahoma (Thai);}{\f654\froman\fcharset0\fprq2 Cambria;}{\f652\froman\fcharset238\fprq2 Cambria CE;}{\f655\froman\fcharset161\fprq2 Cambria Greek;}
+{\f656\froman\fcharset162\fprq2 Cambria Tur;}{\f659\froman\fcharset186\fprq2 Cambria Baltic;}{\f660\froman\fcharset163\fprq2 Cambria (Vietnamese);}{\f664\fswiss\fcharset0\fprq2 Calibri;}{\f662\fswiss\fcharset238\fprq2 Calibri CE;}
+{\f665\fswiss\fcharset161\fprq2 Calibri Greek;}{\f666\fswiss\fcharset162\fprq2 Calibri Tur;}{\f669\fswiss\fcharset186\fprq2 Calibri Baltic;}{\f670\fswiss\fcharset163\fprq2 Calibri (Vietnamese);}{\f674\fswiss\fcharset0\fprq2 Segoe UI Semibold;}
+{\f672\fswiss\fcharset238\fprq2 Segoe UI Semibold CE;}{\f675\fswiss\fcharset161\fprq2 Segoe UI Semibold Greek;}{\f676\fswiss\fcharset162\fprq2 Segoe UI Semibold Tur;}{\f677\fbidi \fswiss\fcharset177\fprq2 Segoe UI Semibold (Hebrew);}
+{\f678\fbidi \fswiss\fcharset178\fprq2 Segoe UI Semibold (Arabic);}{\f679\fswiss\fcharset186\fprq2 Segoe UI Semibold Baltic;}{\f680\fswiss\fcharset163\fprq2 Segoe UI Semibold (Vietnamese);}{\f684\fswiss\fcharset0\fprq2 Segoe UI;}
+{\f682\fswiss\fcharset238\fprq2 Segoe UI CE;}{\f685\fswiss\fcharset161\fprq2 Segoe UI Greek;}{\f686\fswiss\fcharset162\fprq2 Segoe UI Tur;}{\f687\fbidi \fswiss\fcharset177\fprq2 Segoe UI (Hebrew);}{\f688\fbidi \fswiss\fcharset178\fprq2 Segoe UI (Arabic);}
+{\f689\fswiss\fcharset186\fprq2 Segoe UI Baltic;}{\f690\fswiss\fcharset163\fprq2 Segoe UI (Vietnamese);}{\f1594\fnil\fcharset0\fprq2 @SimSun Western;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;\red46\green57\blue23;}{\stylesheet{\ql \li0\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 
+\f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 \snext0 \styrsid1063174 Normal;}{\s1\ql \li0\ri0\sb120\sa60\sl276\slmult1\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel0\adjustright\rin0\lin0\itap0 \rtlch\fcs1 
+\af0\afs32\alang1025 \ltrch\fcs0 \b\fs40\cf17\lang1026\langfe1033\loch\f38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 \sbasedon0 \snext0 \slink22 \styrsid1063174 heading 1;}{\s2\ql \li0\ri0\sb120\sa80\sl276\slmult1
+\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs36\alang1025 \ltrch\fcs0 \b\fs36\cf17\lang1026\langfe1033\loch\f38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 
+\sbasedon0 \snext0 \slink23 \styrsid1063174 heading 2;}{\s3\ql \li0\ri0\sb120\sa80\sl276\slmult1\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel2\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs32\alang1025 \ltrch\fcs0 
+\b\fs32\cf17\lang1026\langfe1033\loch\f38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 \sbasedon0 \snext0 \slink26 \styrsid1063174 heading 3;}{\s4\ql \li0\ri0\sb80\sa80\sl276\slmult1
+\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel3\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \ai\af0\afs22\alang1025 \ltrch\fcs0 \fs28\cf17\lang1026\langfe1033\loch\f38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 
+\sbasedon0 \snext0 \slink27 \styrsid1063174 heading 4;}{\*\cs10 \additive \ssemihidden Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tblind0\tblindtype3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20 \ltrch\fcs0 \fs20\lang1024\langfe1024\loch\f39\hich\af39\dbch\af39\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}{
+\s15\ql \li0\ri0\widctlpar\tqc\tx4680\tqr\tx9360\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 
+\sbasedon0 \snext15 \slink16 \styrsid8415394 header;}{\*\cs16 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \sbasedon10 \slink15 \slocked \styrsid8415394 Header Char;}{\s17\ql \li0\ri0\widctlpar
+\tqc\tx4680\tqr\tx9360\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 \sbasedon0 \snext17 \slink18 \styrsid8415394 footer;}{\*\cs18 
+\additive \rtlch\fcs1 \af0 \ltrch\fcs0 \sbasedon10 \slink17 \slocked \styrsid8415394 Footer Char;}{\s19\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af36\afs16\alang1025 \ltrch\fcs0 
+\f36\fs16\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 \sbasedon0 \snext19 \slink20 \ssemihidden \styrsid5655931 Balloon Text;}{\*\cs20 \additive \rtlch\fcs1 \af36\afs16 \ltrch\fcs0 \f36\fs16 
+\sbasedon10 \slink19 \slocked \ssemihidden \styrsid5655931 Balloon Text Char;}{\*\cs21 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \ul\cf2 \sbasedon10 \styrsid7942730 Hyperlink;}{\*\cs22 \additive \rtlch\fcs1 \af0\afs32 \ltrch\fcs0 
+\b\fs32\cf17\lang1026\langfe0\loch\f38\hich\af38\dbch\af13\langnp1026\langfenp0 \sbasedon10 \slink1 \slocked \styrsid1063174 Heading 1 Char;}{\*\cs23 \additive \rtlch\fcs1 \af0\afs36 \ltrch\fcs0 
+\b\fs36\cf17\lang1026\langfe0\loch\f38\hich\af38\dbch\af13\langnp1026\langfenp0 \sbasedon10 \slink2 \slocked \styrsid1063174 Heading 2 Char;}{
+\s24\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang1026\langfe1033\loch\f0\hich\af0\dbch\af39\cgrid\langnp1026\langfenp1033 
+\sbasedon0 \snext24 \ssemihidden \styrsid5392265 Normal (Web);}{\*\cs25 \additive \rtlch\fcs1 \ab\af0 \ltrch\fcs0 \b \sbasedon10 \styrsid5392265 Strong;}{\*\cs26 \additive \rtlch\fcs1 \af0\afs32 \ltrch\fcs0 
+\b\fs32\cf17\lang1026\langfe0\loch\f38\hich\af38\dbch\af13\langnp1026\langfenp0 \sbasedon10 \slink3 \slocked \styrsid1063174 Heading 3 Char;}{\*\cs27 \additive \rtlch\fcs1 \ai\af0 \ltrch\fcs0 
+\fs28\cf17\lang1026\langfe0\loch\f38\hich\af38\dbch\af13\langnp1026\langfenp0 \sbasedon10 \slink4 \slocked \styrsid1063174 Heading 4 Char;}{\s28\ql \li720\ri0\sa200\sl276\slmult1
+\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0\contextualspace \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 \sbasedon0 \snext28 \styrsid8787893 List Paragraph;}{\*
+\cs29 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \ul\cf12 \sbasedon10 \ssemihidden \styrsid12601611 FollowedHyperlink;}}
+{\*\latentstyles\lsdstimax156\lsdlockeddef0{\lsdlockedexcept Normal;heading 1;heading 2;heading 3;heading 4;heading 5;heading 6;heading 7;heading 8;heading 9;toc 1;toc 2;toc 3;toc 4;toc 5;toc 6;toc 7;toc 8;toc 9;caption;Title;Default Paragraph Font;Subtitle;Strong;Emphasis;Table Grid;}}
+{\*\listtable{\list\listtemplateid-1649346974\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 
+\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\lin1440 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0
+{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698689
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 
+\fi-360\li5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\lin6480 }{\listname 
+;}\listid82184480}{\list\listtemplateid-1606091270\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid67698703\'02\'00.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fi-360\li720\lin720 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698713\'02\'01.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fi-360\li1440\lin1440 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698715\'02\'02.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fi-180\li2160\lin2160 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698703\'02\'03.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fi-360\li2880\lin2880 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698713\'02\'04.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fi-360\li3600\lin3600 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698715\'02\'05.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fi-180\li4320\lin4320 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698703\'02\'06.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fi-360\li5040\lin5040 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698713\'02\'07.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fi-360\li5760\lin5760 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698715\'02\'08.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fi-180\li6480\lin6480 }{\listname ;}\listid583876500}{\list\listtemplateid575811130\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid67698689
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 
+\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\lin2160 }{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698693
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\lin6480 }{\listname ;}\listid1426531950}{\list\listtemplateid-1778232072\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0
+{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698691
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 
+\fi-360\li2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\lin2880 }{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\lin6480 }{\listname ;}\listid1436092471}{\list\listtemplateid1478121434\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\levelspace0\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698693
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}
+\f3\fbias0 \fi-360\li2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\lin3600 }
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698689\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid67698691\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid67698693\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\lin6480 }{\listname ;}\listid2046907828}}{\*\listoverridetable{\listoverride\listid82184480\listoverridecount0\ls1}{\listoverride\listid2046907828
+\listoverridecount0\ls2}{\listoverride\listid583876500\listoverridecount0\ls3}{\listoverride\listid1426531950\listoverridecount0\ls4}{\listoverride\listid1436092471\listoverridecount0\ls5}}{\*\pgptbl {\pgp\ipgp4\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp12\itap0
+\li0\ri0\sb0\sa0}{\pgp\ipgp5\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp4\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp10\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp4\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp10\itap0\li0\ri0\sb0
+\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp13\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp10\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp7\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp7\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp7\itap0\li0\ri0\sb0\sa0}}{\*\rsidtbl \rsid11292\rsid80907\rsid413328
+\rsid487653\rsid928755\rsid994407\rsid1063174\rsid1587756\rsid1643146\rsid1909860\rsid2039282\rsid2187214\rsid2241835\rsid2430733\rsid2507399\rsid2513053\rsid2516193\rsid2634636\rsid2764077\rsid3023834\rsid3354571\rsid3501281\rsid3619518\rsid3634440
+\rsid3676143\rsid3680837\rsid3806721\rsid3877002\rsid4068991\rsid4090875\rsid4468681\rsid4547555\rsid4596398\rsid4666138\rsid4882039\rsid5056937\rsid5248530\rsid5317607\rsid5392265\rsid5655931\rsid5657213\rsid5705076\rsid5784746\rsid5799198\rsid5835611
+\rsid5845055\rsid6034204\rsid6111091\rsid6161614\rsid6184621\rsid6188233\rsid6230688\rsid6308707\rsid6440027\rsid6442447\rsid6446762\rsid6750273\rsid6782283\rsid6817908\rsid6908169\rsid7043766\rsid7219827\rsid7357490\rsid7473359\rsid7942006\rsid7942730
+\rsid8020830\rsid8062735\rsid8259936\rsid8415394\rsid8455584\rsid8745990\rsid8787893\rsid8794308\rsid8849448\rsid8914955\rsid9587940\rsid9852513\rsid10250855\rsid10297496\rsid10644733\rsid10771081\rsid10945063\rsid11350548\rsid11370473\rsid11609882
+\rsid11618525\rsid12006425\rsid12208160\rsid12388811\rsid12477832\rsid12525597\rsid12601611\rsid12613892\rsid12926775\rsid12986895\rsid13117538\rsid13393110\rsid13443998\rsid13464709\rsid13648892\rsid13727138\rsid13907278\rsid14181716\rsid14225578
+\rsid14483663\rsid14637016\rsid14906240\rsid14968260\rsid15350569\rsid15367233\rsid15486302\rsid15498627\rsid15535594\rsid15694083\rsid15755954\rsid15862600\rsid16017688\rsid16018910\rsid16610069}{\*\generator Microsoft Word 11.0.0000;}{\info
+{\title OOP Team Work Project Assigment}{\author Telerik Software Academy}{\keywords oop, object-oriented programming, object-oriented design, team work, project, assigment}{\doccomm http://academy.telerik.com}{\operator BGatev}
+{\creatim\yr2013\mo7\dy12\hr15\min11}{\revtim\yr2013\mo7\dy12\hr15\min11}{\printim\yr2013\mo1\dy16\hr11\min38}{\version2}{\edmins0}{\nofpages2}{\nofwords494}{\nofchars2819}{\nofcharsws3307}{\vern24617}{\*\password 00000000}}{\*\xmlnstbl {\xmlns1 http://sc
+hemas.microsoft.com/office/word/2003/wordml}}\paperw11909\paperh16834\margl851\margr851\margt284\margb907\gutter0\ltrsect 
+\widowctrl\ftnbj\aenddoc\hyphhotz425\donotembedsysfont1\donotembedlingdata0\grfdocevents0\validatexml1\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors1\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\formshade\horzdoc\dgmargin
+\dghspace180\dgvspace180\dghorigin851\dgvorigin284\dghshow1\dgvshow1
+\jexpand\viewkind1\viewscale110\pgbrdrhead\pgbrdrfoot\splytwnine\ftnlytwnine\htmautsp\nolnhtadjtbl\useltbaln\alntblind\lytcalctblwd\lyttblrtgr\lnbrkrule\nobrkwrptbl\snaptogridincell\allowfieldendsel\wrppunct
+\asianbrkrule\rsidroot8415394\newtblstyruls\nogrowautofit \fet0{\*\wgrffmtfilter 2110}\ilfomacatclnup0{\*\ftnsep \ltrpar \pard\plain \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid8415394 \rtlch\fcs1 
+\af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7219827 \chftnsep 
+\par }}{\*\ftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid8415394 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7219827 \chftnsepc 
+\par }}{\*\aftnsep \ltrpar \pard\plain \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid8415394 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7219827 \chftnsep 
+\par }}{\*\aftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid8415394 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7219827 \chftnsepc 
+\par }}\ltrpar \sectd \ltrsect\psz9\linex0\headery1247\footery369\colsx708\endnhere\sectlinegrid360\sectdefaultcl\sectrsid1063174\sftnbj {\headerr \ltrpar \pard\plain \ltrpar\s15\ql \fi-1134\li0\ri0\widctlpar
+\tqc\tx4680\tqr\tx9360\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid5655931 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1024\langfe1024\noproof\langfenp1026\insrsid7219827 {\shp{\*\shpinst\shpleft-566\shptop-925\shpright10773\shpbottom107\shpfhdr0\shpbxcolumn\shpbxignore\shpbypara\shpbyignore\shpwr3\shpwrk0\shpfblwtxt0\shpz2\shplid2049
+{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}{\sp{\sn fRotateText}{\sv 1}}{\sp{\sn pib}{\sv {\pict\picscalex33\picscaley33\piccropl0\piccropr0\piccropt0\piccropb0
+\picw60008\pich5450\picwgoal34020\pichgoal3090\wmetafile8\bliptag-876365177{\*\blipuid cbc3ba870af15c9bd88c71b0ec8dc39b}0100090000030d1400000300c107000000000400000003010800050000000b022d063800050000000c02ce00dc08040000000601020007000000fc02000071b6
+31000000040000002d01000008000000fa0205000000000000000000040000002d0101000f0000003805010005003800fb061409fb0614092d0638002d063800
+fb06040000000601020007000000fc020000000000000000040000002d01020004000000f00100000f000000380501000500c603fb063800fb0638009e06c603
+9e06c603fb06040000000601020007000000fc020000ffffff000000040000002d01000004000000f0010200f40000003805040019001a000e0035004801e206
+4701e2064701e2064701e2064701e2064701d6064701d6064801d6064801d6064801d6064801d6064801d6064801d6064801d6064801d7064801d7064801d706
+4901e2064901e2064901e2064801e2064801e2064801e3064801e3064801e2063801d5063801d5063301d4062f01d3062b01d1062901cf062501cc062401ca06
+2401ca062401c7062501c4063501cc063501cc063601cc063601cc063701cc064801c5064801c5064801ce064701d0064701d0064401d2064101d4063d01d406
+3801d5063801d5064901cf064901cf064901cc064901cc064901c5064b01c4064b01c4064c01c8064c01ca064c01ca064c01ca064c01cb064901cf064901cf06
+3601ca063601ca063501ca061b01bd063b01b4063b01b4063b01b4063b01b4063b01b4063c01b4065601be065601be065601be065601be065601be064901c306
+4901c3064901c3064901c3064601c0064301bf063c01bd063c01bd063c01bc063a01bb063901bb063801bb063801bb063801bb063601bb063501bc063401bd06
+3401bd063401bd063401bd063501be063801bf063801bf063801bf063801bf063801bf063a01bf063c01be063c01be064101c0064501c1064801c3064801c306
+4801c3063601ca063601ca063601ca063601ca060400000006010200c1070000380515003500320010002100300010003e002100120048003400040041005600
+130033001f002f00100084004c008301c3068101c3068101c3068001c1068001c1067f01be067f01be067d01bc067d01bc067b01bb067b01bb067901bb067901
+bb067701bb067501bb067501d8067501d8067601da067601da067701db067701db067901db067901db067b01db067b01dd066a01dd066a01db066a01db066c01
+db066c01db066e01db066e01db066f01da066f01da067001d8067001bb066e01bb066e01bb066c01bb066c01bb066a01bb066a01bb066801bc066801bc066701
+be066701be066501c1066501c1066401c3066301c3066301b9068301b9068301c3069601d7069601d7069501da069201dc069201dc068f01dd068c01de068c01
+de068901de068601dd068601dd068301da068301da068001d6068001d6068001d0068001d0068001cc068001cc068301c7068301c7068601c4068601c4068901
+c4068b01c3068b01c3069001c4069001c4069301c7069301c7069501ca069501ca069601ce069601d0068501d0068501d0068501d4068501d4068701d8068701
+d8068901da068901da068d01db068d01db068f01db069101da069101da069301d9069501d6069601d7069101ce069101ce069001cb069001cb069001c8069001
+c8068e01c6068e01c6068b01c5068b01c5068901c6068701c8068701c8068501ca068501ce069101ce06a401dd069801dd069801dc069801dc069901db069901
+db069a01db069a01db069b01da069b01da069c01d9069c01bc069c01bc069b01ba069b01ba069a01b9069a01b9069901b8069901b8069701b8069701b606a001
+b606a101b606a101d906a101d906a101da06a101da06a201db06a201db06a301db06a301db06a401dc06a401dd06bd01d706bd01d706bb01da06b901dc06b901
+dc06b601dd06b201de06b201de06af01de06ad01dd06ad01dd06a901da06a901da06a701d606a701d606a601d006a601d006a701cc06a701cc06a901c706a901
+c706ad01c406ad01c406b201c306b201c306b701c406b701c406ba01c706ba01c706bc01ca06bc01ca06bc01ce06bc01d006ab01d006ab01d006ac01d406ac01
+d406ad01d806ad01d806b001da06b001da06b401db06b401db06b601db06b801da06b801da06bb01d606bd01d706b701ce06b701ce06b701cb06b701cb06b601
+c806b601c806b401c606b401c606b201c506b201c506af01c606ad01c806ad01c806ac01ca06ab01ce06b701ce06d201c706d201c706d201ca06d201ca06d101
+ca06d001cb06d001cb06cd01ca06cd01ca06cd01c806cd01c806cd01c706cd01c706cd01c606cd01c606ca01c706ca01c706c701ca06c701d906c701d906c801
+da06c801da06c901db06c901db06ca01db06ca01db06cc01dc06cc01dd06bf01dd06bf01dc06bf01dc06c001db06c001db06c101db06c101db06c201da06c201
+da06c201d906c201c906c201c906c201c806c201c806c101c706c101c706c001c606c001c606be01c606be01c406c701c406c701c406c701c806c701c806c701
+c806cb01c506cb01c506cf01c306cf01c306d101c506d101c506d201c606d201c706d201c706e201dd06d501dd06d501dc06d501dc06d701db06d701db06d801
+db06d801db06d901da06d901da06d901d906d901c906d901c906d901c806d901c806d801c706d801c706d601c606d601c606d501c606d501c406de01c406de01
+c406de01d906de01d906de01da06de01da06df01db06df01db06e101db06e101db06e201dc06e201dd06de01ba06de01ba06de01bc06de01bc06db01bd06db01
+bd06d901bc06d901bc06d801ba06d801ba06d901b806d901b806db01b706db01b706de01b806de01b806de01ba06de01ba060002dd06f801dd06f801dd06f401
+d706f401d706ef01d106ed01d306ed01d906ed01d906ed01da06ed01da06ef01db06ef01db06f001db06f001db06f101dc06f101dd06e501dd06e501dc06e501
+dc06e601db06e601db06e701db06e701db06e801da06e801da06e801d906e801bc06e801bc06e801ba06e801ba06e701b906e701b906e501b806e501b806e301
+b806e301b606ed01b606ed01b606ed01d106ed01d106f201cc06f201cc06f501c806f501c806f601c806f601c806f601c706f601c706f501c606f501c606f301
+c606f301c406fe01c406fe01c606fe01c606fa01c706fa01c706f801c906f801c906f601cb06f601cb06f301ce06f301ce06f801d406f801d406fb01d906fb01
+d906fe01db06fe01db060002dc060002dd063002dd062102dd062102db062102db062402db062402db062502da062502da062502d9062502d9062502d9062202
+d1061502d1061502d1061402d4061402d4061302d6061302d6061302d8061302d8061202d9061202d9061302da061402db061402db061802db061802dd060a02
+dd060a02db060a02db060c02db060c02db060d02da060d02da060f02d9060f02d9061002d7061002d7061602c8061602c8061c02b9061e02b9062a02d8062a02
+d8062b02d9062b02d9062d02db062d02db062e02db062e02db063002db063002dd062102ce061b02c0061602ce062102ce063c02de063c02de063702dd063302
+da063302da063102d6063002d1063002d1063102cc063102cc063302c7063302c7063702c4063702c4063c02c3063c02c3064002c4064202c5064202c5064402
+c7064502ca064502ca064402cc064402cc064302cd064202cd064202cd064002cc064002cc063f02cb063f02cb063f02c8063f02c8063f02c7063f02c7063e02
+c6063e02c6063c02c5063c02c5063a02c6063a02c6063802c8063802c8063602cb063602cb063502d0063502d0063602d5063802d8063802d8063a02da063d02
+db063d02db063f02db064102da064102da064502d6064602d7064602d7064402da064202dc064202dc063f02dd063c02de063c02de066102dd066102dd065f02
+dd065f02dd065d02de065d02de065902dd065902dd065802da065802da065802da065402dd065402dd064f02de064f02de064d02dd064b02dc064b02dc064902
+da064902d8064902d8064902d5064902d5064a02d3064a02d3064c02d2064c02d2064e02d1064e02d1065302cf065302cf065802cd065802cb065802cb065802
+c9065802c9065702c8065702c8065502c6065502c6065302c5065302c5065102c6065102c6064f02c6064f02c6064f02c8064f02c8065002ca065002ca064f02
+cb064f02cb064d02cc064d02cc064b02cb064b02cb064a02c9064a02c9064b02c7064b02c7064d02c5064d02c5065002c4065002c4065302c3065302c3065702
+c4065702c4065a02c5065a02c5065c02c7065c02c7065d02cc065d02cc065d02d2065d02d2065c02d8065c02d8065d02da065d02da065e02db065e02db065f02
+db065f02db066102db066102dd065802cf065802cf065402d1065402d1065102d2065102d2064f02d4064f02d4064e02d7064e02d7064e02d9064f02da064f02
+da065202db065202db065502da065502da065802d8065802cf067e02dd067502dd067502dd067502db067502db067502db067102dd067102dd066d02de066d02
+de066902dd066902dd066502da066502da066302d6066302d6066202d1066202d1066302cb066302cb066602c7066602c7066a02c4066a02c4066e02c3066e02
+c3067202c4067202c4067502c5067502bc067502bc067402ba067402ba067302b9067302b9067102b8067102b8066f02b8066f02b6067902b6067a02b6067a02
+d8067a02d8067a02da067a02da067b02db067b02db067c02db067c02db067e02db067e02dd067502d8067502ca067502ca067402c8067402c8067302c7067302
+c7067102c6067102c6066f02c5066f02c5066c02c6066c02c6066a02c8066a02c8066802cc066802cc066702d1066702d1066802d5066802d5066902d8066902
+d8066c02da066c02da066f02db066f02db067202da067202da067502d8067502d8069602d7069602d7069402da069202dc069202dc068f02dd068c02de068c02
+de068902de068602dd068602dd068202da068202da068002d6068002d6067f02d0067f02d0068002cc068002cc068202c7068202c7068602c4068602c4068b02
+c3068b02c3069002c4069002c4069302c7069302c7069502ca069502ca069502ce069502d0068402d0068402d0068502d4068502d4068602d8068602d8068902
+da068902da068d02db068d02db069102da069102da069402d6069602d7069002ce069002ce069002cb069002cb068f02c8068f02c8068e02c6068e02c6068b02
+c5068b02c5068802c6068602c8068602c8068502ca068402ce069002ce06c402dd06b702dd06b702dc06b702dc06b802db06b802db06ba02db06ba02db06bb02
+da06bb02da06bb02d906bb02cc06bb02cc06bb02ca06ba02c806ba02c806b802c706b702c606b702c606b402c706b402c706b202c806b202c806b102c906b102
+c906b002ca06b002d906b002d906b102da06b102da06b202db06b202db06b302db06b302db06b402dc06b402dd06a802dd06a802dc06a802dc06a902db06a902
+db06aa02db06aa02db06ab02da06ab02da06ab02d906ab02cc06ab02cc06ab02ca06aa02c806aa02c806a902c706a702c606a702c606a502c706a502c706a302
+c806a302c806a102c906a102c906a002ca06a002d906a002d906a102da06a102da06a202db06a202db06a302db06a302db06a402dc06a402dd069802dd069802
+dc069802dc069902db069902db069a02db069a02db069b02da069b02da069c02d9069c02c9069c02c9069b02c8069b02c8069a02c7069a02c7069902c6069902
+c6069702c6069702c406a002c406a002c406a002c806a102c806a102c806a202c606a202c606a402c506a402c506a602c406a602c406a902c306a902c306ab02
+c406ad02c506ad02c506b002c806b002c806b202c606b202c606b402c506b402c506b602c406b602c406b902c306b902c306bc02c406be02c506be02c506bf02
+c806c002cc06c002d906c002d906c002da06c002da06c102db06c102db06c202db06c202db06c402dc06c402dd06c302e506c302e506c402e306c402e306c602
+e306c602e306c702e306c702e306c802e406c802e406c902e506c902e506ca02e606ca02e606cd02e206cd02e206d002dd06d002dd06cb02d206cb02d206c702
+c806c702c806c502c706c502c706c302c606c302c406cf02c406cf02c606cf02c606cd02c606cd02c606cc02c706cc02c706cc02c706cc02c706cc02c806cc02
+c806cf02cf06cf02cf06d202d706d202d706d502d106d502d106d802ca06d802ca06d802c906d802c906d802c806d802c806d702c606d702c606d502c606d502
+c406df02c406df02c606df02c606dc02c706dc02c706db02c906db02c906d502d506d502d506d102de06d102de06cf02e406cf02e406cc02e706cc02e706ca02
+e806ca02e806c802e906c802e906c502e806c502e806c302e506c302e50604000000060102002a00000038050200090009004204d6063e04d6063a04cd062c04
+cd062904d6062404d6063104b5063504b5064204d6063904c9063404bb063404bb063304b9063304b9063304b9063204bb062d04c9063904c906040000000601
+020021000000380501000e005b04d6065504d6064b04cb064b04cb064b04d6064704d6064704be064b04be064b04c9064b04c9065504be065a04be064f04ca06
+5b04d60604000000060102007800000038050200250014007004d6066d04d6066d04d2066d04d2066d04d2066a04d5066504d7066504d7066204d6066004d506
+6004d5065e04d2065e04d0065e04d0065e04cd066004ca066204c9066604c8066d04c7066d04c7066c04c4066b04c2066a04c1066804c1066804c1066404c206
+6004c4066004c0066004c0066404be066804be066804be066c04be066e04c0067004c3067004c7067004d6066d04ca066704cb066704cb066304cc066304cc06
+6204cd066204cf066204cf066204d1066304d2066304d2066404d3066604d3066604d3066904d3066b04d1066b04d1066c04cf066d04cc066d04ca0604000000
+060102003600000038050200110007008d04df068a04df068a04d6067804d6067804df067504df067504d3067704d3067704d3067a04ce067c04c9067d04c406
+7d04be068a04be068a04d3068d04d3068d04df068604d3068604c2068104c2068104c2067f04cb067b04d3068604d30604000000060102006600000038050200
+22000e00a604cb069604cb069604cb069604cf069804d1069804d1069a04d3069d04d3069d04d306a104d306a504d106a504d406a504d406a104d6069c04d706
+9c04d7069804d6069504d3069504d3069204cf069204ca069204ca069204c5069504c1069504c1069804bf069d04be069d04be06a104bf06a404c106a404c106
+a604c406a604c906a604cb06a204c806a204c806a204c506a104c306a104c3069f04c1069c04c1069c04c1069a04c1069804c3069804c3069604c5069604c806
+a204c80604000000060102002f000000380501001500c604d606c304d606c304c306c304c306c104c706bb04d606b804d606b204c706b204c706b004c306b004
+d606ad04d606ad04be06b204be06b804ce06b804ce06ba04d206bb04ce06c104be06c604be06c604d606040000000601020023000000380501000f00e304d606
+df04d606df04c306df04c306de04c606d304d606cf04d606cf04be06d204be06d204d106d204d106d404cf06df04be06e304be06e304d6060400000006010200
+56000000380502001b000d00fb04d606f804d606f804cc06f504cc06f504cc06f204cd06f004d006ed04d606e904d606ed04cf06ed04cf06ee04cd06f004cb06
+f004cb06ee04cb06ec04c906ec04c906eb04c706eb04c506eb04c506eb04c206ed04c006ed04c006f004bf06f304be06fb04be06fb04d606f804c906f804c206
+f304c206f304c206f004c206ef04c406ee04c506ee04c506ef04c706f004c806f104c906f304c906f804c90604000000060102001f000000380501000d002505
+d6062205d6062205cb061605cb061605d6061205d6061205be061605be061605c8062205c8062205be062505be062505d6060400000006010200780000003805
+0200250014003f05d6063b05d6063b05d2063b05d2063b05d2063805d5063405d7063405d7063105d6062e05d5062e05d5062d05d2062c05d0062c05d0062d05
+cd062e05ca063105c9063405c8063b05c7063b05c7063b05c4063a05c2063805c1063605c1063605c1063205c2062f05c4062f05c0062f05c0063205be063705
+be063705be063a05be063d05c0063e05c3063f05c7063f05d6063b05ca063505cb063505cb063205cc063205cc063105cd063005cf063005cf063005d1063105
+d2063105d2063305d3063505d3063505d3063705d3063905d1063905d1063b05cf063b05cc063b05ca060400000006010200170000003805010009006905b806
+5f05b8065f05d6065c05d6065c05b8065205b8065205b5066905b5066905b8060400000006010200660000003805020022000e007d05cb066c05cb066c05cb06
+6d05cf066e05d1066e05d1067005d3067405d3067405d3067705d3067b05d1067b05d4067b05d4067705d6067305d7067305d7066e05d6066b05d3066b05d306
+6905cf066805ca066805ca066905c5066b05c1066b05c1066f05bf067305be067305be067705bf067a05c1067a05c1067c05c4067d05c9067d05cb067905c806
+7905c8067805c5067705c3067705c3067505c1067305c1067305c1067005c1066e05c3066e05c3066d05c5066c05c8067905c806040000000601020035000000
+3805010018009405d6069105d6069105c2068b05c2068b05c2068a05cb068805d2068805d2068505d5068405d6068205d6068205d6068005d6068005d3068005
+d3068205d3068205d3068305d3068405d2068605ce068705c7068805be069405be069405d6060400000006010200660000003805020022000e00b005cb069f05
+cb069f05cb06a005cf06a205d106a205d106a405d306a705d306a705d306ab05d306ae05d106ae05d406ae05d406ab05d606a605d706a605d706a205d6069e05
+d3069e05d3069c05cf069b05ca069b05ca069c05c5069f05c1069f05c106a205bf06a605be06a605be06aa05bf06ae05c106ae05c106af05c406b005c906b005
+cb06ac05c806ac05c806ac05c506ab05c306ab05c306a905c106a605c106a605c106a405c106a205c306a205c306a005c5069f05c806ac05c806040000000601
+020076000000380502001d001b00bb05d306ba05d306ba05e106b705e106b705be06ba05be06ba05c306bb05c306bb05c306bc05c006be05bf06c005be06c305
+be06c305be06c705bf06ca05c106ca05c106cc05c506cc05c906cc05c906cc05cf06ca05d306ca05d306c605d606c205d706c205d706be05d606bb05d306bb05
+d306ba05c906ba05cc06ba05cc06bb05cf06bc05d106bc05d106bf05d306c105d306c105d306c405d306c705d106c705d106c805ce06c905c906c905c906c805
+c606c705c306c705c306c505c206c205c106c205c106bf05c206bc05c306bc05c306bb05c606ba05c906ba05c906040000000601020023000000380501000f00
+e705d606e405d606e405c306e405c306e205c606d705d606d305d606d305be06d705be06d705d106d705d106d805cf06e305be06e705be06e705d60604000000
+0601020021000000380501000e000306d606fe05d606f405cb06f405cb06f405d606f005d606f005be06f405be06f405c906f405c906fe05be060206be06f805
+ca060306d606040000000601020083000000380501003f001406d5061406d2061406d2061706d3061b06d3061b06d3061e06d3062006d2062106d1062206cf06
+2206cf062106ce062006cc061e06cc061b06cb061806cb061806c8061b06c8061b06c8061d06c8061f06c7062006c6062106c4062106c4062006c3061f06c206
+1f06c2061b06c1061b06c1061806c1061506c3061506bf061506bf061806be061c06be061c06be061f06be062206bf062406c1062406c4062406c4062406c606
+2306c8062306c8062206c9061f06ca061f06ca061f06ca062206ca062406cc062406cc062506cd062506cf062506cf062506d2062306d5062306d5062006d606
+1b06d7061b06d7061706d6061406d5061406d50604000000060102007800000038050200250014003d06d6063906d6063906d2063906d2063906d2063606d506
+3206d7063206d7062f06d6062c06d5062c06d5062b06d2062a06d0062a06d0062b06cd062c06ca062f06c9063206c8063906c7063906c7063906c4063806c206
+3606c1063406c1063406c1063006c2062d06c4062d06c0062d06c0063006be063506be063506be063806be063b06c0063c06c3063d06c7063d06d6063906ca06
+3306cb063306cb062f06cc062f06cc062e06cd062e06cf062e06cf062e06d1062f06d2062f06d2063106d3063306d3063306d3063506d3063706d1063706d106
+3906cf063906cc063906ca060400000006010200530000003805010027006306d5066306d5066006d6065c06d7065c06d7065806d6065406d3065406d3065206
+cf065106cb065106cb065206c5065506c1065506c1065806bf065d06be065d06be066006be066306bf066306c3066306c3066006c1065d06c1065d06c1065a06
+c2065706c4065706c4065606c7065506ca065506ca065606ce065706d1065706d1065a06d3065d06d3065d06d3066006d3066306d1066306d506040000000601
+02006e000000380502001a001a007306d7067306d7066f06d6066b06d3066b06d3066906cf066806ca066806ca066906c5066b06c1066b06c1066f06bf067406
+be067406be067906bf067c06c1067c06c1067e06c5067f06ca067f06ca067e06cf067c06d3067c06d3067806d6067306d7067306d7067406c1067406c1067006
+c2066e06c3066e06c3066c06c6066c06ca066c06ca066c06ce066e06d1066e06d1067006d3067406d3067406d3067706d3067906d1067906d1067b06ce067b06
+ca067b06ca067b06c6067906c3067906c3067706c2067406c1067406c10604000000060102008d000000380503002300100010009406d7069406e1069106e106
+9106d7069006d7069006d7068b06d6068806d3068806d3068506cf068506ca068506ca068506c5068806c1068806c1068c06bf069006be069106be069106b406
+9406b4069406be069506be069506be069a06bf069d06c1069d06c106a006c506a006ca06a006ca06a006cf069d06d3069d06d3069a06d6069506d7069406d706
+9106d3069106c1069006c1069006c1068d06c2068b06c3068b06c3068906c6068806ca068806ca068906ce068b06d1068b06d1068d06d3069006d3069106d306
+9406c1069406d3069506d3069506d3069806d3069a06d1069a06d1069c06ce069d06ca069d06ca069c06c6069b06c3069b06c3069806c2069506c1069406c106
+040000000601020017000000380501000900b506c206ae06c206ae06d606ab06d606ab06c206a406c206a406be06b506be06b506c20604000000060102003900
+0000380501001a00cf06be06c406da06c406da06c206dd06c006df06be06e106bc06e106bc06e106b906e106b906dd06b906dd06bb06de06bb06de06be06dd06
+c006da06c206d606b806be06bd06be06c306d106c306d106c306d206c406d206c406d206c406d106cb06be06cf06be0604000000060102006600000038050200
+22000e00e606cb06d606cb06d606cb06d606cf06d806d106d806d106da06d306dd06d306dd06d306e106d306e506d106e506d406e506d406e106d606dd06d706
+dd06d706d806d606d506d306d506d306d306cf06d206ca06d206ca06d306c506d506c106d506c106d806bf06dd06be06dd06be06e106bf06e406c106e406c106
+e606c406e606c906e606cb06e306c806e306c806e206c506e106c306e106c306df06c106dd06c106dd06c106da06c106d806c306d806c306d706c506d606c806
+e306c806040000000601020076000000380502001d001b00f106d306f106d306f106e106ed06e106ed06be06f106be06f106c306f106c306f106c306f206c006
+f406bf06f706be06f906be06f906be06fd06bf060007c1060007c1060207c5060307c9060307c9060207cf060007d3060007d306fc06d606f806d706f806d706
+f406d606f106d306f106d306f106c906f106cc06f106cc06f106cf06f306d106f306d106f506d306f806d306f806d306fb06d306fd06d106fd06d106fe06ce06
+ff06c906ff06c906fe06c606fd06c306fd06c306fb06c206f806c106f806c106f506c206f306c306f306c306f106c606f106c906f106c9060400000006010200
+1f000000380501000d001d07d6061a07d6061a07cb060e07cb060e07d6060a07d6060a07be060e07be060e07c8061a07c8061a07be061d07be061d07d6060400
+00000601020023000000380501000f003a07d6063607d6063607c3063607c3063507c6062a07d6062607d6062607be062907be062907d1062907d1062b07cf06
+3607be063a07be063a07d606040000000601020023000000380501000f006407d6066107d6066107c3066107c3065f07c6065407d6065007d6065007be065407
+be065407d1065407d1065507cf066007be066407be066407d60604000000060102001f000000380501000d008007d6067c07d6067c07cb067007cb067007d606
+6d07d6066d07be067007be067007c8067c07c8067c07be068007be068007d606040000000601020033000000380501001700a807d606a307d6069807ca069807
+ca069807d6069507d6069507ca069507ca068a07d6068507d6069107ca068607be068b07be069507c9069507c9069507be069807be069807c9069807c906a207
+be06a707be069c07ca06a807d6060400000006010200660000003805020022000e00bf07cb06ae07cb06ae07cb06af07cf06b007d106b007d106b307d306b607
+d306b607d306ba07d306bd07d106bd07d406bd07d406ba07d606b507d706b507d706b107d606ad07d306ad07d306ab07cf06aa07ca06aa07ca06ab07c506ad07
+c106ad07c106b107bf06b507be06b507be06b907bf06bc07c106bc07c106be07c406bf07c906bf07cb06bb07c806bb07c806bb07c506b907c306b907c306b807
+c106b507c106b507c106b307c106b107c306b107c306af07c506ae07c806bb07c80604000000060102001f000000380501000d00d907d606d507d606d507cb06
+c907cb06c907d606c607d606c607be06c907be06c907c806d507c806d507be06d907be06d907d6060400000006010200660000003805020022000e00f507cb06
+e407cb06e407cb06e507cf06e607d106e607d106e907d306ec07d306ec07d306f007d306f307d106f307d406f307d406ef07d606eb07d706eb07d706e607d606
+e307d306e307d306e107cf06e007ca06e007ca06e107c506e307c106e307c106e707bf06eb07be06eb07be06ef07bf06f207c106f207c106f407c406f507c906
+f507cb06f107c806f107c806f007c506ef07c306ef07c306ed07c106eb07c106eb07c106e807c106e607c306e607c306e507c506e407c806f107c80604000000
+0601020076000000380502001d001b00ff07d306ff07d306ff07e106fb07e106fb07be06ff07be06ff07c306ff07c306ff07c3060108c0060308bf060508be06
+0708be060708be060b08bf060e08c1060e08c1061008c5061108c9061108c9061008cf060e08d3060e08d3060b08d6060608d7060608d7060208d606ff07d306
+ff07d306ff07c906ff07cc06ff07cc060008cf060108d1060108d1060308d3060608d3060608d3060908d3060b08d1060b08d1060d08ce060d08c9060d08c906
+0d08c6060b08c3060b08c3060908c2060608c1060608c1060308c2060108c3060108c3060008c606ff07c906ff07c90604000000060102002300000038050100
+0f002c08d6062808d6062808c3062808c3062708c6061c08d6061808d6061808be061b08be061b08d1061b08d1061d08cf062808be062c08be062c08d6060400
+00000601020007000000fc020000000000000000040000002d01020004000000f00100000f0000003805010005001409fb06a208fb06a2089e0614099e061409fb0604000000f001010004000000f00102000300000000000000}
+}}{\sp{\sn pictureGray}{\sv 0}}{\sp{\sn pictureBiLevel}{\sv 0}}{\sp{\sn fFilled}{\sv 0}}{\sp{\sn fNoFillHitTest}{\sv 1}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn wzName}{\sv Picture 2}}{\sp{\sn pihlShape}{\sv {\*\hl{\hlfr http://academy.telerik.com}
+{\hlsrc http://academy.telerik.com/}}}}{\sp{\sn fLayoutInCell}{\sv 1}}{\sp{\sn fAllowOverlap}{\sv 1}}{\sp{\sn fBehindDocument}{\sv 0}}{\sp{\sn fIsButton}{\sv 1}}{\sp{\sn fHidden}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}}{\shprslt\par\pard
+\ql \li0\ri0\widctlpar\pvpara\posnegx-567\posnegy-926\dxfrtext180\dfrmtxtx180\dfrmtxty0\wraparound\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {\pict\picscalex33\picscaley33\piccropl0\piccropr0\piccropt0\piccropb0
+\picw60008\pich5450\picwgoal34020\pichgoal3090\wmetafile8\bliptag-876365177{\*\blipuid cbc3ba870af15c9bd88c71b0ec8dc39b}0100090000030d1400000300c107000000000400000003010800050000000b022d063800050000000c02ce00dc08040000000601020007000000fc02000071b6
+31000000040000002d01000008000000fa0205000000000000000000040000002d0101000f0000003805010005003800fb061409fb0614092d0638002d063800
+fb06040000000601020007000000fc020000000000000000040000002d01020004000000f00100000f000000380501000500c603fb063800fb0638009e06c603
+9e06c603fb06040000000601020007000000fc020000ffffff000000040000002d01000004000000f0010200f40000003805040019001a000e0035004801e206
+4701e2064701e2064701e2064701e2064701d6064701d6064801d6064801d6064801d6064801d6064801d6064801d6064801d6064801d7064801d7064801d706
+4901e2064901e2064901e2064801e2064801e2064801e3064801e3064801e2063801d5063801d5063301d4062f01d3062b01d1062901cf062501cc062401ca06
+2401ca062401c7062501c4063501cc063501cc063601cc063601cc063701cc064801c5064801c5064801ce064701d0064701d0064401d2064101d4063d01d406
+3801d5063801d5064901cf064901cf064901cc064901cc064901c5064b01c4064b01c4064c01c8064c01ca064c01ca064c01ca064c01cb064901cf064901cf06
+3601ca063601ca063501ca061b01bd063b01b4063b01b4063b01b4063b01b4063b01b4063c01b4065601be065601be065601be065601be065601be064901c306
+4901c3064901c3064901c3064601c0064301bf063c01bd063c01bd063c01bc063a01bb063901bb063801bb063801bb063801bb063601bb063501bc063401bd06
+3401bd063401bd063401bd063501be063801bf063801bf063801bf063801bf063801bf063a01bf063c01be063c01be064101c0064501c1064801c3064801c306
+4801c3063601ca063601ca063601ca063601ca060400000006010200c1070000380515003500320010002100300010003e002100120048003400040041005600
+130033001f002f00100084004c008301c3068101c3068101c3068001c1068001c1067f01be067f01be067d01bc067d01bc067b01bb067b01bb067901bb067901
+bb067701bb067501bb067501d8067501d8067601da067601da067701db067701db067901db067901db067b01db067b01dd066a01dd066a01db066a01db066c01
+db066c01db066e01db066e01db066f01da066f01da067001d8067001bb066e01bb066e01bb066c01bb066c01bb066a01bb066a01bb066801bc066801bc066701
+be066701be066501c1066501c1066401c3066301c3066301b9068301b9068301c3069601d7069601d7069501da069201dc069201dc068f01dd068c01de068c01
+de068901de068601dd068601dd068301da068301da068001d6068001d6068001d0068001d0068001cc068001cc068301c7068301c7068601c4068601c4068901
+c4068b01c3068b01c3069001c4069001c4069301c7069301c7069501ca069501ca069601ce069601d0068501d0068501d0068501d4068501d4068701d8068701
+d8068901da068901da068d01db068d01db068f01db069101da069101da069301d9069501d6069601d7069101ce069101ce069001cb069001cb069001c8069001
+c8068e01c6068e01c6068b01c5068b01c5068901c6068701c8068701c8068501ca068501ce069101ce06a401dd069801dd069801dc069801dc069901db069901
+db069a01db069a01db069b01da069b01da069c01d9069c01bc069c01bc069b01ba069b01ba069a01b9069a01b9069901b8069901b8069701b8069701b606a001
+b606a101b606a101d906a101d906a101da06a101da06a201db06a201db06a301db06a301db06a401dc06a401dd06bd01d706bd01d706bb01da06b901dc06b901
+dc06b601dd06b201de06b201de06af01de06ad01dd06ad01dd06a901da06a901da06a701d606a701d606a601d006a601d006a701cc06a701cc06a901c706a901
+c706ad01c406ad01c406b201c306b201c306b701c406b701c406ba01c706ba01c706bc01ca06bc01ca06bc01ce06bc01d006ab01d006ab01d006ac01d406ac01
+d406ad01d806ad01d806b001da06b001da06b401db06b401db06b601db06b801da06b801da06bb01d606bd01d706b701ce06b701ce06b701cb06b701cb06b601
+c806b601c806b401c606b401c606b201c506b201c506af01c606ad01c806ad01c806ac01ca06ab01ce06b701ce06d201c706d201c706d201ca06d201ca06d101
+ca06d001cb06d001cb06cd01ca06cd01ca06cd01c806cd01c806cd01c706cd01c706cd01c606cd01c606ca01c706ca01c706c701ca06c701d906c701d906c801
+da06c801da06c901db06c901db06ca01db06ca01db06cc01dc06cc01dd06bf01dd06bf01dc06bf01dc06c001db06c001db06c101db06c101db06c201da06c201
+da06c201d906c201c906c201c906c201c806c201c806c101c706c101c706c001c606c001c606be01c606be01c406c701c406c701c406c701c806c701c806c701
+c806cb01c506cb01c506cf01c306cf01c306d101c506d101c506d201c606d201c706d201c706e201dd06d501dd06d501dc06d501dc06d701db06d701db06d801
+db06d801db06d901da06d901da06d901d906d901c906d901c906d901c806d901c806d801c706d801c706d601c606d601c606d501c606d501c406de01c406de01
+c406de01d906de01d906de01da06de01da06df01db06df01db06e101db06e101db06e201dc06e201dd06de01ba06de01ba06de01bc06de01bc06db01bd06db01
+bd06d901bc06d901bc06d801ba06d801ba06d901b806d901b806db01b706db01b706de01b806de01b806de01ba06de01ba060002dd06f801dd06f801dd06f401
+d706f401d706ef01d106ed01d306ed01d906ed01d906ed01da06ed01da06ef01db06ef01db06f001db06f001db06f101dc06f101dd06e501dd06e501dc06e501
+dc06e601db06e601db06e701db06e701db06e801da06e801da06e801d906e801bc06e801bc06e801ba06e801ba06e701b906e701b906e501b806e501b806e301
+b806e301b606ed01b606ed01b606ed01d106ed01d106f201cc06f201cc06f501c806f501c806f601c806f601c806f601c706f601c706f501c606f501c606f301
+c606f301c406fe01c406fe01c606fe01c606fa01c706fa01c706f801c906f801c906f601cb06f601cb06f301ce06f301ce06f801d406f801d406fb01d906fb01
+d906fe01db06fe01db060002dc060002dd063002dd062102dd062102db062102db062402db062402db062502da062502da062502d9062502d9062502d9062202
+d1061502d1061502d1061402d4061402d4061302d6061302d6061302d8061302d8061202d9061202d9061302da061402db061402db061802db061802dd060a02
+dd060a02db060a02db060c02db060c02db060d02da060d02da060f02d9060f02d9061002d7061002d7061602c8061602c8061c02b9061e02b9062a02d8062a02
+d8062b02d9062b02d9062d02db062d02db062e02db062e02db063002db063002dd062102ce061b02c0061602ce062102ce063c02de063c02de063702dd063302
+da063302da063102d6063002d1063002d1063102cc063102cc063302c7063302c7063702c4063702c4063c02c3063c02c3064002c4064202c5064202c5064402
+c7064502ca064502ca064402cc064402cc064302cd064202cd064202cd064002cc064002cc063f02cb063f02cb063f02c8063f02c8063f02c7063f02c7063e02
+c6063e02c6063c02c5063c02c5063a02c6063a02c6063802c8063802c8063602cb063602cb063502d0063502d0063602d5063802d8063802d8063a02da063d02
+db063d02db063f02db064102da064102da064502d6064602d7064602d7064402da064202dc064202dc063f02dd063c02de063c02de066102dd066102dd065f02
+dd065f02dd065d02de065d02de065902dd065902dd065802da065802da065802da065402dd065402dd064f02de064f02de064d02dd064b02dc064b02dc064902
+da064902d8064902d8064902d5064902d5064a02d3064a02d3064c02d2064c02d2064e02d1064e02d1065302cf065302cf065802cd065802cb065802cb065802
+c9065802c9065702c8065702c8065502c6065502c6065302c5065302c5065102c6065102c6064f02c6064f02c6064f02c8064f02c8065002ca065002ca064f02
+cb064f02cb064d02cc064d02cc064b02cb064b02cb064a02c9064a02c9064b02c7064b02c7064d02c5064d02c5065002c4065002c4065302c3065302c3065702
+c4065702c4065a02c5065a02c5065c02c7065c02c7065d02cc065d02cc065d02d2065d02d2065c02d8065c02d8065d02da065d02da065e02db065e02db065f02
+db065f02db066102db066102dd065802cf065802cf065402d1065402d1065102d2065102d2064f02d4064f02d4064e02d7064e02d7064e02d9064f02da064f02
+da065202db065202db065502da065502da065802d8065802cf067e02dd067502dd067502dd067502db067502db067502db067102dd067102dd066d02de066d02
+de066902dd066902dd066502da066502da066302d6066302d6066202d1066202d1066302cb066302cb066602c7066602c7066a02c4066a02c4066e02c3066e02
+c3067202c4067202c4067502c5067502bc067502bc067402ba067402ba067302b9067302b9067102b8067102b8066f02b8066f02b6067902b6067a02b6067a02
+d8067a02d8067a02da067a02da067b02db067b02db067c02db067c02db067e02db067e02dd067502d8067502ca067502ca067402c8067402c8067302c7067302
+c7067102c6067102c6066f02c5066f02c5066c02c6066c02c6066a02c8066a02c8066802cc066802cc066702d1066702d1066802d5066802d5066902d8066902
+d8066c02da066c02da066f02db066f02db067202da067202da067502d8067502d8069602d7069602d7069402da069202dc069202dc068f02dd068c02de068c02
+de068902de068602dd068602dd068202da068202da068002d6068002d6067f02d0067f02d0068002cc068002cc068202c7068202c7068602c4068602c4068b02
+c3068b02c3069002c4069002c4069302c7069302c7069502ca069502ca069502ce069502d0068402d0068402d0068502d4068502d4068602d8068602d8068902
+da068902da068d02db068d02db069102da069102da069402d6069602d7069002ce069002ce069002cb069002cb068f02c8068f02c8068e02c6068e02c6068b02
+c5068b02c5068802c6068602c8068602c8068502ca068402ce069002ce06c402dd06b702dd06b702dc06b702dc06b802db06b802db06ba02db06ba02db06bb02
+da06bb02da06bb02d906bb02cc06bb02cc06bb02ca06ba02c806ba02c806b802c706b702c606b702c606b402c706b402c706b202c806b202c806b102c906b102
+c906b002ca06b002d906b002d906b102da06b102da06b202db06b202db06b302db06b302db06b402dc06b402dd06a802dd06a802dc06a802dc06a902db06a902
+db06aa02db06aa02db06ab02da06ab02da06ab02d906ab02cc06ab02cc06ab02ca06aa02c806aa02c806a902c706a702c606a702c606a502c706a502c706a302
+c806a302c806a102c906a102c906a002ca06a002d906a002d906a102da06a102da06a202db06a202db06a302db06a302db06a402dc06a402dd069802dd069802
+dc069802dc069902db069902db069a02db069a02db069b02da069b02da069c02d9069c02c9069c02c9069b02c8069b02c8069a02c7069a02c7069902c6069902
+c6069702c6069702c406a002c406a002c406a002c806a102c806a102c806a202c606a202c606a402c506a402c506a602c406a602c406a902c306a902c306ab02
+c406ad02c506ad02c506b002c806b002c806b202c606b202c606b402c506b402c506b602c406b602c406b902c306b902c306bc02c406be02c506be02c506bf02
+c806c002cc06c002d906c002d906c002da06c002da06c102db06c102db06c202db06c202db06c402dc06c402dd06c302e506c302e506c402e306c402e306c602
+e306c602e306c702e306c702e306c802e406c802e406c902e506c902e506ca02e606ca02e606cd02e206cd02e206d002dd06d002dd06cb02d206cb02d206c702
+c806c702c806c502c706c502c706c302c606c302c406cf02c406cf02c606cf02c606cd02c606cd02c606cc02c706cc02c706cc02c706cc02c706cc02c806cc02
+c806cf02cf06cf02cf06d202d706d202d706d502d106d502d106d802ca06d802ca06d802c906d802c906d802c806d802c806d702c606d702c606d502c606d502
+c406df02c406df02c606df02c606dc02c706dc02c706db02c906db02c906d502d506d502d506d102de06d102de06cf02e406cf02e406cc02e706cc02e706ca02
+e806ca02e806c802e906c802e906c502e806c502e806c302e506c302e50604000000060102002a00000038050200090009004204d6063e04d6063a04cd062c04
+cd062904d6062404d6063104b5063504b5064204d6063904c9063404bb063404bb063304b9063304b9063304b9063204bb062d04c9063904c906040000000601
+020021000000380501000e005b04d6065504d6064b04cb064b04cb064b04d6064704d6064704be064b04be064b04c9064b04c9065504be065a04be064f04ca06
+5b04d60604000000060102007800000038050200250014007004d6066d04d6066d04d2066d04d2066d04d2066a04d5066504d7066504d7066204d6066004d506
+6004d5065e04d2065e04d0065e04d0065e04cd066004ca066204c9066604c8066d04c7066d04c7066c04c4066b04c2066a04c1066804c1066804c1066404c206
+6004c4066004c0066004c0066404be066804be066804be066c04be066e04c0067004c3067004c7067004d6066d04ca066704cb066704cb066304cc066304cc06
+6204cd066204cf066204cf066204d1066304d2066304d2066404d3066604d3066604d3066904d3066b04d1066b04d1066c04cf066d04cc066d04ca0604000000
+060102003600000038050200110007008d04df068a04df068a04d6067804d6067804df067504df067504d3067704d3067704d3067a04ce067c04c9067d04c406
+7d04be068a04be068a04d3068d04d3068d04df068604d3068604c2068104c2068104c2067f04cb067b04d3068604d30604000000060102006600000038050200
+22000e00a604cb069604cb069604cb069604cf069804d1069804d1069a04d3069d04d3069d04d306a104d306a504d106a504d406a504d406a104d6069c04d706
+9c04d7069804d6069504d3069504d3069204cf069204ca069204ca069204c5069504c1069504c1069804bf069d04be069d04be06a104bf06a404c106a404c106
+a604c406a604c906a604cb06a204c806a204c806a204c506a104c306a104c3069f04c1069c04c1069c04c1069a04c1069804c3069804c3069604c5069604c806
+a204c80604000000060102002f000000380501001500c604d606c304d606c304c306c304c306c104c706bb04d606b804d606b204c706b204c706b004c306b004
+d606ad04d606ad04be06b204be06b804ce06b804ce06ba04d206bb04ce06c104be06c604be06c604d606040000000601020023000000380501000f00e304d606
+df04d606df04c306df04c306de04c606d304d606cf04d606cf04be06d204be06d204d106d204d106d404cf06df04be06e304be06e304d6060400000006010200
+56000000380502001b000d00fb04d606f804d606f804cc06f504cc06f504cc06f204cd06f004d006ed04d606e904d606ed04cf06ed04cf06ee04cd06f004cb06
+f004cb06ee04cb06ec04c906ec04c906eb04c706eb04c506eb04c506eb04c206ed04c006ed04c006f004bf06f304be06fb04be06fb04d606f804c906f804c206
+f304c206f304c206f004c206ef04c406ee04c506ee04c506ef04c706f004c806f104c906f304c906f804c90604000000060102001f000000380501000d002505
+d6062205d6062205cb061605cb061605d6061205d6061205be061605be061605c8062205c8062205be062505be062505d6060400000006010200780000003805
+0200250014003f05d6063b05d6063b05d2063b05d2063b05d2063805d5063405d7063405d7063105d6062e05d5062e05d5062d05d2062c05d0062c05d0062d05
+cd062e05ca063105c9063405c8063b05c7063b05c7063b05c4063a05c2063805c1063605c1063605c1063205c2062f05c4062f05c0062f05c0063205be063705
+be063705be063a05be063d05c0063e05c3063f05c7063f05d6063b05ca063505cb063505cb063205cc063205cc063105cd063005cf063005cf063005d1063105
+d2063105d2063305d3063505d3063505d3063705d3063905d1063905d1063b05cf063b05cc063b05ca060400000006010200170000003805010009006905b806
+5f05b8065f05d6065c05d6065c05b8065205b8065205b5066905b5066905b8060400000006010200660000003805020022000e007d05cb066c05cb066c05cb06
+6d05cf066e05d1066e05d1067005d3067405d3067405d3067705d3067b05d1067b05d4067b05d4067705d6067305d7067305d7066e05d6066b05d3066b05d306
+6905cf066805ca066805ca066905c5066b05c1066b05c1066f05bf067305be067305be067705bf067a05c1067a05c1067c05c4067d05c9067d05cb067905c806
+7905c8067805c5067705c3067705c3067505c1067305c1067305c1067005c1066e05c3066e05c3066d05c5066c05c8067905c806040000000601020035000000
+3805010018009405d6069105d6069105c2068b05c2068b05c2068a05cb068805d2068805d2068505d5068405d6068205d6068205d6068005d6068005d3068005
+d3068205d3068205d3068305d3068405d2068605ce068705c7068805be069405be069405d6060400000006010200660000003805020022000e00b005cb069f05
+cb069f05cb06a005cf06a205d106a205d106a405d306a705d306a705d306ab05d306ae05d106ae05d406ae05d406ab05d606a605d706a605d706a205d6069e05
+d3069e05d3069c05cf069b05ca069b05ca069c05c5069f05c1069f05c106a205bf06a605be06a605be06aa05bf06ae05c106ae05c106af05c406b005c906b005
+cb06ac05c806ac05c806ac05c506ab05c306ab05c306a905c106a605c106a605c106a405c106a205c306a205c306a005c5069f05c806ac05c806040000000601
+020076000000380502001d001b00bb05d306ba05d306ba05e106b705e106b705be06ba05be06ba05c306bb05c306bb05c306bc05c006be05bf06c005be06c305
+be06c305be06c705bf06ca05c106ca05c106cc05c506cc05c906cc05c906cc05cf06ca05d306ca05d306c605d606c205d706c205d706be05d606bb05d306bb05
+d306ba05c906ba05cc06ba05cc06bb05cf06bc05d106bc05d106bf05d306c105d306c105d306c405d306c705d106c705d106c805ce06c905c906c905c906c805
+c606c705c306c705c306c505c206c205c106c205c106bf05c206bc05c306bc05c306bb05c606ba05c906ba05c906040000000601020023000000380501000f00
+e705d606e405d606e405c306e405c306e205c606d705d606d305d606d305be06d705be06d705d106d705d106d805cf06e305be06e705be06e705d60604000000
+0601020021000000380501000e000306d606fe05d606f405cb06f405cb06f405d606f005d606f005be06f405be06f405c906f405c906fe05be060206be06f805
+ca060306d606040000000601020083000000380501003f001406d5061406d2061406d2061706d3061b06d3061b06d3061e06d3062006d2062106d1062206cf06
+2206cf062106ce062006cc061e06cc061b06cb061806cb061806c8061b06c8061b06c8061d06c8061f06c7062006c6062106c4062106c4062006c3061f06c206
+1f06c2061b06c1061b06c1061806c1061506c3061506bf061506bf061806be061c06be061c06be061f06be062206bf062406c1062406c4062406c4062406c606
+2306c8062306c8062206c9061f06ca061f06ca061f06ca062206ca062406cc062406cc062506cd062506cf062506cf062506d2062306d5062306d5062006d606
+1b06d7061b06d7061706d6061406d5061406d50604000000060102007800000038050200250014003d06d6063906d6063906d2063906d2063906d2063606d506
+3206d7063206d7062f06d6062c06d5062c06d5062b06d2062a06d0062a06d0062b06cd062c06ca062f06c9063206c8063906c7063906c7063906c4063806c206
+3606c1063406c1063406c1063006c2062d06c4062d06c0062d06c0063006be063506be063506be063806be063b06c0063c06c3063d06c7063d06d6063906ca06
+3306cb063306cb062f06cc062f06cc062e06cd062e06cf062e06cf062e06d1062f06d2062f06d2063106d3063306d3063306d3063506d3063706d1063706d106
+3906cf063906cc063906ca060400000006010200530000003805010027006306d5066306d5066006d6065c06d7065c06d7065806d6065406d3065406d3065206
+cf065106cb065106cb065206c5065506c1065506c1065806bf065d06be065d06be066006be066306bf066306c3066306c3066006c1065d06c1065d06c1065a06
+c2065706c4065706c4065606c7065506ca065506ca065606ce065706d1065706d1065a06d3065d06d3065d06d3066006d3066306d1066306d506040000000601
+02006e000000380502001a001a007306d7067306d7066f06d6066b06d3066b06d3066906cf066806ca066806ca066906c5066b06c1066b06c1066f06bf067406
+be067406be067906bf067c06c1067c06c1067e06c5067f06ca067f06ca067e06cf067c06d3067c06d3067806d6067306d7067306d7067406c1067406c1067006
+c2066e06c3066e06c3066c06c6066c06ca066c06ca066c06ce066e06d1066e06d1067006d3067406d3067406d3067706d3067906d1067906d1067b06ce067b06
+ca067b06ca067b06c6067906c3067906c3067706c2067406c1067406c10604000000060102008d000000380503002300100010009406d7069406e1069106e106
+9106d7069006d7069006d7068b06d6068806d3068806d3068506cf068506ca068506ca068506c5068806c1068806c1068c06bf069006be069106be069106b406
+9406b4069406be069506be069506be069a06bf069d06c1069d06c106a006c506a006ca06a006ca06a006cf069d06d3069d06d3069a06d6069506d7069406d706
+9106d3069106c1069006c1069006c1068d06c2068b06c3068b06c3068906c6068806ca068806ca068906ce068b06d1068b06d1068d06d3069006d3069106d306
+9406c1069406d3069506d3069506d3069806d3069a06d1069a06d1069c06ce069d06ca069d06ca069c06c6069b06c3069b06c3069806c2069506c1069406c106
+040000000601020017000000380501000900b506c206ae06c206ae06d606ab06d606ab06c206a406c206a406be06b506be06b506c20604000000060102003900
+0000380501001a00cf06be06c406da06c406da06c206dd06c006df06be06e106bc06e106bc06e106b906e106b906dd06b906dd06bb06de06bb06de06be06dd06
+c006da06c206d606b806be06bd06be06c306d106c306d106c306d206c406d206c406d206c406d106cb06be06cf06be0604000000060102006600000038050200
+22000e00e606cb06d606cb06d606cb06d606cf06d806d106d806d106da06d306dd06d306dd06d306e106d306e506d106e506d406e506d406e106d606dd06d706
+dd06d706d806d606d506d306d506d306d306cf06d206ca06d206ca06d306c506d506c106d506c106d806bf06dd06be06dd06be06e106bf06e406c106e406c106
+e606c406e606c906e606cb06e306c806e306c806e206c506e106c306e106c306df06c106dd06c106dd06c106da06c106d806c306d806c306d706c506d606c806
+e306c806040000000601020076000000380502001d001b00f106d306f106d306f106e106ed06e106ed06be06f106be06f106c306f106c306f106c306f206c006
+f406bf06f706be06f906be06f906be06fd06bf060007c1060007c1060207c5060307c9060307c9060207cf060007d3060007d306fc06d606f806d706f806d706
+f406d606f106d306f106d306f106c906f106cc06f106cc06f106cf06f306d106f306d106f506d306f806d306f806d306fb06d306fd06d106fd06d106fe06ce06
+ff06c906ff06c906fe06c606fd06c306fd06c306fb06c206f806c106f806c106f506c206f306c306f306c306f106c606f106c906f106c9060400000006010200
+1f000000380501000d001d07d6061a07d6061a07cb060e07cb060e07d6060a07d6060a07be060e07be060e07c8061a07c8061a07be061d07be061d07d6060400
+00000601020023000000380501000f003a07d6063607d6063607c3063607c3063507c6062a07d6062607d6062607be062907be062907d1062907d1062b07cf06
+3607be063a07be063a07d606040000000601020023000000380501000f006407d6066107d6066107c3066107c3065f07c6065407d6065007d6065007be065407
+be065407d1065407d1065507cf066007be066407be066407d60604000000060102001f000000380501000d008007d6067c07d6067c07cb067007cb067007d606
+6d07d6066d07be067007be067007c8067c07c8067c07be068007be068007d606040000000601020033000000380501001700a807d606a307d6069807ca069807
+ca069807d6069507d6069507ca069507ca068a07d6068507d6069107ca068607be068b07be069507c9069507c9069507be069807be069807c9069807c906a207
+be06a707be069c07ca06a807d6060400000006010200660000003805020022000e00bf07cb06ae07cb06ae07cb06af07cf06b007d106b007d106b307d306b607
+d306b607d306ba07d306bd07d106bd07d406bd07d406ba07d606b507d706b507d706b107d606ad07d306ad07d306ab07cf06aa07ca06aa07ca06ab07c506ad07
+c106ad07c106b107bf06b507be06b507be06b907bf06bc07c106bc07c106be07c406bf07c906bf07cb06bb07c806bb07c806bb07c506b907c306b907c306b807
+c106b507c106b507c106b307c106b107c306b107c306af07c506ae07c806bb07c80604000000060102001f000000380501000d00d907d606d507d606d507cb06
+c907cb06c907d606c607d606c607be06c907be06c907c806d507c806d507be06d907be06d907d6060400000006010200660000003805020022000e00f507cb06
+e407cb06e407cb06e507cf06e607d106e607d106e907d306ec07d306ec07d306f007d306f307d106f307d406f307d406ef07d606eb07d706eb07d706e607d606
+e307d306e307d306e107cf06e007ca06e007ca06e107c506e307c106e307c106e707bf06eb07be06eb07be06ef07bf06f207c106f207c106f407c406f507c906
+f507cb06f107c806f107c806f007c506ef07c306ef07c306ed07c106eb07c106eb07c106e807c106e607c306e607c306e507c506e407c806f107c80604000000
+0601020076000000380502001d001b00ff07d306ff07d306ff07e106fb07e106fb07be06ff07be06ff07c306ff07c306ff07c3060108c0060308bf060508be06
+0708be060708be060b08bf060e08c1060e08c1061008c5061108c9061108c9061008cf060e08d3060e08d3060b08d6060608d7060608d7060208d606ff07d306
+ff07d306ff07c906ff07cc06ff07cc060008cf060108d1060108d1060308d3060608d3060608d3060908d3060b08d1060b08d1060d08ce060d08c9060d08c906
+0d08c6060b08c3060b08c3060908c2060608c1060608c1060308c2060108c3060108c3060008c606ff07c906ff07c90604000000060102002300000038050100
+0f002c08d6062808d6062808c3062808c3062708c6061c08d6061808d6061808be061b08be061b08d1061b08d1061d08cf062808be062c08be062c08d6060400
+00000601020007000000fc020000000000000000040000002d01020004000000f00100000f0000003805010005001409fb06a208fb06a2089e0614099e061409fb0604000000f001010004000000f00102000300000000000000}\par}}}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7219827 
+\par }}{\footerr \ltrpar \pard\plain \ltrpar\s17\ql \li0\ri0\widctlpar\tqc\tx4680\tqr\tx9360\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid5056937 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 
+\f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1024\langfe1024\noproof\langfenp1026\insrsid7219827 
+{\shp{\*\shpinst\shpleft9116\shptop-9\shpright9365\shpbottom246\shpfhdr0\shpbxcolumn\shpbxignore\shpbypara\shpbyignore\shpwr3\shpwrk0\shpfblwtxt0\shpz4\shplid2050{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn fRotateText}{\sv 1}}{\sp{\sn pib}{\sv {\pict\picscalex33\picscaley33\piccropl0\piccropr0\piccropt0\piccropb0\picw1323\pich1349\picwgoal750\pichgoal765\wmetafile8\bliptag-1573807183{\*\blipuid a2319bb19421dcaccb49ef2386bd42ea}
+0100090000031403000003000001000000000400000003010800050000000b028c047b06050000000c0233003200040000000601010007000000fc020000edee
+ee000000040000002d01000008000000fa0205000000000000000000040000002d01010039000000380501001a0083068c04a4068c04a4068c04a8068d04ab06
+8f04ac069104ad069504ad06b604ad06b604ac06b904ab06bc04a806be04a406bf048306bf048306bf048006be047d06bc047b06b9047b06b6047b0695047b06
+95047b0691047d068f0480068d0483068c0483068c0472000000430f2000cc0000000800060000000000180012008d0482062800000006000000080000000100
+180000000000a0000000130b0000130b00000000000000000000eeeeedeeeeedeeeeedeeeeedeeeeedeeeeed0000eeeeedeeeeedd0d0cfc2c2c1eeeeedeeeeed
+0000eeeeedeeeeed7878773d3c3ceeeeedeeeeed0000eeeeedeeeeed7f7e7e474646eeeeedeeeeed0000eeeeedeeeeed777777434343eeeeedeeeeed0000eeee
+edeeeeed414141292929d5d5d4eeeeed0000eeeeedcbcbcb3636366363639d9d9deeeeed0000eeeeedb8b8b88d8d8eaeaead989898eeeeed00005a000000430f
+2000cc000000070005000000000015000f0090048b06280000000500000007000000010018000000000070000000130b0000130b00000000000000000000eeee
+edeeeeedeeeeedeeeeedeeeeed00c2c2c1eeeeedb3b3b2dfdfdeeeeeed003d3c3c888887131312212120eeeeed00474646818181818181151515eeeeed004343
+438a8a898a8a89262626eeeeed00292929908f8f4d4c4d4d4c4deeeeed00636363989898b0afafd9d9d8eeeeed005a000000430f2000cc000000070005000000
+000015000f0090049406280000000500000007000000010018000000000070000000130b0000130b00000000000000000000eeeeedeeeeedeeeeedeeeeedeeee
+ed00dfdfdedfdfdeb3b3b2b3b3b2eeeeed00212120797978121211040403eeeeed001515158181814b4b4a151515eeeeed002626268a8a89585757272626eeee
+ed004d4c4d939392656565383838eeeeed00d9d9d8d9d9d9cfcfcec5c5c4eeeeed00040000000601020007000000fc020000e30613000000040000002d010200
+04000000f001000051000000380501002600aa06aa04aa06aa04a906a804a806a604a606a504a306a504a306a5049406a5049406a5048506a5048506a5048206
+a5048006a6047f06a8047e06aa047e06aa047e06b0047e06b0047e06b7047e06b7047f06b9048006ba048206bb048506bc048506bc049406bc049406bc04a306
+bc04a306bc04a606bb04a806ba04a906b904aa06b704aa06b704aa06b004aa06b004aa06aa04aa06aa04040000000601020007000000fc020000ffffff000000
+040000002d01000004000000f00102000001000038050600090019001800130022000c008c06a8048406a8048406aa048706aa048706b8048906b8048906aa04
+8c06aa048c06a8049006b5049006b5048f06b6048f06b6048f06b6048f06b6048e06b6048e06b6048e06b6048e06ac048c06ac048c06b6048c06b6048c06b804
+8c06b8048d06b9048d06b9048f06b8048f06b8049006b7049006b8049206b8049206ac049006ac049006b5049906ac049906ac049806ac049806ac049706ad04
+9706a8049506a8049506b8049706b8049706b8049706b8049806b8049806b8049906b9049906b9049b06b8049b06b8049b06b6049b06af049b06af049b06ad04
+9b06ad049906ac049906ac049906b6049906b6049906b6049906b6049806b7049806b7049806b7049806b7049706b6049706ae049706ae049806ae049806ae04
+9806ae049806ae049906ae049906ae049906af049906b604a406b304a406af04a406af04a306ad04a306ad04a106ac04a106ac049e06ad049e06ad049d06af04
+9d06b5049d06b5049e06b8049e06b8049f06b904a006b904a006b904a206b904a306b804a306b804a406b504a406b404a206b404a206b504a206b504a106b604
+a106b604a106b704a106b704a006b604a006b604a006b504a006b304a406b304a006af04a006af04a006ae04a006ae04a106ae04a106ae04a106ae04a106ae04a206af04a206b104a006b104a006af0404000000f001000004000000f00101000300000000000000}
+}}{\sp{\sn pictureGray}{\sv 0}}{\sp{\sn pictureBiLevel}{\sv 0}}{\sp{\sn fFilled}{\sv 0}}{\sp{\sn fNoFillHitTest}{\sv 1}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn wzName}{\sv Picture 5}}{\sp{\sn pihlShape}{\sv {\*\hl{\hlfr http://www.youtube.com/user/telerikacadem}
+{\hlsrc http://www.youtube.com/user/telerikacadem}}}}{\sp{\sn fLayoutInCell}{\sv 1}}{\sp{\sn fAllowOverlap}{\sv 1}}{\sp{\sn fBehindDocument}{\sv 0}}{\sp{\sn fIsButton}{\sv 1}}{\sp{\sn fHidden}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}}{\shprslt\par\pard
+\ql \li0\ri0\widctlpar\pvpara\posx9115\posnegy-10\dxfrtext180\dfrmtxtx180\dfrmtxty0\wraparound\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {\pict\picscalex33\picscaley33\piccropl0\piccropr0\piccropt0\piccropb0
+\picw1323\pich1349\picwgoal750\pichgoal765\wmetafile8\bliptag-1573807183{\*\blipuid a2319bb19421dcaccb49ef2386bd42ea}0100090000031403000003000001000000000400000003010800050000000b028c047b06050000000c0233003200040000000601010007000000fc020000edee
+ee000000040000002d01000008000000fa0205000000000000000000040000002d01010039000000380501001a0083068c04a4068c04a4068c04a8068d04ab06
+8f04ac069104ad069504ad06b604ad06b604ac06b904ab06bc04a806be04a406bf048306bf048306bf048006be047d06bc047b06b9047b06b6047b0695047b06
+95047b0691047d068f0480068d0483068c0483068c0472000000430f2000cc0000000800060000000000180012008d0482062800000006000000080000000100
+180000000000a0000000130b0000130b00000000000000000000eeeeedeeeeedeeeeedeeeeedeeeeedeeeeed0000eeeeedeeeeedd0d0cfc2c2c1eeeeedeeeeed
+0000eeeeedeeeeed7878773d3c3ceeeeedeeeeed0000eeeeedeeeeed7f7e7e474646eeeeedeeeeed0000eeeeedeeeeed777777434343eeeeedeeeeed0000eeee
+edeeeeed414141292929d5d5d4eeeeed0000eeeeedcbcbcb3636366363639d9d9deeeeed0000eeeeedb8b8b88d8d8eaeaead989898eeeeed00005a000000430f
+2000cc000000070005000000000015000f0090048b06280000000500000007000000010018000000000070000000130b0000130b00000000000000000000eeee
+edeeeeedeeeeedeeeeedeeeeed00c2c2c1eeeeedb3b3b2dfdfdeeeeeed003d3c3c888887131312212120eeeeed00474646818181818181151515eeeeed004343
+438a8a898a8a89262626eeeeed00292929908f8f4d4c4d4d4c4deeeeed00636363989898b0afafd9d9d8eeeeed005a000000430f2000cc000000070005000000
+000015000f0090049406280000000500000007000000010018000000000070000000130b0000130b00000000000000000000eeeeedeeeeedeeeeedeeeeedeeee
+ed00dfdfdedfdfdeb3b3b2b3b3b2eeeeed00212120797978121211040403eeeeed001515158181814b4b4a151515eeeeed002626268a8a89585757272626eeee
+ed004d4c4d939392656565383838eeeeed00d9d9d8d9d9d9cfcfcec5c5c4eeeeed00040000000601020007000000fc020000e30613000000040000002d010200
+04000000f001000051000000380501002600aa06aa04aa06aa04a906a804a806a604a606a504a306a504a306a5049406a5049406a5048506a5048506a5048206
+a5048006a6047f06a8047e06aa047e06aa047e06b0047e06b0047e06b7047e06b7047f06b9048006ba048206bb048506bc048506bc049406bc049406bc04a306
+bc04a306bc04a606bb04a806ba04a906b904aa06b704aa06b704aa06b004aa06b004aa06aa04aa06aa04040000000601020007000000fc020000ffffff000000
+040000002d01000004000000f00102000001000038050600090019001800130022000c008c06a8048406a8048406aa048706aa048706b8048906b8048906aa04
+8c06aa048c06a8049006b5049006b5048f06b6048f06b6048f06b6048f06b6048e06b6048e06b6048e06b6048e06ac048c06ac048c06b6048c06b6048c06b804
+8c06b8048d06b9048d06b9048f06b8048f06b8049006b7049006b8049206b8049206ac049006ac049006b5049906ac049906ac049806ac049806ac049706ad04
+9706a8049506a8049506b8049706b8049706b8049706b8049806b8049806b8049906b9049906b9049b06b8049b06b8049b06b6049b06af049b06af049b06ad04
+9b06ad049906ac049906ac049906b6049906b6049906b6049906b6049806b7049806b7049806b7049806b7049706b6049706ae049706ae049806ae049806ae04
+9806ae049806ae049906ae049906ae049906af049906b604a406b304a406af04a406af04a306ad04a306ad04a106ac04a106ac049e06ad049e06ad049d06af04
+9d06b5049d06b5049e06b8049e06b8049f06b904a006b904a006b904a206b904a306b804a306b804a406b504a406b404a206b404a206b504a206b504a106b604
+a106b604a106b704a106b704a006b604a006b604a006b504a006b304a406b304a006af04a006af04a006ae04a006ae04a106ae04a106ae04a106ae04a106ae04a206af04a206b104a006b104a006af0404000000f001000004000000f00101000300000000000000}\par}}
+{\shp{\*\shpinst\shpleft8790\shptop0\shpright9022\shpbottom226\shpfhdr0\shpbxcolumn\shpbxignore\shpbypara\shpbyignore\shpwr3\shpwrk0\shpfblwtxt0\shpz3\shplid2051{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn fRotateText}{\sv 1}}{\sp{\sn pib}{\sv {\pict\picscalex34\picscaley33\piccropl0\piccropr0\piccropt0\piccropb0\picw1217\pich1191\picwgoal690\pichgoal675\wmetafile8\bliptag-1689827638{\*\blipuid 9b4746cabf46417b90cc688d556ff34a}
+010009000003a401000003008700000000000400000003010800050000000b023f06c302050000000c022d002e00040000000601020007000000fc0200002ca6
+df000000040000002d01000008000000fa0205000000000000000000040000002d01010008000000fa0205000000000000000000040000002d01020004000000
+f00101004f000000380501002500da023f06da023f06df023f06e3024006e7024206ea024506ed024906ef024d06f0025106f1025506f1025506f0025a06ef02
+5e06ed026206ea026606e7026806e3026a06df026c06da026c06da026c06d5026c06d1026a06cd026806ca026606c7026206c5025e06c4025a06c3025506c302
+5506c4025106c5024d06c7024906ca024506cd024206d1024006d5023f06da023f0608000000fa0205000000000000000000040000002d01010004000000f001
+020007000000fc020100000000000000040000002d01020004000000f00100004e00000025032500da023f06da023f06df023f06e3024006e7024206ea024506
+ed024906ef024d06f0025106f1025506f1025506f0025a06ef025e06ed026206ea026606e7026806e3026a06df026c06da026c06da026c06d5026c06d1026a06
+cd026806ca026606c7026206c5025e06c4025a06c3025506c3025506c4025106c5024d06c7024906ca024506cd024206d1024006d5023f06da023f0604000000
+0601020007000000fc020000ffffff000000040000002d01000004000000f001020087000000380501004100e9024c06e9024c06e6024d06e6024d06e8024c06
+e9024a06e9024a06e5024c06e5024c06e3024a06e1024a06e1024a06de024a06dc024b06db024d06db025006db025006db025106db025106d7025006d4024f06
+d1024d06cf024b06cf024b06ce024e06ce024e06ce025106d0025306d0025306ce025206ce025206ce025206ce025206ce025406cf025606d1025706d2025806
+d2025806d1025806d1025806d0025806d0025806d2025b06d3025c06d5025c06d5025c06d2025e06ce025f06ce025f06cd025e06cd025e06d1026006d6026106
+d6026106d9026106dd026006e0025e06e2025c06e5025606e6025006e6025006e6025006e6025006e9024c06e9024c0604000000f001000004000000f00101000300000000000000}}}{\sp{\sn pictureGray}{\sv 0}}{\sp{\sn pictureBiLevel}{\sv 0}}{\sp{\sn fFilled}{\sv 0}}
+{\sp{\sn fNoFillHitTest}{\sv 1}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn wzName}{\sv Picture 4}}{\sp{\sn pihlShape}{\sv {\*\hl{\hlfr https://twitter.com/ - !/TelerikAcadem}{\hlsrc https://twitter.com/}{\hlloc !/TelerikAcadem}
+}}}{\sp{\sn fLayoutInCell}{\sv 1}}{\sp{\sn fAllowOverlap}{\sv 1}}{\sp{\sn fBehindDocument}{\sv 0}}{\sp{\sn fIsButton}{\sv 1}}{\sp{\sn fHidden}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}}{\shprslt\par\pard
+\ql \li0\ri0\widctlpar\pvpara\posx8789\dxfrtext180\dfrmtxtx180\dfrmtxty0\wraparound\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {\pict\picscalex34\picscaley33\piccropl0\piccropr0\piccropt0\piccropb0
+\picw1217\pich1191\picwgoal690\pichgoal675\wmetafile8\bliptag-1689827638{\*\blipuid 9b4746cabf46417b90cc688d556ff34a}010009000003a401000003008700000000000400000003010800050000000b023f06c302050000000c022d002e00040000000601020007000000fc0200002ca6
+df000000040000002d01000008000000fa0205000000000000000000040000002d01010008000000fa0205000000000000000000040000002d01020004000000
+f00101004f000000380501002500da023f06da023f06df023f06e3024006e7024206ea024506ed024906ef024d06f0025106f1025506f1025506f0025a06ef02
+5e06ed026206ea026606e7026806e3026a06df026c06da026c06da026c06d5026c06d1026a06cd026806ca026606c7026206c5025e06c4025a06c3025506c302
+5506c4025106c5024d06c7024906ca024506cd024206d1024006d5023f06da023f0608000000fa0205000000000000000000040000002d01010004000000f001
+020007000000fc020100000000000000040000002d01020004000000f00100004e00000025032500da023f06da023f06df023f06e3024006e7024206ea024506
+ed024906ef024d06f0025106f1025506f1025506f0025a06ef025e06ed026206ea026606e7026806e3026a06df026c06da026c06da026c06d5026c06d1026a06
+cd026806ca026606c7026206c5025e06c4025a06c3025506c3025506c4025106c5024d06c7024906ca024506cd024206d1024006d5023f06da023f0604000000
+0601020007000000fc020000ffffff000000040000002d01000004000000f001020087000000380501004100e9024c06e9024c06e6024d06e6024d06e8024c06
+e9024a06e9024a06e5024c06e5024c06e3024a06e1024a06e1024a06de024a06dc024b06db024d06db025006db025006db025106db025106d7025006d4024f06
+d1024d06cf024b06cf024b06ce024e06ce024e06ce025106d0025306d0025306ce025206ce025206ce025206ce025206ce025406cf025606d1025706d2025806
+d2025806d1025806d1025806d0025806d0025806d2025b06d3025c06d5025c06d5025c06d2025e06ce025f06ce025f06cd025e06cd025e06d1026006d6026106
+d6026106d9026106dd026006e0025e06e2025c06e5025606e6025006e6025006e6025006e6025006e9024c06e9024c0604000000f001000004000000f00101000300000000000000}\par}}
+{\shp{\*\shpinst\shpleft8495\shptop-4\shpright8727\shpbottom222\shpfhdr0\shpbxcolumn\shpbxignore\shpbypara\shpbyignore\shpwr3\shpwrk0\shpfblwtxt0\shpz1\shplid2052{\sp{\sn shapeType}{\sv 75}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn fRotateText}{\sv 1}}{\sp{\sn pib}{\sv {\pict\picscalex34\picscaley33\piccropl0\piccropr0\piccropt0\piccropb0\picw1217\pich1191\picwgoal690\pichgoal675\wmetafile8\bliptag-385396380{\*\blipuid e907516478f674bb67ae59d28cd94801}
+0100090000037001000003005300000000000400000003010800050000000b023f06c402050000000c022d002e00040000000601020007000000fc0200000670
+b7000000040000002d01000008000000fa0205000000000000000000040000002d01010008000000fa0205000000000000000000040000002d01020004000000
+f00101004f000000380501002500db023f06db023f06e0023f06e4024006e8024206eb024506ee024906f0024d06f1025106f2025506f2025506f1025a06f002
+5e06ee026206eb026606e8026806e4026a06e0026c06db026c06db026c06d7026c06d2026a06ce026806cb026606c8026206c6025e06c5025a06c4025506c402
+5506c5025106c6024d06c8024906cb024506ce024206d2024006d7023f06db023f0608000000fa0205000000000000000000040000002d01010004000000f001
+020007000000fc020100000000000000040000002d01020004000000f00100004e00000025032500db023f06db023f06e0023f06e4024006e8024206eb024506
+ee024906f0024d06f1025106f2025506f2025506f1025a06f0025e06ee026206eb026606e8026806e4026a06e0026c06db026c06db026c06d7026c06d2026a06
+ce026806cb026606c8026206c6025e06c5025a06c4025506c4025506c5025106c6024d06c8024906cb024506ce024206d2024006d7023f06db023f0604000000
+0601020007000000fc020000ffffff000000040000002d01000004000000f001020053000000380501002700dc026206dc025706e1025706e1025706e1025606
+e1025206e1025206e1025106dc025106dc024f06dc024f06dd024e06e1024e06e1024e06e1024e06e1024906e1024906e1024906dd024906dd024906db024906
+d9024b06d7024d06d7024f06d7025106d3025106d3025106d3025206d3025606d3025606d3025706d7025706d7026206d7026206d7026206dc026206dc026206dc026206dc02620604000000f001000004000000f00101000300000000000000}
+}}{\sp{\sn pictureGray}{\sv 0}}{\sp{\sn pictureBiLevel}{\sv 0}}{\sp{\sn fFilled}{\sv 0}}{\sp{\sn fNoFillHitTest}{\sv 1}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn wzName}{\sv Picture 1}}{\sp{\sn pihlShape}{\sv {\*\hl{\hlfr http://facebook.com/TelerikAcadem}
+{\hlsrc http://facebook.com/TelerikAcadem}}}}{\sp{\sn fLayoutInCell}{\sv 1}}{\sp{\sn fAllowOverlap}{\sv 1}}{\sp{\sn fBehindDocument}{\sv 0}}{\sp{\sn fIsButton}{\sv 1}}{\sp{\sn fHidden}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}}{\shprslt\par\pard
+\ql \li0\ri0\widctlpar\pvpara\posx8494\posyt\dxfrtext180\dfrmtxtx180\dfrmtxty0\wraparound\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 {\pict\picscalex34\picscaley33\piccropl0\piccropr0\piccropt0\piccropb0
+\picw1217\pich1191\picwgoal690\pichgoal675\wmetafile8\bliptag-385396380{\*\blipuid e907516478f674bb67ae59d28cd94801}0100090000037001000003005300000000000400000003010800050000000b023f06c402050000000c022d002e00040000000601020007000000fc0200000670
+b7000000040000002d01000008000000fa0205000000000000000000040000002d01010008000000fa0205000000000000000000040000002d01020004000000
+f00101004f000000380501002500db023f06db023f06e0023f06e4024006e8024206eb024506ee024906f0024d06f1025106f2025506f2025506f1025a06f002
+5e06ee026206eb026606e8026806e4026a06e0026c06db026c06db026c06d7026c06d2026a06ce026806cb026606c8026206c6025e06c5025a06c4025506c402
+5506c5025106c6024d06c8024906cb024506ce024206d2024006d7023f06db023f0608000000fa0205000000000000000000040000002d01010004000000f001
+020007000000fc020100000000000000040000002d01020004000000f00100004e00000025032500db023f06db023f06e0023f06e4024006e8024206eb024506
+ee024906f0024d06f1025106f2025506f2025506f1025a06f0025e06ee026206eb026606e8026806e4026a06e0026c06db026c06db026c06d7026c06d2026a06
+ce026806cb026606c8026206c6025e06c5025a06c4025506c4025506c5025106c6024d06c8024906cb024506ce024206d2024006d7023f06db023f0604000000
+0601020007000000fc020000ffffff000000040000002d01000004000000f001020053000000380501002700dc026206dc025706e1025706e1025706e1025606
+e1025206e1025206e1025106dc025106dc024f06dc024f06dd024e06e1024e06e1024e06e1024e06e1024906e1024906e1024906dd024906dd024906db024906
+d9024b06d7024d06d7024f06d7025106d3025106d3025106d3025206d3025606d3025606d3025706d7025706d7026206d7026206d7026206dc026206dc026206dc026206dc02620604000000f001000004000000f00101000300000000000000}\par}}
+{\shp{\*\shpinst\shpleft-578\shptop-125\shpright10762\shpbottom328\shpfhdr1\shpbxcolumn\shpbxignore\shpbypara\shpbyignore\shpwr3\shpwrk0\shpfblwtxt0\shpz0\shplid2053{\sp{\sn shapeType}{\sv 202}}{\sp{\sn fFlipH}{\sv 0}}{\sp{\sn fFlipV}{\sv 0}}
+{\sp{\sn lTxid}{\sv 65536}}{\sp{\sn dyTextTop}{\sv 0}}{\sp{\sn fillColor}{\sv 0}}{\sp{\sn lineWidth}{\sv 6350}}{\sp{\sn fLine}{\sv 0}}{\sp{\sn wzName}{\sv Text Box 3}}{\sp{\sn metroBlob}{\sv {\*\svb 
+504b030414000600080000002100b6833892fe000000e1010000130000005b436f6e74656e745f54797065735d2e786d6c9491414ec3301045f748dcc1f216254ebb400825e982b44b40a81c60644f128b646c794c686f8f93b61b449158da33ffbf27bbdc1cc6414c18d83aaae42a2fa440d2ce58ea2af9bedf650f527004
+323038c24a1e91e5a6bebd29f7478f2c529ab8927d8cfe5129d63d8ec0b9f34869d2ba30424cc7d0290ffa033a54eba2b857da51448a599c3b645d36d8c2e710c5f690ae4f26010796e2e9b438b32a09de0f56434ca66a22f383929d09794a2e3bdc5bcf774943aa5f09f3e43ae09c7b494f13ac41f10a213ec398349409ac
+70ed1aa7f3bf3b66c99133d7b65663de04de2ea98bd3b56ee3be28e0f4dff226c5de70bab4abe583ea6f000000ffff0300504b03041400060008000000210038fd21ffd6000000940100000b0000005f72656c732f2e72656c73a490c16ac3300c86ef83bd83d17d719ac318a34e2fa3d06be91ec0d88a631a5b4632d9faf6
+3383c1327adb51bfd0f7897f7ff84c8b5a91255236b0eb7a50981df9988381f7cbf1e90594549bbd5d28a3811b0a1cc6c787fd19175bdb91ccb1886a942c06e65acbabd6e2664c563a2a98db66224eb6b691832ed65d6d403df4fdb3e6df0c18374c75f206f8e40750975b69e63fec141d93d0543b4749d33445778faa3d7d
+e433ae8d62396035e059be43c6b56bcf81beefddfdd31bd89639ba23db846fe4b67e1ca8653f7abde972fc020000ffff0300504b030414000600080000002100829850398c020000860500000e0000006472732f65326f446f632e786d6cac544d6fdb300cbd0fd87f10745f9db44d3f823a45d6a2c380a22d960e3d2bb2d4
+1893454d521267bf7e4fb293745d2f1d76b129ea9114c9475e5cb68d612be5434db6e4c3830167ca4aaa6afb5cf2ef8f379fce380b51d84a18b2aae41b15f8e5e4e3878bb51bab435a90a994677062c378ed4abe88d18d8b22c8856a443820a72c2e35f946441cfd735179b186f7c6148783c149b1265f394f528500ed7577
+c927d9bfd64ac67bad838acc941c6f8bf9ebf3779ebec5e4428c9fbd708b5af6cf10fff08a46d4164177aeae45146ce9ebbf5c35b5f41448c703494d415ad752e51c90cd70f02a9bd942389573417182db9529fc3fb7f26ef5e0595d95fc88332b1ab4e851b5917da6961da5eaac5d1803347380c5166a7479ab0f50a6a45b
+ed9bf4473a0cf7a8f36657dbe44c42798a6e9d0f7025717778767a321a2537c5dedaf910bf286a58124aeed1bb5c52b1ba0db1836e21295820535737b531f990f8a2ae8c672b814ec736bf11ceff4019cbd6253f391a0db2634bc9bcf36c6c72a33263fa7029f32ec32cc58d510963ec37a551b19ce81bb18594cac66dfc8c
+4e288d50ef31ecf1fb57bdc7b8cb03163932d9b8336e6a4b3e679f476c5fb2eac7f6c9bac3a3372ff24e626ce76dcf8839551b10c2533750c1c99b1a5dbb15213e088f0942a3b115e23d3eda10aa4ebdc4d982fcafb7f4090f62e396b33526b2e4e1e75278c599f96a41f9f3e1f1711ae17c80e05f6ae7f9703c02cdc0e365
+7345a0c110bbc7c92c267c345b517b6a9eb038a62922ae8495880bde6cc5abd8ed082c1ea9a6d30cc2c03a116fedccc9e43a9536f1f1b17d12def5a48da0fb1d6de7568c5f71b7c3264b4bd365245d6762a7e27615ed8b8e61cfa3d12fa6b44d5e9e336abf3e27bf010000ffff0300504b030414000600080000002100ab1b
+81c4e10000000b0100000f0000006472732f646f776e7265762e786d6c4c8fcd6ec2301084ef487d076b2bf5064e8220288d83faa31e38416955a9b7255e92087b1dc506d2b7af39b5b71ded68e69b723d5a232e34f8ceb18274968020ae9deeb851f0f9f1365d81f00159a3714c0a7ec8c3baba9b94586877e577baec4323
+6208fb0215b421f48594be6ec9a29fb99e38fe8e6eb018a21c1aa907bcc6706b6496244b69b1e3d8d0624f2f2dd5a7fdd92ad8189ca7c7efd7adfd3ae59dd9edda7ca39f957ab81f9f1e41041ac39f196ef8111daac8747067d65e1805d3451ed1433cd26c01e2e648f26506e2a0609ead4056a5fcbfa1fa050000ffff0300
+504b01022d0014000600080000002100b6833892fe000000e10100001300000000000000000000000000000000005b436f6e74656e745f54797065735d2e786d6c504b01022d001400060008000000210038fd21ffd6000000940100000b000000000000000000000000002f0100005f72656c732f2e72656c73504b01022d
+0014000600080000002100829850398c020000860500000e000000000000000000000000002e0200006472732f65326f446f632e786d6c504b01022d0014000600080000002100ab1b81c4e10000000b0100000f00000000000000000000000000e60400006472732f646f776e7265762e786d6c504b050600000000040004
+00f3000000f40500000000}}}{\sp{\sn fLayoutInCell}{\sv 1}}{\sp{\sn fHidden}{\sv 0}}{\sp{\sn fLayoutInCell}{\sv 1}}{\shptxt \ltrpar \pard\plain \ltrpar\ql \li0\ri0\sb120\sa120\widctlpar
+\tqr\tx11057\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid5056937 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\f40\fs16\cf8\insrsid7219827\charrsid5317607 w: }{\field{\*\fldinst {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7219827  HYPERLINK "http://academy.telerik.com" }}{\fldrslt {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \cs21\f40\fs16\cf8\insrsid7219827\charrsid5317607 
+academy.telerik.com}}}\sectd \linex0\headery708\footery708\colsx708\endnhere\sectdefaultcl\sftnbj {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607  \bullet  e: academy@telerik.com \bullet  a: }{\rtlch\fcs1 \af41\afs16 
+\ltrch\fcs0 \f40\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 Bul}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607 . \'93}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\f40\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 Alexander Malinov}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607 \'93 }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\f40\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 #}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607  31, }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\f40\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 Sofia, }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607 1729, }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\f40\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 Bulgaria}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607 \tab }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\f40\fs16\cf8\lang1024\langfe1024\noproof\langnp1033\insrsid7219827\charrsid5317607 page}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607  }{\field{\*\fldinst {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\b\f42\fs16\cf8\insrsid7219827\charrsid5317607  PAGE  \\* Arabic  \\* MERGEFORMAT }}{\fldrslt {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \b\f42\fs16\cf8\lang1024\langfe1024\noproof\insrsid4547555 1}}}\sectd 
+\linex0\headery708\footery708\colsx708\endnhere\sectdefaultcl\sftnbj {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f42\fs16\cf8\insrsid7219827\charrsid5317607  }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\f42\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 of}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f42\fs16\cf8\insrsid7219827\charrsid5317607  }{\field{\*\fldinst {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\b\f42\fs16\cf8\insrsid7219827\charrsid5317607  NUMPAGES  \\* Arabic  \\* MERGEFORMAT }}{\fldrslt {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \b\f42\fs16\cf8\lang1024\langfe1024\noproof\insrsid4547555 2}}}\sectd 
+\linex0\headery708\footery708\colsx708\endnhere\sectdefaultcl\sftnbj {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607 
+\par }}}{\shprslt{\*\do\dobxcolumn\dobypara\dodhgt8192\dptxbx\dptxlrtb{\dptxbxtext\ltrpar \pard\plain \ltrpar\ql \li0\ri0\sb120\sa120\widctlpar\tqr\tx11057\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid5056937 \rtlch\fcs1 
+\af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607 w: }{\field{\*\fldinst {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7219827 
+ HYPERLINK "http://academy.telerik.com" }}{\fldrslt {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \cs21\f40\fs16\cf8\insrsid7219827\charrsid5317607 academy.telerik.com}}}\sectd \linex0\headery708\footery708\colsx708\endnhere\sectdefaultcl\sftnbj {\rtlch\fcs1 
+\af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607  \bullet  e: academy@telerik.com \bullet  a: }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 Bul}{\rtlch\fcs1 
+\af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607 . \'93}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 Alexander Malinov}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\f40\fs16\cf8\insrsid7219827\charrsid5317607 \'93 }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 #}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607  31, }{
+\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 Sofia, }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607 1729, }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\f40\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 Bulgaria}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607 \tab }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\f40\fs16\cf8\lang1024\langfe1024\noproof\langnp1033\insrsid7219827\charrsid5317607 page}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607  }{\field{\*\fldinst {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\b\f42\fs16\cf8\insrsid7219827\charrsid5317607  PAGE  \\* Arabic  \\* MERGEFORMAT }}{\fldrslt {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \b\f42\fs16\cf8\lang1024\langfe1024\noproof\insrsid4547555 1}}}\sectd 
+\linex0\headery708\footery708\colsx708\endnhere\sectdefaultcl\sftnbj {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f42\fs16\cf8\insrsid7219827\charrsid5317607  }{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\f42\fs16\cf8\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5317607 of}{\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f42\fs16\cf8\insrsid7219827\charrsid5317607  }{\field{\*\fldinst {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 
+\b\f42\fs16\cf8\insrsid7219827\charrsid5317607  NUMPAGES  \\* Arabic  \\* MERGEFORMAT }}{\fldrslt {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \b\f42\fs16\cf8\lang1024\langfe1024\noproof\insrsid4547555 2}}}\sectd 
+\linex0\headery708\footery708\colsx708\endnhere\sectdefaultcl\sftnbj {\rtlch\fcs1 \af41\afs16 \ltrch\fcs0 \f40\fs16\cf8\insrsid7219827\charrsid5317607 
+\par }}\dpx-578\dpy-125\dpxsize11340\dpysize453\dpfillfgcr255\dpfillfgcg255\dpfillfgcb255\dpfillbgcr0\dpfillbgcg0\dpfillbgcb0\dpfillpat1\dplinehollow}}}}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7219827 
+\par }}{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}
+{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8
+\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}\pard\plain \ltrpar\qj \li0\ri0\sa200\sl276\slmult1
+\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827 This document is the }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid12986895 team work assignment }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827 for Telerik Academy students participating in }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid9587940 C# Part 2}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827  course. 
+\par }\pard\plain \ltrpar\s1\qj \li0\ri0\sb120\sa60\sl276\slmult1\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel0\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs32\alang1025 \ltrch\fcs0 
+\b\fs40\cf17\lang1026\langfe1033\loch\af38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 \hich\af38\dbch\af13\loch\f38 Project Description
+\par }\pard\plain \ltrpar\qj \li0\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 Design and implement }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827 a}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8787893  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827 Console Game}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8787893  
+}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 by choice. It could be a classic well-known application like Minesweeper, Tetris, Chess, Snake, etc., but you can design your own type of game. You are absolutely }{\rtlch\fcs1 
+\af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8787893 free to choose the topic of your work}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 .
+\par }\pard\plain \ltrpar\s2\qj \li0\ri0\sb120\sa80\sl276\slmult1\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs36\alang1025 \ltrch\fcs0 
+\b\fs36\cf17\lang1026\langfe1033\loch\af38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 \hich\af38\dbch\af13\loch\f38 General Requirements
+\par }\pard\plain \ltrpar\qj \li0\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 Please define and implement the following assets in your project:}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8787893 
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \ltrpar
+\s28\qj \fi-360\li720\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls1\adjustright\rin0\lin720\itap0\pararsid9852513\contextualspace \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 
+\f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 At least }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827 1}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8787893  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827 multi-dimensional array}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5835611 
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827 At least }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid5835611 3 one-dimensional arrays}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 
+
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}At least }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8787893 10 }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827 methods }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 
+(separating the application\rquote s logic)}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8787893 
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827 At least }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827 3 existing .NET classes }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 (like }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \i\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid6908169 System.Math}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  or }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid6908169 System.DateTime}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 )
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}At least }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\lang1033\langfe1033\langnp1033\insrsid7219827 2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8787893  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827 exception handlings}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}At least }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8787893 1 }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827 use of external text file}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid12601611 
+\par }\pard\plain \ltrpar\s2\qj \li0\ri0\sb120\sa80\sl276\slmult1\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs36\alang1025 \ltrch\fcs0 
+\b\fs36\cf17\lang1026\langfe1033\loch\af38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 \hich\af38\dbch\af13\loch\f38 Additional R\hich\af38\dbch\af13\loch\f38 equirements}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827\charrsid14637016 
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \ltrpar
+\s28\qj \fi-360\li720\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls1\adjustright\rin0\lin720\itap0\pararsid9852513\contextualspace \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 
+\f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 Obligatory use }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8849448 
+Team Foundation Server (TFS)}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  to keep your source code and for team collaboration (you might use }{\field{\*\fldinst {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7219827 
+HYPERLINK "http://tfs.visualstudio.com"}}{\fldrslt {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs21\ul\cf2\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid6184621 http://tfs.visualstudio.com}}}\sectd 
+\psz9\linex0\headery1247\footery369\colsx708\endnhere\sectlinegrid360\sectdefaultcl\sectrsid1063174\sftnbj {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  or }{\field{\*\fldinst {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7219827 
+HYPERLINK "http://codeplex.com"}}{\fldrslt {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs21\ul\cf2\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid6184621 http://codeplex.com}}}\sectd 
+\psz9\linex0\headery1247\footery369\colsx708\endnhere\sectlinegrid360\sectdefaultcl\sectrsid1063174\sftnbj {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 ). SVN or Git are }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid12525597 not}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  allowed. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid994407 
+Use TFS.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827\charrsid2187214 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid2187214 Provide documentation}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827  for your application}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid2187214  (}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 more information below}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid2187214 ).
+\par }\pard\plain \ltrpar\s2\qj \li0\ri0\sb120\sa80\sl276\slmult1\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs36\alang1025 \ltrch\fcs0 
+\b\fs36\cf17\lang1026\langfe1033\loch\af38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 \hich\af38\dbch\af13\loch\f38 Optional Requirements
+\par }\pard\plain \ltrpar\qj \li0\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 If you have a chance, time and a suitable situation, you might add some of the following to your project:
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \ltrpar
+\s28\qj \fi-360\li720\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls1\adjustright\rin0\lin720\itap0\pararsid9852513\contextualspace \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 
+\f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827 Object Oriented Programming}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 
+ (classes, interfaces, structures, inheritance, polymorphism, etc.)
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827\charrsid8794308 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8794308 Serialization}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  of t}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827\charrsid3501281 
+he}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  data}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827\charrsid3501281  }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827 in the }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827\charrsid3501281 text file }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 (binary)
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\lang1033\langfe1033\langnp1033\insrsid7219827 Sound effects }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 during the gameplay}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827\charrsid3501281 
+
+\par }\pard\plain \ltrpar\s2\qj \li0\ri0\sb120\sa80\sl276\slmult1\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs36\alang1025 \ltrch\fcs0 
+\b\fs36\cf17\lang1026\langfe1033\loch\af38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 \hich\af38\dbch\af13\loch\f38 Non-Required Work
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \ltrpar
+\s28\qj \fi-360\li720\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls2\adjustright\rin0\lin720\itap0\pararsid9852513\contextualspace \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 
+\f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827 Completely finished project}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 
+ is not obligatory required. It will not be a big problem if your project is not completely finished or is not working greatly. This team work project is for educational purpose. Its main purpose is to experience }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid11609882 working on}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  a real-world project and to get some experience in team collaboration with TFS. }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827\charrsid8787893 
+\par }\pard\plain \ltrpar\s2\qj \li0\ri0\sb120\sa80\sl276\slmult1\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs36\alang1025 \ltrch\fcs0 
+\b\fs36\cf17\lang1026\langfe1033\loch\af38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 \hich\af38\dbch\af13\loch\f38 D\hich\af38\dbch\af13\loch\f38 eliverables
+\par }\pard\plain \ltrpar\qj \li0\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 Put the following in a }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid13907278 ZIP archive}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827  and submit it (each team member submits the same file):
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \ltrpar
+\s28\qj \fi-360\li720\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls4\adjustright\rin0\lin720\itap0\pararsid9852513\contextualspace \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 
+\f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 The complete }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid12926775 
+source code}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 .
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}Brief }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid12926775 documentation}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  of your project (2-3 pages). It should provide the following information (in brief):
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af2\hich\af2\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \hich\af2\dbch\af0\loch\f2 o\tab}}\pard \ltrpar\s28\qj \fi-360\li1440\ri0\sa200\sl276\slmult1
+\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls4\ilvl1\adjustright\rin0\lin1440\itap0\pararsid9852513\contextualspace {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 Team name and list of team members (including }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid3619518 usernames}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  from the student system)
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af2\hich\af2\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \hich\af2\dbch\af0\loch\f2 o\tab}}\pard \ltrpar\s28\qj \fi-360\li1440\ri0\sa200\sl276\slmult1
+\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls4\ilvl1\adjustright\rin0\lin1440\itap0\pararsid6782283\contextualspace {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 Project explanation \endash  describe your game
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af2\hich\af2\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \hich\af2\dbch\af0\loch\f2 o\tab}}\pard \ltrpar\s28\qj \fi-360\li1440\ri0\sa200\sl276\slmult1
+\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls4\ilvl1\adjustright\rin0\lin1440\itap0\pararsid9852513\contextualspace {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 The URL of your TFS repository
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af2\hich\af2\dbch\af0\langnp1033\langfenp1033\insrsid7219827\charrsid13464709 \hich\af2\dbch\af0\loch\f2 o\tab}}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid13464709 Any other information (optionally)
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \ltrpar
+\s28\qj \fi-360\li720\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls4\adjustright\rin0\lin720\itap0\pararsid9852513\contextualspace {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 Optionally provide a 
+}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid7357490 PowerPoint presentation}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  designed for the project defense.
+\par }\pard\plain \ltrpar\s2\qj \li0\ri0\sb120\sa80\sl276\slmult1\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs36\alang1025 \ltrch\fcs0 
+\b\fs36\cf17\lang1026\langfe1033\loch\af38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 \hich\af38\dbch\af13\loch\f38 Public \hich\af38\dbch\af13\loch\f38 Project Defense
+
+\par }\pard\plain \ltrpar\qj \li0\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 Each team will have to deliver a }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid13464709 public defense}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827  of its work in from of the other students and trainers. You will have }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid13464709 only 5 minutes}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  for the following:
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827\charrsid2516193 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \ltrpar
+\s28\qj \fi-360\li720\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls5\adjustright\rin0\lin720\itap0\pararsid6446762\contextualspace \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 
+\f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid2516193 Demonstrate}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 
+ the game (very shortly).
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \ltrpar
+\s28\qj \fi-360\li720\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls5\adjustright\rin0\lin720\itap0\pararsid9852513\contextualspace {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 Show the }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid2516193 source code}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  in the }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid2516193 TFS}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  web-based source code browser.
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}Show the }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid2516193 commits logs}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  to confirm that each team member has contributed.
+\par {\listtext\pard\plain\ltrpar \s28 \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\af3\hich\af3\dbch\af0\langnp1033\langfenp1033\insrsid7219827 \loch\af3\dbch\af0\hich\f3 \'b7\tab}
+Optionally you might prepare a PowerPoint presentation (3-4 slides).
+\par }\pard\plain \ltrpar\qj \li0\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 Please be }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid13464709 strict in timing}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827 ! Be }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid13464709 well prepared}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 
+ for presenting maximum of your work for minimum time. Bring your own laptop. Test it preliminary with the multimedia projector. Open the project assets beforehand to save time.}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid6308707  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 You have }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid13907278 
+5 minutes}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 , no more. It is not necessary for all team members to participate in the project {\*\bkmkstart _GoBack}defense{\*\bkmkend _GoBack}.}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid2516193 
+\par }\pard\plain \ltrpar\s2\qj \li0\ri0\sb120\sa80\sl276\slmult1\keep\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel1\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs36\alang1025 \ltrch\fcs0 
+\b\fs36\cf17\lang1026\langfe1033\loch\af38\hich\af38\dbch\af13\cgrid\langnp1026\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 \hich\af38\dbch\af13\loch\f38 Give Feedback \hich\af38\dbch\af13\loch\f38 
+about Your Teammates}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827\charrsid12926775 
+\par }\pard\plain \ltrpar\qj \li0\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid9852513 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang1026\langfe1033\cgrid\langnp1026\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827 You will be invited to }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid2507399 provide feedback}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827  about all your teammates, their attitude to this project, their technical skills, their team working skills, their contribution to the project, etc. The feedback is important part of the project 
+evaluation so }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid2507399 take it seriously}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827  and be honest.}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang1033\langfe1033\langnp1033\insrsid7219827\charrsid2187214 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1033\langfe1033\langnp1033\insrsid7219827\charrsid12986895 
+\par }}
