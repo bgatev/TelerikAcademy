@@ -1,0 +1,99 @@
+$ErrorActionPreference = "SilentlyContinue"
+Import-Module Servermanager
+$output = @{}
+$output.add("Name",$false)
+$output.add("Domain",$false)
+$output.add("IP",$false)
+$output.add("DHCPRole",$false)
+$output.add("WDSRole",$false)
+$output.add("DHCPScopeDNS",$false)
+$output.add("DHCPScopeExclusion",$false)
+$output.add("WDSImages",$false)
+$output.add("WDSPrepImage",$false)
+$output.add("Perfmon",$false)
+
+$name = Get-WmiObject win32_computersystem | % { $_.name }
+$domain =  Get-WmiObject win32_computersystem | % {  $_.domain }
+
+# Name
+if($name -eq "SRV01"){
+	$output["Name"] = $true
+}
+
+# Domain
+$output["Domain"] = $domain
+
+# Ip conf
+
+try{
+	$ip = Get-WmiObject win32_networkadapterconfiguration | Out-String -Stream | Select-String -Pattern "192.168.75.11"
+	if($ip){
+		$output["IP"] = $true
+	}
+}catch{}
+
+# DHCP Role
+$dhcpRole = get-windowsfeature DHCP | % { $_.Installed }
+if($dhcpRole){
+	$output["DHCPRole"] = $true
+}
+
+# WDS Role
+$wdsRole = get-windowsfeature WDS | % { $_.Installed }
+if($wdsRole){
+	$output["WDSRole"] = $true
+}
+
+try{
+	# DHCP Scope DNS check
+	$scopeOptions = netsh dhcp server scope 192.168.75.0 show optionvalue
+
+	if($scopeOptions | out-string | % { $_ -match "OptionID : 6(.|`n)+?(OptionId|Command)" }){
+		$text = $Matches[0]
+		if($text -match "Option Element Value =\s+(?'IP'.+)?`n"){
+		
+			if($Matches.ip){
+				$output["DHCPScopeDNS"] = $true
+			}
+
+		}
+	}
+}catch{}
+
+# DHCP Scope Exclusion
+try{
+	$dhcpExclusion = netsh dhcp server scope 192.168.75.0 show excluderange
+	if($dhcpExclusion | out-string | % { $_ -match "192.168.75.1\s+-\s+192.168.75.128" }){
+		$output["DHCPScopeExclusion"] = $true
+	}
+}catch{}
+
+# WDS Images
+try{
+	$bootImages = wdsutil.exe /get-allimages /show:boot
+	$installImages = wdsutil.exe /get-allimages /show:Install
+	$captureWim = $bootImages | Out-String | % { $_ -match "Capture.Wim" }
+	$bootWim = $bootImages | Out-String | % { $_ -match "Boot.Wim" }
+	$installWim =  $installImages | Out-String | % { $_ -match "install.Wim" }
+	if($captureWim -and $bootWim -and $installWim){
+		$output["WDSImages"] = $true
+	}
+}catch{}
+
+# WDS Captured Image
+try{
+	$installImages = wdsutil.exe /get-allimages /show:Install
+	$capturedImage =  $installImages | Out-String | % { $_ -match "Win7Prep" }
+	if($capturedImage){
+		$output["WDSPrepImage"] = $true
+	}
+}catch{}
+
+# Perfmon
+$CPUandMemory = Test-Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Windows\PLA\CPUandMemory"
+if($CPUandMemory){
+	$output["Perfmon"] = $true
+}
+
+$output
+

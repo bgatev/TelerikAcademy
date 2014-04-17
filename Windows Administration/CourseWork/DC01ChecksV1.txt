@@ -1,0 +1,147 @@
+DC01Checks=Import-Module activedirectory
+Import-Module grouppolicy
+Import-Module Servermanager
+$output = @{}
+$output.add("Name",$false)
+$output.add("Domain",$false)
+$output.add("IP",$false)
+$output.add("Service",$false)
+$output.add("DomainController",$false)
+$output.add("OU",$false)
+$output.add("Accounts",$false)
+$output.add("Nesting",$false)
+$output.add("ADRB",$false)
+$output.add("GPO",$false)
+$output.add("DomainSID",$false)
+$output.add("FS",$false)
+$output.add("Share",$false)
+$output.add("ACL",$false)
+$output.add("DFSTarget",$false)
+$output.add("Quota",$false)
+
+$name = Get-WmiObject win32_computersystem | % { $_.name}
+$domain =  Get-WmiObject win32_computersystem | % {  $_.domain }
+
+
+# Name
+if($name -eq "DC01"){
+	$output["Name"] = $true
+}
+
+# Domain
+$output["Domain"] = $domain
+
+# Ip conf
+$ip = Get-WmiObject win32_networkadapterconfiguration | Out-String -Stream | Select-String -Pattern "192.168.75.10"
+if($ip){
+	$output["IP"] = $true
+}
+
+# Win Audio Service
+$service = Get-WmiObject win32_service | where { $_.displayname -eq "Windows Audio" } | % { $_.startmode }
+if($service -eq "Disabled"){
+	$output["Service"] = $true
+}
+
+# Domain Controller
+$domainController = Get-ADDomainController | % { $_.hostname }
+if( $domainController.ToLower().contains("dc01")){
+	$output["DomainController"] = $true
+}
+
+# Organizational Unints
+$defaultNamingContext = Get-ADRootDSE | % { $_.defaultNamingContext }
+$bg = Get-ADOrganizationalUnit "OU=BG,$defaultNamingContext"
+$computers = Get-ADOrganizationalUnit "OU=Computers,OU=BG,$defaultNamingContext"
+$users = Get-ADOrganizationalUnit "OU=Users,OU=BG,$defaultNamingContext"
+$groups = Get-ADOrganizationalUnit "OU=Groups,OU=BG,$defaultNamingContext"
+
+if($bg -and $computers -and $users -and $groups){
+	$output["OU"] = $true
+}
+
+# Accounts
+$globalAdmins = Get-ADGroup "Global Admins"
+$bgFinanceUsers = Get-ADGroup "BG Finance Users"
+if($globalAdmins -and $bgFinanceUsers){
+	$output["Accounts"] = $true
+}
+
+# Nesting 
+$membersGlobalAdmins = (Get-ADGroup "Global Admins" | Get-ADGroupMember | % { $_.name }).count
+$membersAllFinanceUsers = (Get-ADGroup "All Finance Users" | Get-ADGroupMember | % { $_.name }).count
+if(($membersGlobalAdmins -eq 3) -and ($membersAllFinanceUsers -eq 2)){
+	$output["Nesting"] = $true
+}
+
+# AD Recycle Bin
+$configurationContext = Get-ADRootDSE | % { $_.configurationnamingcontext }
+$enabledFeatures = Get-ADObject "CN=Partitions,$configurationContext" -properties msDS-EnabledFeature | % { $_."msDS-EnabledFeature" }
+if($enabledFeatures){
+	$output["ADRB"] = $true
+}
+
+# GPOs
+$GlobalAppLockerPolicyReport = Get-GPOReport -Name "GlobalAppLockerPolicy" -ReportType XML
+$GlobalAppLockerPolicyReportScripts = $GlobalAppLockerPolicyReport -match ".+All scripts located in the Windows folder.+"
+$GlobalAppLockerPolicyReportLinks = $GlobalAppLockerPolicyReport -match "<SOMName>US</SOMName>"
+$GlobalDesktopPolicyReport = Get-GPOReport -Name "GlobalDesktopPolicy" -ReportType XML
+$GlobalDesktopPolicyReportDesktop = $GlobalDesktopPolicyReport -match "Desktop/Desktop"
+
+if($GlobalAppLockerPolicyReportScripts -and $GlobalAppLockerPolicyReportLinks -and $GlobalDesktopPolicyReportDesktop){
+	$output["GPO"] = $true
+}
+
+# Domain SID
+$domainSID =Get-ADDomain | % { $_.DomainSID.value }
+$fileDomainSID = (Get-Content C:\domainSID.txt).trim()
+if($fileDomainSID -eq $domainSID){
+	$output["DomainSID"] = $true
+}
+
+# Features
+$fs = get-windowsfeature FS-FileServer | % { $_.Installed }
+$dfs = get-windowsfeature FS-DFS | % { $_.Installed }
+$dfsN = get-windowsfeature FS-DFS-Namespace | % { $_.Installed }
+if($fs -and $dfs -and $dfsN){
+	$output["FS"] = $true
+}
+
+# Share
+$share = Get-WmiObject win32_share | where { $_.name -eq "Shared Documents" }
+if($share){
+	$output["Share"] = $true
+}
+
+# SD and ACL
+$sd = Get-Acl "C:\Shared Documents"
+$access = $sd.Access | % { $_.IdentityReference.value }
+$access | % { 
+	if($_ -like "*All Finance Users*" -and $sd.AreAccessRulesProtected) {
+		$output["ACL"] = $true
+	}
+
+}
+
+# DFS 
+$dfsTargetPath = "\\$domain\Data\SharedDocs"
+$dfsTargetPathTest = Test-Path $dfsTargetPath
+if($dfsTargetPathTest) {
+		$output["DFSTarget"] = $true
+}
+
+# Quota
+$quotaConf = dirquota quota list | out-string -Stream
+$quotaConfHash = @{}
+$quotaConf | % { 
+	if($_ -match "^(?'option'.+)?:\s+(?'value'.+)"){
+		$quotaConfHash.add($matches.option,$matches.value)
+	}
+	
+}
+if($quotaConfHash["Limit"] -eq "300.00 MB (Hard)"){
+	$output["Quota"] = $true
+}
+
+$output
+

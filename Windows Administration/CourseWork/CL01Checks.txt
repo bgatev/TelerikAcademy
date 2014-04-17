@@ -1,0 +1,26 @@
+$ErrorActionPreference = "SilentlyContinue"
+Import-Module Servermanager
+$output = @{}
+$output.add("Name",$false)
+$output.add("Domain",$false)
+$output.add("IP",$false)
+
+
+$name = Get-WmiObject win32_computersystem | % { $_.name }
+$domain =  Get-WmiObject win32_computersystem | % {  $_.domain }
+
+# Name
+if($name -eq "CL01"){
+	$output["Name"] = $true
+}
+
+# Domain
+$output["Domain"] = $domain
+
+# Ip conf
+$ip = Get-WmiObject win32_networkadapterconfiguration | where { $_.IPAddress -like "*192.168.75*" -and $_.DHCPEnabled -eq $true }
+if($ip){
+	$output["IP"] = $true
+}
+
+$output

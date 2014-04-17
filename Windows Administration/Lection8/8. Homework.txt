@@ -5,7 +5,7 @@
 5. Create a new DNS zone that meets the following requirements:
  * The zone should support modification on multiple servers
  * The zone should be replicated only to specific domain controllers
-6. Implement a VPN solution that meets the following requirements:
+6.*** Implement a VPN solution that meets the following requirements:
  * The VPN users are primarly sales consultants that travel a lot. They should be able to use and access any corporate services or resources from any location.
  * A group of VPN users should be able to connect to the corporate network only in business hours.
  * The VPN configuration should be automatically deployed on any new laptop in the company. 
