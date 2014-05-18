@@ -65,7 +65,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="brackets.js" />
+    <Content Include="change-region.js" />
+    <Content Include="create-html-ul.js" />
+    <Content Include="CreateUL.html" />
+    <Content Include="extract-email.js" />
+    <Content Include="extract-html.js" />
+    <Content Include="extract-palindrom.js" />
+    <Content Include="find-substring.js" />
+    <Content Include="parse-url.js" />
+    <Content Include="replace-html.js" />
+    <Content Include="replace-whitespace.js" />
     <Content Include="reverse.js" />
+    <Content Include="string-placeholders.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
