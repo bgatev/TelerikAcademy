@@ -1,5 +1,5 @@
 ﻿function solve(params) {
-    var N = params[0];
+    var N = Number(params[0]);
     var result = '';
     var keyValuePair = [];
 
@@ -7,20 +7,21 @@
         var line = params[i + 1].split('-');
         var subline = line[1].split(';');
         keyValuePair[i] = { key: line[0], value: subline};
-   
     }
 
-    var M = params[N + 1];
+    var M = Number(params[N + 1]);
     var view = [];
 
     for (var i = 0; i < M; i++) {
         view[i] = params[N + 2 + i];
     }
 
-    var docBegin = false;
+    var viewLength = view.length;
+    var keyValuePairLength = keyValuePair.length;
 
-    for (var i = 0; i < view.length; i++) {
+    for (var i = 0; i < viewLength; i++) {
         var currentLine = view[i];
+       
         if (currentLine != undefined) {
             var indexOfNK = currentLine.indexOf('<nk-model>');
             var indexOfNKEnd = currentLine.indexOf('</nk-model>');
@@ -29,25 +30,50 @@
                 result += currentLine.substring(0, indexOfNK);
                 var currentKey = currentLine.substring(indexOfNK + 10, indexOfNKEnd);
 
-                for (var j = 0; j < keyValuePair.length; j++) {
+                for (var j = 0; j < keyValuePairLength; j++) {
                     if (currentKey == keyValuePair[j].key) {
                         result += keyValuePair[j].value;
                         break;
                     }
                 }
-                result += currentLine.substr(indexOfNKEnd + 11);
+                result += currentLine.substr(indexOfNKEnd + 11) + '\n';
             }
-            else {
-                var indexDocType = currentLine.indexOf('<!DOCTYPE html>');
-                if (indexDocType != -1) docBegin = true;
-            }
-            if (docBegin) result += currentLine;
+            else result += currentLine + '\n';
         }
     }
-
-
+    //console.log(result);
     return result;
 }
+
+var fs = require('fs');
+
+var testId = '003';
+
+fs.readFile('test.' + testId + '.in.txt', 'utf8', function (err, data) {
+    var input = data.split('\r\n');
+    console.log(input);
+    var result = solve(input);
+    fs.writeFile('test.' + testId + '.out.txt', result);
+    console.log(result);
+})
+
+
+var p3=['2',
+'text-RandomText',
+'anotherText-RandomTextAgain',
+'10',
+'<div>',
+'    <div>',
+'        <nk-model>text</nk-model>',
+'    </div>',
+'    <ul>',
+'        <li>',
+'             <span><nk-model>anotherText</nk-model></span>',
+'        </li>',
+'    </ul>',
+'</div>']
+
+//solve(p3);
 
 var p=[6,
 'title-Telerik Academy',
@@ -97,4 +123,4 @@ var p=[6,
 '</body>',
 '</html>']
 
-console.log(solve(p));
+//console.log(solve(p));
