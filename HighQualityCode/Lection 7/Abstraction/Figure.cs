@@ -1,26 +1,21 @@
-﻿using System;
-
-namespace Abstraction
+﻿namespace Abstraction
 {
-    abstract class Figure
-    {
-        public virtual double Width { get; set; }
-        public virtual double Height { get; set; }
-        public virtual double Radius { get; set; }
+    using System;
 
+    public abstract class Figure
+    {
         public Figure()
         {
         }
 
-        public Figure(double radius)
+        public virtual double CalcPerimeter()
         {
-            this.Radius = radius;
+            throw new NotImplementedException("Must override this method");
         }
 
-        public Figure(double width, double height)
+        public virtual double CalcSurface()
         {
-            this.Width = width;
-            this.Height = height;
+            throw new NotImplementedException("Must override this method");
         }
     }
 }

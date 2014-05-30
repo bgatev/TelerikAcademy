@@ -1,23 +1,21 @@
-﻿using System;
-
-namespace CohesionAndCoupling
+﻿namespace CohesionAndCoupling
 {
-    class UtilsExamples
+    using System;
+
+    public class UtilsExamples
     {
-        static void Main()
+        private static void Main()
         {
-            Console.WriteLine(Utils.GetFileExtension("example"));
-            Console.WriteLine(Utils.GetFileExtension("example.pdf"));
-            Console.WriteLine(Utils.GetFileExtension("example.new.pdf"));
+            Console.WriteLine(Files.GetFileExtension("example"));
+            Console.WriteLine(Files.GetFileExtension("example.pdf"));
+            Console.WriteLine(Files.GetFileExtension("example.new.pdf"));
 
-            Console.WriteLine(Utils.GetFileNameWithoutExtension("example"));
-            Console.WriteLine(Utils.GetFileNameWithoutExtension("example.pdf"));
-            Console.WriteLine(Utils.GetFileNameWithoutExtension("example.new.pdf"));
+            Console.WriteLine(Files.GetFileNameWithoutExtension("example"));
+            Console.WriteLine(Files.GetFileNameWithoutExtension("example.pdf"));
+            Console.WriteLine(Files.GetFileNameWithoutExtension("example.new.pdf"));
 
-            Console.WriteLine("Distance in the 2D space = {0:f2}",
-                Utils.CalcDistance2D(1, -2, 3, 4));
-            Console.WriteLine("Distance in the 3D space = {0:f2}",
-                Utils.CalcDistance3D(5, 2, -1, 3, -6, 4));
+            Console.WriteLine("Distance in the 2D space = {0:f2}", Utils.CalcDistance2D(1, -2, 3, 4));
+            Console.WriteLine("Distance in the 3D space = {0:f2}", Utils.CalcDistance3D(5, 2, -1, 3, -6, 4));
 
             Utils.Width = 3;
             Utils.Height = 4;
