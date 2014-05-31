@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Figures</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1280" height="1024" />
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        function drawFullCircle(x, y, r, scaleX, scaleY, fillColor, strokeColor, rotate) {
+            ctx.save();
+            ctx.beginPath();
+            ctx.fillStyle = fillColor;
+            ctx.strokeStyle = strokeColor;
+            ctx.rotate(rotate * Math.PI / 180);
+            ctx.scale(scaleX, scaleY);
+            ctx.arc(x, y, r, 0, 2 * Math.PI);
+            ctx.lineWidth = 3;
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+            ctx.restore();
+        }
+
+        function drawLine(points, strokeColor, fillColor, isClosed) {
+            ctx.beginPath();
+
+            for (var i = 0; i < points.length; i += 2) ctx.lineTo(points[i], points[i + 1]);
+
+            ctx.strokeStyle = strokeColor;
+
+            if (isClosed) ctx.closePath();
+            if (fillColor) {
+                ctx.fillStyle = fillColor;
+                ctx.fill();
+            }
+            ctx.stroke();
+            
+        }
+
+        function drawRect(x, y, w, h, fillColor, strokeColor) {
+            ctx.beginPath();
+            ctx.rect(x, y, w, h);
+            ctx.fillStyle = fillColor;
+            ctx.strokeStyle = strokeColor;
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        function drawHead() {
+            // Head
+            drawFullCircle(150, 250, 80, 1, 0.9, '#90cad7', '#184a54');
+
+            // Eyes
+            drawFullCircle(100, 260, 15, 1, 0.8, '#90cad7', '#184a54');
+            ctx.translate(40, 0);
+            drawFullCircle(110, 260, 15, 1, 0.8, '#90cad7', '#184a54');
+            ctx.translate(-20, -52);
+            drawFullCircle(110, 260, 9, 0.65, 1, '#184a54', '#184a54');
+            ctx.translate(50, 0);
+            drawFullCircle(110, 260, 9, 0.65, 1, '#184a54', '#184a54');
+
+            // Mouth
+            drawFullCircle(145, 580, 30, 1, 0.5, '#184a54', '#184a54', 15);
+
+            // Nose
+            ctx.strokeStyle = '#184a54';
+            ctx.lineWidth = 2;
+            ctx.moveTo(55, 255);
+            ctx.lineTo(50, 285);
+            ctx.lineTo(65, 285);
+            ctx.stroke();
+
+            //Hat
+            drawFullCircle(75, 880, 70, 1, 0.25, '#396693', '#262626', 0);
+            ctx.beginPath();
+            ctx.save();
+            ctx.moveTo(30, 105)
+            ctx.lineTo(30, 205);
+            ctx.scale(2, 1);
+            ctx.arc(35, 205, 20, -1 * Math.PI, 0 * Math.PI, true);
+            ctx.lineTo(55, 105);
+            ctx.closePath();
+            ctx.strokeStyle = '#262626';
+            ctx.fillStyle = '#396693';
+            ctx.fill();
+            ctx.stroke();
+            drawFullCircle(35, 120, 20, 1, 0.9, '#396693', '#262626', 0);
+            ctx.restore();
+        }
+
+        function drawBike() {
+            ctx.translate(100, 400);
+            drawFullCircle(-70, 150, 70, 1, 1, '#90cad7', '#317c8e', 0);
+            ctx.translate(150, 150);
+            drawFullCircle(0, 0, 70, 1, 1, '#90cad7', '#317c8e', 0);
+            var points =
+                [
+                    0, 0, -20, -150, 20, -170, -20, -150, -60, -150, -20, -150, -13, -100,
+                 -120, 0, -220, 0, -150, -80, -13, -100, -120, 0, -165, -120, -140, -120, -190, -120
+                ];
+            drawLine(points, '#317c8e');
+
+            ctx.moveTo(-120, 0);
+            ctx.beginPath();
+            ctx.arc(-120, 0, 20, 0.25 * Math.PI, -0.75 * Math.PI);
+            ctx.lineTo(-150, -30);
+            ctx.moveTo(-90, 30);
+            ctx.arc(-120, 0, 20, 0.25 * Math.PI, -0.75 * Math.PI, true);
+
+            ctx.stroke();
+        }
+
+        function drawHouse() {
+            ctx.translate(150, -250);
+            drawRect(0, 0, 400, 250, '#975B5B', 'black');
+            ctx.lineTo(200, -180);
+            ctx.lineTo(400, 0);
+            ctx.fillStyle = '#975B5B';
+            ctx.fill();
+            ctx.stroke();
+
+            drawRect(40, 30, 50, 30, 'black', 'black');
+            drawRect(40, 65, 50, 30, 'black', 'black');
+            drawRect(95, 30, 50, 30, 'black', 'black');
+            drawRect(95, 65, 50, 30, 'black', 'black');
+
+            drawRect(255, 30, 50, 30, 'black', 'black');
+            drawRect(255, 65, 50, 30, 'black', 'black');
+            drawRect(310, 30, 50, 30, 'black', 'black');
+            drawRect(310, 65, 50, 30, 'black', 'black');
+
+            drawRect(255, 140, 50, 30, 'black', 'black');
+            drawRect(255, 175, 50, 30, 'black', 'black');
+            drawRect(310, 140, 50, 30, 'black', 'black');
+            drawRect(310, 175, 50, 30, 'black', 'black');
+
+            ctx.translate(290, -150);
+            drawLine([0, 95, 0, 0, 30, 0, 30, 95], 'black', '#975B5B', false);
+            drawFullCircle(15, 0, 15, 1, 0.3, '#975B5B', 'black');
+
+            ctx.translate(-290, 400);
+            drawFullCircle(80, -30, 3, 1, 1, '#975B5B', 'black');
+            drawFullCircle(103, -30, 3, 1, 1, '#975B5B', 'black');
+            drawLine([50, 0, 50, -86], 'black', '#975B5B', false);
+            drawLine([92, 0, 92, -100], 'black', '#975B5B', false);
+            drawLine([136, 0, 136, -86], 'black', '#975B5B', false);
+
+            ctx.beginPath();
+            ctx.translate(50, -86);
+            ctx.moveTo(0, 0);
+            ctx.quadraticCurveTo(20, -15, 42, -14);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.translate(86, 0);
+            ctx.moveTo(0, 0);
+            ctx.quadraticCurveTo(-20, -15, -44, -14);
+            ctx.stroke();
+        }
+
+
+        drawHead();
+        drawBike();
+        drawHouse();
+    </script>
+</body>
+</html>

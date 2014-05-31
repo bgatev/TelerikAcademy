@@ -1,15 +1,31 @@
-using System;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Media;
-using System.Windows.Media.Media3D;
-using System.Windows.Input;
- // IAddChild, ContentPropertyAttribute
-
 namespace Microsoft._3DTools
 {
+    // IAddChild, ContentPropertyAttribute
+
+    using System;
+    using System.Windows;
+    using System.Windows.Controls;
+    using System.Windows.Input;
+    using System.Windows.Media;
+    using System.Windows.Media.Media3D;
+
     public class TrackballDecorator : Viewport3DDecorator
     {
+        //--------------------------------------------------------------------
+        //
+        // Private data
+        //
+        //--------------------------------------------------------------------
+
+        private Point _previousPosition2D;
+        private Vector3D _previousPosition3D = new Vector3D(0, 0, 1);
+
+        private Transform3DGroup _transform;
+        private ScaleTransform3D _scale = new ScaleTransform3D();
+        private AxisAngleRotation3D _rotation = new AxisAngleRotation3D();
+
+        private Border _eventSource; 
+
         public TrackballDecorator()
         {
             // the transform that will be applied to the viewport 3d's camera
@@ -41,9 +57,8 @@ namespace Microsoft._3DTools
             base.OnMouseDown(e);
 
             _previousPosition2D = e.GetPosition(this);
-            _previousPosition3D = ProjectToTrackball(ActualWidth,
-                                                     ActualHeight,
-                                                     _previousPosition2D);
+            _previousPosition3D = ProjectToTrackball(ActualWidth, ActualHeight, _previousPosition2D);
+
             if (Mouse.Captured == null)
             {
                 Mouse.Capture(this, CaptureMode.Element);
@@ -69,7 +84,10 @@ namespace Microsoft._3DTools
                 Point currentPosition = e.GetPosition(this);
 
                 // avoid any zero axis conditions
-                if (currentPosition == _previousPosition2D) return;
+                if (currentPosition == _previousPosition2D)
+                {
+                    return;
+                }
 
                 // Prefer tracking to zooming if both buttons are pressed.
                 if (e.LeftButton == MouseButtonState.Pressed)
@@ -115,7 +133,10 @@ namespace Microsoft._3DTools
             // quaterion will throw if this happens - sometimes we can get 3D positions that
             // are very similar, so we avoid the throw by doing this check and just ignoring
             // the event 
-            if (axis.Length == 0) return;
+            if (axis.Length == 0)
+            {
+                return;
+            }
 
             Quaternion delta = new Quaternion(axis, -angle);
 
@@ -156,21 +177,6 @@ namespace Microsoft._3DTools
             _scale.ScaleX *= scale;
             _scale.ScaleY *= scale;
             _scale.ScaleZ *= scale;
-        }
-
-        //--------------------------------------------------------------------
-        //
-        // Private data
-        //
-        //--------------------------------------------------------------------
-
-        private Point _previousPosition2D;
-        private Vector3D _previousPosition3D = new Vector3D(0, 0, 1);
-
-        private Transform3DGroup _transform;
-        private ScaleTransform3D _scale = new ScaleTransform3D();
-        private AxisAngleRotation3D _rotation = new AxisAngleRotation3D();
-
-        private Border _eventSource;        
+        }       
     }
 }

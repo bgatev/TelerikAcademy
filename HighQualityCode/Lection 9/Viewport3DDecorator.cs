@@ -1,13 +1,13 @@
-using System;
-using System.Collections;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Media;
-using System.Windows.Markup; // IAddChild, ContentPropertyAttribute
-
 namespace Microsoft._3DTools
 {
+    using System;
+    using System.Collections;
+    using System.Windows;
+    using System.Windows.Controls;
+    using System.Windows.Data;
+    using System.Windows.Markup; // IAddChild, ContentPropertyAttribute
+    using System.Windows.Media;
+
     /// <summary>
     /// This class enables a Viewport3D to be enhanced by allowing UIElements to be placed 
     /// behind and in front of the Viewport3D.  These can then be used for various enhancements.  
@@ -16,6 +16,15 @@ namespace Microsoft._3DTools
     [ContentProperty("Content")]    
     public abstract class Viewport3DDecorator : FrameworkElement, IAddChild
     {
+        //---------------------------------------------------------
+        // 
+        //  Private data
+        //
+        //---------------------------------------------------------        
+        private UIElementCollection _preViewportChildren;
+        private UIElementCollection _postViewportChildren;
+        private UIElement _content;
+
         /// <summary>
         /// Creates the Viewport3DDecorator
         /// </summary>
@@ -80,63 +89,6 @@ namespace Microsoft._3DTools
         }
 
         /// <summary>
-        /// Data binds the (Max/Min)Width and (Max/Min)Height properties to the same
-        /// ones as the content.  This will make it so we end up being sized to be
-        /// exactly the same ActualWidth and ActualHeight as waht is below us.
-        /// </summary>
-        /// <param name="newContent">What to bind to</param>
-        private void BindToContentsWidthHeight(UIElement newContent)
-        {
-            // bind to width height
-            Binding _widthBinding = new Binding("Width");
-            _widthBinding.Mode = BindingMode.OneWay;
-            Binding _heightBinding = new Binding("Height");
-            _heightBinding.Mode = BindingMode.OneWay;
-
-            _widthBinding.Source = newContent;
-            _heightBinding.Source = newContent;
-
-            BindingOperations.SetBinding(this, WidthProperty, _widthBinding);
-            BindingOperations.SetBinding(this, HeightProperty, _heightBinding);
-
-            
-            // bind to max width and max height
-            Binding _maxWidthBinding = new Binding("MaxWidth");
-            _maxWidthBinding.Mode = BindingMode.OneWay;
-            Binding _maxHeightBinding = new Binding("MaxHeight");
-            _maxHeightBinding.Mode = BindingMode.OneWay;
-
-            _maxWidthBinding.Source = newContent;
-            _maxHeightBinding.Source = newContent;
-
-            BindingOperations.SetBinding(this, MaxWidthProperty, _maxWidthBinding);
-            BindingOperations.SetBinding(this, MaxHeightProperty, _maxHeightBinding);
-
-            
-            // bind to min width and min height
-            Binding _minWidthBinding = new Binding("MinWidth");
-            _minWidthBinding.Mode = BindingMode.OneWay;
-            Binding _minHeightBinding = new Binding("MinHeight");
-            _minHeightBinding.Mode = BindingMode.OneWay;
-
-            _minWidthBinding.Source = newContent;
-            _minHeightBinding.Source = newContent;
-
-            BindingOperations.SetBinding(this, MinWidthProperty, _minWidthBinding);
-            BindingOperations.SetBinding(this, MinHeightProperty, _minHeightBinding);            
-        }
-
-        /// <summary>
-        /// Extenders of Viewport3DDecorator can override this function to be notified
-        /// when the Content property changes
-        /// </summary>
-        /// <param name="oldContent">The old value of the Content property</param>
-        /// <param name="newContent">The new value of the Content property</param>
-        protected virtual void OnViewport3DDecoratorContentChange(UIElement oldContent, UIElement newContent)
-        {
-        }
-
-        /// <summary>
         /// Property to get the Viewport3D that is being enhanced.
         /// </summary>
         public Viewport3D Viewport3D
@@ -164,12 +116,12 @@ namespace Microsoft._3DTools
                     else
                     {
                         currEnhancer = (Viewport3DDecorator)currContent;
-                    }                    
+                    }
                 }
 
                 return viewport3D;
             }
-        }        
+        }
 
         /// <summary>
         /// The UIElements that occur before the Viewport3D
@@ -192,51 +144,20 @@ namespace Microsoft._3DTools
                 return _postViewportChildren;
             }
         }
-       
+
         /// <summary>
         /// Returns the number of Visual children this element has.
         /// </summary>
         protected override int VisualChildrenCount
         {
-            get 
+            get
             {
                 int contentCount = (Content == null ? 0 : 1);
 
                 return PreViewportChildren.Count +
-                       PostViewportChildren.Count + 
-                       contentCount; 
+                       PostViewportChildren.Count +
+                       contentCount;
             }
-        }
-
-        /// <summary>
-        /// Returns the child at the specified index.
-        /// </summary>
-        protected override Visual GetVisualChild(int index)
-        {
-            int orginalIndex = index;
-
-            // see if index is in the pre viewport children
-            if (index < PreViewportChildren.Count)
-            {
-                return PreViewportChildren[index];
-            }
-            index -= PreViewportChildren.Count;
-
-            // see if it's the content
-            if (Content != null && index == 0)
-            {
-                return Content;
-            }
-            index -= (Content == null ? 0 : 1);
-
-            // see if it's the post viewport children
-            if (index < PostViewportChildren.Count)
-            {
-                return PostViewportChildren[index];
-            }
-
-            // if we didn't return then the index is out of range - throw an error
-            throw new ArgumentOutOfRangeException("index", orginalIndex, "Out of range visual requested");
         }
 
         /// <summary> 
@@ -256,6 +177,85 @@ namespace Microsoft._3DTools
                 // return an enumerator to the ArrayList
                 return logicalChildren.GetEnumerator();
             }
+        }
+
+        //------------------------------------------------------
+        //
+        //  IAddChild implementation
+        //
+        //------------------------------------------------------
+
+        void IAddChild.AddChild(object value)
+        {
+            // check against null
+            if (value == null)
+            {
+                throw new ArgumentNullException("value");
+            }
+
+            // we only can have one child
+            if (this.Content != null)
+            {
+                throw new ArgumentException("Viewport3DDecorator can only have one child");
+            }
+
+            // now we can actually set the content
+            Content = (UIElement)value;
+        }
+
+        void IAddChild.AddText(string text)
+        {
+            // The only text we accept is whitespace, which we ignore.
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (!Char.IsWhiteSpace(text[i]))
+                {
+                    throw new ArgumentException("Non whitespace in add text", text);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Extenders of Viewport3DDecorator can override this function to be notified
+        /// when the Content property changes
+        /// </summary>
+        /// <param name="oldContent">The old value of the Content property</param>
+        /// <param name="newContent">The new value of the Content property</param>
+        protected virtual void OnViewport3DDecoratorContentChange(UIElement oldContent, UIElement newContent)
+        {
+        }
+
+        /// <summary>
+        /// Returns the child at the specified index.
+        /// </summary>
+        protected override Visual GetVisualChild(int index)
+        {
+            int orginalIndex = index;
+
+            // see if index is in the pre viewport children
+            if (index < PreViewportChildren.Count)
+            {
+                return PreViewportChildren[index];
+            }
+
+            index -= PreViewportChildren.Count;
+
+            // see if it's the content
+            if (Content != null && index == 0)
+            {
+                return Content;
+            }
+
+            index -= (Content == null ? 0 : 1);
+
+            // see if it's the post viewport children
+            if (index < PostViewportChildren.Count)
+            {
+                return PostViewportChildren[index];
+            }
+
+            // if we didn't return then the index is out of range - throw an error
+            throw new ArgumentOutOfRangeException("index", orginalIndex, "Out of range visual requested");
         }
 
         /// <summary>
@@ -304,20 +304,6 @@ namespace Microsoft._3DTools
         }
 
         /// <summary>
-        /// Measures all of the UIElements in a UIElementCollection
-        /// </summary>
-        /// <param name="collection">The collection to measure</param>
-        /// <param name="constraint">The "upper limit" on the size of an element</param>
-        private void MeasureUIElementCollection(UIElementCollection collection, Size constraint)
-        {
-            // measure the pre viewport visual visuals
-            foreach (UIElement uiElem in collection)
-            {
-                uiElem.Measure(constraint);
-            }
-        }
-        
-        /// <summary>
         /// Arranges the Pre and Post Viewport children, and arranges itself
         /// </summary>
         /// <param name="arrangeSize">The final size to use to arrange itself and its children</param>
@@ -357,6 +343,65 @@ namespace Microsoft._3DTools
         }
 
         /// <summary>
+        /// Data binds the (Max/Min)Width and (Max/Min)Height properties to the same
+        /// ones as the content.  This will make it so we end up being sized to be
+        /// exactly the same ActualWidth and ActualHeight as waht is below us.
+        /// </summary>
+        /// <param name="newContent">What to bind to</param>
+        private void BindToContentsWidthHeight(UIElement newContent)
+        {
+            // bind to width height
+            Binding _widthBinding = new Binding("Width");
+            _widthBinding.Mode = BindingMode.OneWay;
+            Binding _heightBinding = new Binding("Height");
+            _heightBinding.Mode = BindingMode.OneWay;
+
+            _widthBinding.Source = newContent;
+            _heightBinding.Source = newContent;
+
+            BindingOperations.SetBinding(this, WidthProperty, _widthBinding);
+            BindingOperations.SetBinding(this, HeightProperty, _heightBinding);
+
+            // bind to max width and max height
+            Binding _maxWidthBinding = new Binding("MaxWidth");
+            _maxWidthBinding.Mode = BindingMode.OneWay;
+            Binding _maxHeightBinding = new Binding("MaxHeight");
+            _maxHeightBinding.Mode = BindingMode.OneWay;
+
+            _maxWidthBinding.Source = newContent;
+            _maxHeightBinding.Source = newContent;
+
+            BindingOperations.SetBinding(this, MaxWidthProperty, _maxWidthBinding);
+            BindingOperations.SetBinding(this, MaxHeightProperty, _maxHeightBinding);
+
+            // bind to min width and min height
+            Binding _minWidthBinding = new Binding("MinWidth");
+            _minWidthBinding.Mode = BindingMode.OneWay;
+            Binding _minHeightBinding = new Binding("MinHeight");
+            _minHeightBinding.Mode = BindingMode.OneWay;
+
+            _minWidthBinding.Source = newContent;
+            _minHeightBinding.Source = newContent;
+
+            BindingOperations.SetBinding(this, MinWidthProperty, _minWidthBinding);
+            BindingOperations.SetBinding(this, MinHeightProperty, _minHeightBinding);
+        }
+
+        /// <summary>
+        /// Measures all of the UIElements in a UIElementCollection
+        /// </summary>
+        /// <param name="collection">The collection to measure</param>
+        /// <param name="constraint">The "upper limit" on the size of an element</param>
+        private void MeasureUIElementCollection(UIElementCollection collection, Size constraint)
+        {
+            // measure the pre viewport visual visuals
+            foreach (UIElement uiElem in collection)
+            {
+                uiElem.Measure(constraint);
+            }
+        }
+        
+        /// <summary>
         /// Arranges all the UIElements in the passed in UIElementCollection
         /// </summary>
         /// <param name="collection">The collection that should be arranged</param>
@@ -369,51 +414,5 @@ namespace Microsoft._3DTools
                 uiElem.Arrange(new Rect(constraint));
             }
         }
-
-        //------------------------------------------------------
-        //
-        //  IAddChild implementation
-        //
-        //------------------------------------------------------
-
-        void IAddChild.AddChild(Object value)
-        {
-            // check against null
-            if (value == null)
-            {
-                throw new ArgumentNullException("value");
-            }
-
-            // we only can have one child
-            if (this.Content != null)
-            {
-                throw new ArgumentException("Viewport3DDecorator can only have one child");
-            }
-
-            // now we can actually set the content
-            Content = (UIElement)value;
-        }
-
-        void IAddChild.AddText(string text)
-        {
-            // The only text we accept is whitespace, which we ignore.
-            for (int i = 0; i < text.Length; i++)
-            {
-                if (!Char.IsWhiteSpace(text[i]))
-                {
-                    throw new ArgumentException("Non whitespace in add text", text);
-                }
-            }
-        }
-
-        //---------------------------------------------------------
-        // 
-        //  Private data
-        //
-        //---------------------------------------------------------        
-        private UIElementCollection _preViewportChildren;
-        private UIElementCollection _postViewportChildren;
-        private UIElement _content;
     }
 }
-

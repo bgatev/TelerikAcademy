@@ -1,42 +1,70 @@
-﻿using System;
-using System.ComponentModel;
-using System.Windows.Threading;
-
-namespace SolarSystem
+﻿namespace SolarSystem
 {
-    class OrbitsCalculator : INotifyPropertyChanged
+    using System;
+    using System.ComponentModel;
+    using System.Windows.Threading;
+
+    public class OrbitsCalculator : INotifyPropertyChanged
     {
+        private const double EARTHYEAR = 365.25;
+        private const double EARTHROTATIONPERIOD = 1.0;
+        private const double SUNROTATIONPERIOD = 25.0;
+        private const double TWOPI = Math.PI * 2;
+
         private DateTime _startTime;
         private double _startDays;
         private DispatcherTimer _timer;
-
-        const double EarthYear = 365.25;
-        const double EarthRotationPeriod = 1.0;
-        const double SunRotationPeriod = 25.0;
-        const double TwoPi = Math.PI * 2;
-
         private double _daysPerSecond = 2;
-        public double DaysPerSecond
-        {
-            get { return _daysPerSecond; }
-            set { _daysPerSecond = value; Update("DaysPerSecond"); }
-        }
-
-        public double EarthOrbitRadius { get { return 40; } set { } }
-        public double Days { get; set; }
-        public double EarthRotationAngle { get; set; }
-        public double SunRotationAngle { get; set; }
-        public double EarthOrbitPositionX { get; set; }
-        public double EarthOrbitPositionY { get; set; }
-        public double EarthOrbitPositionZ { get; set; }
-        public bool ReverseTime { get; set; }
-        public bool Paused { get; set; }
 
         public OrbitsCalculator()
         {
             EarthOrbitPositionX = EarthOrbitRadius;
             DaysPerSecond = 2;
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public double DaysPerSecond
+        {
+            get 
+            { 
+                return _daysPerSecond; 
+            }
+
+            set 
+            { 
+                _daysPerSecond = value; 
+                Update("DaysPerSecond"); 
+            }
+        }
+
+        public double EarthOrbitRadius 
+        { 
+            get 
+            { 
+                return 40; 
+            } 
+
+            set 
+            { 
+            } 
+        }
+
+        public double Days { get; set; }
+
+        public double EarthRotationAngle { get; set; }
+
+        public double SunRotationAngle { get; set; }
+
+        public double EarthOrbitPositionX { get; set; }
+
+        public double EarthOrbitPositionY { get; set; }
+
+        public double EarthOrbitPositionZ { get; set; }
+
+        public bool ReverseTime { get; set; }
+
+        public bool Paused { get; set; }
 
         public void StartTimer()
         {
@@ -45,13 +73,6 @@ namespace SolarSystem
             _timer.Interval = TimeSpan.FromMilliseconds(10);
             _timer.Tick += new EventHandler(OnTimerTick);
             _timer.Start();
-        }
-
-        private void StopTimer()
-        {
-            _timer.Stop();
-            _timer.Tick -= OnTimerTick;
-            _timer = null;
         }
 
         public void Pause(bool doPause)
@@ -66,13 +87,21 @@ namespace SolarSystem
             }
         }
 
-        void OnTimerTick(object sender, EventArgs e)
+        public void OnTimerTick(object sender, EventArgs e)
         {
             var now = DateTime.Now;
-            Days += (now-_startTime).TotalMilliseconds * DaysPerSecond / 1000.0 * (ReverseTime?-1:1);
+
+            Days += (now - _startTime).TotalMilliseconds * DaysPerSecond / 1000.0 * (ReverseTime ? -1 : 1);
             _startTime = now;
             Update("Days");
             OnTimeChanged();
+        }
+
+        private void StopTimer()
+        {
+            _timer.Stop();
+            _timer.Tick -= OnTimerTick;
+            _timer = null;
         }
 
         private void OnTimeChanged()
@@ -84,7 +113,8 @@ namespace SolarSystem
 
         private void EarthPosition()
         {
-            double angle = 2 * Math.PI * Days / EarthYear;
+            double angle = 2 * Math.PI * Days / EARTHYEAR;
+
             EarthOrbitPositionX = EarthOrbitRadius * Math.Cos(angle);
             EarthOrbitPositionY = EarthOrbitRadius * Math.Sin(angle);
             Update("EarthOrbitPositionX");
@@ -93,16 +123,17 @@ namespace SolarSystem
 
         private void EarthRotation()
         {
-			for (decimal step = 0; step <= 360; step+=0.00005m)
+			for (decimal step = 0; step <= 360; step += 0.00005m)
 			{
-				EarthRotationAngle = ((double)step) * Days / EarthRotationPeriod;
+				EarthRotationAngle = ((double)step) * Days / EARTHROTATIONPERIOD;
 			}
+
             Update("EarthRotationAngle");
         }
 
         private void SunRotation()
         {
-            SunRotationAngle = 360 * Days / SunRotationPeriod;
+            SunRotationAngle = 360 * Days / SUNROTATIONPERIOD;
             Update("SunRotationAngle");
         }
 
@@ -114,7 +145,5 @@ namespace SolarSystem
                 PropertyChanged(this, args);
             }
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 
 public class Student
 {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public IList<Exam> Exams { get; set; }
-
     public Student(string firstName, string lastName, IList<Exam> exams = null)
     {
         if (firstName == null)
@@ -26,6 +22,12 @@ public class Student
         this.LastName = lastName;
         this.Exams = exams;
     }
+
+    public string FirstName { get; set; }
+
+    public string LastName { get; set; }
+
+    public IList<Exam> Exams { get; set; }
 
     public IList<ExamResult> CheckExams()
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-class ExceptionsHomework
+public class ExceptionsHomework
 {
     public static T[] Subsequence<T>(T[] arr, int startIndex, int count)
     {
@@ -11,6 +11,7 @@ class ExceptionsHomework
         {
             result.Add(arr[i]);
         }
+
         return result.ToArray();
     }
 
@@ -26,6 +27,7 @@ class ExceptionsHomework
         {
             result.Append(str[i]);
         }
+
         return result.ToString();
     }
 
@@ -40,19 +42,19 @@ class ExceptionsHomework
         }
     }
 
-    static void Main()
+    private static void Main()
     {
         var substr = Subsequence("Hello!".ToCharArray(), 2, 3);
         Console.WriteLine(substr);
 
         var subarr = Subsequence(new int[] { -1, 3, 2, 1 }, 0, 2);
-        Console.WriteLine(String.Join(" ", subarr));
+        Console.WriteLine(string.Join(" ", subarr));
 
         var allarr = Subsequence(new int[] { -1, 3, 2, 1 }, 0, 4);
-        Console.WriteLine(String.Join(" ", allarr));
+        Console.WriteLine(string.Join(" ", allarr));
 
         var emptyarr = Subsequence(new int[] { -1, 3, 2, 1 }, 0, 0);
-        Console.WriteLine(String.Join(" ", emptyarr));
+        Console.WriteLine(string.Join(" ", emptyarr));
 
         Console.WriteLine(ExtractEnding("I love C#", 2));
         Console.WriteLine(ExtractEnding("Nakov", 4));
@@ -87,6 +89,7 @@ class ExceptionsHomework
             new SimpleMathExam(1),
             new CSharpExam(0),
         };
+
         Student peter = new Student("Peter", "Petrov", peterExams);
         double peterAverageResult = peter.CalcAverageExamResultInPercents();
         Console.WriteLine("Average results = {0:p0}", peterAverageResult);

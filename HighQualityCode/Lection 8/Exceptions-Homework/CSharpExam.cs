@@ -2,8 +2,6 @@
 
 public class CSharpExam : Exam
 {
-    public int Score { get; private set; }
-
     public CSharpExam(int score)
     {
         if (score < 0)
@@ -14,9 +12,11 @@ public class CSharpExam : Exam
         this.Score = score;
     }
 
+    public int Score { get; private set; }
+
     public override ExamResult Check()
     {
-        if (Score < 0 || Score > 100)
+        if (this.Score < 0 || this.Score > 100)
         {
             throw new InvalidOperationException();
         }

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ball</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1280" height="1024" />
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = 'black';
+        ctx.strokeStyle = 'black';
+
+        var x = 3, y = 3;
+        var dx = 10, dy = 10;
+        var counter = 0;
+        draw();
+
+        function draw() {
+            if (x < 0 || x > canvas.width) dx = -dx;
+            if (y < 0 || y > canvas.height) dy = -dy;
+
+            ctx.beginPath();
+            ctx.arc(x, y, 2, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.fill();
+            ctx.closePath();
+
+            x += dx;
+            y += dy;
+            counter++;
+            if (counter > 1000) return;
+
+            requestAnimationFrame(draw);
+        }
+    </script>
+</body>
+</html>

@@ -1,8 +1,3 @@
-using System;
-using System.Windows;
-using System.Windows.Input;
-using System.Windows.Media.Media3D;
-
 namespace Microsoft._3DTools
 {
     /// <summary>
@@ -40,6 +35,11 @@ namespace Microsoft._3DTools
     ///           You may also use a Transform3DGroup to combine the
     ///           Transform property with additional Transforms.
     /// </summary> 
+    using System;
+    using System.Windows;
+    using System.Windows.Input;
+    using System.Windows.Media.Media3D;
+
     public class Trackball
     {
         private FrameworkElement _eventSource;
@@ -73,7 +73,10 @@ namespace Microsoft._3DTools
         /// </summary>
         public FrameworkElement EventSource
         {
-            get { return _eventSource; }
+            get 
+            { 
+                return _eventSource; 
+            }
             
             set
             {

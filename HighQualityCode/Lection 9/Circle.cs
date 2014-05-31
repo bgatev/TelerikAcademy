@@ -1,12 +1,14 @@
-﻿using System;
-using System.Windows.Media.Media3D;
-
-namespace Surfaces
+﻿namespace Surfaces
 {
+    using System;
+    using System.Windows.Media.Media3D;
+
     public sealed class Circle : Surface
     {
-        private static PropertyHolder<double, Circle> RadiusProperty =
-            new PropertyHolder<double, Circle>("Radius", 1.0, OnGeometryChanged);
+        private static PropertyHolder<double, Circle> RadiusProperty = new PropertyHolder<double, Circle>("Radius", 1.0, OnGeometryChanged);
+        private static PropertyHolder<Point3D, Circle> PositionProperty = new PropertyHolder<Point3D, Circle>("Position", new Point3D(0, 0, 0), OnGeometryChanged);
+        private double _radius;
+        private Point3D _position;
 
         public double Radius
         {
@@ -14,21 +16,10 @@ namespace Surfaces
             set { RadiusProperty.Set(this, value); }
         }
 
-        private static PropertyHolder<Point3D, Circle> PositionProperty =
-            new PropertyHolder<Point3D, Circle>("Position", new Point3D(0, 0, 0), OnGeometryChanged);
-
         public Point3D Position
         {
             get { return PositionProperty.Get(this); }
             set { PositionProperty.Set(this, value); }
-        }
-
-        private double _radius;
-        private Point3D _position;
-
-        private Point3D PointForAngle(double angle)
-        {
-            return new Point3D( _position.X + _radius*Math.Cos(angle), _position.Y + _radius*Math.Sin(angle), _position.Z);
         }
 
         protected override Geometry3D CreateMesh()
@@ -38,12 +29,12 @@ namespace Surfaces
 
             MeshGeometry3D mesh = new MeshGeometry3D();
             Point3D prevPoint = PointForAngle(0);
-            Vector3D normal = new Vector3D(0,0,1);
+            Vector3D normal = new Vector3D(0, 0, 1);
 
-            const int div = 180;
-            for (int i = 1; i <= div; ++i)
+            const int DIV = 180;
+            for (int i = 1; i <= DIV; ++i)
             {
-                double angle = 2 * Math.PI / div * i;
+                double angle = 2 * Math.PI / DIV * i;
                 Point3D newPoint = PointForAngle(angle);
                 mesh.Positions.Add(prevPoint);
                 mesh.Positions.Add(_position);
@@ -56,6 +47,11 @@ namespace Surfaces
 
             mesh.Freeze();
             return mesh;
+        }
+
+        private Point3D PointForAngle(double angle)
+        {
+            return new Point3D(_position.X + _radius * Math.Cos(angle), _position.Y + _radius * Math.Sin(angle), _position.Z);
         }
     }
 }

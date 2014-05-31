@@ -1,13 +1,14 @@
-﻿using System.Windows;
-
-namespace SolarSystem
+﻿namespace SolarSystem
 {
+    using System.Windows;
+
     /// <summary>
 	/// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        OrbitsCalculator _data = new OrbitsCalculator();
+        private OrbitsCalculator _data = new OrbitsCalculator();
+
         public MainWindow()
         {
             DataContext = _data;

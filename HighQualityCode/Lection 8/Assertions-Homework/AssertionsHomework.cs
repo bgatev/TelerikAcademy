@@ -1,20 +1,25 @@
 ﻿using System;
-using System.Linq;
 using System.Diagnostics;
+using System.Linq;
 
-class AssertionsHomework
+public class AssertionsHomework
 {
     public static void SelectionSort<T>(T[] arr) where T : IComparable<T>
     {
-        for (int index = 0; index < arr.Length-1; index++)
+        for (int index = 0; index < arr.Length - 1; index++)
         {
             int minElementIndex = FindMinElementIndex(arr, index, arr.Length - 1);
+
             Swap(ref arr[index], ref arr[minElementIndex]);
         }
     }
-  
-    private static int FindMinElementIndex<T>(T[] arr, int startIndex, int endIndex) 
-        where T : IComparable<T>
+
+    public static int BinarySearch<T>(T[] arr, T value) where T : IComparable<T>
+    {
+        return BinarySearch(arr, value, 0, arr.Length - 1);
+    }
+
+    private static int FindMinElementIndex<T>(T[] arr, int startIndex, int endIndex) where T : IComparable<T>
     {
         int minElementIndex = startIndex;
         for (int i = startIndex + 1; i <= endIndex; i++)
@@ -24,6 +29,7 @@ class AssertionsHomework
                 minElementIndex = i;
             }
         }
+
         return minElementIndex;
     }
 
@@ -34,13 +40,7 @@ class AssertionsHomework
         y = oldX;
     }
 
-    public static int BinarySearch<T>(T[] arr, T value) where T : IComparable<T>
-    {
-        return BinarySearch(arr, value, 0, arr.Length - 1);
-    }
-
-    private static int BinarySearch<T>(T[] arr, T value, int startIndex, int endIndex) 
-        where T : IComparable<T>
+    private static int BinarySearch<T>(T[] arr, T value, int startIndex, int endIndex) where T : IComparable<T>
     {
         while (startIndex <= endIndex)
         {
@@ -49,6 +49,7 @@ class AssertionsHomework
             {
                 return midIndex;
             }
+
             if (arr[midIndex].CompareTo(value) < 0)
             {
                 // Search on the right half
@@ -65,7 +66,7 @@ class AssertionsHomework
         return -1;
     }
 
-    static void Main()
+    private static void Main()
     {
         int[] arr = new int[] { 3, -1, 15, 4, 17, 2, 33, 0 };
         Console.WriteLine("arr = [{0}]", string.Join(", ", arr));

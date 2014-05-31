@@ -1,10 +1,10 @@
-﻿using System.Windows;
-
-namespace Surfaces
+﻿namespace Surfaces
 {
-    public class PropertyHolder<PropertyType, HoldingType> where HoldingType:DependencyObject
+    using System.Windows;
+
+    public class PropertyHolder<PropertyType, HoldingType> where HoldingType : DependencyObject
     {
-        DependencyProperty _property;
+        private DependencyProperty _property;
 
         public PropertyHolder(string name, PropertyType defaultValue, PropertyChangedCallback propertyChangedCallback)
         {
