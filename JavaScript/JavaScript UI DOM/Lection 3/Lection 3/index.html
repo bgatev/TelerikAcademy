@@ -3,85 +3,12 @@
 <head>
     <title>Family Tree</title>
     <script src="kinetic-v5.1.0.js"></script>
+    <script src="inputData.js"></script>
+    <script src="family-tree.js"></script>
 </head>
 <body>
-    <div id="container"></div>
-    <script>
-        var stage = new Kinetic.Stage({
-            container: 'container',
-            width: 1280,
-            height: 1024
-        });
-
-        var layer = new Kinetic.Layer();
-        var textFont = 'Calibri';
-        var textFontSize = 22;
-
-        function drawEllipse(xC, yC, width, height, strokeColor, fillColor, ellipseName) {
-            var shape = new Kinetic.Ellipse({
-                x: xC,
-                y: yC,
-                radius: {
-                    x: width,
-                    y: height
-                },
-                stroke: strokeColor,
-                strokeWidth: 2,
-                fill: fillColor,
-                name: 'ellipse' + ellipseName
-            });
-
-            return shape;
-        }
-
-        function addText(x, y, text, textSize, textFont, textColor) {
-            var simpleText = new Kinetic.Text({
-                x: x,
-                y: y,
-                text: text,
-                fontSize: textSize,
-                fontFamily: textFont,
-                fill: textColor
-                //width: shape.getWidth(),
-                //align: 'center'   
-            });
-
-            return simpleText;
-        }
-
-        var familyMembers = [{
-            mother: 'Maria Petrova',
-            father: 'Georgi Petrov',
-            children: ['Teodora Petrova', 'Peter Petrov']
-        }, {
-            mother: 'Petra Stamatova',
-            father: 'Todor Stamatov',
-            children: ['Maria Petrova']
-        }];
-
-        var shape = drawEllipse(200, 200, 100, 40, 'black', 'yellow', 1);
-        var textX = shape.getX() - shape.radiusX() / 2;
-        var textY = shape.getY() - textFontSize / 2;
-        layer.add(shape);     
-
-        var name = addText(textX, textY, 'Mother 1', textFontSize, textFont, 'black');
-        layer.add(name);
-        stage.add(layer);
-
-        console.log(shape.attrs.name);
-
-        for (var i = 0, len = familyMembers.length; i < len; i++) {
-            console.log(familyMembers[i].mother.toString());
-            console.log(familyMembers[i].father.toString());
-
-            for (var j = 0, len1 = familyMembers[i].children.length; j < len1; j++) {
-                console.log(familyMembers[i].children[j].toString());
-            }
-
-            console.log('---');
-        }
-        
-        
-    </script>
+    <div id='wrapper'>
+        <div id="container"></div>
+    </div>
 </body>
 </html>

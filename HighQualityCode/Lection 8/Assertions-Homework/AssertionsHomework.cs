@@ -70,6 +70,9 @@ public class AssertionsHomework
     {
         int[] arr = new int[] { 3, -1, 15, 4, 17, 2, 33, 0 };
         Console.WriteLine("arr = [{0}]", string.Join(", ", arr));
+        
+        Debug.Assert(arr.Length > 0, "Invalid Input Array");
+        
         SelectionSort(arr);
         Console.WriteLine("sorted = [{0}]", string.Join(", ", arr));
 

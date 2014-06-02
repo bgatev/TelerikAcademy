@@ -2,39 +2,100 @@
 
 public class ExamResult
 {
+    private int grade;
+    private int minGrade;
+    private int maxGrade;
+    private string comments;
+ 
     public ExamResult(int grade, int minGrade, int maxGrade, string comments)
     {
-        if (grade < 0)
-        {
-            throw new Exception();
-        }
-
-        if (minGrade < 0)
-        {
-            throw new Exception();
-        }
-
-        if (maxGrade <= minGrade)
-        {
-            throw new Exception();
-        }
-
-        if (comments == null || comments == string.Empty)
-        {
-            throw new Exception();
-        }
-
         this.Grade = grade;
         this.MinGrade = minGrade;
         this.MaxGrade = maxGrade;
         this.Comments = comments;
     }
 
-    public int Grade { get; private set; }
+    public int Grade
+    {
+        get
+        {
+            return this.grade;
+        }
 
-    public int MinGrade { get; private set; }
+        private set
+        {
+            if (value < 2 || value > 6)
+            {
+                throw new ArgumentOutOfRangeException("Invalid Student Grade");
+            }
+            else
+            {
+                this.grade = value;
+            }
+        }
+    }
 
-    public int MaxGrade { get; private set; }
+    public int MinGrade
+    {
+        get
+        {
+            return this.minGrade;
+        }
 
-    public string Comments { get; private set; }
+        private set
+        {
+            if (value < 2 || value > 6)
+            {
+                throw new ArgumentOutOfRangeException("Invalid Min Grade");
+            }
+            else
+            {
+                this.minGrade = value;
+            }
+        }
+    }
+
+    public int MaxGrade
+    {
+        get
+        {
+            return this.maxGrade;
+        }
+
+        private set
+        {
+            if (value < 2 || value > 6)
+            {
+                throw new ArgumentOutOfRangeException("Invalid Max Grade");
+            }
+            else if (value <= this.minGrade)
+            {
+                throw new ArgumentOutOfRangeException("Invalid Max Grade - max grade must be greater than Min Grade");
+            }
+            else
+            {
+                this.maxGrade = value;
+            }
+        }
+    }
+
+    public string Comments 
+    {
+        get
+        {
+            return this.comments;
+        }
+
+        private set
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                throw new ArgumentNullException("Invalid comments - please input comment");
+            }
+            else
+            {
+                this.comments = value;
+            }
+        }
+    }
 }

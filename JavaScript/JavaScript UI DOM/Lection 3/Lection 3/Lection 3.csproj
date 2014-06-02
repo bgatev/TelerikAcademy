@@ -65,7 +65,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="family-tree.js" />
     <Content Include="index.html" />
+    <Content Include="inputData.js" />
     <Content Include="kinetic-v5.1.0.js" />
     <Content Include="Web.config" />
   </ItemGroup>
