@@ -26,28 +26,28 @@
 
         public double DaysPerSecond
         {
-            get 
-            { 
-                return _daysPerSecond; 
+            get
+            {
+                return _daysPerSecond;
             }
 
-            set 
-            { 
-                _daysPerSecond = value; 
-                Update("DaysPerSecond"); 
+            set
+            {
+                _daysPerSecond = value;
+                Update("DaysPerSecond");
             }
         }
 
-        public double EarthOrbitRadius 
-        { 
-            get 
-            { 
-                return 40; 
-            } 
+        public double EarthOrbitRadius
+        {
+            get
+            {
+                return 40;
+            }
 
-            set 
-            { 
-            } 
+            set
+            {
+            }
         }
 
         public double Days { get; set; }
@@ -94,12 +94,12 @@
             var timeDiff = (now - _startTime).TotalMilliseconds;
             if (!ReverseTime)
             {
-                Days +=  timeDiff * DaysPerSecond / 1000.0;
+                Days += timeDiff * DaysPerSecond / 1000.0;
             }
             else
             {
                 Days -= timeDiff * DaysPerSecond / 1000.0;
-            }  
+            }
 
             //Days += (now - _startTime).TotalMilliseconds * DaysPerSecond / 1000.0 * (ReverseTime ? -1 : 1);
             _startTime = now;
@@ -133,13 +133,11 @@
 
         private void EarthRotation()
         {
-			//for (decimal step = 0; step <= 360; step += 0.00005m)
-            for (double step = 0; step <= 360; step += 0.00005)
-			{
-				//EarthRotationAngle = ((double)step) * Days / EARTHROTATIONPERIOD;
-                EarthRotationAngle = step * Days / EARTHROTATIONPERIOD;
-			}
-
+            /*for (decimal step = 0; step <= 360; step += 0.00005m)
+            {
+                EarthRotationAngle = ((double)step) * Days / EARTHROTATIONPERIOD;
+            }*/
+            EarthRotationAngle = 360 * Days / EARTHROTATIONPERIOD;
             Update("EarthRotationAngle");
         }
 
