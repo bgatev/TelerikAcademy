@@ -1,22 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Poker
+﻿namespace Poker
 {
-    class PokerExample
+    using System;
+    using System.Collections.Generic;
+
+    /// <summary>
+    /// This is not class for unit testing
+    /// </summary>
+    public class PokerExample
     {
-        static void Main()
+        public static void Main()
         {
             ICard card = new Card(CardFace.Ace, CardSuit.Clubs);
             Console.WriteLine(card);
 
-            IHand hand = new Hand(new List<ICard>() { 
+            IHand hand = new Hand(new List<ICard>() 
+            { 
                 new Card(CardFace.Ace, CardSuit.Clubs),
-                new Card(CardFace.Ace, CardSuit.Diamonds),
-                new Card(CardFace.King, CardSuit.Hearts),
                 new Card(CardFace.King, CardSuit.Spades),
                 new Card(CardFace.Seven, CardSuit.Diamonds),
+                new Card(CardFace.Ace, CardSuit.Diamonds),
+                new Card(CardFace.King, CardSuit.Hearts),  
             });
+
             Console.WriteLine(hand);
 
             IPokerHandsChecker checker = new PokerHandsChecker();
