@@ -1,40 +1,34 @@
-﻿/*taskName = "My Tree View";
-
-function Main(bufferElement) {
-    SetConsoleSize(500, 500);
-
-    var numberOfNodes = 5;
-    createTreeView(numberOfNodes);
-}*/
-
-function createTreeView(numberOfNodes) {
+﻿function createTreeView(numberOfNodes) {
     var list = createList(numberOfNodes);
+
     addNestedList(list);
 }
 
-function createList(liCount, message, isSubItem) {
-    var mainContainer = document.getElementById('main-container');//_GetDefaultContainer();
+function createList(liCount, liText, isSubItem) {
+    var container = document.getElementById('wrapper');
     var list = document.createElement('ul');
-    message = message || "Item";
+
+    liText = liText || "Item";
 
     for (var i = 0; i < liCount; i++) {
-        var li = createListItem(message);
-        list.appendChild(li);
+        var currentLI = createListItem(liText);
+
+        list.appendChild(currentLI);
     }
 
     if (isSubItem) list.style.display = 'none';
 
-    mainContainer.appendChild(list);
+    container.appendChild(list);
 
     return list;
 }
 
-function createListItem(message) {
+function createListItem(liText) {
     var anchor = document.createElement('a');
-    anchor.expanded = false;
-    anchor.innerHTML = message;
 
-    // Set event to anchor
+    anchor.expanded = false;
+    anchor.innerHTML = liText;
+
     anchor.onclick = function() {
         var children = anchor.nextElementSibling;
 
@@ -43,10 +37,10 @@ function createListItem(message) {
         this.expanded = !this.expanded;
     };
 
-    var li = document.createElement('li');
-    li.appendChild(anchor);
+    var currentLI = document.createElement('li');
+    currentLI.appendChild(anchor);
 
-    return li;
+    return currentLI;
 }
 
 function addNestedList(list) {
