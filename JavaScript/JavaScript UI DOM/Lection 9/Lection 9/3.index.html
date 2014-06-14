@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Table</title>
+    <script src="scripts/jquery-1.11.1.js"></script>
+    <script src="student-table.js"></script>
+    <style>
+        table {
+            width: 300px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr {
+            width: 300px;
+            border-collapse: collapse;
+        }
+        td,th {
+            width: 100px;
+            margin: 0px;
+            padding: 0px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    </div>
+    <script>
+        var students = [{
+            fName: 'Pesho', lName: 'Petrov', grade: 6
+        }, {
+            fName: 'Ivan', lName: 'Penkeler', grade: 3
+        }, {
+            fName: 'Gosho', lName: 'Sarafov', grade: 4
+        }, {
+            fName: 'Vania', lName: 'Petrova', grade: 4
+        }];
+        createTable(students);
+    </script>
+</body>
+</html>

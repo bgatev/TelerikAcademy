@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Slider</title>
+    <script src="scripts/jquery-1.11.1.js"></script>
+    <script src="slider.js"></script>
+    <style>
+        div{
+            width:1280px;
+            height:720px;
+        }
+        img{
+            width:30%;
+            height:30%;
+        }
+        button{
+            width:70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    </div>
+    <script>
+        var index = 0;
+        var images = ['images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/4.jpg', 'images/5.jpg'];
+
+        var $currentImageElement = createSlider(index);
+
+        slide($currentImageElement, index++);
+
+    </script>
+</body>
+</html>

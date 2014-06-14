@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>GridView</title>
+    <script src="scripts/jquery-1.11.1.js"></script>
+    <script src="grid-view.js"></script>
+    <style>
+        table {
+            margin: 5px;
+        }
+
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            background:lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <table id="container"></table>
+    <script>
+        var schoolGrid = controls.getGridView("#container");
+        schoolGrid.addHeader("Name", "Location", "Number of Courses", "Total students", "Speciality");
+        schoolGrid.addRow("OMG", "Plovdiv", 5, 400, "Math");
+
+        var tuRow = schoolGrid.addRow("TU", "Sofia", 8, 500, "IT");
+        var tuGrid = tuRow.getNestedGrid();
+        tuGrid.addHeader("Title", "Start Date", "Total Students");
+        tuGrid.addRow("JS 2", "17.06.2014", "300");
+        tuGrid.addRow("JS 2 TW", "19.06.2014", "280");
+        var js3row = tuGrid.addRow("JS 3", "11.07.2014", "250");
+        var js3grid = js3row.getNestedGrid();
+        js3grid.addHeader("Title", "Start Date", "Total Students");
+
+        var taRow = schoolGrid.addRow("Telerik Academy", "Sofia", 23, 2000, "IT");
+        var taGrid = taRow.getNestedGrid();
+        taGrid.addHeader("Title", "Start Date", "Total Students");
+        taGrid.addRow("C#", "14.12.2014", "600");
+        taGrid.addRow("C# 2", "18.02.2014", "500");
+        taGrid.addRow("C# OOP", "21.04.2014", "400");
+        schoolGrid.render();
+    </script>
+</body>
+</html>
