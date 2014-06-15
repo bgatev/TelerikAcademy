@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ListView</title>
+    <script src="scripts/jquery-1.11.1.js"></script>
+    <script src="scripts/handlebars-v1.3.0.js"></script>
+    <script src="list-view.js"></script>
+    <style>
+         table {
+            border-collapse: collapse;
+            font-weight: bold;
+            font-family: Arial;
+        }
+
+        table, tr, td, th {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: #A6A6A6;
+            color: white;
+        }
+
+        td {
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="mainContainer">
+        <ul id="books-list" data-template="book-item-template"></ul>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Mark</th>
+                </tr>
+            </thead>
+            <tbody id="students-table" data-template="students-row-template"></tbody>
+        </table>
+    </div>
+
+    <div id="students-table2"></div>    <!--//task 4 -->
+
+    <script id="book-item-template" type="text/x-handlebars-template">
+        {{#each books}}
+        <li class="book-item">
+            <a href="/#books/{{id}}">
+                <strong>{{title}}</strong>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script id="students-row-template" type="text/x-handlebars-template">
+        {{#each students}}
+        <tr class="student-row">
+            <td>{{number}}</td>
+            <td>{{name}}</td>
+            <td>{{mark}}</td>
+        </tr>
+        {{/each}}
+    </script>
+
+    <script>
+        createTable('students-table2');
+    </script>
+
+    <script>
+        $('#books-list').listview(allBooks);
+        $('#students-table').listview(allStudents);
+        $('#students-table2 table').listview(allStudents);    //task 4
+    </script>
+
+</body>
+</html>

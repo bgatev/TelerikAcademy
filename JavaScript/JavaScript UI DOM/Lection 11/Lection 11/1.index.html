@@ -3,8 +3,58 @@
 <head>
     <title>Table</title>
     <script src="scripts/handlebars-v1.3.0.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-weight: bold;
+            font-family: Arial;
+        }
+
+        table, tr, td, th {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: #A6A6A6;
+            color: white;
+        }
+
+        td {
+            padding: 3px;
+        }
+
+        td.course-number {
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #D9D9D9;
+        }
+    </style>
 </head>
 <body>
+    <div id="mainContainer"></div>
 
+    <script type="text/x-handlebars-template" id="table-template">
+        <table>
+            <tr>
+                <th>№</th>
+                <th>Title</th>
+                <th>Date #1</th>
+                <th>Date #2</th>
+            </tr>
+
+            {{#each courses}}
+            <tr>
+                <td class="course-number">{{number}}</td>
+                <td>{{title}}</td>
+                <td>{{firstDate}}</td>
+                <td>{{secondDate}}</td>
+            </tr>
+            {{/each}}
+        </table>
+    </script>
+
+    <script src="create-table.js"></script>
 </body>
 </html>

@@ -5,6 +5,15 @@
     <script src="scripts/handlebars-v1.3.0.js"></script>
 </head>
 <body>
+    <div id="mainContainer"></div>
 
+    <script type="text/x-handlebars-template" id="items-template">
+        <select>
+            {{#each items}}
+            <option value="{{value}}">{{text}}</option>
+            {{/each}}
+        </select>
+    </script>
+    <script src="dynamic-select.js"></script>
 </body>
 </html>
