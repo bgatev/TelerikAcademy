@@ -3,8 +3,24 @@
 <head>
     <title>Fading Message</title>
     <script src="scripts/jquery-1.11.1.js"></script>
+    <style>
+        #message-box {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            padding: 50px;
+            font-size: 36px;
+            color: white;
+            border: 1px solid black;
+            border-radius: 30px;
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
-
+    <button id="successBtn">Success</button>
+    <button id="errorBtn">Error</button>
+    <div id="message-box"></div>
+    <script src="message-box.js"></script>
 </body>
 </html>

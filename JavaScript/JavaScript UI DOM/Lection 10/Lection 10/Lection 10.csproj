@@ -67,6 +67,8 @@
   <ItemGroup>
     <Content Include="1.index.html" />
     <Content Include="2.index.html" />
+    <Content Include="dropdown.js" />
+    <Content Include="message-box.js" />
     <Content Include="scripts\jquery-1.11.1.js" />
     <Content Include="Web.config" />
   </ItemGroup>
