@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Paint.JS</title>
+    <link href="styles/paintjs.css" rel="stylesheet" />
+    <!-- Scripts -->
+    <script src="scripts/libraries/jquery-1.11.1.js"></script>
+    <script src="scripts/libraries/kinetic-v5.1.0.js"></script>
+    <script src="scripts/libraries/raphael.js"></script>
+    <script src="scripts/libraries/handlebars-v1.3.0.js"></script>
+    <!-- Main -->
+    <script src="scripts/main/paintjs.js"></script>
+    <!-- Toolbar -->
+    <script src="scripts/main/toolbar/paint.toolbar.js"></script>
+    <script src="scripts/main/toolbar/actions/paint.toolbar.actions.js"></script>
+    <!-- Canvas -->
+    <script src="scripts/main/canvas/paint.canvas.js"></script>
+    <!-- Shapes -->
+    <script src="scripts/main/shape/paint.shape.js"></script>
+    <script src="scripts/main/shape/paint.shape.line.js"></script>
+    <script src="scripts/main/shape/paint.shape.circle.js"></script>
+    <script src="scripts/main/shape/paint.shape.rectangle.js"></script>
+    <script src="scripts/main/shape/paint.shape.chat.js"></script>
+    <script src="scripts/main/shape/paint.shape.square.js"></script>
+    <script src="scripts/main/shape/paint.shape.triangle.js"></script>
+</head>
+<body>
+    <div id="toolbar-container">
+        <div id="tools" class="container">
+            <div id="pencil" class="tool" onclick="paint.toolbar.actions.startDrawing($(this));"></div>
+            <div id="text" class="tool"></div>
+            <div id="eraser" class="tool" onclick="paint.toolbar.actions.eraser();"></div>
+            <div id="colorPicker" class="tool" onclick="paint.toolbar.actions.getPixelColor();"></div>
+            <div id="trash" class="tool" onclick="paint.toolbar.actions.eraseCanvasContent();"></div>
+            <div id="save" class="tool" onclick="paint.toolbar.actions.downloadDrawing();"></div>
+            <div id="tools-label" class="label">Tools</div>
+        </div>
+        <div id="brushes" class="container">
+            <div id="brush-tool-container">
+                <div id="brush" class="tool"></div>
+                <div id="brush-select" class="tool">Brushes</div>
+                <div id="brushes-container">
+                    <div id="brush-1" class="brush-type" onclick="paint.toolbar.actions.startDrawing($(this));" data-brush-type="smoothingShadow">
+
+                    </div>
+                    <div id="brush-2" class="brush-type" onclick="paint.toolbar.actions.startDrawing($(this));" data-brush-type="brushFurPen">
+
+                    </div>
+                    <div id="brush-3" class="brush-type" onclick="paint.toolbar.actions.startDrawing($(this));" data-brush-type="rotatingFur">
+
+                    </div>
+                    <div id="brush-4" class="brush-type" onclick="paint.toolbar.actions.startDrawing($(this));" data-brush-type="spray">
+
+                    </div>
+                    <div id="brush-5" class="brush-type" onclick="paint.toolbar.actions.startDrawing($(this));" data-brush-type="slicedPen">
+
+                    </div>
+                    <div id="brush-6" class="brush-type" onclick="paint.toolbar.actions.startDrawing($(this));" data-brush-type="radialGradient">
+
+                    </div>
+                    <div id="brush-7" class="brush-type" onclick="paint.toolbar.actions.startDrawing($(this));" data-brush-type="trailPen">
+
+                    </div>
+                    <div id="brush-8" class="brush-type" onclick="paint.toolbar.actions.startDrawing($(this));" data-brush-type="randomRadius">
+
+                    </div>
+                    <div id="brush-9" class="brush-type" onclick="paint.toolbar.actions.startDrawing($(this));" data-brush-type="customPen">
+
+                    </div>
+                    <div id="brush-10" class="brush-type" onclick="paint.toolbar.actions.startDrawing($(this));" data-brush-type="neighbourPoints">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="shapes" class="container">
+            <div id="shapes-container">
+                <div id="line" class="tool" onclick="paint.toolbar.actions.drawShapes($(this));"></div>
+                <div id="freehand" class="tool" onclick="paint.toolbar.actions.drawShapes($(this));"></div>
+                <div id="rectangle" class="tool" onclick="paint.toolbar.actions.drawShapes($(this));"></div>
+                <div id="circle" class="tool" onclick="paint.toolbar.actions.drawShapes($(this));"></div>
+                <div id="chat" class="tool" onclick="paint.toolbar.actions.drawShapes($(this));"></div>
+            </div>
+            <input type="checkbox" id="fill-button" onclick="paint.toolbar.actions.fill()" />
+            <label for="fill-button" id="fill-button-label"></label>
+            <div id="animate" class="tool" onclick="paint.canvas.animateDrawing()"></div>
+            <div id="shapes-label" class="label">Shapes</div>
+        </div>
+        <div id="line-width" class="container" data-line-width="1">
+            <div id="line-width-select">
+                <div id="line-width-label" class="label">Line-width</div>
+                <div id="line-width-container">
+                    <div id="width-1" class="line-width-type" data-line-width="1"></div>
+                    <div id="width-2" class="line-width-type" data-line-width="5"></div>
+                    <div id="width-3" class="line-width-type" data-line-width="15"></div>
+                    <div id="width-4" class="line-width-type" data-line-width="25"></div>
+                </div>
+            </div>
+        </div>
+        <div id="colors" class="container">
+        	<div id="color-1-container" class="color-container">
+        		<input type="color" id="color-picker-1" class="color-picker" value="#000000"/>
+        		Stroke color
+        	</div>
+        	<div id="color-2-container" class="color-container">
+        		<input type="color" id="color-picker-2" class="color-picker" value="#FFFFFF" />
+        		Fill color
+        	</div>
+        	<div id="predifined-colors">
+        		<div id="black" class="color"></div>
+        		<div id="gray" class="color"></div>
+        		<div id="dark-red" class="color"></div>
+        		<div id="red" class="color"></div>
+        		<div id="orange" class="color"></div>
+
+        		<div id="yellow" class="color"></div>
+        		<div id="green" class="color"></div>
+        		<div id="blue" class="color"></div>
+        		<div id="dark-blue" class="color"></div>
+        		<div id="purple" class="color"></div>
+
+        		<div id="white" class="color"></div>
+        		<div id="light-gray" class="color"></div>
+        		<div id="brown" class="color"></div>
+        		<div id="pink" class="color"></div>
+        		<div id="light-orange" class="color"></div>
+
+        		<div id="light-yellow" class="color"></div>
+        		<div id="light-green" class="color"></div>
+        		<div id="sky-blue" class="color"></div>
+        		<div id="light-blue" class="color"></div>
+        		<div id="light-purple" class="color"></div>
+        	</div>
+            <div id="colors-label" class="label">Colors</div>
+        </div>
+    </div>
+    <canvas id="canvasTemp" width="1000" height="389"></canvas>
+    <canvas id="canvas" width="1000" height="389"></canvas>
+</body>
+</html>
