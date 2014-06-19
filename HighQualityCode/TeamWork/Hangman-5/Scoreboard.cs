@@ -1,113 +1,86 @@
-﻿using System;
-using System.Collections.Generic;
-
-class Scoreboard
+﻿namespace HangmanGame
 {
-    private const int MAX_NUMBER_OF_RECORDS = 5;
-    private List<KeyValuePair<int, String>> TopFiveRecords;
+    using System;
+    using System.Collections.Generic;
 
-    public Scoreboard()
+    /// <summary>
+    /// Singleton Pattern for Scoreboard
+    /// </summary>
+    public sealed class Scoreboard
     {
-        this.TopFiveRecords = new List<KeyValuePair<int, string>>();
-    }
+        private const int TOPSCORE_MAX_RECORDS = 5;
+        private static readonly List<KeyValuePair<int, string>> topScore = new List<KeyValuePair<int, string>>();
 
-    public void TryToSignToScoreboard(int numberOfMistakesMade)
-    {
-        bool scoreQualifiesForTopFive = CheckIfScoreQualifiesForTopFive(numberOfMistakesMade);
-        if (scoreQualifiesForTopFive)
+        public Scoreboard()
         {
-                AddNewRecord(numberOfMistakesMade);
-                PrintCurrentScoreboard();
         }
-    }
 
-    private bool CheckIfScoreQualifiesForTopFive(int numberOfMistakesMade)
-    {
-        bool scoreQualifiesForTopFive = false;
-        if (TopFiveRecords.Count < MAX_NUMBER_OF_RECORDS)
+        public static List<KeyValuePair<int, string>> TopScore
         {
-            scoreQualifiesForTopFive = true;
-        }
-        else
-        {
-            int worstScoreInTopFive = TopFiveRecords[MAX_NUMBER_OF_RECORDS - 1].Key;
-            if (numberOfMistakesMade < worstScoreInTopFive)
+            get
             {
-                scoreQualifiesForTopFive = true;
+                return topScore;
             }
         }
-        return scoreQualifiesForTopFive;
-    }
 
-    private void AddNewRecord(int numberOfMistakesMade)
-    {
-        if (TopFiveRecords.Count == MAX_NUMBER_OF_RECORDS)
+        public static bool IsTopScoreResult(int mistakes)
         {
-            DeleteTheWorstRecord();
-        }
-
-        string playerName = AskForPlayerName();
-        KeyValuePair<int, string> newRecord = new KeyValuePair<int, string>(numberOfMistakesMade, playerName);
-        TopFiveRecords.Add(newRecord);
-        SortRecordsAscendingByScore();
-    }
-
-    private string AskForPlayerName()
-    {
-        string name = "unknown";
-        bool inputIsAcceptable = false;
-        while (!inputIsAcceptable)
-        {
-            Console.Write("Please enter your name for the top scoreboard: ");
-            string line = Console.ReadLine();
-            if (line.Length == 0)
+            if (Scoreboard.TopScore.Count < TOPSCORE_MAX_RECORDS)
             {
-                Console.WriteLine("You did not enter a name. Please, try again.");
-            }
-            else if (line.Length > 40)
-            {
-                Console.WriteLine("The name you entered is too long. Please, enter a name up to 40 characters");
+                return true;
             }
             else
             {
-                name = line;
-                inputIsAcceptable = true;
+                int worstResult = Scoreboard.TopScore[TOPSCORE_MAX_RECORDS - 1].Key;
+
+                if (mistakes < worstResult)
+                {
+                    return true;
+                }
             }
+
+            return false;
         }
-        return name;
-    }
 
-    private void DeleteTheWorstRecord()
-    {
-        this.TopFiveRecords.RemoveAt(TopFiveRecords.Count - 1);
-    }
-
-    private void SortRecordsAscendingByScore()
-    {
-        TopFiveRecords.Sort(CompareByKeys);
-    }
-
-    private static int CompareByKeys(KeyValuePair<int, string> pairA, KeyValuePair<int, string> pairB)
-    {
-        return pairA.Key.CompareTo(pairB.Key);
-    }
-
-    public void PrintCurrentScoreboard()
-    {
-        Console.WriteLine("Scoreboard:");
-        if (TopFiveRecords.Count == 0)
+        public static void AddNewTopscoreRecord(int mistakes)
         {
-            Console.WriteLine("There are no records in the scoreboard yet.");
-        }
-        else
-        {
-            for (int index = 0; index < TopFiveRecords.Count; index++)
+            if (TopScore.Count == TOPSCORE_MAX_RECORDS)
             {
-                string name = TopFiveRecords[index].Value;
-                int mistakes = TopFiveRecords[index].Key;
-                Console.WriteLine("{0}. {1} --> {2} mistakes", index + 1, name, mistakes);
+                TopScore.RemoveAt(TopScore.Count - 1);
+            }
+
+            string playerName = GetPlayerName();
+            KeyValuePair<int, string> newTopscoreRecord = new KeyValuePair<int, string>(mistakes, playerName);
+
+            TopScore.Add(newTopscoreRecord);
+            TopScore.Sort(CompareByKeys);
+        }
+
+        private static string GetPlayerName()
+        {
+            while (true)
+            {
+                Console.Write("Please enter your name for the top scoreboard: ");
+                string playerName = Console.ReadLine();
+
+                if (playerName.Length == 0)
+                {
+                    Console.WriteLine("You did not enter a name. Please, try again.");
+                }
+                else if (playerName.Length > 40)
+                {
+                    Console.WriteLine("The name you entered is too long. Please, enter a name up to 40 characters");
+                }
+                else
+                {
+                    return playerName;
+                }
             }
         }
-    }
 
+        private static int CompareByKeys(KeyValuePair<int, string> pairA, KeyValuePair<int, string> pairB)
+        {
+            return pairA.Key.CompareTo(pairB.Key);
+        }  
+    }
 }
