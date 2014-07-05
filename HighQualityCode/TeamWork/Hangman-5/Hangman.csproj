@@ -40,10 +40,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\PrintCurrentWordCommand.cs" />
+    <Compile Include="Commands\GetUserInputCommand.cs" />
+    <Compile Include="Commands\ProcessUserCommand.cs" />
+    <Compile Include="Commands\ProcessUserGuessCommand.cs" />
+    <Compile Include="Entensions\ClassExtensions.cs" />
+    <Compile Include="Executor.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Interfaces\IPrintable.cs" />
+    <Compile Include="Messages.cs" />
+    <Compile Include="Messages\CheatWinMessage.cs" />
+    <Compile Include="Messages\ExitMessage.cs" />
+    <Compile Include="MessageFactory.cs" />
+    <Compile Include="Messages\GetHelpMessage.cs" />
+    <Compile Include="Messages\InvalidEntryMessage.cs" />
+    <Compile Include="Messages\OnRepeatedLetterMessage.cs" />
+    <Compile Include="Messages\OnSuccessLetterMessage.cs" />
+    <Compile Include="Messages\WelcomeMessage.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Hangman.cs" />
-    <Compile Include="Messages.cs" />
+    <Compile Include="Interfaces\IMessage.cs" />
+    <Compile Include="Messages\WinMessage.cs" />
     <Compile Include="Scoreboard.cs" />
+    <Compile Include="Entensions\StringExtensions.cs" />
+    <Compile Include="UserInputHandler.cs" />
+    <Compile Include="Word.cs" />
     <Compile Include="Words.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

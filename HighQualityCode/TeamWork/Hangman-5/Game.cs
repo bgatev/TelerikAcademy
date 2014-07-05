@@ -1,103 +1,45 @@
 ﻿namespace HangmanGame
 {
     using System;
+    using Commands;
+    using Extensions;
+    using Interfaces;
 
     public class Game
     {
-        public static void Process(string command, string secretWord, char[] currentWord, out bool endOfAllGames, out bool endOfCurrentGame, out bool helpIsUsed)
+        public bool Play()
         {
-            endOfCurrentGame = false;
-            endOfAllGames = false;
-            helpIsUsed = false;
+            UserInputHandler inputHandler = new UserInputHandler(Words.GetRandom());
+            Executor executor = new Executor();
 
-            switch (command)
+            ICommand printCurrentWord = new PrintCurrentWordCommand(inputHandler);
+            ICommand getInput = new GetUserInputCommand(inputHandler);
+            ICommand processInput = new ProcessUserGuessCommand(inputHandler);
+            ICommand processCommand = new ProcessUserCommand(inputHandler);
+
+            while (!inputHandler.EndOfCurrentGame)
             {
-                case "top":
-                            Messages.PrintScoreBoard();
-                            break;
-                case "restart":
-                            endOfCurrentGame = true;
-                            endOfAllGames = false;
-                            break;
-                case "exit":
-                            Messages.PrintExit();
-                            endOfCurrentGame = true;
-                            endOfAllGames = true;
-                            break;
-                case "help":
-                            char revealedLetter = Words.GetHelp(secretWord, currentWord);
-                            Messages.PrintGetHelp(revealedLetter);
-                            helpIsUsed = true;
-                            break;
-                default:
-                            break;
-            }
-        }
-        
-        public static bool Play()
-        {
-            string wordToGuess = Words.SelectRandom();
-            char[] currentWord = Words.EmptyWord(wordToGuess.Length);
-            int mistakes = 0;
+                executor.StoreAndExecute(printCurrentWord);
+                executor.StoreAndExecute(getInput);
 
-            bool gameOver = false;
-            bool currentGameOver = false;
-            bool hintUsed = false;
-
-            while (!currentGameOver)
-            {
-                Words.Print(currentWord);
-
-                string command = string.Empty;
-                string suggestedLetter = Hangman.GetUserInput(out command);
-
-                if (suggestedLetter != string.Empty)
+                if (inputHandler.LastInput != string.Empty)
                 {
-                    Hangman.ProcessUserGuess(suggestedLetter, wordToGuess, currentWord, ref mistakes);
+                    executor.StoreAndExecute(processInput);
                 }
                 else
                 {
-                    Game.Process(command, wordToGuess, currentWord, out gameOver, out currentGameOver, out hintUsed);
+                    executor.StoreAndExecute(processCommand);
                 }
 
-                bool gameIsWon = IsWon(currentWord, hintUsed, mistakes);
+                bool gameIsWon = inputHandler.IsWon();
 
                 if (gameIsWon)
                 {
-                    currentGameOver = true;
+                    inputHandler.EndOfCurrentGame = true;
                 }
             }
 
-            return gameOver;
-        }
-
-        public static bool IsWon(char[] currentWord, bool helpIsUsed, int mistakes)
-        {
-            bool wordIsRevealed = Words.IsRevealed(currentWord);
-
-            if (wordIsRevealed)
-            {
-                if (helpIsUsed)
-                {
-                    Messages.PrintCheatWin(mistakes);
-                    Words.Print(currentWord);
-                }
-                else
-                {
-                    Messages.PrintWin(mistakes);
-                    Words.Print(currentWord);
-
-                    bool topscoreResult = Scoreboard.IsTopScoreResult(mistakes);
-
-                    if (topscoreResult)
-                    {
-                        Scoreboard.AddNewTopscoreRecord(mistakes);
-                        Messages.PrintScoreBoard();
-                    }
-                }
-            }
-
-            return wordIsRevealed;
+            return inputHandler.EndOfAllGames;
         }
     }
 }
