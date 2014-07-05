@@ -1,9 +1,15 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Special Console</title>
+    <script src="console.js"></script>
 </head>
 <body>
-
+    <script>
+        specialConsole.writeLine("Message: hello");
+        specialConsole.writeLine("Message 2: {0}", "hello");
+        specialConsole.writeError("Error: {0}", "Something happened");
+        specialConsole.writeWarning("Warning: {0}", "A warning");
+    </script>
 </body>
 </html>

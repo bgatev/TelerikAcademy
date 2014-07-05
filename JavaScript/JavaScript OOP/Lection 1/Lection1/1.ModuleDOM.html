@@ -1,9 +1,40 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Module DOM</title>
+    <script src="module-dom.js"></script>
+    <style>
+        ul {
+            list-style-type:none;
+        }
+    </style>
 </head>
 <body>
+    <div id="wrapper">
+        <div id="main-nav">
+            <ul>
+                <li><a class="button" href="#">First</a></li>
+                <li><a class="button" href="#">Second</a></li>
+                <li><a href="#">Third</a></li>
+            </ul>
+        </div>
+        <div class="container">Container</div>
+    </div>
+    <script>
+        var div = document.createElement("div");
+        var navItem = document.createElement("nav");
+        div.innerHTML = "New Element";
+        navItem.innerHTML = "Nav";
 
+        domModule.appendChild(div, "#wrapper");
+        domModule.removeChild("ul", "li:first-child");
+        domModule.addHandler("a.button", 'click', function () { alert("Clicked") });
+
+        for (var i = 0; i < 101; i++) {
+            domModule.appendToBuffer(".container", div.cloneNode(true));
+        }
+        
+        domModule.appendToBuffer("#main-nav ul", navItem);        
+    </script>
 </body>
 </html>

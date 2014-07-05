@@ -1,9 +1,20 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Draw Shapes</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-
+    <canvas id="myCanvas" width="1280" height="1024" />
+    <script src="draw-module.js"></script>
+    <script>
+        drawingModule.drawRect(100, 100, 200, 200);
+        drawingModule.drawCircle(150, 150, 50);
+        drawingModule.drawLine(50, 50, 300, 300);
+    </script>
 </body>
 </html>
