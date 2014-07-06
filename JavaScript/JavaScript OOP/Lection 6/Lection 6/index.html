@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Snake</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="snake-canvas" width="515" height="515"></canvas>
+    <script src="scripts/snake.js"></script>
+    <script src="scripts/renderer.js"></script>
+    <script src="scripts/detector.js"></script>
+    <script src="scripts/helpers.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script>
+        var theSnake = snakes.get(0, 0, 5).snakeController();
+        var food = snakes.getFood(75, 75, 15);
+        var theUi = ui.getUI();
+        theUi.initStatusBar();
+        var wallArray = [];
+        var wallsCount = 10;
+        var randomPosition;
+        for (var i = 0; i < wallsCount; i++) {
+            randomPosition = helpers.getRandomPosition();
+            wallArray.push(snakes.getWall(randomPosition.x, randomPosition.y, 15));
+        }
+
+        var renderer = renderers.getCanvas('#snake-canvas');
+        function engine() {
+            theSnake.move();
+            detector.playFieldCollision('#snake-canvas', theSnake, theUi);
+            detector.tailCollision(theSnake, theUi);
+            detector.wallCollision(wallArray, theSnake, theUi);
+            if (detector.isFoodCollision(theSnake, food)) {
+                theSnake.extendSnake();
+                var newFoodPosition = helpers.getRandomPosition();
+                food.changePosition(newFoodPosition.x, newFoodPosition.y);
+                theUi.updateCollision('Food');
+                theUi.updateScore(10);
+            }
+            renderer.clear();
+            renderer.draw(theSnake);
+            renderer.draw(food);
+            for (var i = 0; i < wallArray.length; i++) {
+                renderer.draw(wallArray[i]);
+            }
+            setTimeout(engine, 100);
+        }
+        setTimeout(engine, 100);
+    </script>
+</body>
+</html>
