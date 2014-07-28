@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A4A4F7C4-9C47-4459-9042-FC8080CCEB87}</ProjectGuid>
+    <ProjectGuid>{66B4E4C8-38EA-4C3A-B94D-F37C713CF8FE}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lection_2</RootNamespace>
-    <AssemblyName>Lection 2</AssemblyName>
+    <RootNamespace>Lection5</RootNamespace>
+    <AssemblyName>Lection5</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -65,9 +65,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="index.html" />
+    <Content Include="1_3.index.html" />
+    <Content Include="2.index.html" />
+    <Content Include="get_post.js" />
     <Content Include="jquery-1.11.1.js" />
-    <Content Include="scripts.js" />
+    <Content Include="q.js" />
+    <Content Include="require.js" />
+    <Content Include="students.js" />
+    <Content Include="twitter.js" />
+    <Content Include="twitter_fetcher.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -86,9 +92,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>55237</DevelopmentServerPort>
+          <DevelopmentServerPort>61651</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:55237/</IISUrl>
+          <IISUrl>http://localhost:61651/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
