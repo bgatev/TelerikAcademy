@@ -1,56 +1,47 @@
-﻿namespace HangmanGame
+﻿namespace Hangman
 {
     using System;
     using System.Collections.Generic;
 
     /// <summary>
-    /// Singleton Pattern for Scoreboard
+    ///     Singleton Pattern for Scoreboard
     /// </summary>
     public sealed class Scoreboard
     {
-        private const int TOPSCORE_MAX_RECORDS = 5;
-        private static readonly List<KeyValuePair<int, string>> topScore = new List<KeyValuePair<int, string>>();
-
-        public Scoreboard()
-        {
-        }
+        private const int TopScoreMaxRecords = 5;
+        private static readonly List<KeyValuePair<int, string>> GameTopScore = new List<KeyValuePair<int, string>>();
 
         public static List<KeyValuePair<int, string>> TopScore
         {
-            get
-            {
-                return topScore;
-            }
+            get { return GameTopScore; }
         }
 
         public static bool IsTopScoreResult(int mistakes)
         {
-            if (Scoreboard.TopScore.Count < TOPSCORE_MAX_RECORDS)
+            if (TopScore.Count < TopScoreMaxRecords)
             {
                 return true;
             }
-            else
-            {
-                int worstResult = Scoreboard.TopScore[TOPSCORE_MAX_RECORDS - 1].Key;
 
-                if (mistakes < worstResult)
-                {
-                    return true;
-                }
+            int worstResult = TopScore[TopScoreMaxRecords - 1].Key;
+
+            if (mistakes < worstResult)
+            {
+                return true;
             }
 
             return false;
         }
 
-        public static void AddNewTopscoreRecord(int mistakes)
+        public static void AddNewTopScoreRecord(int mistakes)
         {
-            if (TopScore.Count == TOPSCORE_MAX_RECORDS)
+            if (TopScore.Count == TopScoreMaxRecords)
             {
                 TopScore.RemoveAt(TopScore.Count - 1);
             }
 
             string playerName = GetPlayerName();
-            KeyValuePair<int, string> newTopscoreRecord = new KeyValuePair<int, string>(mistakes, playerName);
+            var newTopscoreRecord = new KeyValuePair<int, string>(mistakes, playerName);
 
             TopScore.Add(newTopscoreRecord);
             TopScore.Sort(CompareByKeys);
@@ -101,6 +92,6 @@
         private static int CompareByKeys(KeyValuePair<int, string> pairA, KeyValuePair<int, string> pairB)
         {
             return pairA.Key.CompareTo(pairB.Key);
-        }  
+        }
     }
 }
