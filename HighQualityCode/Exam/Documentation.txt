@@ -1,0 +1,45 @@
+I have some variables starting with capital letters, but this is because I used a brand names, like HP, Dell and Lenovo.
+
+
+Design pattern: Simple Factory
+Used for commands in main method
+
+Design pattern: Strategy
+Used for CPU encapsulation
+
+Design pattern: Template Method
+	* 
+
+Design pattern: Abstract factory
+Used for Computers - personal, server, laptop
+
+Design pattern: Composite
+	* 
+
+Design pattern: Mediator
+	* 
+
+Found bottlenecks:
+1. Incorect Process method
+	* 
+
+Found bugs:
+1. HardDriver -> this.data = new Dictionary<int, string(capacity); - invalid syntax
+2. HardDriver -> this.capacity = capacity  - no ;
+3. Second Main method
+4. Unreachable code in main Method
+
+Single responsibility principle
+Used in all of my classes
+
+Open/closed principle
+Used in all of my classes
+
+Liskov substitution principle
+Used in all variables, for which I have interfaces, for example CPU and ICPU
+
+Interface segregation principle
+I split the code in smaller interfaces, so that everything to be ok
+
+Dependency inversion principle
+Used in all variables, for which I have interfaces, for example CPU and ICPU
