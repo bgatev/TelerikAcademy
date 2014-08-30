@@ -7,98 +7,79 @@ using System.Threading.Tasks;
 
 public class Program
 {
-    public static void ListAllBooks(SQLiteConnection dbConnection)
+    private static SQLiteConnection books = null;
+
+    public static void ListAllBooks()
     {
-        dbConnection.Open();
+        SQLiteCommand command = new SQLiteCommand("Select * From Books", books);
+        SQLiteDataReader reader = command.ExecuteReader();
 
-        using (dbConnection)
+        using (reader)
         {
-            SQLiteCommand command = new SQLiteCommand("Use BooksDB; Select * From Books", dbConnection);
-            SQLiteDataReader reader = command.ExecuteReader();
-
-            using (reader)
+            while (reader.Read())
             {
-                while (reader.Read())
-                {
-                    string title = (string)reader["title"];
-                    string author = (string)reader["author"];
-                    DateTime publishDate = (DateTime)reader["publishDate"];
-                    string ISBN = (string)reader["ISBN"];
+                string title = (string)reader["title"];
+                string author = (string)reader["author"];
+                var publishDate = reader["publishDate"];
+                string ISBN = (string)reader["ISBN"];
 
-                    Console.WriteLine("{0} - {1} published on {2} as {3} ", title, author, publishDate, ISBN);
-                }
+                Console.WriteLine("{0} - {1} published on {2} as {3} ", title, author, publishDate, ISBN);
             }
         }
-
-        dbConnection.Close();
     }
 
-    public static void FindBook(SQLiteConnection dbConnection, string name)
+    public static void FindBook(string name)
     {
-        dbConnection.Open();
+        string findBookStatement = "Select * From Books Where title = '" + name + "'";
+        SQLiteCommand command = new SQLiteCommand(findBookStatement, books);
+        SQLiteDataReader reader = command.ExecuteReader();
 
-        using (dbConnection)
+        using (reader)
         {
-            string findBookStatement = "Use BooksDB; Select * From Books Where title = '" + name + "'";
-            SQLiteCommand command = new SQLiteCommand(findBookStatement, dbConnection);
-            SQLiteDataReader reader = command.ExecuteReader();
-
-            using (reader)
+            while (reader.Read())
             {
-                while (reader.Read())
-                {
-                    string title = (string)reader["title"];
-                    string author = (string)reader["author"];
-                    DateTime publishDate = (DateTime)reader["publishDate"];
-                    string ISBN = (string)reader["ISBN"];
+                string title = (string)reader["title"];
+                string author = (string)reader["author"];
+                var publishDate = reader["publishDate"];
+                string ISBN = (string)reader["ISBN"];
 
-                    Console.WriteLine("{0} - {1} published on {2} as {3} ", title, author, publishDate, ISBN);
-                }
+                Console.WriteLine("{0} - {1} published on {2} as {3} ", title, author, publishDate, ISBN);
             }
         }
-
-        dbConnection.Close();
     }
 
-    public static void AddBook(SQLiteConnection dbConnection, string title, string author, DateTime publishDate, string ISBN)
+    public static void AddBook(string title, string author, DateTime publishDate, string ISBN)
     {
-        dbConnection.Open();
+        string formattedDate = string.Format("{0:yyyy-MM-dd HH:mm:ss}", publishDate);
+        string insertTableRow = "Insert Into Books (title, author, publishDate, ISBN) Values ('" + title + "', '" + author + "', '" + formattedDate + "', '" + ISBN + "')";
 
-        using (dbConnection) 
-        {
-            string formattedDate = string.Format("{0:yyyy-MM-dd HH:mm:ss}", publishDate);
-            string insertTableRow = "Use BooksDB; Insert Into Books (title, author, publishDate, ISBN) Values ('" + title + "', '" + author + "', '" + formattedDate + "', '" + ISBN + "')";
-
-            SQLiteCommand insertCommand = new SQLiteCommand(insertTableRow, dbConnection);
-            insertCommand.ExecuteNonQuery();
-        }
-
-        dbConnection.Close();
+        SQLiteCommand insertCommand = new SQLiteCommand(insertTableRow, books);
+        insertCommand.ExecuteNonQuery();
     }
 
     public static void Main()
     {
-        SQLiteConnection books = new SQLiteConnection("Data Source=:memory:;Version=3;New=True;");
+        books = new SQLiteConnection("Data Source=../../books.sqlite;Version=3;New=True;");
 
         books.Open();
 
         using (books)
         {
-            string createTableSQL = "CREATE DATABASE IF NOT EXISTS BooksDB; Use BooksDB; Create table Books (title text, author text, publishDate text, ISBN text)";
+            //Start Once
+            /*string createTableSQL = "Create table Books (title text, author text, publishDate text, ISBN text)";
 
             SQLiteCommand createCommand = new SQLiteCommand(createTableSQL, books);
-            createCommand.ExecuteNonQuery();     
+            createCommand.ExecuteNonQuery();*/
+
+            AddBook("Me", "Ivan Vazov", DateTime.Now, "123456789");
+            AddBook("Boat", "Pencho Slaveikov", DateTime.Now, "345345678");
+            AddBook("Human", "Petko Slaveikov", DateTime.Now, "123432345");
+            AddBook("Sun", "Hristo Botev", DateTime.Now, "987456284");
+
+            ListAllBooks();
+            FindBook("Me");
 
             books.Close();
         }
-
-        AddBook(books, "Me", "Ivan Vazov", DateTime.Now, "123456789");
-        AddBook(books, "Boat", "Pencho Slaveikov", DateTime.Now, "345345678");
-        AddBook(books, "Human", "Petko Slaveikov", DateTime.Now, "123432345");
-        AddBook(books, "Sun", "Hristo Botev", DateTime.Now, "987456284");
-
-        ListAllBooks(books);
-        FindBook(books, "Me");
     }
 }
-
