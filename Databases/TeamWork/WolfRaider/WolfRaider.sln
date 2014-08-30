@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.ConsoleClient", "WolfRaider.ConsoleClient\WolfRaider.ConsoleClient.csproj", "{DBD1BB62-C41A-485E-8F93-7A09F9EB000E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.Common", "WolfRaider.Common\WolfRaider.Common.csproj", "{A6C5AB44-8865-4487-B065-DA01D5D61742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.Application", "WolfRaider.Application\WolfRaider.Application.csproj", "{026D31BF-1D25-4646-AF1B-1F4540F1D37D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.DataWriter", "WolfRaider.DataWriter\WolfRaider.DataWriter.csproj", "{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.DataConverter", "WolfRaider.DataConverter\WolfRaider.DataConverter.csproj", "{D100B2BD-51A0-463C-A257-E7C7A97FDE14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.DatabaseAccess", "WolfRaider.DatabaseAccess\WolfRaider.DatabaseAccess.csproj", "{D83203D1-3076-4FF3-89FC-0721FE9FDAD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBD1BB62-C41A-485E-8F93-7A09F9EB000E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD1BB62-C41A-485E-8F93-7A09F9EB000E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD1BB62-C41A-485E-8F93-7A09F9EB000E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD1BB62-C41A-485E-8F93-7A09F9EB000E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C5AB44-8865-4487-B065-DA01D5D61742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C5AB44-8865-4487-B065-DA01D5D61742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C5AB44-8865-4487-B065-DA01D5D61742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C5AB44-8865-4487-B065-DA01D5D61742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026D31BF-1D25-4646-AF1B-1F4540F1D37D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026D31BF-1D25-4646-AF1B-1F4540F1D37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026D31BF-1D25-4646-AF1B-1F4540F1D37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026D31BF-1D25-4646-AF1B-1F4540F1D37D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D100B2BD-51A0-463C-A257-E7C7A97FDE14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D100B2BD-51A0-463C-A257-E7C7A97FDE14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D100B2BD-51A0-463C-A257-E7C7A97FDE14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D100B2BD-51A0-463C-A257-E7C7A97FDE14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D83203D1-3076-4FF3-89FC-0721FE9FDAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D83203D1-3076-4FF3-89FC-0721FE9FDAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D83203D1-3076-4FF3-89FC-0721FE9FDAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D83203D1-3076-4FF3-89FC-0721FE9FDAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
