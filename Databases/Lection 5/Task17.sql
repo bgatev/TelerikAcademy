@@ -1,0 +1,6 @@
+CREATE TABLE Groups
+(
+id int IDENTITY,
+name nvarchar(30) UNIQUE NOT NULL,
+CONSTRAINT PK_Groups PRIMARY KEY(id)
+)
