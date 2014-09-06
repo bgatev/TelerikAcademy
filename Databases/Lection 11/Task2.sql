@@ -1,0 +1,6 @@
+CHECKPOINT; DBCC DROPCLEANBUFFERS;
+
+// Around 15 seconds for Select, 1083421 rows in results
+SELECT id, date, text
+FROM   Logs
+WHERE  (date > CONVERT(DATETIME, '2014-09-01 00:00:00', 102)) AND (date < CONVERT(DATETIME, '2014-09-05 00:00:00', 102))
