@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<playerpositions>
+   <position id="1">
+      <name>Goalkeeper</name>
+   </position>
+   <position id="2">
+      <name>CentreBack</name>
+   </position>
+   <position id="3">
+      <name>WingBack</name>
+   </position>
+   <position id="4">
+      <name>DefensiveMidfield</name>
+   </position>
+   <position id="5">
+      <name>CentreMidfield</name>
+   </position>
+   <position id="6">
+      <name>AttackingMidfield</name>
+   </position>
+   <position id="7">
+      <name>CentreForward</name>
+   </position>
+   <position id="8">
+      <name>SecondStriker</name>
+   </position>
+   <position id="9">
+      <name>Winger</name>
+   </position>
+   <position id="10">
+      <name>TelerikAcademyTrainer</name>
+   </position>
+   <position id="11">
+      <name>SubstituteForever</name>
+   </position>
+</playerpositions>

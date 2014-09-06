@@ -9,11 +9,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.Common", "WolfRa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.Application", "WolfRaider.Application\WolfRaider.Application.csproj", "{026D31BF-1D25-4646-AF1B-1F4540F1D37D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.DataWriter", "WolfRaider.DataWriter\WolfRaider.DataWriter.csproj", "{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.DataConverter", "WolfRaider.DataConverter\WolfRaider.DataConverter.csproj", "{D100B2BD-51A0-463C-A257-E7C7A97FDE14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.DatabaseAccess", "WolfRaider.DatabaseAccess\WolfRaider.DatabaseAccess.csproj", "{D83203D1-3076-4FF3-89FC-0721FE9FDAD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{57E50AD2-6636-4BAC-B2F0-08E13DA43A24}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.DataInputOutput", "WolfRaider.DataInputOutput\WolfRaider.DataInputOutput.csproj", "{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfRaider.DataConverter.Tests", "WolfRaider.DataConverter.Tests\WolfRaider.DataConverter.Tests.csproj", "{E6ADEB73-3D0A-4FDF-87E2-5DF73D37CF3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{A2F5A708-2F66-4E89-8887-583101319D4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +44,6 @@ Global
 		{026D31BF-1D25-4646-AF1B-1F4540F1D37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{026D31BF-1D25-4646-AF1B-1F4540F1D37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{026D31BF-1D25-4646-AF1B-1F4540F1D37D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D100B2BD-51A0-463C-A257-E7C7A97FDE14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D100B2BD-51A0-463C-A257-E7C7A97FDE14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D100B2BD-51A0-463C-A257-E7C7A97FDE14}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +52,18 @@ Global
 		{D83203D1-3076-4FF3-89FC-0721FE9FDAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D83203D1-3076-4FF3-89FC-0721FE9FDAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D83203D1-3076-4FF3-89FC-0721FE9FDAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DEE49B-E520-4BFF-B6D4-5EC6F2A4ECA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6ADEB73-3D0A-4FDF-87E2-5DF73D37CF3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6ADEB73-3D0A-4FDF-87E2-5DF73D37CF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6ADEB73-3D0A-4FDF-87E2-5DF73D37CF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6ADEB73-3D0A-4FDF-87E2-5DF73D37CF3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2F5A708-2F66-4E89-8887-583101319D4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2F5A708-2F66-4E89-8887-583101319D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2F5A708-2F66-4E89-8887-583101319D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2F5A708-2F66-4E89-8887-583101319D4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

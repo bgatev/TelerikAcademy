@@ -1,47 +1,64 @@
-﻿using System;
-using Newtonsoft.Json;
-using WolfRaider.Common.Config;
-using WolfRaider.Common.Models.Contracts;
-using WolfRaider.DataConverter.Exporters.Contracts;
-using WolfRaider.DataWriter;
-
-namespace WolfRaider.DataConverter.Exporters
+﻿namespace WolfRaider.DataConverter.Exporters
 {
+    using System.Web.Script.Serialization;
+    using WolfRaider.Common.Models;
+    using WolfRaider.DataConverter.Exporters.Contracts;
+
     /// <summary>
     /// A class for exporting some data to to a json file.
     /// </summary>
-    public class JsonExporter : Exporter
+    public class JsonExporter : IExporter<string>
     {
-        private const string PathFormat = "{0}\\{1}";
-        private const string FileNameFormat = "{0}.json";
+        private readonly JavaScriptSerializer serializer;
 
-        public JsonExporter(IDataWriter dataWriter)
-            : base(dataWriter)
+        public JsonExporter()
         {
+            this.serializer = new JavaScriptSerializer();
         }
 
-        private void WriteFile(string filename, string text)
+        public string ConvertEmployee(Employee employee)
         {
-            var path = string.Format(PathFormat, Folders.JsonFolder, filename);
-            dataWriter.Write(path, text);
+           return this.GetJson(employee);
         }
 
-        public override void Export(IExportable serializable)
+        public string ConvertOccupation(Occupation occupation)
         {
-            var json = this.GetJson(serializable);
-            var filename = this.GetFileName(serializable);
-            this.WriteFile(filename, json);
+            return this.GetJson(occupation);
         }
 
-        private string GetFileName(IExportable exportable)
+        public string ConvertNationality(Nationality nationality)
         {
-            var filename = string.Format(FileNameFormat, exportable.GetSerialNumber());
-            return filename;
+            return this.GetJson(nationality);
         }
 
-        private string GetJson(Object data)
+        public string ConvertPosition(Position position)
         {
-            string json = JsonConvert.SerializeObject(data);
+            return this.GetJson(position);
+        }
+
+        public string ConvertGame(Game game)
+        {
+            return this.GetJson(game);
+        }
+
+        public string ConvertSquadHistory(SquadHistory squadHistory)
+        {
+            return this.GetJson(squadHistory);
+        }
+
+        public string ConvertTeam(Team team)
+        {
+            return this.GetJson(team);
+        }
+
+        public string ConvertWorkHistory(WorkHistory workHistory)
+        {
+            return this.GetJson(workHistory);
+        }
+
+        private string GetJson(object data)
+        {
+            string json = this.serializer.Serialize(data);
             return json;
         }
     }
