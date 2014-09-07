@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<students xmlns:students="http://www.pesho.com/schemas/students">
+	<student>
+		<name> Pesho </name>
+		<sex> male </sex>
+		<birthdate> 01.02.2000 </birthdate>
+		<phone> 021231231 </phone>
+		<email> pesho@abv.bg </email>
+		<course> 1 </course>
+		<speciality> KST </speciality>
+		<facultynumber> 234234 </facultynumber>
+		<exams>
+			<name> C# </name>
+			<tutor> super </tutor>
+			<score> 6 </score>
+		</exams>
+	</student>
+  <student>
+    <name> Goshoo </name>
+    <sex> male </sex>
+    <birthdate> 01.01.2001 </birthdate>
+    <phone> 023431231 </phone>
+    <email> gosho@abv.bg </email>
+    <course> 2 </course>
+    <speciality> KTT </speciality>
+    <facultynumber> 237234 </facultynumber>
+    <exams>
+      <name> PHP </name>
+      <tutor> biva </tutor>
+      <score> 4 </score>
+    </exams>
+  </student>
+</students>

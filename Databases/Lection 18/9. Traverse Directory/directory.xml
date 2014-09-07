@@ -1,0 +1,5224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directories>
+	<dir name="Genius">
+		<dir name="ioCentre">
+			<file name="FileMgm.ini" />
+			<file name="gAdvance.dll" />
+			<file name="gAutoPan.dll" />
+			<file name="gAutoScroll.dll" />
+			<file name="gCentral.exe" />
+			<file name="gDeskMgm.dll" />
+			<file name="gDevMgm.dll" />
+			<file name="GenXml.dll" />
+			<file name="gfAction.dll" />
+			<file name="gfBrowser.dll" />
+			<file name="gfEmail.dll" />
+			<file name="gfMedia.dll" />
+			<file name="gfOffice.dll" />
+			<file name="gfSystem.dll" />
+			<file name="gFuncDlg.dll" />
+			<file name="gIMHook.dll" />
+			<file name="gIMMgm.dll" />
+			<file name="gIoCentreFunMgm.exe" />
+			<file name="gIoCentreHook.dll" />
+			<file name="gKbdTask.exe" />
+			<file name="gKbStatus.dll" />
+			<file name="gKeyboardDll.dll" />
+			<file name="gMouseDll.dll" />
+			<file name="GMouseService.exe" />
+			<file name="gMouseTask.exe" />
+			<file name="gPreset.dll" />
+			<file name="gSmartSearch.dll" />
+			<file name="gTabSwitch.dll" />
+			<file name="gTaskBar.exe" />
+			<file name="gTaskSwitch.dll" />
+			<file name="gUnloadioCentre.exe" />
+			<file name="gUpdateDriver.exe" />
+			<file name="gZoom.dll" />
+			<file name="ServiceCommand.exe" />
+			<file name="Setup.ini" />
+			<dir name="BindFile">
+				<file name="DeviceBind.exe" />
+				<file name="GenXML.dll" />
+				<file name="rwHidHW.dll" />
+				<file name="SupportDevice.txt" />
+				<dir name="Database">
+					<dir name="Mouse">
+						<dir name="VID0458_PID00A0">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID00A1">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID00A3">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID00A6">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID00AE">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID00AF">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00B1">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID00B3">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID00B4">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID00B9">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00BA">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00BF">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00C0">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00C5">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID00C7">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00C8">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00C9">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00D1">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00D3">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00D4">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00D7">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID00D8">
+							<file name="current.xml" />
+							<file name="default.xml" />
+						</dir>
+						<dir name="VID0458_PID00DA">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID0117">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+						<dir name="VID0458_PID0128">
+							<file name="current.xml" />
+							<file name="default.xml" />
+							<dir name="BMP">
+								<file name="Main.png" />
+							</dir>
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+			<dir name="Database">
+				<file name="Internet.xml" />
+				<file name="MediaList.xml" />
+				<file name="MultiMedia_AP_List_20100316.xls" />
+				<file name="Search.xml" />
+				<dir name="Email">
+					<file name="default.xml" />
+				</dir>
+				<dir name="Keyboard">
+					<dir name="VID0458_PID002B">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Back.png" />
+							<file name="Favorite.png" />
+							<file name="Forward.png" />
+							<file name="Internet.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Next.png" />
+							<file name="PlayPause.png" />
+							<file name="Previous.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID002C">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Back.png" />
+							<file name="Calculator.png" />
+							<file name="Computer.png" />
+							<file name="Excel.png" />
+							<file name="Favorite.png" />
+							<file name="Forward.png" />
+							<file name="Internet.png" />
+							<file name="iStop.png" />
+							<file name="KBRoller.png" />
+							<file name="keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Mute.png" />
+							<file name="Next.png" />
+							<file name="PlayPause.png" />
+							<file name="Previous.png" />
+							<file name="Refresh.png" />
+							<file name="Search.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0038">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Internet.png" />
+							<file name="PlayPause.png" />
+							<file name="SwitchBtn.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0039">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Internet.png" />
+							<file name="PlayPause.png" />
+							<file name="SwitchBtn.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID003D">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Back.png" />
+							<file name="Calculator.png" />
+							<file name="Computer.png" />
+							<file name="Excel.png" />
+							<file name="Forward.png" />
+							<file name="Internet.png" />
+							<file name="KBRoller.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Next.png" />
+							<file name="PlayPause.png" />
+							<file name="Previous.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0041">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Back.png" />
+							<file name="Calculator.png" />
+							<file name="Computer.png" />
+							<file name="Favorite.png" />
+							<file name="Forward.png" />
+							<file name="Internet.png" />
+							<file name="iStop.png" />
+							<file name="keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Mute.png" />
+							<file name="Next.png" />
+							<file name="PlayPause.png" />
+							<file name="Previous.png" />
+							<file name="Refresh.png" />
+							<file name="Search.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0048">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Back.png" />
+							<file name="Calculator.png" />
+							<file name="Computer.png" />
+							<file name="Forward.png" />
+							<file name="Internet.png" />
+							<file name="KBRoller.png" />
+							<file name="keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="PlayPause.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0049">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Back.png" />
+							<file name="Favorite.png" />
+							<file name="Forward.png" />
+							<file name="Internet.png" />
+							<file name="iStop.png" />
+							<file name="keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Mute.png" />
+							<file name="Next.png" />
+							<file name="PlayPause.png" />
+							<file name="Previous.png" />
+							<file name="Refresh.png" />
+							<file name="Search.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0055">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Back.png" />
+							<file name="Favorite.png" />
+							<file name="Forward.png" />
+							<file name="Internet.png" />
+							<file name="keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="PlayPause.png" />
+							<file name="Refresh.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID005A">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Back.png" />
+							<file name="Calculator.png" />
+							<file name="Computer.png" />
+							<file name="Document.png" />
+							<file name="Excel.png" />
+							<file name="Favorite.png" />
+							<file name="Forward.png" />
+							<file name="Internet.png" />
+							<file name="iStop.png" />
+							<file name="KBRoller.bmp" />
+							<file name="KBRoller.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Music.png" />
+							<file name="Mute.png" />
+							<file name="Next.png" />
+							<file name="Picture.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Preset1.png" />
+							<file name="Preset2.png" />
+							<file name="Preset3.png" />
+							<file name="Previous.png" />
+							<file name="Refresh.png" />
+							<file name="Search.png" />
+							<file name="Status.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Webcam.png" />
+							<file name="Word.png" />
+							<file name="ZoomIn.png" />
+							<file name="ZoomOut.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID005B">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Back.png" />
+							<file name="Calculator.png" />
+							<file name="Computer.png" />
+							<file name="Document.png" />
+							<file name="Excel.png" />
+							<file name="Favorite.png" />
+							<file name="Forward.png" />
+							<file name="Internet.png" />
+							<file name="iStop.png" />
+							<file name="KBRoller.bmp" />
+							<file name="KBRoller.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Music.png" />
+							<file name="Mute.png" />
+							<file name="Next.png" />
+							<file name="Picture.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Preset1.png" />
+							<file name="Preset2.png" />
+							<file name="Preset3.png" />
+							<file name="Previous.png" />
+							<file name="Refresh.png" />
+							<file name="Search.png" />
+							<file name="Status.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Webcam.png" />
+							<file name="Word.png" />
+							<file name="ZoomIn.png" />
+							<file name="ZoomOut.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0063">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Back.png" />
+							<file name="Calculator.png" />
+							<file name="Forward.png" />
+							<file name="Internet.png" />
+							<file name="keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="PlayPause.png" />
+							<file name="Refresh.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0066">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Calculator.png" />
+							<file name="Excel.png" />
+							<file name="Favorite.png" />
+							<file name="Internet.png" />
+							<file name="iStop.png" />
+							<file name="KBRoller.png" />
+							<file name="keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="Next.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Previous.png" />
+							<file name="Refresh.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0067">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Excel.png" />
+							<file name="Internet.png" />
+							<file name="keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Refresh.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0075">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Calculator.png" />
+							<file name="Computer.png" />
+							<file name="Favorite.png" />
+							<file name="Internet.png" />
+							<file name="keyboard.png" />
+							<file name="Lock.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="PlayPause.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="ZoomIn.png" />
+							<file name="ZoomOut.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0076">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Computer.png" />
+							<file name="Internet.png" />
+							<file name="keyboard.png" />
+							<file name="Lock.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="PlayPause.png" />
+							<file name="Refresh.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID007E">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Computer.png" />
+							<file name="Favorite.png" />
+							<file name="Internet.png" />
+							<file name="Keyboard.png" />
+							<file name="Lock.PNG" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="PlayPause.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0099">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="AddFavorite.png" />
+							<file name="Blog.png" />
+							<file name="Computer.png" />
+							<file name="Excel.png" />
+							<file name="Favorite.png" />
+							<file name="FileSearch.png" />
+							<file name="Internet.png" />
+							<file name="iStop.png" />
+							<file name="KBRoller.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="Next.png" />
+							<file name="PhotoGallery.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Previous.png" />
+							<file name="Refresh.png" />
+							<file name="Search.png" />
+							<file name="Status.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Webcam.png" />
+							<file name="Word.png" />
+							<file name="ZoomIn.png" />
+							<file name="ZoomOut.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID009B">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Computer.png" />
+							<file name="Excel.png" />
+							<file name="Favorite.png" />
+							<file name="Flip.png" />
+							<file name="Internet.png" />
+							<file name="iStop.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="Picture.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Refresh.png" />
+							<file name="Search.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+							<file name="ZoomIn.png" />
+							<file name="ZoomOut.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID009F">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="CloseApp.png" />
+							<file name="Excel.png" />
+							<file name="Flip.png" />
+							<file name="Internet.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Picture.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Search.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00A1">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Favorite.png" />
+							<file name="Flip.png" />
+							<file name="Internet.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="PhotoGallery.png" />
+							<file name="PlayPause.png" />
+							<file name="Search.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00A6">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Back.png" />
+							<file name="Calculator.png" />
+							<file name="Computer.png" />
+							<file name="Excel.png" />
+							<file name="Favorite.png" />
+							<file name="FileSearch.png" />
+							<file name="Flip.png" />
+							<file name="Forward.png" />
+							<file name="Internet.png" />
+							<file name="iStop.png" />
+							<file name="Keyboard.png" />
+							<file name="LuxMate T830-0025.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="Next.png" />
+							<file name="PhotoGallery.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Previous.png" />
+							<file name="Refresh.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00AE">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Calculator.png" />
+							<file name="Computer.png" />
+							<file name="Excel.png" />
+							<file name="Favorite.png" />
+							<file name="Flip.png" />
+							<file name="Internet.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="Next.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Previous.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00AF">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Computer.png" />
+							<file name="Excel.png" />
+							<file name="Flip.png" />
+							<file name="Internet.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="PhotoGallery.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Refresh.png" />
+							<file name="SS820V keyboard UI-1.png" />
+							<file name="SS820V keyboard UI-6.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00B3">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Calculator.png" />
+							<file name="Computer.png" />
+							<file name="Excel.png" />
+							<file name="Flip.png" />
+							<file name="Internet.png" />
+							<file name="Keyboard.png" />
+							<file name="Lock.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="Next.png" />
+							<file name="PhotoGallery.png" />
+							<file name="Picture.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Previous.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+							<file name="Youtube.png" />
+							<file name="ZoomIn.png" />
+							<file name="ZoomOut.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID010C">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Excel.png" />
+							<file name="Flip.png" />
+							<file name="Internet.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Stop.png" />
+							<file name="Word.png" />
+							<file name="Youtube.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID010D">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Calculator.png" />
+							<file name="CloseApp.png" />
+							<file name="Eject.png" />
+							<file name="Excel.png" />
+							<file name="Flip.png" />
+							<file name="Internet.png" />
+							<file name="Keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="Picture.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Stop.png" />
+							<file name="Word.png" />
+							<file name="Youtube.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0116">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Computer.png" />
+							<file name="Excel.png" />
+							<file name="Flip.png" />
+							<file name="Internet.png" />
+							<file name="keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Media.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="PhotoGallery.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Refresh.png" />
+							<file name="SS820V keyboard UI-1.png" />
+							<file name="SS820V keyboard UI-6.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0118">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Calculator.png" />
+							<file name="Internet.png" />
+							<file name="keyboard.png" />
+							<file name="Mail.png" />
+							<file name="Mute.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0119">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Computer.png" />
+							<file name="Excel.png" />
+							<file name="Flip.png" />
+							<file name="Internet.png" />
+							<file name="Keyboard.png" />
+							<file name="LM 320-k8.png" />
+							<file name="LM 320-k9.png" />
+							<file name="Lock.png" />
+							<file name="Mail.png" />
+							<file name="Messenger.png" />
+							<file name="Mute.png" />
+							<file name="Picture.png" />
+							<file name="PlayPause.png" />
+							<file name="Powerpoint.png" />
+							<file name="Stop.png" />
+							<file name="VolDec.png" />
+							<file name="VolInc.png" />
+							<file name="Word.png" />
+							<file name="Youtube.png" />
+							<file name="ZoomIn.png" />
+							<file name="ZoomOut.png" />
+						</dir>
+					</dir>
+				</dir>
+				<dir name="Mouse">
+					<dir name="VID0458_PID0003">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID001B">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0022">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID002B">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID002C">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID002E">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0031">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0033">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0036">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0038">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NS+ Superior Red_01.png" />
+							<file name="NS+ Superior Red_02.png" />
+							<file name="NS+ Superior Red_03.png" />
+							<file name="NS+ Superior Red_04.png" />
+							<file name="NS+ Superior Red_08.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0039">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NS+ Superior Red_01.png" />
+							<file name="NS+ Superior Red_02.png" />
+							<file name="NS+ Superior Red_03.png" />
+							<file name="NS+ Superior Red_04.png" />
+							<file name="NS+ Superior Red_08.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID003A">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID003D">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID003E">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0041">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0045">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="SwitchBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0046">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0048">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0049">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID004A">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="SwitchBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0050">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0051">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0052">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0053">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0054">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0055">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0056">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0057">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="DPIBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="VolDownBtn.png" />
+							<file name="VolUpBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0059">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="DPIBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PlayBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="VolDownBtn.png" />
+							<file name="VolUpBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID005A">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="DPIBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PlayBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="VolDownBtn.png" />
+							<file name="VolUpBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID005B">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="DPIBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PlayBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="VolDownBtn.png" />
+							<file name="VolUpBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID005C">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="DPIBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="VolDownBtn.png" />
+							<file name="VolUpBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID005D">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="DPIBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PlayBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="VolDownBtn.png" />
+							<file name="VolUpBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0063">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0065">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="IMBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0066">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0067">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="IMBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="m15_05.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0068">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="IMBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="m15_05.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0072">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="DPIBtn.png" />
+							<file name="KeyBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0075">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="IMBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0076">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0077">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="IMBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="m15_05.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID007B">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID007C">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlipBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="ZoomBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID007E">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0086">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlipBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0087">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlipBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="SearchBtn.png" />
+							<file name="ZoomBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0088">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlipBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="SearchBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0089">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID008A">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlipBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="SearchBtn.png" />
+							<file name="ZoomBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID008C">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlipBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID008D">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlipBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="SearchBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0098">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0099">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlipBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID009B">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID009C">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="SwitchBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID009D">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlipBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="ZoomBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID009F">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00A0">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="Navigator 820 UI-2.png" />
+							<file name="Navigator 820 UI-4.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00A1">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00A2">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00A3">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00A4">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlyingScrollBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00A6">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00AE">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="mouse UI-4.png" />
+							<file name="mouse UI-5.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00B1">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00B3">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00B4">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00B5">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NetScroll G500 Laser UI-5.png" />
+							<file name="NetScroll G500 Laser UI-6.png" />
+							<file name="NetScroll G500 Laser UI-7.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00C5">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00D7">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="Navigator 835 UI-10.png" />
+							<file name="Navigator 835 UI-11.png" />
+							<file name="Navigator 835 UI-4.png" />
+							<file name="Navigator 835 UI-9.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="VolDownBtn.png" />
+							<file name="VolUpBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID00DA">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0101">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NS G500 Laser UI-5.png" />
+							<file name="NS G500 Laser UI-6.png" />
+							<file name="NS G500 Laser UI-7.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0105">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0106">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0109">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlipBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="ZoomBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID010A">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID010C">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID010D">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID010E">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID010F">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0112">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="FlipBtn.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="SearchBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0113">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0114">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0115">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="Ergo T355 Laser UI-2.png" />
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="SearchBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0116">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0117">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="Navigator 835 UI-10.png" />
+							<file name="Navigator 835 UI-11.png" />
+							<file name="Navigator 835 UI-4.png" />
+							<file name="Navigator 835 UI-9.png" />
+							<file name="NextBtn.png" />
+							<file name="PreviousBtn.png" />
+							<file name="RightBtn.png" />
+							<file name="VolDownBtn.png" />
+							<file name="VolUpBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0118">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0119">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID011A">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NetScroll T220 Laser UI-ls button.png" />
+							<file name="NetScroll T220 Laser UI-rs button.png" />
+							<file name="NetScroll T220 UI-l button.png" />
+							<file name="NetScroll T220 UI-light.png" />
+							<file name="NetScroll T220 UI-ls button.png" />
+							<file name="NetScroll T220 UI-r button.png" />
+							<file name="NetScroll T220 UI-rs button.png" />
+							<file name="NetScroll T220 UI.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID011B">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="NetScroll T220 Laser UI-ls button.png" />
+							<file name="NetScroll T220 Laser UI-rs button.png" />
+							<file name="NetScroll T220 UI-l button.png" />
+							<file name="NetScroll T220 UI-light.png" />
+							<file name="NetScroll T220 UI-ls button.png" />
+							<file name="NetScroll T220 UI-r button.png" />
+							<file name="NetScroll T220 UI-rs button.png" />
+							<file name="NetScroll T220 UI.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0127">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID0128">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID012B">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID012C">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID012D">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID012E">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="PageDownBtn.png" />
+							<file name="PageUpBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+					<dir name="VID0458_PID012F">
+						<file name="current.xml" />
+						<file name="default.xml" />
+						<dir name="BMP">
+							<file name="LeftBtn.png" />
+							<file name="Main.png" />
+							<file name="MiddleBtn.png" />
+							<file name="RightBtn.png" />
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+			<dir name="Drivers">
+				<file name="gHidPnp.cat" />
+				<file name="gHidPnp.inf" />
+				<file name="gMouPS2.cat" />
+				<file name="gMouPS2.inf" />
+				<file name="gMouUsb.cat" />
+				<file name="gMouUsb.inf" />
+				<file name="gMouUsb16.cat" />
+				<file name="gMouUsb16.inf" />
+				<dir name="amd64">
+					<file name="gHidPnp.sys" />
+					<file name="gMouPS2.sys" />
+					<file name="gMouUsb.sys" />
+					<file name="gMouUsb16.sys" />
+				</dir>
+			</dir>
+			<dir name="Help">
+				<file name="Background.GIF" />
+				<file name="KeyboardFunction.xml" />
+				<file name="KeyboardFunction.xslt" />
+				<file name="MailFunction.xml" />
+				<file name="MailFunction.xslt" />
+				<file name="MainScreen.xml" />
+				<file name="MainScreen.xslt" />
+				<file name="MouseFunction.xml" />
+				<file name="MouseFunction.xslt" />
+				<dir name="Keyboard_Function">
+					<dir name="Arabic">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Brazil">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="China">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Czech">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Dutch">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="English">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Estonian">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="French">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="German">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Greek">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Hungary">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Italy">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Japan">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Kazakh">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Korean">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Latvian">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Lithuanian">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Poland">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Portugal">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Romanian">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Russian">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Serbian">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Spanish">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Taiwan">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Turkish">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Ukrainian">
+						<file name="KeyboardFunction.xml" />
+						<file name="KeyboardFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="HotkeySettings.png" />
+							<file name="KeyboardFunction.png" />
+							<file name="KeyboardSetting.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+				</dir>
+				<dir name="Mail_Function">
+					<dir name="Arabic">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Brazil">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="China">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Czech">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Dutch">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="English">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Estonian">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="French">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="German">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Greek">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Hungary">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Italy">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Japan">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Kazakh">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Korean">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Latvian">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Lithuanian">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Poland">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Portugal">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Romanian">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Russian">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Serbian">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Spanish">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Taiwan">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Turkish">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+					<dir name="Ukrainian">
+						<file name="MailFunction.xml" />
+						<file name="MailFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="AccountManager.png" />
+							<file name="AccountMenu.png" />
+							<file name="Advance.png" />
+							<file name="MailNotify.png" />
+							<file name="NoteLight.gif" />
+							<file name="Play.png" />
+							<file name="Search.png" />
+							<file name="Setting.png" />
+							<file name="Stop.png" />
+						</dir>
+					</dir>
+				</dir>
+				<dir name="Main_Screen">
+					<dir name="Arabic">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Brazil">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="China">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Czech">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Dutch">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="English">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Estonian">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="French">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="German">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Greek">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Hungary">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Italy">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Japan">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Kazakh">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Korean">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Latvian">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Lithuanian">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Poland">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Portugal">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Romanian">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Russian">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Serbian">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Spanish">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Taiwan">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Turkish">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+					<dir name="Ukrainian">
+						<file name="MainScreen.xml" />
+						<file name="MainScreen_Model.xslt" />
+						<dir name="Graphic">
+							<file name="MainScreen.png" />
+							<file name="MainSkin.png" />
+							<file name="SkinButton.png" />
+							<file name="ToolKitIcon.png" />
+							<file name="ToolKitLanguage.png" />
+						</dir>
+					</dir>
+				</dir>
+				<dir name="Mouse_Function">
+					<dir name="Arabic">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Brazil">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="China">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Czech">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Dutch">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="English">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Estonian">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="French">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="German">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Greek">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Hungary">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Italy">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Japan">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Kazakh">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Korean">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Latvian">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Lithuanian">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Poland">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Portugal">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Romanian">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Russian">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Serbian">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Spanish">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Taiwan">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Turkish">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+					<dir name="Ukrainian">
+						<file name="MouseFunction.xml" />
+						<file name="MouseFunction_Model.xslt" />
+						<dir name="Graphic">
+							<file name="ButtonSettings.png" />
+							<file name="DPISettings.png" />
+							<file name="KeystrokeHW.png" />
+							<file name="Magnifier.png" />
+							<file name="MouseButtonFunctions.png" />
+							<file name="NoteLight.gif" />
+							<file name="Security.png" />
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+			<dir name="Resource">
+				<dir name="NonSkin">
+					<dir name="gAdvance">
+						<file name="icon_0.ico" />
+						<file name="icon_0.png" />
+						<file name="icon_1.ico" />
+						<file name="icon_1.png" />
+						<file name="icon_2.ico" />
+						<file name="language_01.png" />
+						<file name="language_02.png" />
+						<file name="language_03.png" />
+						<file name="language_04.png" />
+						<file name="language_05.png" />
+						<file name="language_06.png" />
+						<file name="language_07.png" />
+						<file name="language_08.png" />
+						<file name="language_09.png" />
+						<file name="language_10.png" />
+						<file name="language_11.png" />
+						<file name="language_12.png" />
+						<file name="language_13.png" />
+						<file name="language_14.png" />
+						<file name="language_15.png" />
+						<file name="language_16.png" />
+						<file name="Language_17.png" />
+						<file name="Language_18.png" />
+						<file name="Language_19.png" />
+						<file name="Language_20.png" />
+						<file name="Language_21.png" />
+						<file name="Language_22.png" />
+						<file name="Language_23.png" />
+						<file name="Language_24.png" />
+						<file name="Language_25.png" />
+						<file name="Language_26.png" />
+						<file name="language_m_01.png" />
+						<file name="language_m_02.png" />
+						<file name="language_m_03.png" />
+						<file name="language_m_04.png" />
+						<file name="language_m_05.png" />
+						<file name="language_m_06.png" />
+						<file name="language_m_07.png" />
+						<file name="language_m_08.png" />
+						<file name="language_m_09.png" />
+						<file name="language_m_10.png" />
+						<file name="language_m_11.png" />
+						<file name="language_m_12.png" />
+						<file name="language_m_13.png" />
+						<file name="language_m_14.png" />
+						<file name="language_m_15.png" />
+						<file name="language_m_16.png" />
+						<file name="language_m_17.png" />
+						<file name="language_m_18.png" />
+						<file name="language_m_19.png" />
+						<file name="language_m_20.png" />
+						<file name="language_m_21.png" />
+						<file name="language_m_22.png" />
+						<file name="language_m_23.png" />
+						<file name="language_m_24.png" />
+						<file name="language_m_25.png" />
+						<file name="language_m_26.png" />
+					</dir>
+					<dir name="gAutoPan">
+						<file name="aCenter.png" />
+						<file name="aDown.png" />
+						<file name="aDownLeft.png" />
+						<file name="aDownRight.png" />
+						<file name="aLeft.png" />
+						<file name="aRight.png" />
+						<file name="aUp.png" />
+						<file name="aUpLeft.png" />
+						<file name="aUpRight.png" />
+					</dir>
+					<dir name="gDeskMgm">
+						<file name="BGround.png" />
+						<file name="GSpeaker.png" />
+						<file name="Mute_SndOff.png" />
+						<file name="Mute_SndOn.png" />
+						<file name="RSpeaker.png" />
+						<file name="SndOff.png" />
+						<file name="SndOn.png" />
+						<file name="splash.png" />
+					</dir>
+					<dir name="gKbStatus">
+						<dir name="Skin_0">
+							<file name="lock_01.png" />
+							<file name="lock_01_a.png" />
+							<file name="lock_02.png" />
+							<file name="lock_02_a.png" />
+							<file name="lock_03.png" />
+							<file name="lock_03_a.png" />
+						</dir>
+						<dir name="Skin_1">
+							<file name="lock_01.png" />
+							<file name="lock_01_a.png" />
+							<file name="lock_02.png" />
+							<file name="lock_02_a.png" />
+							<file name="lock_03.png" />
+							<file name="lock_03_a.png" />
+						</dir>
+						<dir name="Skin_2">
+							<file name="lock_01.png" />
+							<file name="lock_01_a.png" />
+							<file name="lock_02.png" />
+							<file name="lock_02_a.png" />
+							<file name="lock_03.png" />
+							<file name="lock_03_a.png" />
+						</dir>
+					</dir>
+					<dir name="gTaskBar">
+						<dir name="Skin_0">
+							<file name="icon_a0001.ico" />
+							<file name="icon_a0002.ico" />
+							<file name="icon_a0003.ico" />
+							<file name="icon_a0004.ico" />
+							<file name="icon_a0005.ico" />
+							<file name="icon_a0006.ico" />
+							<file name="icon_a0007.ico" />
+							<file name="icon_a0008.ico" />
+							<file name="icon_a0009.ico" />
+							<file name="icon_a0010.ico" />
+							<file name="icon_a0011.ico" />
+							<file name="icon_a0012.ico" />
+							<file name="icon_a0013.ico" />
+						</dir>
+						<dir name="Skin_1">
+							<file name="mm_000.ico" />
+							<file name="mm_045.ico" />
+							<file name="mm_090.ico" />
+							<file name="mm_135.ico" />
+							<file name="mm_180.ico" />
+							<file name="mm_225.ico" />
+							<file name="mm_270.ico" />
+							<file name="mm_315.ico" />
+							<file name="mm_battery.ico" />
+							<file name="mm_close.ico" />
+							<file name="mm_open.ico" />
+						</dir>
+						<dir name="Skin_2">
+							<file name="E000.ICO" />
+							<file name="E045.ICO" />
+							<file name="E090.ICO" />
+							<file name="E135.ICO" />
+							<file name="E180.ICO" />
+							<file name="E225.ICO" />
+							<file name="E270.ICO" />
+							<file name="E315.ICO" />
+							<file name="ECLOSE.ICO" />
+							<file name="EOPEN.ICO" />
+							<file name="rE000.ico" />
+							<file name="rE045.ico" />
+							<file name="rE090.ico" />
+							<file name="rE135.ico" />
+							<file name="rE180.ico" />
+							<file name="rE225.ico" />
+							<file name="rE270.ico" />
+							<file name="rE315.ico" />
+							<file name="rEclose.ico" />
+							<file name="rEopen.ico" />
+							<file name="yE000.ico" />
+							<file name="yE045.ico" />
+							<file name="yE090.ico" />
+							<file name="yE135.ico" />
+							<file name="yE180.ico" />
+							<file name="yE225.ico" />
+							<file name="yE270.ico" />
+							<file name="yE315.ico" />
+							<file name="yEclose.ico" />
+							<file name="yEopen.ico" />
+						</dir>
+					</dir>
+					<dir name="gTaskSwitch">
+						<file name="aBK.bmp" />
+						<file name="Shell32.ico" />
+					</dir>
+					<dir name="gZoom">
+						<file name="aA1.png" />
+						<file name="aA10.png" />
+						<file name="aA10Hlp.png" />
+						<file name="aA1Hlp.png" />
+						<file name="aA2.png" />
+						<file name="aA2Hlp.png" />
+						<file name="aA3.png" />
+						<file name="aA3Hlp.png" />
+						<file name="aA4.png" />
+						<file name="aA4Hlp.png" />
+						<file name="aA5.png" />
+						<file name="aA5Hlp.png" />
+						<file name="aA6.png" />
+						<file name="aA6Hlp.png" />
+						<file name="aA7.png" />
+						<file name="aA7Hlp.png" />
+						<file name="aA8.png" />
+						<file name="aA8Hlp.png" />
+						<file name="aA9.png" />
+						<file name="aA9Hlp.png" />
+						<file name="Empty.png" />
+					</dir>
+				</dir>
+				<dir name="Skin_0">
+					<dir name="Action">
+						<file name="Action_bg_01.png" />
+						<file name="mouse_ct_03.png" />
+						<file name="mouse_ct_03_m.png" />
+						<file name="mouse_ct_06.png" />
+						<file name="mouse_ct_06_m.png" />
+						<file name="mouse_ct_08.png" />
+						<file name="mouse_ct_10.png" />
+						<file name="mouse_ct_14.png" />
+						<file name="mouse_ct_17.png" />
+						<file name="mouse_ct_17_m.png" />
+						<file name="mouse_ct_19.png" />
+						<file name="mouse_ct_19_m.png" />
+						<file name="mouse_ct_21.png" />
+						<file name="mouse_ct_21_m.png" />
+					</dir>
+					<dir name="Advance">
+						<file name="language_bg_01.png" />
+						<file name="other_ban_02.png" />
+						<file name="other_ban_02_m.png" />
+						<file name="other_ban_03.png" />
+						<file name="other_ban_03_m.png" />
+						<file name="other_ban_06.png" />
+						<file name="other_ban_06_m.png" />
+						<file name="other_ban_07.png" />
+						<file name="other_ban_07_m.png" />
+						<file name="other_ban_13.png" />
+						<file name="other_ban_13_m.png" />
+						<file name="other_bg_01.png" />
+						<file name="other_ct_03.png" />
+						<file name="other_ct_03_m.png" />
+						<file name="other_ct_06.png" />
+						<file name="other_ct_06_m1.png" />
+						<file name="other_ct_06_m2.png" />
+						<file name="other_ct_14.png" />
+						<file name="other_ct_17.png" />
+						<file name="other_ct_17_m.png" />
+						<file name="other_ct_19.png" />
+						<file name="other_ct_19_m.png" />
+						<file name="other_ct_21.png" />
+						<file name="other_ct_21_m.png" />
+						<file name="property_bg_01.png" />
+					</dir>
+					<dir name="central">
+						<file name="central_a0001.png" />
+						<file name="central_a0001_s.png" />
+						<file name="central_a0002.png" />
+						<file name="central_a0003.png" />
+						<file name="central_a0004.png" />
+						<file name="central_a0005.png" />
+						<file name="central_a0006.png" />
+						<file name="central_a0007.png" />
+						<file name="central_a0008.png" />
+						<file name="central_a0009.png" />
+						<file name="central_a0010.png" />
+						<file name="central_a0011.png" />
+						<file name="central_a0012.png" />
+						<file name="central_a0013.png" />
+						<file name="central_a0014.png" />
+						<file name="central_a0015.png" />
+						<file name="central_a0016.png" />
+						<file name="central_a0017.png" />
+						<file name="central_a0018.png" />
+						<file name="central_a0019.png" />
+						<file name="central_a0020.png" />
+						<file name="central_a0021.png" />
+						<file name="central_a0022.png" />
+						<file name="central_a0023.png" />
+						<file name="central_a0024.png" />
+						<file name="central_a0025.png" />
+						<file name="central_a0026.png" />
+						<file name="central_a0027.png" />
+						<file name="central_a0027_s.png" />
+						<file name="central_b0001.png" />
+						<file name="central_b0002.png" />
+						<file name="central_b0003.png" />
+						<file name="central_b0004.png" />
+						<file name="central_b0005.png" />
+						<file name="central_b0006.png" />
+						<file name="central_b0007.png" />
+						<file name="central_b0008.png" />
+						<file name="central_b0009.png" />
+						<file name="central_b0010.png" />
+						<file name="central_b0011.png" />
+						<file name="central_b0012.png" />
+						<file name="central_b0013.png" />
+						<file name="central_b0014.png" />
+						<file name="central_b0015.png" />
+						<file name="central_b0016.png" />
+						<file name="central_b0017.png" />
+						<file name="central_b0018.png" />
+						<file name="central_b0019.png" />
+						<file name="central_b0020.png" />
+						<file name="central_b0021.png" />
+						<file name="central_b0022.png" />
+						<file name="central_b0023.png" />
+						<file name="central_b0024.png" />
+						<file name="central_b0025.png" />
+						<file name="central_b0026.png" />
+						<file name="central_b0027.png" />
+						<file name="central_ban_01.png" />
+						<file name="central_ban_01_m.png" />
+						<file name="central_ban_02.png" />
+						<file name="central_ban_02_m.png" />
+						<file name="central_ban_03.png" />
+						<file name="central_ban_03_m.png" />
+						<file name="central_ban_04.png" />
+						<file name="central_ban_04_m.png" />
+						<file name="central_ban_05.png" />
+						<file name="central_ban_05_m.png" />
+						<file name="central_ban_06.png" />
+						<file name="central_ban_06_m.png" />
+						<file name="central_bg_01.png" />
+						<file name="central_bg_02.png" />
+						<file name="central_bg_03.png" />
+						<file name="central_bg_04.png" />
+						<file name="central_dn_01.png" />
+						<file name="central_dn_01_m.png" />
+						<file name="central_up_01.png" />
+						<file name="central_up_01_m.png" />
+						<file name="close_02.png" />
+						<file name="close_02_m.png" />
+						<file name="skin_ban_01.png" />
+						<file name="skin_ban_01_m.png" />
+					</dir>
+					<dir name="CompanyProfile">
+						<file name="ba_01.png" />
+						<file name="ba_01_m.png" />
+						<file name="ba_02.png" />
+						<file name="ba_02_m.png" />
+						<file name="ba_03.png" />
+						<file name="ba_03_m.png" />
+						<file name="close_01.png" />
+						<file name="close_01_m.png" />
+						<file name="Company_bg_01.png" />
+						<file name="Company_bg_02.png" />
+						<file name="Next_01.png" />
+						<file name="Next_01_m.png" />
+						<file name="Previous_01.png" />
+						<file name="Previous_01_m.png" />
+					</dir>
+					<dir name="Email">
+						<file name="Advance_bg_01.PNG" />
+						<file name="Inform_bg_01.PNG" />
+						<file name="mail_ban_02.PNG" />
+						<file name="mail_ban_02_m.PNG" />
+						<file name="mail_ban_03.PNG" />
+						<file name="mail_ban_03_m.PNG" />
+						<file name="mail_ban_04.PNG" />
+						<file name="mail_ban_04_m.PNG" />
+						<file name="mail_ban_05.PNG" />
+						<file name="mail_ban_05_m.PNG" />
+						<file name="mail_ban_06.PNG" />
+						<file name="mail_ban_07.PNG" />
+						<file name="mail_ban_07_m.PNG" />
+						<file name="mail_ban_08.PNG" />
+						<file name="mail_ban_08_m.PNG" />
+						<file name="mail_ban_13.PNG" />
+						<file name="mail_ban_13_m.PNG" />
+						<file name="mail_bg_01.PNG" />
+						<file name="mail_ct_03.PNG" />
+						<file name="mail_ct_03_m.PNG" />
+						<file name="mail_ct_06.PNG" />
+						<file name="mail_ct_06_m.PNG" />
+						<file name="mail_ct_08.PNG" />
+						<file name="mail_ct_10.PNG" />
+						<file name="mail_ct_17.PNG" />
+						<file name="mail_ct_17_m.PNG" />
+						<file name="mail_ct_19.PNG" />
+						<file name="mail_ct_19_m.PNG" />
+						<file name="mail_ct_21.PNG" />
+						<file name="mail_ct_21_m.PNG" />
+						<file name="mail_play_01.PNG" />
+						<file name="mail_play_01_m.PNG" />
+						<file name="mail_pp_01.PNG" />
+						<file name="mail_search_01.PNG" />
+						<file name="mail_search_01_m.PNG" />
+						<file name="mail_stop_01.PNG" />
+						<file name="mail_stop_01_m.PNG" />
+						<file name="popfilter_bg.PNG" />
+						<file name="popmenu_bg.PNG" />
+						<file name="popwin_bg.PNG" />
+					</dir>
+					<dir name="FuncDlg">
+						<file name="mouse_fd_01.png" />
+						<file name="mouse_fd_02.png" />
+						<file name="popsearch_bg.png" />
+						<file name="popwin_bg.png" />
+						<file name="popwin_ct_01.png" />
+						<file name="popwin_ct_01_m.png" />
+						<file name="search_ban_08.png" />
+						<file name="search_ban_08_m.png" />
+						<file name="search_ct_01.png" />
+						<file name="search_ct_01_m.png" />
+						<file name="search_ct_02.png" />
+						<file name="search_ct_02_m.png" />
+						<dir name="Keyboard">
+							<file name="keyboard_ban_01s.png" />
+							<file name="keyboard_ban_01s_m.png" />
+							<file name="keyboard_ban_02s.png" />
+							<file name="keyboard_ban_02s_m.png" />
+							<file name="keyboard_ban_06.png" />
+							<file name="keyboard_ban_06_m.png" />
+							<file name="keyboard_ban_07.png" />
+							<file name="keyboard_ban_07_m.png" />
+							<file name="keyboard_ban_08.png" />
+							<file name="keyboard_ban_08_m.png" />
+							<file name="keyboard_ban_09.png" />
+							<file name="keyboard_ban_09_m.png" />
+							<file name="keyboard_ban_13.png" />
+							<file name="keyboard_ban_13_m.png" />
+							<file name="keyboard_ban_14.png" />
+							<file name="keyboard_ban_14_m.png" />
+							<file name="keyboard_bg_03b.png" />
+							<file name="keyboard_bg_08.png" />
+							<file name="keyboard_ct_06.png" />
+							<file name="keyboard_ct_06_m.png" />
+							<file name="keyboard_dn_01.png" />
+							<file name="keyboard_dn_01_m.png" />
+							<file name="keyboard_tit_01c.png" />
+							<file name="keyboard_up_01.png" />
+							<file name="keyboard_up_01_m.png" />
+						</dir>
+						<dir name="Mouse">
+							<file name="mouse_ban_06.png" />
+							<file name="mouse_ban_06_m.png" />
+							<file name="mouse_ban_07.png" />
+							<file name="mouse_ban_07_m.png" />
+							<file name="mouse_ban_08.png" />
+							<file name="mouse_ban_08_m.png" />
+							<file name="mouse_ban_10.png" />
+							<file name="mouse_ban_10_m.png" />
+							<file name="mouse_ban_11.png" />
+							<file name="mouse_ban_11_m.png" />
+							<file name="mouse_ban_14.png" />
+							<file name="mouse_ban_14_m.png" />
+							<file name="mouse_bg_03a.png" />
+							<file name="mouse_bg_03b.png" />
+							<file name="mouse_fd_01.png" />
+							<file name="mouse_Func_01.png" />
+							<file name="mouse_tit_01c.png" />
+						</dir>
+					</dir>
+					<dir name="Gaming">
+						<file name="bg_00.png" />
+						<file name="bg_01.png" />
+						<file name="bg_02.png" />
+						<file name="bg_03.png" />
+						<file name="mouse_ga_06.png" />
+						<file name="mouse_ga_06_m.png" />
+						<file name="mouse_ga_06_m1.png" />
+						<file name="mouse_ga_06_m2.png" />
+						<dir name="VID0458_PID0057">
+							<file name="ga_bg_00.png" />
+							<file name="ga_bg_01.png" />
+							<file name="ga_bg_02.png" />
+							<file name="ga_bg_03.png" />
+						</dir>
+						<dir name="VID0458_PID005C">
+							<file name="ga_bg_00.png" />
+							<file name="ga_bg_01.png" />
+							<file name="ga_bg_02.png" />
+							<file name="ga_bg_03.png" />
+						</dir>
+						<dir name="VID0458_PID0072">
+							<file name="ga_bg_00.png" />
+							<file name="ga_bg_01.png" />
+							<file name="ga_bg_02.png" />
+							<file name="ga_bg_03.png" />
+						</dir>
+					</dir>
+					<dir name="gKbStatus">
+						<file name="lock_01.png" />
+						<file name="lock_01_a.png" />
+						<file name="lock_02.png" />
+						<file name="lock_02_a.png" />
+						<file name="lock_03.png" />
+						<file name="lock_03_a.png" />
+					</dir>
+					<dir name="keyboard">
+						<file name="battery_0.png" />
+						<file name="battery_100.png" />
+						<file name="battery_20.png" />
+						<file name="battery_40.png" />
+						<file name="battery_60.png" />
+						<file name="battery_80.png" />
+						<file name="keyboard_ban_01.png" />
+						<file name="keyboard_ban_01_m.png" />
+						<file name="keyboard_ban_02.png" />
+						<file name="keyboard_ban_02_m.png" />
+						<file name="keyboard_ban_03.png" />
+						<file name="keyboard_ban_03_m.png" />
+						<file name="keyboard_ban_04.png" />
+						<file name="keyboard_ban_04_m.png" />
+						<file name="keyboard_ban_05.png" />
+						<file name="keyboard_ban_05_m.png" />
+						<file name="keyboard_ban_06.png" />
+						<file name="keyboard_ban_06_m.png" />
+						<file name="keyboard_ban_07.png" />
+						<file name="keyboard_ban_07_m.png" />
+						<file name="keyboard_ban_08.png" />
+						<file name="keyboard_ban_08_m.png" />
+						<file name="keyboard_ban_09.png" />
+						<file name="keyboard_ban_09_m.png" />
+						<file name="keyboard_ban_10.png" />
+						<file name="keyboard_ban_10_m.png" />
+						<file name="keyboard_ban_13.png" />
+						<file name="keyboard_ban_13_m.png" />
+						<file name="keyboard_bar_01.png" />
+						<file name="keyboard_bar_01_01.png" />
+						<file name="keyboard_bar_01_02.png" />
+						<file name="keyboard_bar_02_01.png" />
+						<file name="keyboard_bar_02_02.png" />
+						<file name="keyboard_bg_01.png" />
+						<file name="keyboard_bg_01_s.png" />
+						<file name="keyboard_bg_02.png" />
+						<file name="keyboard_bg_04.png" />
+						<file name="keyboard_bg_05.png" />
+						<file name="keyboard_bg_07.png" />
+						<file name="keyboard_bg_08.png" />
+						<file name="keyboard_ct_03.png" />
+						<file name="keyboard_ct_03_m.png" />
+						<file name="keyboard_ct_08.png" />
+						<file name="keyboard_ct_10.png" />
+						<file name="keyboard_ct_17.png" />
+						<file name="keyboard_ct_17_m.png" />
+					</dir>
+					<dir name="Messagebox">
+						<file name="mouse_ban_08.png" />
+						<file name="mouse_ban_08_m.png" />
+						<file name="popwin_bg_01.png" />
+						<file name="popwin_bg_02.png" />
+						<file name="popwin_bg_03.png" />
+					</dir>
+					<dir name="Mouse">
+						<file name="mouse_ban_01.png" />
+						<file name="mouse_ban_01_m.png" />
+						<file name="mouse_ban_02.png" />
+						<file name="mouse_ban_02_m.png" />
+						<file name="mouse_ban_03.png" />
+						<file name="mouse_ban_03_m.png" />
+						<file name="mouse_ban_04.png" />
+						<file name="mouse_ban_04_m.png" />
+						<file name="mouse_ban_05.png" />
+						<file name="mouse_ban_05_m.png" />
+						<file name="mouse_ban_09.png" />
+						<file name="mouse_ban_09_m.png" />
+						<file name="mouse_ban_10.png" />
+						<file name="mouse_ban_10_m.png" />
+						<file name="mouse_ban_11.png" />
+						<file name="mouse_ban_11_m.png" />
+						<file name="mouse_ban_12.png" />
+						<file name="mouse_ban_12_m.png" />
+						<file name="mouse_bar.png" />
+						<file name="mouse_bar_01.png" />
+						<file name="mouse_bg_01.png" />
+						<file name="mouse_bg_02.png" />
+						<file name="mouse_bg_02a.png" />
+						<file name="mouse_pp_01.png" />
+						<file name="mouse_set_01.png" />
+						<dir name="Function">
+							<file name="mouse_ban_09.png" />
+							<file name="mouse_ban_09_m.png" />
+							<file name="mouse_ban_10.png" />
+							<file name="mouse_ban_10_m.png" />
+							<file name="mouse_bg_03a.png" />
+							<file name="mouse_bg_03b.png" />
+							<file name="mouse_bg_03c.png" />
+							<file name="mouse_tit_01c.png" />
+						</dir>
+					</dir>
+					<dir name="Security">
+						<file name="Security.jpg" />
+					</dir>
+					<dir name="Wireless">
+						<file name="battery_0.png" />
+						<file name="battery_100.png" />
+						<file name="battery_20.png" />
+						<file name="battery_40.png" />
+						<file name="battery_60.png" />
+						<file name="battery_80.png" />
+						<file name="bg_a.png" />
+						<file name="demo.jpg" />
+						<file name="demo.png" />
+						<file name="Wireless_bg_01.png" />
+					</dir>
+				</dir>
+				<dir name="Skin_1">
+					<dir name="Action">
+						<file name="Action_bg_01.png" />
+						<file name="mouse_ct_03.png" />
+						<file name="mouse_ct_03_m.png" />
+						<file name="mouse_ct_06.png" />
+						<file name="mouse_ct_06_m.png" />
+						<file name="mouse_ct_08.png" />
+						<file name="mouse_ct_10.png" />
+						<file name="mouse_ct_14.png" />
+						<file name="mouse_ct_17.png" />
+						<file name="mouse_ct_17_m.png" />
+						<file name="mouse_ct_19.png" />
+						<file name="mouse_ct_19_m.png" />
+						<file name="mouse_ct_21.png" />
+						<file name="mouse_ct_21_m.png" />
+					</dir>
+					<dir name="Advance">
+						<file name="language_bg_01.png" />
+						<file name="other_ban_02.png" />
+						<file name="other_ban_02_m.png" />
+						<file name="other_ban_03.png" />
+						<file name="other_ban_03_m.png" />
+						<file name="other_ban_06.png" />
+						<file name="other_ban_06_m.png" />
+						<file name="other_ban_07.png" />
+						<file name="other_ban_07_m.png" />
+						<file name="other_ban_13.png" />
+						<file name="other_ban_13_m.png" />
+						<file name="other_bg_01.png" />
+						<file name="other_ct_03.png" />
+						<file name="other_ct_03_m.png" />
+						<file name="other_ct_06.png" />
+						<file name="other_ct_06_m1.png" />
+						<file name="other_ct_06_m2.png" />
+						<file name="other_ct_14.png" />
+						<file name="other_ct_17.png" />
+						<file name="other_ct_17_m.png" />
+						<file name="other_ct_19.png" />
+						<file name="other_ct_19_m.png" />
+						<file name="other_ct_21.png" />
+						<file name="other_ct_21_m.png" />
+						<file name="property_bg_01.png" />
+					</dir>
+					<dir name="central">
+						<file name="central_a0001.png" />
+						<file name="central_a0002.png" />
+						<file name="central_a0003.png" />
+						<file name="central_a0004.png" />
+						<file name="central_a0005.png" />
+						<file name="central_a0006.png" />
+						<file name="central_a0007.png" />
+						<file name="central_a0008.png" />
+						<file name="central_a0009.png" />
+						<file name="central_a0010.png" />
+						<file name="central_a0011.png" />
+						<file name="central_a0012.png" />
+						<file name="central_a0013.png" />
+						<file name="central_a0014.png" />
+						<file name="central_a0015.png" />
+						<file name="central_a0016.png" />
+						<file name="central_a0017.png" />
+						<file name="central_a0018.png" />
+						<file name="central_a0019.png" />
+						<file name="central_a0020.png" />
+						<file name="central_a0021.png" />
+						<file name="central_a0022.png" />
+						<file name="central_a0023.png" />
+						<file name="central_a0024.png" />
+						<file name="central_a0025.png" />
+						<file name="central_a0026.png" />
+						<file name="central_a0027.png" />
+						<file name="central_a0027_s.png" />
+						<file name="central_b0001.png" />
+						<file name="central_b0002.png" />
+						<file name="central_b0003.png" />
+						<file name="central_b0004.png" />
+						<file name="central_b0005.png" />
+						<file name="central_b0006.png" />
+						<file name="central_b0007.png" />
+						<file name="central_b0008.png" />
+						<file name="central_b0009.png" />
+						<file name="central_b0010.png" />
+						<file name="central_b0011.png" />
+						<file name="central_b0012.png" />
+						<file name="central_b0013.png" />
+						<file name="central_b0014.png" />
+						<file name="central_b0015.png" />
+						<file name="central_b0016.png" />
+						<file name="central_b0017.png" />
+						<file name="central_b0018.png" />
+						<file name="central_b0019.png" />
+						<file name="central_b0020.png" />
+						<file name="central_b0021.png" />
+						<file name="central_b0022.png" />
+						<file name="central_b0023.png" />
+						<file name="central_b0024.png" />
+						<file name="central_b0025.png" />
+						<file name="central_b0026.png" />
+						<file name="central_b0027.png" />
+						<file name="central_ban_01.png" />
+						<file name="central_ban_01_m.png" />
+						<file name="central_ban_02.png" />
+						<file name="central_ban_02_m.png" />
+						<file name="central_ban_03.png" />
+						<file name="central_ban_03_m.png" />
+						<file name="central_ban_04.png" />
+						<file name="central_ban_04_m.png" />
+						<file name="central_ban_05.png" />
+						<file name="central_ban_05_m.png" />
+						<file name="central_ban_06.png" />
+						<file name="central_ban_06_m.png" />
+						<file name="central_bg_01.png" />
+						<file name="central_bg_02.png" />
+						<file name="central_bg_03.png" />
+						<file name="central_bg_04.png" />
+						<file name="central_dn_01.png" />
+						<file name="central_dn_01_m.png" />
+						<file name="central_up_01.png" />
+						<file name="central_up_01_m.png" />
+						<file name="close_02.png" />
+						<file name="close_02_m.png" />
+						<file name="skin_ban_01.png" />
+						<file name="skin_ban_01_m.png" />
+					</dir>
+					<dir name="CompanyProfile">
+						<file name="ba_01.png" />
+						<file name="ba_01_m.png" />
+						<file name="ba_02.png" />
+						<file name="ba_02_m.png" />
+						<file name="ba_03.png" />
+						<file name="ba_03_m.png" />
+						<file name="close_01.png" />
+						<file name="close_01_m.png" />
+						<file name="Company_bg_01.png" />
+						<file name="Company_bg_02.png" />
+						<file name="Next_01.png" />
+						<file name="Next_01_m.png" />
+						<file name="Previous_01.png" />
+						<file name="Previous_01_m.png" />
+					</dir>
+					<dir name="Email">
+						<file name="Advance_bg_01.PNG" />
+						<file name="Inform_bg_01.PNG" />
+						<file name="mail_ban_02.PNG" />
+						<file name="mail_ban_02_m.PNG" />
+						<file name="mail_ban_03.PNG" />
+						<file name="mail_ban_03_m.PNG" />
+						<file name="mail_ban_04.PNG" />
+						<file name="mail_ban_04_m.PNG" />
+						<file name="mail_ban_05.PNG" />
+						<file name="mail_ban_05_m.PNG" />
+						<file name="mail_ban_06.PNG" />
+						<file name="mail_ban_07.PNG" />
+						<file name="mail_ban_07_m.PNG" />
+						<file name="mail_ban_08.PNG" />
+						<file name="mail_ban_08_m.PNG" />
+						<file name="mail_ban_13.PNG" />
+						<file name="mail_ban_13_m.PNG" />
+						<file name="mail_bg_01.PNG" />
+						<file name="mail_ct_03.PNG" />
+						<file name="mail_ct_03_m.PNG" />
+						<file name="mail_ct_06.PNG" />
+						<file name="mail_ct_06_m.PNG" />
+						<file name="mail_ct_08.PNG" />
+						<file name="mail_ct_10.PNG" />
+						<file name="mail_ct_17.PNG" />
+						<file name="mail_ct_17_m.PNG" />
+						<file name="mail_ct_19.PNG" />
+						<file name="mail_ct_19_m.PNG" />
+						<file name="mail_ct_21.PNG" />
+						<file name="mail_ct_21_m.PNG" />
+						<file name="mail_play_01.PNG" />
+						<file name="mail_play_01_m.PNG" />
+						<file name="mail_pp_01.PNG" />
+						<file name="mail_search_01.PNG" />
+						<file name="mail_search_01_m.PNG" />
+						<file name="mail_stop_01.PNG" />
+						<file name="mail_stop_01_m.PNG" />
+						<file name="popfilter_bg.PNG" />
+						<file name="popmenu_bg.PNG" />
+						<file name="popwin_bg.PNG" />
+					</dir>
+					<dir name="FuncDlg">
+						<file name="mouse_fd_01.png" />
+						<file name="mouse_fd_02.png" />
+						<file name="popsearch_bg.png" />
+						<file name="popwin_bg.png" />
+						<file name="popwin_ct_01.png" />
+						<file name="popwin_ct_01_m.png" />
+						<file name="search_ban_08.png" />
+						<file name="search_ban_08_m.png" />
+						<file name="search_ct_01.png" />
+						<file name="search_ct_01_m.png" />
+						<file name="search_ct_02.png" />
+						<file name="search_ct_02_m.png" />
+						<dir name="Keyboard">
+							<file name="keyboard_ban_01s.png" />
+							<file name="keyboard_ban_01s_m.png" />
+							<file name="keyboard_ban_02s.png" />
+							<file name="keyboard_ban_02s_m.png" />
+							<file name="keyboard_ban_06.png" />
+							<file name="keyboard_ban_06_m.png" />
+							<file name="keyboard_ban_07.png" />
+							<file name="keyboard_ban_07_m.png" />
+							<file name="keyboard_ban_08.png" />
+							<file name="keyboard_ban_08_m.png" />
+							<file name="keyboard_ban_09.png" />
+							<file name="keyboard_ban_09_m.png" />
+							<file name="keyboard_ban_13.png" />
+							<file name="keyboard_ban_13_m.png" />
+							<file name="keyboard_ban_14.png" />
+							<file name="keyboard_ban_14_m.png" />
+							<file name="keyboard_bg_03b.png" />
+							<file name="keyboard_bg_08.png" />
+							<file name="keyboard_ct_06.png" />
+							<file name="keyboard_ct_06_m.png" />
+							<file name="keyboard_dn_01.png" />
+							<file name="keyboard_dn_01_m.png" />
+							<file name="keyboard_tit_01c.png" />
+							<file name="keyboard_up_01.png" />
+							<file name="keyboard_up_01_m.png" />
+						</dir>
+						<dir name="Mouse">
+							<file name="mouse_ban_06.png" />
+							<file name="mouse_ban_06_m.png" />
+							<file name="mouse_ban_07.png" />
+							<file name="mouse_ban_07_m.png" />
+							<file name="mouse_ban_08.png" />
+							<file name="mouse_ban_08_m.png" />
+							<file name="mouse_ban_10.png" />
+							<file name="mouse_ban_10_m.png" />
+							<file name="mouse_ban_11.png" />
+							<file name="mouse_ban_11_m.png" />
+							<file name="mouse_ban_14.png" />
+							<file name="mouse_ban_14_m.png" />
+							<file name="mouse_bg_03a.png" />
+							<file name="mouse_bg_03b.png" />
+							<file name="mouse_fd_01.png" />
+							<file name="mouse_Func_01.png" />
+							<file name="mouse_tit_01c.png" />
+						</dir>
+					</dir>
+					<dir name="Gaming">
+						<file name="bg_00.png" />
+						<file name="bg_01.png" />
+						<file name="bg_02.png" />
+						<file name="bg_03.png" />
+						<file name="bg_04.png" />
+						<file name="mouse_ga_06.png" />
+						<file name="mouse_ga_06_m.png" />
+						<file name="mouse_ga_06_m1.png" />
+						<file name="mouse_ga_06_m2.png" />
+						<dir name="VID0458_PID0057">
+							<file name="ga_bg_00.png" />
+							<file name="ga_bg_01.png" />
+							<file name="ga_bg_02.png" />
+							<file name="ga_bg_03.png" />
+							<file name="ga_bg_04.png" />
+						</dir>
+						<dir name="VID0458_PID005C">
+							<file name="ga_bg_00.png" />
+							<file name="ga_bg_01.png" />
+							<file name="ga_bg_02.png" />
+							<file name="ga_bg_03.png" />
+							<file name="ga_bg_04.png" />
+						</dir>
+						<dir name="VID0458_PID0072">
+							<file name="ga_bg_00.png" />
+							<file name="ga_bg_01.png" />
+							<file name="ga_bg_02.png" />
+							<file name="ga_bg_03.png" />
+						</dir>
+					</dir>
+					<dir name="gKbStatus">
+						<file name="lock_01.png" />
+						<file name="lock_01_a.png" />
+						<file name="lock_02.png" />
+						<file name="lock_02_a.png" />
+						<file name="lock_03.png" />
+						<file name="lock_03_a.png" />
+					</dir>
+					<dir name="keyboard">
+						<file name="battery_0.png" />
+						<file name="battery_100.png" />
+						<file name="battery_20.png" />
+						<file name="battery_40.png" />
+						<file name="battery_60.png" />
+						<file name="battery_80.png" />
+						<file name="keyboard_ban_01.png" />
+						<file name="keyboard_ban_01_m.png" />
+						<file name="keyboard_ban_02.png" />
+						<file name="keyboard_ban_02_m.png" />
+						<file name="keyboard_ban_03.png" />
+						<file name="keyboard_ban_03_m.png" />
+						<file name="keyboard_ban_04.png" />
+						<file name="keyboard_ban_04_m.png" />
+						<file name="keyboard_ban_05.png" />
+						<file name="keyboard_ban_05_m.png" />
+						<file name="keyboard_ban_06.png" />
+						<file name="keyboard_ban_06_m.png" />
+						<file name="keyboard_ban_07.png" />
+						<file name="keyboard_ban_07_m.png" />
+						<file name="keyboard_ban_08.png" />
+						<file name="keyboard_ban_08_m.png" />
+						<file name="keyboard_ban_09.png" />
+						<file name="keyboard_ban_09_m.png" />
+						<file name="keyboard_ban_10.png" />
+						<file name="keyboard_ban_10_m.png" />
+						<file name="keyboard_ban_13.png" />
+						<file name="keyboard_ban_13_m.png" />
+						<file name="keyboard_bar_01.png" />
+						<file name="keyboard_bar_01_01.png" />
+						<file name="keyboard_bar_01_02.png" />
+						<file name="keyboard_bar_02_01.png" />
+						<file name="keyboard_bar_02_02.png" />
+						<file name="keyboard_bg_01.png" />
+						<file name="keyboard_bg_01_s.png" />
+						<file name="keyboard_bg_02.png" />
+						<file name="keyboard_bg_04.png" />
+						<file name="keyboard_bg_05.png" />
+						<file name="keyboard_bg_07.png" />
+						<file name="keyboard_bg_08.png" />
+						<file name="keyboard_ct_03.png" />
+						<file name="keyboard_ct_03_m.png" />
+						<file name="keyboard_ct_08.png" />
+						<file name="keyboard_ct_10.png" />
+						<file name="keyboard_ct_17.png" />
+						<file name="mouse_ct_17_m.png" />
+					</dir>
+					<dir name="Messagebox">
+						<file name="mouse_ban_08.png" />
+						<file name="mouse_ban_08_m.png" />
+						<file name="popwin_bg_01.png" />
+						<file name="popwin_bg_02.png" />
+						<file name="popwin_bg_03.png" />
+					</dir>
+					<dir name="Mouse">
+						<file name="mouse_ban_01.png" />
+						<file name="mouse_ban_01_m.png" />
+						<file name="mouse_ban_02.png" />
+						<file name="mouse_ban_02_m.png" />
+						<file name="mouse_ban_03.png" />
+						<file name="mouse_ban_03_m.png" />
+						<file name="mouse_ban_04.png" />
+						<file name="mouse_ban_04_m.png" />
+						<file name="mouse_ban_05.png" />
+						<file name="mouse_ban_05_m.png" />
+						<file name="mouse_ban_09.png" />
+						<file name="mouse_ban_09_m.png" />
+						<file name="mouse_ban_10.png" />
+						<file name="mouse_ban_10_m.png" />
+						<file name="mouse_ban_11.png" />
+						<file name="mouse_ban_11_m.png" />
+						<file name="mouse_ban_12.png" />
+						<file name="mouse_ban_12_m.png" />
+						<file name="mouse_bar.png" />
+						<file name="mouse_bar_01.png" />
+						<file name="mouse_bg_01.png" />
+						<file name="mouse_bg_02.png" />
+						<file name="mouse_bg_02a.png" />
+						<file name="mouse_pp_01.png" />
+						<file name="mouse_set_01.png" />
+						<dir name="Function">
+							<file name="mouse_ban_09.png" />
+							<file name="mouse_ban_09_m.png" />
+							<file name="mouse_ban_10.png" />
+							<file name="mouse_ban_10_m.png" />
+							<file name="mouse_bg_03a.png" />
+							<file name="mouse_bg_03b.png" />
+							<file name="mouse_bg_03c.png" />
+							<file name="mouse_tit_01c.png" />
+						</dir>
+					</dir>
+					<dir name="Security">
+						<file name="Security.png" />
+					</dir>
+					<dir name="Wireless">
+						<file name="battery_0.png" />
+						<file name="battery_100.png" />
+						<file name="battery_20.png" />
+						<file name="battery_40.png" />
+						<file name="battery_60.png" />
+						<file name="battery_80.png" />
+						<file name="bg_a.png" />
+						<file name="Wireless_bg_01.png" />
+					</dir>
+				</dir>
+				<dir name="Skin_2">
+					<dir name="Action">
+						<file name="Action_bg_01.png" />
+						<file name="mouse_ct_03.png" />
+						<file name="mouse_ct_03_m.png" />
+						<file name="mouse_ct_06.png" />
+						<file name="mouse_ct_06_m.png" />
+						<file name="mouse_ct_08.png" />
+						<file name="mouse_ct_10.png" />
+						<file name="mouse_ct_14.png" />
+						<file name="mouse_ct_17.png" />
+						<file name="mouse_ct_17_m.png" />
+						<file name="mouse_ct_19.png" />
+						<file name="mouse_ct_19_m.png" />
+						<file name="mouse_ct_21.png" />
+						<file name="mouse_ct_21_m.png" />
+					</dir>
+					<dir name="Advance">
+						<file name="language_bg_01.png" />
+						<file name="mouse_pp_01.png" />
+						<file name="other_ban_02.png" />
+						<file name="other_ban_02_m.png" />
+						<file name="other_ban_03.png" />
+						<file name="other_ban_03_m.png" />
+						<file name="other_ban_06.png" />
+						<file name="other_ban_06_m.png" />
+						<file name="other_ban_07.png" />
+						<file name="other_ban_07_m.png" />
+						<file name="other_ban_13.png" />
+						<file name="other_ban_13_m.png" />
+						<file name="other_bg_01.png" />
+						<file name="other_ct_03.png" />
+						<file name="other_ct_03_m.png" />
+						<file name="other_ct_06.png" />
+						<file name="other_ct_06_m1.png" />
+						<file name="other_ct_06_m2.png" />
+						<file name="other_ct_14.png" />
+						<file name="other_ct_17.png" />
+						<file name="other_ct_17_m.png" />
+						<file name="other_ct_19.png" />
+						<file name="other_ct_19_m.png" />
+						<file name="other_ct_21.png" />
+						<file name="other_ct_21_m.png" />
+						<file name="property_bg_01.png" />
+					</dir>
+					<dir name="central">
+						<file name="central_a0001.png" />
+						<file name="central_a0001_s.png" />
+						<file name="central_a0002.png" />
+						<file name="central_a0003.png" />
+						<file name="central_a0004.png" />
+						<file name="central_a0005.png" />
+						<file name="central_a0006.png" />
+						<file name="central_a0007.png" />
+						<file name="central_a0008.png" />
+						<file name="central_a0009.png" />
+						<file name="central_a0010.png" />
+						<file name="central_a0011.png" />
+						<file name="central_a0012.png" />
+						<file name="central_a0013.png" />
+						<file name="central_a0014.png" />
+						<file name="central_a0015.png" />
+						<file name="central_a0016.png" />
+						<file name="central_a0017.png" />
+						<file name="central_a0018.png" />
+						<file name="central_a0018_s.png" />
+						<file name="central_a0019.png" />
+						<file name="central_a0020.png" />
+						<file name="central_a0021.png" />
+						<file name="central_a0022.png" />
+						<file name="central_a0023.png" />
+						<file name="central_a0024.png" />
+						<file name="central_a0025.png" />
+						<file name="central_a0026.png" />
+						<file name="central_a0027.png" />
+						<file name="central_a0027_s.png" />
+						<file name="central_b0001.png" />
+						<file name="central_b0002.png" />
+						<file name="central_b0003.png" />
+						<file name="central_b0004.png" />
+						<file name="central_b0005.png" />
+						<file name="central_b0006.png" />
+						<file name="central_b0007.png" />
+						<file name="central_b0008.png" />
+						<file name="central_b0009.png" />
+						<file name="central_b0010.png" />
+						<file name="central_b0011.png" />
+						<file name="central_b0012.png" />
+						<file name="central_b0013.png" />
+						<file name="central_b0014.png" />
+						<file name="central_b0015.png" />
+						<file name="central_b0016.png" />
+						<file name="central_b0017.png" />
+						<file name="central_b0018.png" />
+						<file name="central_b0019.png" />
+						<file name="central_b0020.png" />
+						<file name="central_b0021.png" />
+						<file name="central_b0022.png" />
+						<file name="central_b0023.png" />
+						<file name="central_b0024.png" />
+						<file name="central_b0025.png" />
+						<file name="central_b0026.png" />
+						<file name="central_b0027.png" />
+						<file name="central_ban_01.png" />
+						<file name="central_ban_01_m.png" />
+						<file name="central_ban_02.png" />
+						<file name="central_ban_02_m.png" />
+						<file name="central_ban_03.png" />
+						<file name="central_ban_03_m.png" />
+						<file name="central_ban_04.png" />
+						<file name="central_ban_04_m.png" />
+						<file name="central_ban_05.png" />
+						<file name="central_ban_05_m.png" />
+						<file name="central_ban_06.png" />
+						<file name="central_ban_06_m.png" />
+						<file name="central_bg_01.png" />
+						<file name="central_bg_02.png" />
+						<file name="central_bg_03.png" />
+						<file name="central_bg_04.png" />
+						<file name="central_dn_01.png" />
+						<file name="central_dn_01_m.png" />
+						<file name="central_up_01.png" />
+						<file name="central_up_01_m.png" />
+						<file name="close_02.png" />
+						<file name="close_02_m.png" />
+						<file name="skin_ban_01.png" />
+						<file name="skin_ban_01_m.png" />
+					</dir>
+					<dir name="CompanyProfile">
+						<file name="ba_01.png" />
+						<file name="ba_01_m.png" />
+						<file name="ba_02.png" />
+						<file name="ba_02_m.png" />
+						<file name="ba_03.png" />
+						<file name="ba_03_m.png" />
+						<file name="close_01.png" />
+						<file name="close_01_m.png" />
+						<file name="Company_bg_01.png" />
+						<file name="Company_bg_02.png" />
+						<file name="Next_01.png" />
+						<file name="Next_01_m.png" />
+						<file name="Previous_01.png" />
+						<file name="Previous_01_m.png" />
+					</dir>
+					<dir name="Email">
+						<file name="Advance_bg_01.PNG" />
+						<file name="Inform_bg_01.PNG" />
+						<file name="mail_ban_02.PNG" />
+						<file name="mail_ban_02_m.PNG" />
+						<file name="mail_ban_03.PNG" />
+						<file name="mail_ban_03_m.PNG" />
+						<file name="mail_ban_04.PNG" />
+						<file name="mail_ban_04_m.PNG" />
+						<file name="mail_ban_05.PNG" />
+						<file name="mail_ban_05_m.PNG" />
+						<file name="mail_ban_06.PNG" />
+						<file name="mail_ban_07.PNG" />
+						<file name="mail_ban_07_m.PNG" />
+						<file name="mail_ban_08.PNG" />
+						<file name="mail_ban_08_m.PNG" />
+						<file name="mail_ban_13.PNG" />
+						<file name="mail_ban_13_m.PNG" />
+						<file name="mail_bg_01.PNG" />
+						<file name="mail_ct_03.PNG" />
+						<file name="mail_ct_03_m.PNG" />
+						<file name="mail_ct_06.PNG" />
+						<file name="mail_ct_06_m.PNG" />
+						<file name="mail_ct_08.PNG" />
+						<file name="mail_ct_10.PNG" />
+						<file name="mail_ct_17.PNG" />
+						<file name="mail_ct_17_m.PNG" />
+						<file name="mail_ct_19.PNG" />
+						<file name="mail_ct_19_m.PNG" />
+						<file name="mail_ct_21.PNG" />
+						<file name="mail_ct_21_m.PNG" />
+						<file name="mail_play_01.PNG" />
+						<file name="mail_play_01_m.PNG" />
+						<file name="mail_pp_01.PNG" />
+						<file name="mail_search_01.PNG" />
+						<file name="mail_search_01_m.PNG" />
+						<file name="mail_stop_01.PNG" />
+						<file name="mail_stop_01_m.PNG" />
+						<file name="popfilter_bg.PNG" />
+						<file name="popmenu_bg.PNG" />
+						<file name="popwin_bg.PNG" />
+					</dir>
+					<dir name="FuncDlg">
+						<file name="mouse_fd_01.png" />
+						<file name="mouse_fd_02.png" />
+						<file name="popsearch_bg.png" />
+						<file name="popwin_bg.png" />
+						<file name="popwin_ct_01.png" />
+						<file name="popwin_ct_01_m.png" />
+						<file name="search_ban_08.png" />
+						<file name="search_ban_08_m.png" />
+						<file name="search_ct_01.png" />
+						<file name="search_ct_01_m.png" />
+						<file name="search_ct_02.png" />
+						<file name="search_ct_02_m.png" />
+						<dir name="Keyboard">
+							<file name="keyboard_ban_01s.png" />
+							<file name="keyboard_ban_01s_m.png" />
+							<file name="keyboard_ban_02s.png" />
+							<file name="keyboard_ban_02s_m.png" />
+							<file name="keyboard_ban_06.png" />
+							<file name="keyboard_ban_06_m.png" />
+							<file name="keyboard_ban_07.png" />
+							<file name="keyboard_ban_07_m.png" />
+							<file name="keyboard_ban_08.png" />
+							<file name="keyboard_ban_08_m.png" />
+							<file name="keyboard_ban_09.png" />
+							<file name="keyboard_ban_09_m.png" />
+							<file name="keyboard_ban_13.png" />
+							<file name="keyboard_ban_13_m.png" />
+							<file name="keyboard_ban_14.png" />
+							<file name="keyboard_ban_14_m.png" />
+							<file name="keyboard_bg_03b.png" />
+							<file name="keyboard_bg_08.png" />
+							<file name="keyboard_ct_06.png" />
+							<file name="keyboard_ct_06_m.png" />
+							<file name="keyboard_dn_01.png" />
+							<file name="keyboard_dn_01_m.png" />
+							<file name="keyboard_tit_01c.png" />
+							<file name="keyboard_up_01.png" />
+							<file name="keyboard_up_01_m.png" />
+						</dir>
+						<dir name="Mouse">
+							<file name="mouse_ban_06.png" />
+							<file name="mouse_ban_06_m.png" />
+							<file name="mouse_ban_07.png" />
+							<file name="mouse_ban_07_m.png" />
+							<file name="mouse_ban_08.png" />
+							<file name="mouse_ban_08_m.png" />
+							<file name="mouse_ban_10.png" />
+							<file name="mouse_ban_10_m.png" />
+							<file name="mouse_ban_11.png" />
+							<file name="mouse_ban_11_m.png" />
+							<file name="mouse_ban_14.png" />
+							<file name="mouse_ban_14_m.png" />
+							<file name="mouse_bg_03a.png" />
+							<file name="mouse_bg_03b.png" />
+							<file name="mouse_fd_01.png" />
+							<file name="mouse_Func_01.png" />
+							<file name="mouse_tit_01c.png" />
+						</dir>
+					</dir>
+					<dir name="Gaming">
+						<file name="bg_00.png" />
+						<file name="bg_01.png" />
+						<file name="bg_02.png" />
+						<file name="bg_03.png" />
+						<file name="bg_04.png" />
+						<file name="ga_bg_00.png" />
+						<file name="ga_bg_01.png" />
+						<file name="ga_bg_02.png" />
+						<file name="ga_bg_03.png" />
+						<file name="ga_bg_04.png" />
+						<file name="mouse_ga_06.png" />
+						<file name="mouse_ga_06_m.png" />
+						<file name="mouse_ga_06_m1.png" />
+						<file name="mouse_ga_06_m2.png" />
+						<dir name="VID0458_PID0057">
+							<file name="ga_bg_00.png" />
+							<file name="ga_bg_01.png" />
+							<file name="ga_bg_02.png" />
+							<file name="ga_bg_03.png" />
+							<file name="ga_bg_04.png" />
+						</dir>
+						<dir name="VID0458_PID005C">
+							<file name="ga_bg_00.png" />
+							<file name="ga_bg_01.png" />
+							<file name="ga_bg_02.png" />
+							<file name="ga_bg_03.png" />
+							<file name="ga_bg_04.png" />
+						</dir>
+						<dir name="VID0458_PID0072">
+							<file name="ga_bg_00.png" />
+							<file name="ga_bg_01.png" />
+							<file name="ga_bg_02.png" />
+							<file name="ga_bg_03.png" />
+						</dir>
+					</dir>
+					<dir name="gKbStatus">
+						<file name="lock_01.png" />
+						<file name="lock_01_a.png" />
+						<file name="lock_02.png" />
+						<file name="lock_02_a.png" />
+						<file name="lock_03.png" />
+						<file name="lock_03_a.png" />
+					</dir>
+					<dir name="keyboard">
+						<file name="battery_0.png" />
+						<file name="battery_100.png" />
+						<file name="battery_20.png" />
+						<file name="battery_40.png" />
+						<file name="battery_60.png" />
+						<file name="battery_80.png" />
+						<file name="keyboard_ban_01.png" />
+						<file name="keyboard_ban_01_m.png" />
+						<file name="keyboard_ban_02.png" />
+						<file name="keyboard_ban_02_m.png" />
+						<file name="keyboard_ban_03.png" />
+						<file name="keyboard_ban_03_m.png" />
+						<file name="keyboard_ban_04.png" />
+						<file name="keyboard_ban_04_m.png" />
+						<file name="keyboard_ban_05.png" />
+						<file name="keyboard_ban_05_m.png" />
+						<file name="keyboard_ban_06.png" />
+						<file name="keyboard_ban_06_m.png" />
+						<file name="keyboard_ban_07.png" />
+						<file name="keyboard_ban_07_m.png" />
+						<file name="keyboard_ban_08.png" />
+						<file name="keyboard_ban_08_m.png" />
+						<file name="keyboard_ban_09.png" />
+						<file name="keyboard_ban_09_m.png" />
+						<file name="keyboard_ban_10.png" />
+						<file name="keyboard_ban_10_m.png" />
+						<file name="keyboard_ban_13.png" />
+						<file name="keyboard_ban_13_m.png" />
+						<file name="keyboard_bar_01.png" />
+						<file name="keyboard_bar_01_01.png" />
+						<file name="keyboard_bar_01_02.png" />
+						<file name="keyboard_bar_02_01.png" />
+						<file name="keyboard_bar_02_02.png" />
+						<file name="keyboard_bg_01.png" />
+						<file name="keyboard_bg_01_s.png" />
+						<file name="keyboard_bg_02.png" />
+						<file name="keyboard_bg_04.png" />
+						<file name="keyboard_bg_05.png" />
+						<file name="keyboard_bg_07.png" />
+						<file name="keyboard_bg_08.png" />
+						<file name="keyboard_ct_03.png" />
+						<file name="keyboard_ct_03_m.png" />
+						<file name="keyboard_ct_08.png" />
+						<file name="keyboard_ct_10.png" />
+						<file name="keyboard_ct_17.png" />
+						<file name="keyboard_ct_17_m.png" />
+					</dir>
+					<dir name="mail">
+						<file name="Demo.png" />
+						<file name="Demo_01.png" />
+						<file name="Demo_02a.png" />
+						<file name="Demo_02b.png" />
+						<file name="mail_ban_02.png" />
+						<file name="mail_ban_02_m.png" />
+						<file name="mail_ban_03.png" />
+						<file name="mail_ban_03_m.png" />
+						<file name="mail_ban_04.png" />
+						<file name="mail_ban_04_m.png" />
+						<file name="mail_ban_05.png" />
+						<file name="mail_ban_05_m.png" />
+						<file name="mail_ban_06.png" />
+						<file name="mail_ban_06_m.png" />
+						<file name="mail_ban_07.png" />
+						<file name="mail_ban_07_m.png" />
+						<file name="mail_ban_08.png" />
+						<file name="mail_ban_08_m.png" />
+						<file name="mail_ban_09.png" />
+						<file name="mail_ban_09_m.png" />
+						<file name="mail_ban_13.png" />
+						<file name="mail_ban_13_m.png" />
+						<file name="mail_bg_01.png" />
+						<file name="mail_bg_02.png" />
+						<file name="mail_bg_03.png" />
+						<file name="mail_ct_03.png" />
+						<file name="mail_ct_03_m.png" />
+						<file name="mail_ct_06.png" />
+						<file name="mail_ct_06_m.png" />
+						<file name="mail_ct_08.png" />
+						<file name="mail_ct_14.png" />
+						<file name="mail_ct_15.png" />
+						<file name="mail_ct_16.png" />
+						<file name="mail_ct_17.png" />
+						<file name="mail_ct_17_m.png" />
+						<file name="mail_ct_18.png" />
+						<file name="mail_ct_19.png" />
+						<file name="mail_ct_19_m.png" />
+						<file name="mail_ct_21.png" />
+						<file name="mail_ct_21_m.png" />
+						<file name="mail_play_01.png" />
+						<file name="mail_play_01_m.png" />
+						<file name="mail_search_01.png" />
+						<file name="mail_search_01_m.png" />
+					</dir>
+					<dir name="Messagebox">
+						<file name="mouse_ban_08.png" />
+						<file name="mouse_ban_08_m.png" />
+						<file name="popwin_bg_01.png" />
+						<file name="popwin_bg_02.png" />
+						<file name="popwin_bg_03.png" />
+					</dir>
+					<dir name="Mouse">
+						<file name="mouse_ban_01.png" />
+						<file name="mouse_ban_01_m.png" />
+						<file name="mouse_ban_02.png" />
+						<file name="mouse_ban_02_m.png" />
+						<file name="mouse_ban_03.png" />
+						<file name="mouse_ban_03_m.png" />
+						<file name="mouse_ban_04.png" />
+						<file name="mouse_ban_04_m.png" />
+						<file name="mouse_ban_05.png" />
+						<file name="mouse_ban_05_m.png" />
+						<file name="mouse_ban_09.png" />
+						<file name="mouse_ban_09_m.png" />
+						<file name="mouse_ban_10.png" />
+						<file name="mouse_ban_10_m.png" />
+						<file name="mouse_ban_11.png" />
+						<file name="mouse_ban_11_m.png" />
+						<file name="mouse_ban_12.png" />
+						<file name="mouse_ban_12_m.png" />
+						<file name="mouse_bar.png" />
+						<file name="mouse_bar_01.png" />
+						<file name="mouse_bg_01.png" />
+						<file name="mouse_bg_02.png" />
+						<file name="mouse_bg_02a.png" />
+						<file name="mouse_pp_01.png" />
+						<file name="mouse_set_01.png" />
+						<dir name="Function">
+							<file name="mouse_ban_09.png" />
+							<file name="mouse_ban_09_m.png" />
+							<file name="mouse_ban_10.png" />
+							<file name="mouse_ban_10_m.png" />
+							<file name="mouse_bg_03a.png" />
+							<file name="mouse_bg_03b.png" />
+							<file name="mouse_bg_03c.png" />
+							<file name="mouse_ct_08_01.png" />
+							<file name="mouse_tit_01c.png" />
+						</dir>
+					</dir>
+					<dir name="Security">
+						<file name="Security.png" />
+					</dir>
+					<dir name="Wireless">
+						<file name="battery_0.png" />
+						<file name="battery_100.png" />
+						<file name="battery_20.png" />
+						<file name="battery_40.png" />
+						<file name="battery_60.png" />
+						<file name="battery_80.png" />
+						<file name="bg_a.png" />
+						<file name="Wireless_bg_01.png" />
+					</dir>
+				</dir>
+			</dir>
+			<dir name="String">
+				<dir name="Arabic">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Brazil">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="China">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Czech">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="English">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Estonian">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="French">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="German">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Greek">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Holland">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Hungary">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Italian">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Japan">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail - Copy.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Kazakh">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Korean">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Latvian">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Lithuanian">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Polish">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Portuguese">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Romanian">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Russian">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Serbian">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Spanish">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Taiwan">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Turkish">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+				<dir name="Ukrainian">
+					<file name="CommonDlg.xml" />
+					<file name="gAdvance.xml" />
+					<file name="gCentral.xml" />
+					<file name="gCompanyProfile.xml" />
+					<file name="gDeskMgm.xml" />
+					<file name="gEmailDll.xml" />
+					<file name="gKbdTask.xml" />
+					<file name="gKeyboardDll.xml" />
+					<file name="gKyeEmail.xml" />
+					<file name="gMouseDll.xml" />
+					<file name="gMouseTask.xml" />
+					<file name="gSecurity.xml" />
+					<file name="gTaskBar.xml" />
+					<file name="gTaskSwitch.xml" />
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</directories>
