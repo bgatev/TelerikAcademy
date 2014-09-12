@@ -1,0 +1,25 @@
+1. Connection string for "Company" database: (location)
+	<connectionStrings>
+    	<add name="Company" connectionString="metadata=res://*/CompanyModel.csdl|res://*/CompanyModel.ssdl|res://*/CompanyModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=localhost;initial catalog=Company;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+  	</connectionStrings>
+
+2. Connection string for "Cars" database: (location)
+	<connectionStrings>
+    	<add name="CarsDB" connectionString="Data Source=localhost;Initial Catalog=CarsDB;Integrated Security=True" providerName="System.Data.SqlClient" />
+  	</connectionStrings>
+
+3. Relationships for "Company" database: (first-table : second-table - type of relationship)
+	Employees - Employees - one to many
+	Employees - Projects - many to many (using additional table EmployeesProjects)
+	Employees - Departments - one to many
+	Employees - Reports - one to many
+
+4. Relationships for "Cars" database: (first-table : second-table - type of relationship)
+	Cars - Manifacturer - one to one
+	Cars - Dealers - one to many
+	Dealers - Cities - one to many
+
+5. Query files: (file location in solution)
+	All Result Files are in CarsQueries Folder
+
+	
