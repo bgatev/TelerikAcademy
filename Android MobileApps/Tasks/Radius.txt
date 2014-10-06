@@ -1,0 +1,7 @@
+mysql -u root -p
+	use radiusdb;
+	show tables;
+	select * from radcheck where username like "%pesho%";
+	select * from nas where shortname like "%pesho%"; 
+tail -f /var/log/radius.log
+/usr/local/etc/rc.d/radiusd restart ->always when change nas table
