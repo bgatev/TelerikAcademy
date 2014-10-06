@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/partyPeople.css" rel="stylesheet" />
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.exp&sensor=true"></script>
+    <script src="scripts/gmaps.js"></script>
+    <script src="scripts/everlive.all.min.js"></script>
+
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.all.min.js"></script>
+
+</head>
+<body>
+    
+    <div data-role="layout" data-id="main">
+        <div data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </div>
+
+        <!-- application views will be rendered here -->
+
+        <div data-role="footer">
+            <div data-role="tabstrip">
+                <a href="views/home.html" data-icon="home">Home</a>
+                <a href="views/partyContacts.html" data-icon="toprated">Party People</a>
+                <a href="views/addPerson.html" data-icon="add">Add Person</a>
+                <a href="views/nearestPartyPeople.html">Nearest Party Animals</a>
+                <a href="views/mapView.html">Party Animals Positions</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="map">
+
+    </div>
+    
+    <div data-role="listview" id="party">
+
+    </div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/listPeopleController.js"></script>
+    <script src="scripts/controllers/addPersonController.js"></script>
+    <script src="scripts/controllers/homeController.js"></script>
+    <script src="scripts/controllers/listNearestPartyPeopleController.js"></script>
+    <script src="scripts/controllers/mapController.js"></script>
+
+    <script type="text/x-kendo-template" id="contacts-list-template">
+        <ul>
+            # for (var i = 0; i < data.length; i++) { #
+            <li>
+                #= data[i].displayName # likes <strong>#= data[i].categories[0].type #</strong>
+                #if (data[i].categories[1].type) { #
+                <strong> -> #= data[i].categories[1].type #</strong>
+                
+                    #if (data[i].phoneNumbers[0].value) { #
+                    <strong> #= data[i].phoneNumbers[0].value #</strong>
+                    # } #
+                # } #
+            </li>
+            # } #
+        </ul>
+    </script>
+
+    <script type="text/x-kendo-template" id="partypeople-list-template">
+        <ul>
+            # for (var i = 0; i < data.count; i++) { #
+            <li>#= data.result[i].Name # <span> #= data.result[i].Phone #</span></li>
+            # } #
+        </ul>
+   </script>
+    
+</body>
+
+</html>

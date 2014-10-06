@@ -1,0 +1,23 @@
+<div data-role="view" data-title="Home" data-layout="main" data-model="app.login">
+
+    <select id="userMusicType" data-bind="value:musicType">
+        <option value="Rock">Rock</option>
+        <option value="Chalga">Chalga</option>
+        <option value="Retro">Retro</option>
+        <option value="Dance">Dance</option>
+    </select><br />
+
+    <div id="userData">
+        <label for="username" id="userNameLabel">Your Name:</label>
+        <input type="text" id="userName" name="username" data-bind="value: name" /><br />
+        <label for="phone" id="phoneLabel">Phone:</label>
+        <input type="text" id="userPhone" name="phone" data-bind="value: phone" /><br />
+
+        <button id="userLoginBtn" data-bind="events: {click:login}">Login</button>
+    </div>
+    
+
+    
+</div>
+
+<

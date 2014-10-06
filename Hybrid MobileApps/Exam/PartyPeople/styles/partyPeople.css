@@ -1,0 +1,55 @@
+/*PartyContacts CSS*/
+#party-list-output ul li{
+    list-style-type:none;
+    margin: 5px;
+}
+#contacts-output ul li{
+   list-style-type:none;
+   margin: 5px;
+}
+#rock-btn{
+    margin-left:20px;
+}
+
+/*Add Person CSS*/
+#nameLabel{
+    margin:10px;
+}
+#partyMember{
+    margin:10px;
+}
+
+#partyMember button{
+    margin:30px 30px 30px 100px;
+    width:5em;
+}
+#addMusicType{
+    width: 7em;
+    height:2em;
+    margin:10px;
+}
+input{
+    height:3em;
+    width:9em;
+}
+#userName{
+    height:3em;
+    width:9em;
+}
+
+#userPhone{
+    height:3em;
+    width:11em;
+}
+
+#userLoginBtn{
+    border-radius:15px;
+    width:8em;
+    height:4em;
+}
+#addContactBtn{
+    border-radius:15px;
+    width:8em;
+    height:4em;
+}
+
