@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The Bucket List</string>
+    <string name="txtTitle">The Bucket List</string>
+    <string name="action_logout">Log Out</string>
+    <string name="action_profile">Profile</string>
+    <string name="etUserNameHint">UserName</string>
+    <string name="etPasswordHint">Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnRegister">Register</string>
+    <string name="copyright">Copyright © 2014 by Team Jasmine</string>
+    <string name="tvDontHaveAccount">Don\'t Have An Account Yet?</string>
+    <string name="dialogLogin">Logging in …</string>
+    <string name="dialogRegister">Registering …</string>
+    <string name="emptyUserNameAndPassword">The UserName or Password fields cannot be empty</string>
+    <string name="registerSuccess">Register Success, please Login</string>
+    <string name="goalsPageTitle">Goals</string>
+    <string name="braggersPageTitle">Braggers</string>
+    <string name="ideasPageTitle">Ideas Land</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="txtGoalTitleHint">Goal Title</string>
+    <string name="txtSetYourNewGoal">Set Your New Goal</string>
+    <string name="txtGoalDescriptionHint">Description</string>
+    <string name="txtTitleNewGoal">New Goal</string>
+    <string name="btnNewGoal">Add Goal</string>
+    <string name="btnTakePhoto">Take Photo</string>
+
+</resources>

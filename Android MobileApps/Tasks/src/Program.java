@@ -72,9 +72,8 @@ public class Program {
     }
 	
 	public static void main(String[] args) throws IOException, JSONException {
-		/*
 		//Task 1
-		Scanner reader = new Scanner(System.in);
+		/*Scanner reader = new Scanner(System.in);
 		
 	    System.out.println("Input String: ");
 	    String input = reader.nextLine();

@@ -1,7 +1,5 @@
-mysql -u root -p
-	use radiusdb;
+mysql -u root
+	use myveryimportantdb;
 	show tables;
-	select * from radcheck where username like "%pesho%";
-	select * from nas where shortname like "%pesho%"; 
-tail -f /var/log/radius.log
-/usr/local/etc/rc.d/radiusd restart ->always when change nas table
+	select * from userscheck where username like "%pesho%";
+	select * from nascheck where shortname like "%pesho%"; 
