@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -14,9 +15,13 @@ import com.telerik.everlive.sdk.core.model.system.User;
 import com.telerik.everlive.sdk.core.query.definition.UserSecretInfo;
 import com.telerikacademy.jasmine.thebucketlistapp.R;
 import com.telerikacademy.jasmine.thebucketlistapp.models.LoggedUser;
+import com.telerikacademy.jasmine.thebucketlistapp.models.SQLiteUser;
+import com.telerikacademy.jasmine.thebucketlistapp.persisters.LoginSettingsManager;
 import com.telerikacademy.jasmine.thebucketlistapp.persisters.RemoteDbManager;
+import com.telerikacademy.jasmine.thebucketlistapp.persisters.SQLiteDBPref;
 import com.telerikacademy.jasmine.thebucketlistapp.tasks.LoginRequestResultCallbackAction;
 import com.telerikacademy.jasmine.thebucketlistapp.tasks.RegisterRequestResultCallBackAction;
+import com.telerikacademy.jasmine.thebucketlistapp.utils.DeviceStatusManager;
 
 public class LoginActivity extends Activity implements View.OnClickListener{
 
@@ -25,6 +30,10 @@ public class LoginActivity extends Activity implements View.OnClickListener{
     private ProgressDialog progressDialog;
     private Button btnLogin;
     private Button btnRegister;
+    private CheckBox rememberMe;
+
+    private SQLiteDBPref sqliteDbPref;
+    private DeviceStatusManager statusManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +41,10 @@ public class LoginActivity extends Activity implements View.OnClickListener{
         setContentView(R.layout.login);
 
         RemoteDbManager.getInstance().setEverlive(getString(R.string.backendServicesApiKey));
+        LoginSettingsManager.getInstance().setSharedPreferences(getSharedPreferences(getString(R.string.sharedPreferencesName), 0));
+
+        sqliteDbPref = new SQLiteDBPref(this.getApplicationContext());
+        statusManager = new DeviceStatusManager(this.getApplicationContext());
 
         this.progressDialog = new ProgressDialog(this);
 
@@ -39,22 +52,39 @@ public class LoginActivity extends Activity implements View.OnClickListener{
         this.password = (EditText) findViewById(R.id.etPassword);
         this.btnLogin = (Button) findViewById(R.id.btnLogin);
         this.btnRegister = (Button) findViewById(R.id.btnRegister);
+        this.rememberMe = (CheckBox) findViewById(R.id.cbRememberMe);
 
         this.btnLogin.setOnClickListener(this);
         this.btnRegister.setOnClickListener(this);
+    }
 
-        this.username.setText(getResources().getString(R.string.defaultUsername));
-        this.password.setText(getResources().getString(R.string.defaultPassword));
+    private void autoLoginHandle() {
+        if (LoginSettingsManager.getInstance().getRememberMe()) {
+            String username = LoginSettingsManager.getInstance().getCurrentUser();
+
+            SQLiteUser user = sqliteDbPref.findUser(username);
+
+            login(user.getUsername(), user.getPassword());
+        }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        Boolean isConnectedToInternet = statusManager.isInternetConnected();
+        if (!isConnectedToInternet) {
+            showAlert(this, "You're not connected to the internet.\n" +
+                    "Bucket List needs an internet connection.\n\n" + "" +
+                    "Please, connect to the internet first");
+        }
+        else {
+            final User loggedUser = LoggedUser.getInstance().getLoggedUser();
 
-        final User loggedUser = LoggedUser.getInstance().getLoggedUser();
-
-        if (loggedUser != null) {
-            LoginActivity.startMainActivity(this);
+            if (loggedUser != null) {
+                LoginActivity.startMainActivity(this);
+            } else {
+                autoLoginHandle();
+            }
         }
     }
 
@@ -62,7 +92,20 @@ public class LoginActivity extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnLogin : {
-                this.login();
+                String userName = this.username.getText().toString();
+                String password = this.password.getText().toString();
+
+                LoginSettingsManager.
+                        getInstance().
+                        putSettings(this.rememberMe.isChecked(), userName);
+
+                if (!sqliteDbPref.userExist(userName)) {
+                    sqliteDbPref.addRecord(userName, password);
+                } else {
+                    sqliteDbPref.updateRecord(userName, password);
+                }
+
+                this.login(userName, password);
                 break;
             }
             case R.id.btnRegister :  {
@@ -109,12 +152,9 @@ public class LoginActivity extends Activity implements View.OnClickListener{
                 new RegisterRequestResultCallBackAction(this, this.progressDialog));
     }
 
-    private void login() {
+    private void login(String userName, String password) {
         this.progressDialog.setMessage(this.getResources().getString(R.string.dialogLogin));
         this.progressDialog.show();
-
-        String userName = this.username.getText().toString();
-        String password = this.password.getText().toString();
 
         RemoteDbManager.getInstance().login(userName,
                 password,

@@ -20,12 +20,35 @@
         </activity>
         <activity
             android:name=".activities.MainActivity"
-            android:label="@string/txtTitle" >
+            android:label="@string/txtTitle"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".activities.NewGoalActivity"
-            android:label="@string/txtTitleNewGoal" >
+            android:label="@string/txtTitleNewGoal"
+            android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="@string/txtTitleProfile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.GoalDetailActivity"
+            android:label="@string/title_activity_goal_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <provider
+            android:name=".persisters.SQLiteContentProvider"
+            android:authorities="com.telerikacademy.jasmine.thebucketlistapp.contentprovider" >
+        </provider>
+
+        <service
+            android:name=".services.MainService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
     </application>
 
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
@@ -34,7 +57,12 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 

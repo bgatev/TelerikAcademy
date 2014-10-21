@@ -1,13 +1,12 @@
 package com.telerikacademy.jasmine.thebucketlistapp.activities;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -17,6 +16,7 @@ import com.telerik.everlive.sdk.core.result.RequestResultCallbackAction;
 import com.telerikacademy.jasmine.thebucketlistapp.R;
 import com.telerikacademy.jasmine.thebucketlistapp.models.Goal;
 import com.telerikacademy.jasmine.thebucketlistapp.models.Idea;
+import com.telerikacademy.jasmine.thebucketlistapp.persisters.LoginSettingsManager;
 import com.telerikacademy.jasmine.thebucketlistapp.persisters.RemoteDbManager;
 
 import java.util.UUID;
@@ -31,29 +31,45 @@ public class NewGoalActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_goal);
 
+        ActionBar actionbar = getActionBar();
+        if (actionbar != null) {
+            actionbar.setDisplayHomeAsUpEnabled(true);
+        }
+
         this.mGoalTitle = (EditText) findViewById(R.id.etGoalTitle);
         this.mGoalDescription = (EditText) findViewById(R.id.etGoalDescriptrion);
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        this.mGoalTitle.setText("");
+        this.mGoalDescription.setText("");
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.new_goal, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_cancel) {
+
+        if (id == android.R.id.home) {
+            startGoalScreen();
+        } else if (id == R.id.action_cancel) {
             startGoalScreen();
         } else if (id == R.id.action_save) {
             saveGoal();
         } else if (id == R.id.action_logout) {
-            return true;
+            LoginSettingsManager.getInstance().setSharedPreferences(getSharedPreferences(getString(R.string.sharedPreferencesName), 0));
+            LoginSettingsManager.getInstance().resetSettings();
+            RemoteDbManager.getInstance().logout();
+
+            Intent loginScreen = new Intent(this, LoginActivity.class);
+            startActivity(loginScreen);
         }
         return super.onOptionsItemSelected(item);
     }
@@ -110,7 +126,7 @@ public class NewGoalActivity extends Activity {
     }
 
     private void processInvalidInputs() {
-        final String errorMessage = "The Goal Title can't not be empty";
+        final String errorMessage = getString(R.string.goal_title_warning);
 
         NewGoalActivity.this.runOnUiThread(new Runnable() {
 
