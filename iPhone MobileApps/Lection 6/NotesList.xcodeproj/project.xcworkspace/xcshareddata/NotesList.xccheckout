@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>22F59A54-C4A1-47A2-914A-7FC1C5087F16</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NotesList</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>59205E27863E98554F48DDA48B18E577FD5D641F</key>
+		<string>https://github.com/stefanNaumov/TelerikAcademy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MobileDevelopment/iOS/iOS-StoryBoards/NotesList/NotesList.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>59205E27863E98554F48DDA48B18E577FD5D641F</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/stefanNaumov/TelerikAcademy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>59205E27863E98554F48DDA48B18E577FD5D641F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>59205E27863E98554F48DDA48B18E577FD5D641F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TelerikAcademy</string>
+		</dict>
+	</array>
+</dict>
+</plist>
