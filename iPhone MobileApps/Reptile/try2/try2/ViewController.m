@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -15,12 +16,34 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-  self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"13.3.jpg"]];
-
+    self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"13.3.jpg"]];
+    
+    [self.soundBool setOnTintColor:[UIColor orangeColor]];
+    [self.soundBool addTarget:self action:@selector(setState:) forControlEvents:UIControlEventValueChanged];
     
     
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    if ([self.soundBool isOn]) {
+        [self startMusic];
+    }
+    else
+    {
+        [self stopMusic ];
+    }
+
+}
+
+- (void)setState:(id)sender
+{
+    BOOL state = [sender isOn];
+    
+    if (state == YES) {
+        [self startMusic];
+    }
+    else{
+        [self stopMusic];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,12 +53,29 @@
 
 - (IBAction)swipeBackLeft:(UIStoryboardSegue *)segue {
     
-   
+    
 }
 
 - (IBAction)swipeBackRight:(UIStoryboardSegue *)otherSegue {
     
-  
+    
+}
+- (IBAction)tapBackFromMap:(UIStoryboardSegue *)mapSegue {
+    
+    
+}
+
+- (IBAction)stopMusic
+{
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    [appDelegate.myAudioPlayer stop];
+}
+
+
+- (IBAction)startMusic
+{
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    [appDelegate.myAudioPlayer play];
 }
 
 @end

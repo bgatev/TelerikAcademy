@@ -1,0 +1,16 @@
+PODS:
+  - Bolts (1.1.3)
+  - Google-Maps-iOS-SDK (1.7.2)
+  - Parse (1.4.2):
+    - Bolts (~> 1.1.3)
+
+DEPENDENCIES:
+  - Google-Maps-iOS-SDK (~> 1.7.2)
+  - Parse (~> 1.4)
+
+SPEC CHECKSUMS:
+  Bolts: 3db0a875235e0c9042b013af13af0f00f79b102c
+  Google-Maps-iOS-SDK: bc3c49c73959c510cb0d339789fd3bd3bc5474d3
+  Parse: fc9ceb6edbc6bb6a1a1f3c33f0db3293a6894f94
+
+COCOAPODS: 0.34.4

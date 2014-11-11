@@ -1,0 +1,10 @@
+We are Reptile and like all reptiles all over the world we must work, while lying - for now only while lying, not sleeping.
+That's why we must know all of the promotions around us, we will tell them to the other people and make money from
+this. For such this purpose we developed an iOS app, that is looking for promotions all over the city and inform users 
+for the promos, that they are subscribed. All the apple users like big buttons - we have that, they like beautifull
+colors - we have that, they want to swipe right, left and everywhere on the screen - we have that, they want to shake 
+the phone - to see what is inside - we captured that... we implement all of the features that every mac user want. 
+
+We have PRIMOTIONS.
+
+Enjoy it free and download it here: https://github.com/bgatev/Reptile

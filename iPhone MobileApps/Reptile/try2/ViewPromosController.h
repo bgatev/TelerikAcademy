@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewPromosController : UIViewController
+@interface ViewPromosController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerCategories;
+
+@property (weak, nonatomic) NSString* strPrintRepeat;
+
 - (IBAction)swipeBackLeftFromCategory:(UIStoryboardSegue *)segue;
+
+- (IBAction)showAllFromCategory:(id)sender;
+
+- (IBAction)showMyPromos:(id)sender;
 
 
 @end

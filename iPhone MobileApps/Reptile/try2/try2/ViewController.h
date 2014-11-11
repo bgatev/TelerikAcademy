@@ -14,5 +14,9 @@
 
 - (IBAction)swipeBackRight:(UIStoryboardSegue *)otherSegue;
 
+- (IBAction)tapBackFromMap:(UIStoryboardSegue *)mapSegue;
+
+@property (weak, nonatomic) IBOutlet UISwitch *soundBool;
+
 @end
 

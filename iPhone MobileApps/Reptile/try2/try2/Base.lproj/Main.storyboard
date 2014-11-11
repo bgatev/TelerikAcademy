@@ -7,7 +7,7 @@
         <!--MainView-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController restorationIdentifier="mainView" title="MainView" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="mainView" storyboardIdentifier="ViewPromosControllerNib" title="MainView" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="GRAB THE PROMOS" backgroundImage="16.jpg">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.25098040699958801" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -34,7 +34,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="ADD PROMO" backgroundImage="16.jpg">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.25098040699958801" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -47,11 +47,26 @@
                                     <segue destination="dZn-nd-seR" kind="modal" id="wLU-gr-LrZ"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4m1-tz-QCW">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="241" y="525" width="51" height="31"/>
+                                </variation>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0y-Bu-X1F">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="178" y="535" width="55" height="21"/>
+                                </variation>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="grabPromosButton" image="ready3.png" translatesAutoresizingMaskIntoConstraints="NO" id="E8q-dK-CLT">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <gestureRecognizers/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-37" y="-89" width="396" height="540"/>
+                                    <rect key="frame" x="-37" y="-90" width="396" height="540"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="-37" y="-78" width="396" height="540"/>
@@ -63,6 +78,8 @@
                             <mask key="subviews">
                                 <exclude reference="T2Y-vt-3o6"/>
                                 <exclude reference="oVI-tq-N3d"/>
+                                <exclude reference="4m1-tz-QCW"/>
+                                <exclude reference="f0y-Bu-X1F"/>
                                 <exclude reference="E8q-dK-CLT"/>
                             </mask>
                         </variation>
@@ -70,15 +87,20 @@
                             <mask key="subviews">
                                 <include reference="T2Y-vt-3o6"/>
                                 <include reference="oVI-tq-N3d"/>
+                                <include reference="4m1-tz-QCW"/>
+                                <include reference="f0y-Bu-X1F"/>
                                 <include reference="E8q-dK-CLT"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="soundBool" destination="4m1-tz-QCW" id="dXS-9M-rZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1170.75" y="-361.5"/>
+            <point key="canvasLocation" x="-1236.75" y="-319.5"/>
         </scene>
         <!--ViewPromos-->
         <scene sceneID="4Ux-ii-64s">
@@ -92,40 +114,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVG-dr-7c2">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="(delete when implement the gesture)">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-14" y="445" width="344" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="UT2-Ka-tiN" kind="modal" modalTransitionStyle="crossDissolve" id="DvD-hG-rPc"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to show Promos " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uz-xC-98E">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="31" y="381" width="227" height="21"/>
+                                    <rect key="frame" x="19" y="328" width="227" height="21"/>
                                 </variation>
                             </label>
-                            <pickerView contentMode="scaleToFill" restorationIdentifier="chosenCategory" translatesAutoresizingMaskIntoConstraints="NO" id="OyQ-J3-amH">
-                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-21" y="93" width="375" height="180"/>
-                                </variation>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose category:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVd-Mm-2BH">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="56" y="28" width="309" height="32"/>
+                                    <rect key="frame" x="50" y="45" width="309" height="32"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from the chosen category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeQ-fT-cl5">
@@ -134,7 +138,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="68" y="416" width="220" height="21"/>
+                                    <rect key="frame" x="56" y="357" width="220" height="21"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="65" y="410" width="220" height="21"/>
@@ -146,39 +150,78 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="19" y="456" width="295" height="136"/>
+                                    <rect key="frame" x="16" y="477" width="295" height="136"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="51" y="455" width="295" height="136"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVG-dr-7c2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Show All Promos" backgroundImage="9.jpg">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="399" width="241" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showAllFromCategory:" destination="mmT-aY-ehB" eventType="touchUpInside" id="q4P-8k-I75"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" restorationIdentifier="chosenCategory" translatesAutoresizingMaskIntoConstraints="NO" id="OyQ-J3-amH">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-63" y="110" width="394" height="180"/>
+                                </variation>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0h-cD-AT0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Show only my promos" backgroundImage="9.jpg">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="456" width="241" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showMyPromos:" destination="mmT-aY-ehB" eventType="touchUpInside" id="cYx-RM-flp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="NVG-dr-7c2"/>
                                 <exclude reference="4Uz-xC-98E"/>
-                                <exclude reference="OyQ-J3-amH"/>
                                 <exclude reference="gVd-Mm-2BH"/>
                                 <exclude reference="zeQ-fT-cl5"/>
                                 <exclude reference="zB8-HU-zrG"/>
+                                <exclude reference="NVG-dr-7c2"/>
+                                <exclude reference="OyQ-J3-amH"/>
+                                <exclude reference="t0h-cD-AT0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="NVG-dr-7c2"/>
                                 <include reference="4Uz-xC-98E"/>
-                                <include reference="OyQ-J3-amH"/>
                                 <include reference="gVd-Mm-2BH"/>
                                 <include reference="zeQ-fT-cl5"/>
                                 <include reference="zB8-HU-zrG"/>
+                                <include reference="NVG-dr-7c2"/>
+                                <include reference="OyQ-J3-amH"/>
+                                <include reference="t0h-cD-AT0"/>
                             </mask>
                         </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="a5k-es-L1v" appends="YES" id="HAG-IQ-WED"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="pickerCategories" destination="OyQ-J3-amH" id="Yiq-7g-lxc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Gv-sY-UCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Z6V-FA-Cht" userLabel="Exit" sceneMemberID="exit"/>
@@ -189,7 +232,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1877.25" y="-360.75"/>
+            <point key="canvasLocation" x="-1877.25" y="-369.5"/>
         </scene>
         <!--Add Promo-->
         <scene sceneID="eIP-km-Y7L">
@@ -199,17 +242,17 @@
                         <viewControllerLayoutGuide type="top" id="H1N-aw-KXh"/>
                         <viewControllerLayoutGuide type="bottom" id="nnL-wg-0nn"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5Bu-ud-HyX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="categoryCircle" id="5Bu-ud-HyX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long press to Add Picture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdN-dL-ufG">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="413" width="314" height="40"/>
+                                    <rect key="frame" x="30" y="393" width="314" height="40"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name*:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXo-yD-9gf">
@@ -218,7 +261,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="45" width="57" height="21"/>
+                                    <rect key="frame" x="23" y="112" width="57" height="21"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="addStockNameInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add stock name here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hdo-04-rIE">
@@ -226,24 +269,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="150" y="36" width="159" height="30"/>
+                                    <rect key="frame" x="150" y="103" width="159" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category*:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhQ-HK-XaB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="moreInfoLabel" text="More info:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhQ-HK-XaB">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="93" width="90" height="21"/>
+                                    <rect key="frame" x="23" y="197" width="90" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="addCategoryInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add category here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YoM-HK-Vfk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="addCategoryInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add other info here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YoM-HK-Vfk">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="150" y="84" width="159" height="30"/>
+                                    <rect key="frame" x="150" y="188" width="159" height="30"/>
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price*:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkf-Ic-u4G">
@@ -252,7 +295,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="34" y="141" width="50" height="21"/>
+                                    <rect key="frame" x="23" y="153" width="50" height="21"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="addPriceInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add price here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cKE-PH-TMy">
@@ -260,47 +303,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="150" y="132" width="159" height="30"/>
+                                    <rect key="frame" x="150" y="144" width="159" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop*:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNX-wg-MDD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNX-wg-MDD">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="34" y="190" width="52" height="21"/>
+                                    <rect key="frame" x="27" y="36" width="53" height="21"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="35" y="190" width="52" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="addAddressInput" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add shop address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3O-NR-upa">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="150" y="181" width="159" height="30"/>
-                                </variation>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discounted until:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVO-gx-OkA">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="224" width="130" height="21"/>
-                                </variation>
-                            </label>
-                            <datePicker contentMode="scaleToFill" restorationIdentifier="addDateInput" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GYm-Az-1er">
-                                <rect key="frame" x="-160" y="-81" width="320" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="436126619.681624">
-                                    <!--2014-10-27 18:16:59 +0000-->
-                                </date>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="243" width="324" height="162"/>
-                                </variation>
-                            </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fields with * are mandatory" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbE-DT-x25">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -311,6 +328,18 @@
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="7" y="580" width="196" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to go back" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9q0-eV-iKH">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="7" y="503" width="255" height="39"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="533" width="255" height="39"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="createButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfw-Ew-ssm">
@@ -326,17 +355,41 @@
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="89" y="469" width="197" height="44"/>
                                 </variation>
+                                <connections>
+                                    <action selector="createPromo:" destination="dZn-nd-seR" eventType="touchUpInside" id="jRq-nS-9yj"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to go back" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9q0-eV-iKH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Double to go to map " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOL-pY-we2">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="111" y="35" width="208" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long press to add marker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qD5-mi-Xjj">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="116" y="58" width="198" height="21"/>
+                                </variation>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejy-4J-sf4">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-66" y="243" width="375" height="162"/>
+                                </variation>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category*:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVO-gx-OkA">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="7" y="503" width="255" height="39"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="10" y="533" width="255" height="39"/>
+                                    <rect key="frame" x="23" y="235" width="130" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -352,12 +405,13 @@
                                 <exclude reference="bkf-Ic-u4G"/>
                                 <exclude reference="cKE-PH-TMy"/>
                                 <exclude reference="kNX-wg-MDD"/>
-                                <exclude reference="B3O-NR-upa"/>
-                                <exclude reference="oVO-gx-OkA"/>
-                                <exclude reference="GYm-Az-1er"/>
                                 <exclude reference="bbE-DT-x25"/>
-                                <exclude reference="Jfw-Ew-ssm"/>
                                 <exclude reference="9q0-eV-iKH"/>
+                                <exclude reference="Jfw-Ew-ssm"/>
+                                <exclude reference="gOL-pY-we2"/>
+                                <exclude reference="qD5-mi-Xjj"/>
+                                <exclude reference="ejy-4J-sf4"/>
+                                <exclude reference="oVO-gx-OkA"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -370,19 +424,27 @@
                                 <include reference="bkf-Ic-u4G"/>
                                 <include reference="cKE-PH-TMy"/>
                                 <include reference="kNX-wg-MDD"/>
-                                <include reference="B3O-NR-upa"/>
-                                <include reference="oVO-gx-OkA"/>
-                                <include reference="GYm-Az-1er"/>
                                 <include reference="bbE-DT-x25"/>
-                                <include reference="Jfw-Ew-ssm"/>
                                 <include reference="9q0-eV-iKH"/>
+                                <include reference="Jfw-Ew-ssm"/>
+                                <include reference="gOL-pY-we2"/>
+                                <include reference="qD5-mi-Xjj"/>
+                                <include reference="ejy-4J-sf4"/>
+                                <include reference="oVO-gx-OkA"/>
                             </mask>
                         </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Aue-hS-ic5" appends="YES" id="rhY-mS-PrL"/>
-                            <outletCollection property="gestureRecognizers" destination="cLn-3n-5JP" appends="YES" id="3se-yd-ae3"/>
+                            <outletCollection property="gestureRecognizers" destination="ZyS-Bs-xU5" appends="YES" id="I3B-ku-qE5"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="2sG-2q-nHJ"/>
+                    <connections>
+                        <outlet property="moreInfoInput" destination="YoM-HK-Vfk" id="WQ1-5Y-JIT"/>
+                        <outlet property="nameInput" destination="Hdo-04-rIE" id="JUL-dR-n3R"/>
+                        <outlet property="picker" destination="ejy-4J-sf4" id="QqI-Zl-JnV"/>
+                        <outlet property="priceInput" destination="cKE-PH-TMy" id="8lh-cw-QYx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfR-iG-ymA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="jrt-XJ-wFL" userLabel="Exit" sceneMemberID="exit"/>
@@ -391,82 +453,112 @@
                         <segue destination="jrt-XJ-wFL" kind="unwind" unwindAction="swipeBackRight:" id="ejE-RQ-Iz4"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="cLn-3n-5JP"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="ZyS-Bs-xU5">
+                    <connections>
+                        <segue destination="Ypm-0K-czq" kind="show" id="jjs-og-GbU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-462.75" y="-361.5"/>
+            <point key="canvasLocation" x="-457.5" y="-353"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="A12-Uk-nWV">
+            <objects>
+                <viewController title="Map" id="Ypm-0K-czq" customClass="ViewMapController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CUJ-Im-fcO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ndG-6P-ItI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bt7-Yd-mwB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <connections>
+                        <segue destination="dZn-nd-seR" kind="show" identifier="returnFromMapSegue" id="PyJ-cd-rWw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euZ-mo-HFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="-370"/>
         </scene>
         <!--Promos from category-->
         <scene sceneID="VJH-iF-ye6">
             <objects>
-                <viewController restorationIdentifier="promosInCategoryView" title="Promos from category" id="UT2-Ka-tiN" customClass="ViewPromosFromCategoryController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="promosInCategoryView" storyboardIdentifier="PromosFromCategoryNib" title="Promos from category" id="UT2-Ka-tiN" customClass="ViewPromosFromCategoryController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ned-44-0nG"/>
                         <viewControllerLayoutGuide type="bottom" id="0KP-RE-N5k"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xQ4-6v-wQN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promos from the category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2D-y0-mgw">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-5" y="44" width="305" height="21"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to go back" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjJ-12-IuO">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="504" width="159" height="21"/>
+                                    <rect key="frame" x="32" y="490" width="159" height="21"/>
                                 </variation>
                             </label>
                             <pickerView contentMode="scaleToFill" restorationIdentifier="chosenPromo" translatesAutoresizingMaskIntoConstraints="NO" id="UXR-x1-JPu">
                                 <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-53" y="184" width="400" height="162"/>
+                                    <rect key="frame" x="-53" y="156" width="400" height="162"/>
                                 </variation>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxH-QS-8rl">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Show this promo">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Show this promo" backgroundImage="9.jpg">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="32" y="429" width="213" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="eHx-yF-yry" kind="modal" id="LP0-xc-Za1"/>
+                                    <action selector="showSinglePromo:" destination="UT2-Ka-tiN" eventType="touchUpInside" id="Kpb-ck-QYe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promos from the category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2D-y0-mgw">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="48" width="305" height="44"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="e2D-y0-mgw"/>
                                 <exclude reference="CjJ-12-IuO"/>
                                 <exclude reference="UXR-x1-JPu"/>
                                 <exclude reference="DxH-QS-8rl"/>
+                                <exclude reference="e2D-y0-mgw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="e2D-y0-mgw"/>
                                 <include reference="CjJ-12-IuO"/>
                                 <include reference="UXR-x1-JPu"/>
                                 <include reference="DxH-QS-8rl"/>
+                                <include reference="e2D-y0-mgw"/>
                             </mask>
                         </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="lnU-Xk-o4d" appends="YES" id="MEj-pm-Jnl"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="picker" destination="UXR-x1-JPu" id="jIL-eZ-fza"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLw-EJ-XjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cZN-kj-Jy7" userLabel="Exit" sceneMemberID="exit"/>
@@ -478,260 +570,182 @@
             </objects>
             <point key="canvasLocation" x="-2579.25" y="-361.5"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="U36-nP-fn4">
+            <objects>
+                <viewController title="Map" id="ulo-eT-qdW" customClass="SinglePromoMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z3O-2c-EvD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q80-bd-pND"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qn2-Ru-0U3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sj2-oK-kC3"/>
+                    <connections>
+                        <segue destination="XSj-9K-OBZ" kind="unwind" unwindAction="goBackToSinglePromo:" id="QyF-0A-rM3"/>
+                        <segue destination="eHx-yF-yry" kind="show" identifier="goBackToSinglePromo" id="2f6-hl-fws"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yMX-cK-VWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XSj-9K-OBZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-4111.5" y="-305"/>
+        </scene>
         <!--Single Promo-->
         <scene sceneID="gRJ-r4-zJN">
             <objects>
-                <viewController restorationIdentifier="singlePromoView" title="Single Promo" id="eHx-yF-yry" customClass="ViewSinglePromoController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="singlePromoView" storyboardIdentifier="SinglePromoNib" title="Single Promo" id="eHx-yF-yry" customClass="ViewSinglePromoController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VdU-Bu-evi"/>
                         <viewControllerLayoutGuide type="bottom" id="vCr-lV-ajZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MKp-dB-f0B">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap double given address  to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otd-FQ-hBm">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="42" y="445" width="216" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="see shop coordinates" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIu-zU-6yf">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="62" y="474" width="165" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stock picture if exists" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eN7-N3-4ca">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="42" y="397" width="165" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wun-zo-lQw">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="111" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="nameLabel" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ws-pb-644">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkW-H0-uxX">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="165" y="72" width="140" height="21"/>
+                                    <rect key="frame" x="165" y="154" width="161" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENg-iX-vHg">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="115" width="112" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="categoryLabel" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pr2-ot-QlV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4n3-v8-GNv">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="165" y="115" width="124" height="21"/>
+                                    <rect key="frame" x="165" y="193" width="161" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFV-Ji-s5v">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="154" width="95" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="priceLabel" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkW-H0-uxX">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="165" y="154" width="145" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In promo until:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K16-yQ-yPs">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="193" width="141" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dateLabel" text="No info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4n3-v8-GNv">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="165" y="193" width="140" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop address:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDH-4Z-EFl">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="233" width="141" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="addressLabel" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgu-Mn-NYe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="addressLabel" text="Click double " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgu-Mn-NYe">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="165" y="235" width="140" height="21"/>
+                                    <rect key="frame" x="165" y="235" width="161" height="21"/>
                                 </variation>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="OME-I4-TmP" appends="YES" id="dBo-ez-Vl6"/>
-                                </connections>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8iu-TD-72C">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2g-Ps-VPr">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="165" y="109" width="161" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ws-pb-644">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="165" y="72" width="161" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQk-1f-VHF">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="326" height="554"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to go back" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1y-b1-7gg">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="514" width="163" height="21"/>
-                                </variation>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="pictureOfStock" translatesAutoresizingMaskIntoConstraints="NO" id="R8N-U3-Zcc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="3pi-Sd-2IZ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                    <rect key="frame" x="-7" y="-45" width="333" height="645"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinch screen to see" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUM-0o-4tt">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="371" width="252" height="30"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and down to go to main" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLq-vT-7BX">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="37" y="543" width="175" height="21"/>
-                                </variation>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Otd-FQ-hBm"/>
-                                <exclude reference="zIu-zU-6yf"/>
-                                <exclude reference="eN7-N3-4ca"/>
-                                <exclude reference="Wun-zo-lQw"/>
-                                <exclude reference="8ws-pb-644"/>
-                                <exclude reference="ENg-iX-vHg"/>
-                                <exclude reference="Pr2-ot-QlV"/>
-                                <exclude reference="pFV-Ji-s5v"/>
                                 <exclude reference="kkW-H0-uxX"/>
-                                <exclude reference="K16-yQ-yPs"/>
                                 <exclude reference="4n3-v8-GNv"/>
-                                <exclude reference="IDH-4Z-EFl"/>
                                 <exclude reference="Jgu-Mn-NYe"/>
-                                <exclude reference="8iu-TD-72C"/>
-                                <exclude reference="p1y-b1-7gg"/>
-                                <exclude reference="R8N-U3-Zcc"/>
-                                <exclude reference="OUM-0o-4tt"/>
-                                <exclude reference="qLq-vT-7BX"/>
+                                <exclude reference="q2g-Ps-VPr"/>
+                                <exclude reference="8ws-pb-644"/>
+                                <exclude reference="bQk-1f-VHF"/>
+                                <exclude reference="3pi-Sd-2IZ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Otd-FQ-hBm"/>
-                                <include reference="zIu-zU-6yf"/>
-                                <include reference="eN7-N3-4ca"/>
-                                <include reference="Wun-zo-lQw"/>
-                                <include reference="8ws-pb-644"/>
-                                <include reference="ENg-iX-vHg"/>
-                                <include reference="Pr2-ot-QlV"/>
-                                <include reference="pFV-Ji-s5v"/>
                                 <include reference="kkW-H0-uxX"/>
-                                <include reference="K16-yQ-yPs"/>
                                 <include reference="4n3-v8-GNv"/>
-                                <include reference="IDH-4Z-EFl"/>
                                 <include reference="Jgu-Mn-NYe"/>
-                                <include reference="8iu-TD-72C"/>
-                                <include reference="p1y-b1-7gg"/>
-                                <include reference="R8N-U3-Zcc"/>
-                                <include reference="OUM-0o-4tt"/>
-                                <include reference="qLq-vT-7BX"/>
+                                <include reference="q2g-Ps-VPr"/>
+                                <include reference="8ws-pb-644"/>
+                                <include reference="bQk-1f-VHF"/>
+                                <include reference="3pi-Sd-2IZ"/>
                             </mask>
                         </variation>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="mGl-BQ-jfI" appends="YES" id="Bew-id-e1x"/>
                             <outletCollection property="gestureRecognizers" destination="BvM-Z1-USS" appends="YES" id="HNd-nh-lLt"/>
                             <outletCollection property="gestureRecognizers" destination="zN6-UG-NFK" appends="YES" id="p6S-Dz-PDH"/>
+                            <outletCollection property="gestureRecognizers" destination="iXR-Be-saw" appends="YES" id="YGP-pe-hDo"/>
+                            <outletCollection property="gestureRecognizers" destination="mHw-c8-mVi" appends="YES" id="268-Ya-oK3"/>
+                            <outletCollection property="gestureRecognizers" destination="aSH-5J-Txr" appends="YES" id="yfD-9O-YIK"/>
                         </connections>
                     </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VtO-H1-IIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="bsX-MC-aa4" userLabel="Exit" sceneMemberID="exit"/>
-                <pinchGestureRecognizer id="mGl-BQ-jfI">
                     <connections>
-                        <outlet property="delegate" destination="8iu-TD-72C" id="hQG-xC-d3Z"/>
+                        <outlet property="basketBottom" destination="3pi-Sd-2IZ" id="fds-o3-Kdb"/>
+                        <outlet property="basketTop" destination="bQk-1f-VHF" id="JAz-nW-2pn"/>
+                        <outlet property="categoryLabel" destination="q2g-Ps-VPr" id="auo-Eh-CeQ"/>
+                        <outlet property="moreInfoLabel" destination="4n3-v8-GNv" id="OVg-LT-l5u"/>
+                        <outlet property="nameLabel" destination="8ws-pb-644" id="sjD-2S-Q5t"/>
+                        <outlet property="priceLabel" destination="kkW-H0-uxX" id="Swx-Yv-yJh"/>
                     </connections>
-                </pinchGestureRecognizer>
+                </viewController>
                 <swipeGestureRecognizer direction="up" id="BvM-Z1-USS">
                     <connections>
                         <segue destination="bsX-MC-aa4" kind="unwind" unwindAction="swipeBackLeftToPromosFromCategory:" id="lbV-4m-XA0"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <tapGestureRecognizer id="OME-I4-TmP"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VtO-H1-IIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bsX-MC-aa4" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="down" id="zN6-UG-NFK">
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="modal" id="hsF-Qb-w4F"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="iXR-Be-saw">
+                    <connections>
+                        <segue destination="ulo-eT-qdW" kind="show" identifier="goToSeeTheShopSegue" id="rHR-vF-xbW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="mHw-c8-mVi">
+                    <connections>
+                        <action selector="showPic:" destination="eHx-yF-yry" id="ShI-Kv-rzw"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pinchGestureRecognizer id="aSH-5J-Txr">
+                    <connections>
+                        <action selector="handlePinch:" destination="eHx-yF-yry" id="zrY-ui-igu"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-3291.75" y="-361.5"/>
+            <point key="canvasLocation" x="-3369" y="-305"/>
         </scene>
     </scenes>
     <resources>
         <image name="16.jpg" width="640" height="1136"/>
         <image name="9.jpg" width="640" height="1136"/>
+        <image name="bottom.png" width="337" height="600"/>
         <image name="ready3.png" width="700" height="789"/>
+        <image name="top.png" width="337" height="600"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="PyJ-cd-rWw"/>
+    </inferredMetricsTieBreakers>
 </document>
