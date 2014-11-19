@@ -112,8 +112,8 @@ namespace Exam
             //Parse Example - method must be async - for example: protected async override void OnLaunched(LaunchActivatedEventArgs e)
             /*
             var person = new ParseObject("Users");
-            person["username"] = "telerik";
-            person.Add("password", "telerik");
+            person["username"] = "mincho";
+            person.Add("password", "georgiev");
             await person.SaveAsync();*/
         }
 

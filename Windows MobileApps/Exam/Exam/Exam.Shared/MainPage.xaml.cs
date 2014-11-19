@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Devices.Sensors;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,7 +29,24 @@ namespace Exam
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
+
+            this.Accelerometer = Accelerometer.GetDefault();
+
+#if WINDOWS_PHONE_APP
+            this.Accelerometer.ReadingChanged += (sender, args) => 
+            {
+                this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+                {
+                    var x = args.Reading.AccelerationX;
+                    var y = args.Reading.AccelerationY;
+                    var z = args.Reading.AccelerationZ;
+                });
+            };
+#endif
+
         }
+
+        public Accelerometer Accelerometer { get; set; }
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -44,5 +63,7 @@ namespace Exam
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
+
+       
     }
 }
