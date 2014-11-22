@@ -23,13 +23,28 @@
 
         <!-- Title Panel -->
         <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="MY APPLICATION" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock Text="page title" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+            <TextBlock Text="{StaticResource AppName}" 
+                       Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
         </StackPanel>
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <TextBlock HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   Text="Server Image" FontSize="50"/>
+            
+            <Image Name="serverImage" 
+                   Margin="0,100,0,0"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Stretch" Opacity="1"
+                   Source="/Resources/datacenter.jpg"/>
 
+            <Button Name="ChangeImageBtn" Content="Change Image" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Bottom" 
+                Height="100"
+                FontSize="30"
+                Margin="0,0,0,100" Click="ChangeImageBtn_Click"/>
         </Grid>
     </Grid>
 </Page>

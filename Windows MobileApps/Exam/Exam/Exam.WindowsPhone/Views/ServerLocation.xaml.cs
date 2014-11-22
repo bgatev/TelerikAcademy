@@ -107,5 +107,16 @@ namespace Exam.Views
         }
 
         #endregion
+
+        private void UpdateLocationBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SaveBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }

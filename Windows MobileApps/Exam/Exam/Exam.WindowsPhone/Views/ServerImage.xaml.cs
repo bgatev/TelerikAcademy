@@ -107,5 +107,10 @@ namespace Exam.Views
         }
 
         #endregion
+
+        private void ChangeImageBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

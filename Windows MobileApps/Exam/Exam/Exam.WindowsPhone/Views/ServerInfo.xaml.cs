@@ -1,4 +1,5 @@
 ﻿using Exam.Common;
+using Exam.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -35,6 +36,10 @@ namespace Exam.Views
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
+
+            var viewModel = new Server();
+
+            this.DataContext = viewModel;
         }
 
         /// <summary>
@@ -107,5 +112,25 @@ namespace Exam.Views
         }
 
         #endregion
+
+        private void EditBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SynchronizeBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void PictureBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ServerImage));
+        }
+
+        private void LocationBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ServerLocation));
+        }
     }
 }
