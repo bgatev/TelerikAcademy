@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 using Parse;
+using Exam.Models;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -40,6 +41,9 @@ namespace Exam
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
 
+            ParseObject.RegisterSubclass<User>();
+            ParseObject.RegisterSubclass<Server>();
+            ParseObject.RegisterSubclass<Location>();
             ParseClient.Initialize("FxJF9CMeLytciF9RVzGt5DMBEPjAIe4HNXxYD7lm", "YNOs16wyo17U4splevKfdByfNN5MxoFu7U0JKvOo");
 
         }
@@ -111,9 +115,22 @@ namespace Exam
 
             //Parse Example - method must be async - for example: protected async override void OnLaunched(LaunchActivatedEventArgs e)
             /*
-            var person = new ParseObject("Users");
-            person["username"] = "mincho";
-            person.Add("password", "georgiev");
+            var myLocation = new ParseObject("Location");
+            myLocation["Latitude"] = 42.69;
+            myLocation.Add("Longitude", 23.32);
+            myLocation.Add("Name", "Sofia");
+            await myLocation.SaveAsync();
+            
+            var myServer = new ParseObject("Server");
+            myServer["HostName"] = "BGSFDC01";
+            myServer.Add("IPAddress", "192.168.1.1");
+            myServer.Add("Description", "PDC");
+            await myServer.SaveAsync();
+            
+            var person = new ParseObject("User");
+            person["Username"] = "boiko";
+            person.Add("Password", "boiko");
+            person.Add("Group", "administrators");
             await person.SaveAsync();*/
         }
 

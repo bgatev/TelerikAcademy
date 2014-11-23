@@ -29,13 +29,26 @@
 
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            <ComboBox />
+
+            <ComboBox VerticalAlignment="Top" Margin="0,40,0,0"
+                  ItemsSource="{Binding Servers}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding HostName}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+
+
             <TextBlock HorizontalAlignment="Center" 
                    VerticalAlignment="Top"
                    Text="Server Info" FontSize="50"/>
             <TextBlock Text="Hostname:" FontSize="24"
                    Margin="25,90,210,480"/>
-            <TextBox Name="HostnameTb" Text="{Binding Hostname}"
+            <TextBox Name="HostnameTb"
                  Margin="200,90,30,0" FontSize="24"
                  VerticalAlignment="Top" Height="30"/>
 
@@ -72,12 +85,12 @@
                    HorizontalAlignment="Stretch" Opacity="1"
                    Source="/Resources/datacenter.jpg"/>
             
-            <Button Name="EditBtn" Content="Edit" 
+            <Button Name="SaveBtn" Content="Save" 
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom" 
                 Width="120" Height="80"
                 FontSize="30"
-                Margin="0,0,0,100" Click="EditBtn_Click"/>
+                Margin="0,0,0,100" Click="SaveBtn_Click"/>
             
             <Button Name="SynchronizeBtn" Content="Synchronize" 
                 HorizontalAlignment="Center"

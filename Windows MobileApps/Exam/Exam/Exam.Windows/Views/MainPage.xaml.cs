@@ -105,8 +105,9 @@ namespace Exam.Views
         protected override void OnTapped(TappedRoutedEventArgs e)
         {
             base.OnTapped(e);
-            //if (animatedImage.Opacity == 0) ShowFrontLogo.Begin();
-            //else HideFrontLogo.Begin();
+            
+            if (animatedImage.Opacity == 0) ShowFrontLogo.Begin();
+            else HideFrontLogo.Begin();
         }
 
         public static bool IsConnected()

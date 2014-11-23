@@ -20,6 +20,7 @@ using Windows.Media.Playback;
 using Windows.UI.Core;
 using Windows.Devices.Sensors;
 using Windows.Networking.Connectivity;
+using Exam.ViewModels;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -57,6 +58,7 @@ namespace Exam.Views
                 });
             };
 
+            //this.DataContext = new AppViewModel();
         }
 
         public Accelerometer Accelerometer { get; set; }
@@ -153,6 +155,9 @@ namespace Exam.Views
 
         private void LoginNow()
         {
+            
+
+
             this.Frame.Navigate(typeof(ServerInfo));
         }
 

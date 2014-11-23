@@ -1,15 +1,40 @@
-﻿using System;
+﻿using Parse;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Exam.Models
 {
-    public class Server
+    [ParseClassName("Server")]
+    public class Server : ParseObject
     {
-        public string HostName { get; set; }
-        public string IPAddress { get; set; }
-        public string Description { get; set; }
-        public Location Location { get; set; }
+        [ParseFieldName("HostName")]
+        public string HostName
+        {
+            get { return GetProperty<string>(); }
+            set { SetProperty<string>(value); }
+        }
+
+        [ParseFieldName("IPAddress")]
+        public string IPAddress
+        {
+            get { return GetProperty<string>(); }
+            set { SetProperty<string>(value); }
+        }
+
+        [ParseFieldName("Description")]
+        public string Description
+        {
+            get { return GetProperty<string>(); }
+            set { SetProperty<string>(value); }
+        }
+
+        [ParseFieldName("Location")]
+        public Location Location
+        {
+            get { return GetProperty<Location>(); }
+            set { SetProperty<Location>(value); }
+        }
 
         public Server(string hostname, string ipaddress, string description = "")
         {

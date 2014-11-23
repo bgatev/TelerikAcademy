@@ -1,22 +1,35 @@
-﻿using System;
+﻿using Parse;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Exam.Models
 {
-    public class Location
+    [ParseClassName("Location")]
+    public class Location : ParseObject
     {
-        public double Latitude { get; set; }
+        [ParseFieldName("Latitude")]
+        public double Latitude
+        {
+            get { return GetProperty<double>(); }
+            set { SetProperty<double>(value); }
+        }
 
-        public double Longitude { get; set; }
+        [ParseFieldName("Longitude")]
+        public double Longitude
+        {
+            get { return GetProperty<double>(); }
+            set { SetProperty<double>(value); }
+        }
 
-        public string Description { get; set; }
+        [ParseFieldName("Name")]
+        public string Name { get; set; }
 
-        public Location(double latitude, double longitude, string description = Constants.DESCRIPTION_DEFAULT)
+        public Location(double latitude, double longitude, string name = Constants.NAME_DEFAULT)
         {
             this.Latitude = latitude;
             this.Longitude = longitude;
-            this.Description = description;
+            this.Name = name;
         }
 
         public Location()

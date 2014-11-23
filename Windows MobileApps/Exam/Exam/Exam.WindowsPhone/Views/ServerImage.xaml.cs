@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+//using Windows.Phone.Media.Capture;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -27,6 +28,7 @@ namespace Exam.Views
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+        //private PhotoCaptureDevice camera;
 
         public ServerImage()
         {
@@ -101,16 +103,32 @@ namespace Exam.Views
             this.navigationHelper.OnNavigatedTo(e);
         }
 
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        protected override async void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedFrom(e);
+
+            /*Size resolution = PhotoCaptureDevice.GetAvailableCaptureResolutions(CameraSensorLocation.Back).First();
+            camera = await PhotoCaptureDevice.OpenAsync(CameraSensorLocation.Back, resolution);
+            video.SetSource(camera);
+            previewTransform.Rotation = camera.SensorRotationInDegrees;*/
         }
 
         #endregion
 
-        private void ChangeImageBtn_Click(object sender, RoutedEventArgs e)
+        private async void ChangeImageBtn_Click(object sender, RoutedEventArgs e)
         {
+            /*CameraCaptureSequence cameraCaptureSequence = camera.CreateCaptureSequence(1);
 
+            MemoryStream stream = new MemoryStream();
+            cameraCaptureSequence.Frames[0].CaptureStream = stream.AsOutputStream();
+
+            await camera.PrepareCaptureSequenceAsync(cameraCaptureSequence);
+            await cameraCaptureSequence.StartCaptureAsync();
+
+            stream.Seek(0, SeekOrigin.Begin);
+
+            MediaLibrary library = new MediaLibrary();
+            library.SavePictureToCameraRoll("Picture1.jpg", stream);*/
         }
     }
 }
