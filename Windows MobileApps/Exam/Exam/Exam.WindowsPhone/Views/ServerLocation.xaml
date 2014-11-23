@@ -36,13 +36,19 @@
                    Margin="25,90,210,480"/>
             <TextBox Name="LatitudeTb" 
                  Margin="200,90,30,0" FontSize="24"
-                 VerticalAlignment="Top" Height="30"/>
+                 VerticalAlignment="Top" Height="35"/>
 
             <TextBlock Text="Longitude:" FontSize="24"
                    Margin="25,130,210,440"/>
             <TextBox Name="LongitudeTb" 
                  Margin="200,130,30,0" FontSize="24"
-                 VerticalAlignment="Top" Height="30"/>
+                 VerticalAlignment="Top" Height="35"/>
+
+            <TextBlock Text="Name:" FontSize="24"
+                   Margin="25,170,210,400"/>
+            <TextBox Name="NameTb" 
+                 Margin="200,170,30,0" FontSize="24"
+                 VerticalAlignment="Top" Height="35"/>
 
             <Button Name="UpdateLocationBtn" Content="Update Location" 
                 HorizontalAlignment="Stretch"

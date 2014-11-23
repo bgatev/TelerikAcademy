@@ -46,5 +46,45 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <TextBlock HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   Text="Server Location" FontSize="50"/>
+            <TextBlock Text="Latitude:" FontSize="24"
+                   Margin="25,90,210,480"/>
+            <TextBox Name="LatitudeTb" 
+                 Margin="200,90,30,0" FontSize="24"
+                 VerticalAlignment="Top" Height="35"/>
+
+            <TextBlock Text="Longitude:" FontSize="24"
+                   Margin="25,130,210,440"/>
+            <TextBox Name="LongitudeTb" 
+                 Margin="200,130,30,0" FontSize="24"
+                 VerticalAlignment="Top" Height="35"/>
+
+            <TextBlock Text="Name:" FontSize="24"
+                   Margin="25,170,210,400"/>
+            <TextBox Name="NameTb" 
+                 Margin="200,170,30,0" FontSize="24"
+                 VerticalAlignment="Top" Height="35"/>
+
+            <Button Name="UpdateLocationBtn" Content="Update Location" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Bottom" 
+                Height="100"
+                FontSize="30"
+                Margin="0,0,0,100" 
+                Click="UpdateLocationBtn_Click"/>
+
+            <Button Name="SaveBtn" Content="Save" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom" 
+                Width="120" Height="80"
+                FontSize="30"
+                Click="SaveBtn_Click"/>
+
+
+
+        </Grid>
     </Grid>
 </Page>

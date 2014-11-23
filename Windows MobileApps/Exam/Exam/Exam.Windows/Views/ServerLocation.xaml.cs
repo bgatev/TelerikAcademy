@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Devices.Geolocation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -102,5 +103,35 @@ namespace Exam.Views
         }
 
         #endregion
+
+        private async void UpdateLocationBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Geolocator geolocator = new Geolocator();
+            geolocator.DesiredAccuracyInMeters = 50;
+
+            try
+            {
+                Geoposition geoposition = await geolocator.GetGeopositionAsync(maximumAge: TimeSpan.FromMinutes(5), timeout: TimeSpan.FromSeconds(10));
+
+                this.LatitudeTb.Text = geoposition.Coordinate.Latitude.ToString("0.00");
+                this.LongitudeTb.Text = geoposition.Coordinate.Longitude.ToString("0.00");
+            }
+            catch (Exception ex)
+            {
+                if ((uint)ex.HResult == 0x80004004)
+                {
+                    // the application does not have the right capability or the location master switch is off
+                    this.LatitudeTb.Text = "Please enable location in phone settings.";
+                }
+            }
+
+        }
+
+        private void SaveBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            this.Frame.Navigate(typeof(ServerInfo), this.NameTb.Text);
+        }
     }
 }

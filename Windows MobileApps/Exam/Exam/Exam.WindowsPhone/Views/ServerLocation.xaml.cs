@@ -135,7 +135,9 @@ namespace Exam.Views
 
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
         {
+           
 
+            this.Frame.Navigate(typeof(ServerInfo),this.NameTb.Text);
         }
 
     }

@@ -1,11 +1,16 @@
 ﻿using Exam.Common;
+using Exam.Models;
+using Exam.ViewModels;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,6 +31,9 @@ namespace Exam.Views
 
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+        private const string dbName = "ServersLocal.db";
+
+        public List<ServerLocal> ServersLocal { get; set; }
 
         /// <summary>
         /// This can be changed to a strongly typed view model.
@@ -94,6 +102,20 @@ namespace Exam.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             navigationHelper.OnNavigatedTo(e);
+            if (e.Parameter != null) this.LocationTb.Text = e.Parameter.ToString();
+
+            // Create Db if not exist
+            /*bool dbExists = await CheckDbAsync(dbName);
+            if (!dbExists)
+            {
+                await CreateDatabaseAsync();
+                await AddServersAsync();
+            }
+
+            // Get Articles
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
+            var query = conn.Table<ServerLocal>();
+            ServersLocal = await query.ToListAsync();*/
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -102,5 +124,84 @@ namespace Exam.Views
         }
 
         #endregion
+
+        private void SaveBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SynchronizeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateServerDescriptionAsync(this.HostnameTb.Text, this.DescriptionTb.Text);
+        }
+
+        private void PictureBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ServerImage));
+        }
+
+        private void LocationBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ServerLocation));
+        }
+
+        private async Task<bool> CheckDbAsync(string dbName)
+        {
+            bool dbExist = true;
+
+            try
+            {
+                StorageFile sf = await ApplicationData.Current.LocalFolder.GetFileAsync(dbName);
+            }
+            catch (Exception)
+            {
+                dbExist = false;
+            }
+
+            return dbExist;
+        }
+
+        private async Task CreateDatabaseAsync()
+        {
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
+            await conn.CreateTableAsync<ServerLocal>();
+        }
+
+        private async Task AddServersAsync()
+        {
+            var allServers = (this.DataContext as AppViewModel).Servers;
+            var list = new List<ServerLocal>();
+            foreach (var item in allServers)
+            {
+                list.Add(new ServerLocal()
+                {
+                    HostName = item.HostName,
+                    IPAddress = item.IPAddress,
+                    Description = item.Description,
+                    Location = item.Location
+                });
+            }
+
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
+            await conn.InsertAllAsync(list);
+        }
+
+        private async Task UpdateServerDescriptionAsync(string hostname, string newDescription)
+        {
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
+
+            var currentServer = await conn.Table<ServerLocal>().Where(x => x.HostName == hostname).FirstOrDefaultAsync();
+            if (currentServer != null)
+            {
+                currentServer.Description = newDescription;
+                await conn.UpdateAsync(currentServer);
+            }
+        }
+
+        private async Task DropTableAsync(string name)
+        {
+            SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
+            await conn.DropTableAsync<ServerLocal>();
+        }
     }
 }

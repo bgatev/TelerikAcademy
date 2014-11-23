@@ -46,6 +46,77 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <TextBox Grid.Row="1" Text="cote"></TextBox>
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+
+            <ComboBox VerticalAlignment="Top" Margin="0,50,0,0"
+                  ItemsSource="{Binding Servers}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding HostName}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+
+
+            <TextBlock HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   Text="Server Info" FontSize="50"/>
+            <TextBlock Text="Hostname:" FontSize="24"
+                   Margin="25,90,210,480"/>
+            <TextBox Name="HostnameTb"
+                 Margin="200,90,30,0" FontSize="20"
+                 VerticalAlignment="Top" Height="30"/>
+
+            <TextBlock Text="IP Address:" FontSize="24"
+                   Margin="25,130,210,440"/>
+            <TextBox Name="IPAddressTb" 
+                 Margin="200,130,30,0" FontSize="20"
+                 VerticalAlignment="Top" Height="30"/>
+
+            <TextBlock Text="Description:" FontSize="24"
+                   Margin="25,170,210,400"/>
+            <TextBox Name="DescriptionTb" 
+                 Margin="200,170,30,0" FontSize="20"
+                 VerticalAlignment="Top" Height="30"/>
+
+            <Button Name="LocationBtn" Content="Location:" 
+                VerticalAlignment="Top"
+                Width="127" Height="40"
+                FontSize="24" BorderThickness="0" Background="Black"
+                Margin="12,200,210,350" Click="LocationBtn_Click"/>
+            <TextBox Name="LocationTb" 
+                 Margin="200,210,30,0" FontSize="20"
+                 VerticalAlignment="Top" Height="30"/>
+
+            <Button Name="PictureBtn" Content="Picture" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" 
+                Width="120" Height="40"
+                FontSize="24" BorderThickness="0" Background="Black"
+                Margin="0,250,0,100" Click="PictureBtn_Click"/>
+
+            <Image Name="serverImage" 
+                   Margin="0,290,0,180"
+                   HorizontalAlignment="Stretch" Opacity="1"
+                   Source="/Resources/datacenter.jpg"/>
+
+            <Button Name="SaveBtn" Content="Save" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom" 
+                Width="120" Height="80"
+                FontSize="30"
+                Margin="0,0,0,100" Click="SaveBtn_Click"/>
+
+            <Button Name="SynchronizeBtn" Content="Synchronize" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom" 
+                Width="200" Height="80"
+                FontSize="30"
+                Click="SynchronizeBtn_Click"/>
+
+        </Grid>
     </Grid>
 </Page>

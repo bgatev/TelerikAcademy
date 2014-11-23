@@ -110,8 +110,10 @@ namespace Exam.Views
         {
             this.navigationHelper.OnNavigatedTo(e);
 
+            if (e.Parameter != null) this.LocationTb.Text = e.Parameter.ToString();
+
             // Create Db if not exist
-            bool dbExists = await CheckDbAsync(dbName);
+            /*bool dbExists = await CheckDbAsync(dbName);
             if (!dbExists)
             {
                 await CreateDatabaseAsync();
@@ -121,7 +123,7 @@ namespace Exam.Views
             // Get Articles
             SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
             var query = conn.Table<ServerLocal>();
-            //ServersLocal = await query.ToListAsync();
+            ServersLocal = await query.ToListAsync();*/
 
         }
 
