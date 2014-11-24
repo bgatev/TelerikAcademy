@@ -108,6 +108,12 @@ namespace Exam.Views
             this.navigationHelper.OnNavigatedFrom(e);
         }
 
+        protected override void OnHolding(HoldingRoutedEventArgs e)
+        {
+            base.OnHolding(e);
+            UpdateLocationBtn_Click(this, e);
+        }
+
         #endregion
 
         private async void UpdateLocationBtn_Click(object sender, RoutedEventArgs e)

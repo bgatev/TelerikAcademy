@@ -132,6 +132,11 @@ namespace Exam.Views
             this.navigationHelper.OnNavigatedFrom(e);
         }
 
+        protected override void OnDoubleTapped(DoubleTappedRoutedEventArgs e)
+        {
+            base.OnDoubleTapped(e);
+            LocationBtn_Click(this, e);
+        }
         #endregion
 
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
